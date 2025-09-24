@@ -1,0 +1,117 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "📚 Abrir Documentación Principal",
+      "type": "shell",
+      "command": "code",
+      "args": ["./_docs/README.md"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "🔧 Git: Status Completo",
+      "type": "shell",
+      "command": "git",
+      "args": ["status", "--porcelain", "-b"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "📝 Git: Commit con Conventional Commits",
+      "type": "shell",
+      "command": "git",
+      "args": ["commit", "-m", "${input:commitMessage}"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "🌿 Git: Crear Nueva Branch",
+      "type": "shell",
+      "command": "git",
+      "args": ["checkout", "-b", "${input:branchName}"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "🚀 Git: Push a Origin",
+      "type": "shell",
+      "command": "git",
+      "args": ["push", "origin", "HEAD"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "📊 Generar Reporte del Bootcamp",
+      "type": "shell",
+      "command": "tree",
+      "args": ["-d", "-L", "3", "_docs/"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "🧹 Limpiar Logs de Scripts",
+      "type": "shell",
+      "command": "rm",
+      "args": ["-f", "scripts/*.log"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "commitMessage",
+      "description": "Mensaje del commit (usa prefijos: feat:, fix:, docs:, style:, refactor:, test:, chore:)",
+      "default": "docs: actualizar documentación",
+      "type": "promptString"
+    },
+    {
+      "id": "branchName",
+      "description": "Nombre de la nueva branch (ej: feature/nueva-funcionalidad, fix/correccion-bug)",
+      "default": "feature/",
+      "type": "promptString"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "folders": [
+    {
+      "name": "🚀 Bootcamp Git & GitHub",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "peacock.color": "#f1502f",
+    "peacock.remoteColor": "#ff6b35",
+    "workbench.colorCustomizations": {
+      "titleBar.activeBackground": "#f1502f",
+      "titleBar.activeForeground": "#ffffff",
+      "titleBar.inactiveBackground": "#f1502f99",
+      "titleBar.inactiveForeground": "#ffffff99",
+      "statusBar.background": "#f1502f",
+      "statusBar.foreground": "#ffffff",
+      "statusBar.debuggingBackground": "#ff6b35",
+      "statusBar.debuggingForeground": "#ffffff",
+      "statusBar.noFolderBackground": "#f1502f",
+      "statusBar.noFolderForeground": "#ffffff",
+      "activityBar.background": "#f1502f",
+      "activityBar.foreground": "#ffffff",
+      "activityBar.inactiveForeground": "#ffffff99",
+      "activityBarBadge.background": "#ff6b35",
+      "activityBarBadge.foreground": "#ffffff"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "johnpapa.vscode-peacock",
+      "ms-vscode.vscode-git",
+      "eamodio.gitlens",
+      "github.vscode-pull-request-github",
+      "github.copilot",
+      "github.copilot-chat",
+      "davidanson.vscode-markdownlint",
+      "yzhang.markdown-all-in-one",
+      "shd101wyy.markdown-preview-enhanced"
+    ]
+  }
+}

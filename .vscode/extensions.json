@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "johnpapa.vscode-peacock",
+    "ms-vscode.vscode-git",
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github",
+    "github.copilot",
+    "github.copilot-chat",
+    "davidanson.vscode-markdownlint",
+    "yzhang.markdown-all-in-one",
+    "shd101wyy.markdown-preview-enhanced"
+  ]
+}
