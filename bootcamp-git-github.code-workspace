@@ -6,17 +6,27 @@
     }
   ],
   "settings": {
-    "peacock.color": "#f1502f",
-    "peacock.remoteColor": "#ff6b35",
+    "peacock.color": "#7C3AED",
+    "peacock.remoteColor": "#A855F7",
     "peacock.surpriseMeOnStartup": false,
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 3,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.showTabs": "single",
+    "workbench.editor.wrapTabs": false,
+    "workbench.editor.scrollToSwitchTabs": false,
+    "workbench.editor.revealIfOpen": true,
+    "workbench.editor.focusRecentEditorAfterClose": true,
     "peacock.favoriteColors": [
       {
-        "name": "Git Orange",
-        "value": "#f1502f"
+        "name": "Vibrant Purple",
+        "value": "#7C3AED"
       },
       {
-        "name": "Git Orange Light",
-        "value": "#ff6b35"
+        "name": "Purple Light",
+        "value": "#A855F7"
       },
       {
         "name": "GitHub Dark",
@@ -32,24 +42,28 @@
       }
     ],
     "workbench.colorCustomizations": {
-      "titleBar.activeBackground": "#f1502f",
-      "titleBar.activeForeground": "#ffffff",
-      "titleBar.inactiveBackground": "#f1502f99",
-      "titleBar.inactiveForeground": "#ffffff99",
-      "statusBar.background": "#f1502f",
-      "statusBar.foreground": "#ffffff",
-      "statusBar.debuggingBackground": "#ff6b35",
-      "statusBar.debuggingForeground": "#ffffff",
-      "statusBar.noFolderBackground": "#f1502f",
+      "titleBar.activeBackground": "#7c3aed",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveBackground": "#7c3aed99",
+      "titleBar.inactiveForeground": "#e7e7e799",
+      "statusBar.background": "#7c3aed",
+      "statusBar.foreground": "#e7e7e7",
+      "statusBar.noFolderBackground": "#7C3AED",
       "statusBar.noFolderForeground": "#ffffff",
-      "activityBar.background": "#f1502f",
-      "activityBar.foreground": "#ffffff",
-      "activityBar.inactiveForeground": "#ffffff99",
-      "activityBarBadge.background": "#ff6b35",
-      "activityBarBadge.foreground": "#ffffff",
-      "panel.border": "#f1502f",
-      "sideBar.border": "#f1502f",
-      "editorGroup.border": "#f1502f"
+      "activityBar.background": "#9b69f1",
+      "activityBar.foreground": "#15202b",
+      "activityBar.inactiveForeground": "#15202b99",
+      "activityBarBadge.background": "#f4b18a",
+      "activityBarBadge.foreground": "#15202b",
+      "sideBar.border": "#9b69f1",
+      "tab.activeModifiedBorder": "#F59E0B",
+      "editorGroupHeader.tabsBackground": "#1F2937",
+      "activityBar.activeBackground": "#9b69f1",
+      "commandCenter.border": "#e7e7e799",
+      "sash.hoverBorder": "#9b69f1",
+      "statusBarItem.hoverBackground": "#9b69f1",
+      "statusBarItem.remoteBackground": "#7c3aed",
+      "statusBarItem.remoteForeground": "#e7e7e7"
     }
   },
   "extensions": {

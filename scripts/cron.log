@@ -56,3 +56,11 @@ Auto-commit completed: chore(content): update bootcamp materials
  create mode 100644 README.md
  create mode 100644 assets/logo-bootcamp.svg
 Auto-commit completed: chore(content): update bootcamp materials
+[main c6c3e7d] chore(content): update bootcamp materials
+ 5 files changed, 383 insertions(+)
+ create mode 100644 .vscode/README.md
+ create mode 100644 .vscode/extensions.json
+ create mode 100644 .vscode/settings.json
+ create mode 100644 .vscode/tasks.json
+ create mode 100644 bootcamp-git-github.code-workspace
+Auto-commit completed: chore(content): update bootcamp materials
