@@ -1,0 +1,220 @@
+# ================================
+# Bootcamp Git/GitHub - .gitignore
+# ================================
+
+# ====================
+# Logs y Archivos Temporales
+# ====================
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Logs específicos del bootcamp
+admin/scripts/*.log
+cron.log
+auto-commit.log
+
+# ====================
+# Archivos del Sistema Operativo
+# ====================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ====================
+# Editores de Texto
+# ====================
+
+# VS Code (mantener configuración del workspace)
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.vscode/.ropeproject
+!.vscode/tasks.json
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ====================
+# Archivos de Configuración Local
+# ====================
+
+# Configuraciones locales específicas del instructor/estudiante
+config.local.*
+.env.local
+.env.*.local
+
+# Credenciales y tokens (NUNCA commitear)
+.env
+*.pem
+*.key
+token.txt
+credentials.*
+secrets.*
+
+# ====================
+# Entregas de Estudiantes (si aplica)
+# ====================
+
+# Carpetas de trabajo individual de estudiantes
+estudiante-*/
+entregas-individuales/
+trabajos-privados/
+
+# Archivos de entrega temporal
+*.zip
+*.tar.gz
+*.rar
+
+# ====================
+# Archivos Generados del Bootcamp
+# ====================
+
+# Reportes automáticos
+reportes/generados/
+estadisticas/auto/
+
+# Backups automáticos
+backup/
+*.backup
+*.bak
+
+# Archivos de cache del sistema de evaluación
+.cache/
+.pytest_cache/
+__pycache__/
+
+# ====================
+# Node.js (para proyectos con GitHub Actions)
+# ====================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ====================
+# Python (para scripts de automatización)
+# ====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ====================
+# Archivos de Documentación Generados
+# ====================
+
+# PDFs generados automáticamente
+*.pdf
+!recursos/estaticos/*.pdf
+
+# Documentación auto-generada
+docs/build/
+docs/_build/
+
+# ====================
+# Archivos Específicos del Bootcamp
+# ====================
+
+# Notas privadas del instructor
+NOTAS_PRIVADAS.md
+notas-instructor/
+evaluaciones-privadas/
+
+# Soluciones que no deben ser públicas (hasta después de la entrega)
+*/solucion-completa/
+**/respuestas-ejercicios.md
+
+# Archivos de progreso individual
+progreso-*.json
+seguimiento-individual/
+
+# ====================
+# Certificaciones y Material Sensible
+# ====================
+
+# Claves de exámenes de certificación
+examenes/claves/
+certificaciones/respuestas/
+
+# Material con derechos de autor
+material-licenciado/
+contenido-propietario/
+
+# ====================
+# Herramientas de Desarrollo
+# ====================
+
+# Live reload y herramientas de desarrollo
+.live-reload/
+.dev-tools/
+
+# Archivos de build y compilación
+build/
+dist/
+out/
+
+# Coverage reports
+coverage/
+*.cover
+.coverage
+.coverage.*
+
+# ================================
+# MANTENER ESTOS ARCHIVOS IMPORTANTES
+# ================================
+# !README.md
+# !LICENSE
+# !.gitignore
+# !bootcamp-git-github.code-workspace
