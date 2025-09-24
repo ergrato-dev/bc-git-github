@@ -1,8 +1,31 @@
-# 🚀 Bootcamp Git/GitHub - 14 Semanas
+# � Documentación del Bootcamp Git/GitHub
 
-Bienvenido al bootcamp intensivo de Git y GitHub. Este programa de 14 semanas te llevará desde los fundamentos hasta la preparación completa para las **Certificaciones Oficiales de GitHub**, incluyendo dominio profesional del control de versiones, automatización y seguridad.
+Esta carpeta contiene toda la documentación estática y recursos complementarios del bootcamp intensivo de Git y GitHub.
 
-## 📚 Estructura del Bootcamp
+## 📁 Estructura de Documentación
+
+### 📋 `/syllabus/`
+
+Contenido curricular, objetivos de aprendizaje y planificación académica.
+
+### 🔗 `/recursos/`
+
+Material complementario:
+
+- Cheatsheets de comandos
+- Enlaces útiles
+- Certificaciones GitHub
+- FAQ del bootcamp
+
+### 📊 `/evaluaciones/`
+
+Criterios de evaluación, rúbricas y métodos de assessment.
+
+### 🏋️ `/ejercicios/`
+
+Ejercicios transversales y material de práctica general.
+
+## 🎯 Programa del Bootcamp - Vista General
 
 ### Módulos por Semana
 
