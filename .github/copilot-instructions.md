@@ -25,7 +25,7 @@ Este repositorio contiene el material educativo para un bootcamp intensivo de **
 
 Cuando generes contenido para el bootcamp, sigue esta estructura:
 
-```
+````
 _docs/
 ├── README.md (índice principal)
 ├── semana-01/ (Git Foundations)
@@ -45,7 +45,25 @@ _docs/
 ├── recursos/
 ├── ejercicios/
 └── evaluaciones/
-```
+
+### Estructura Interna de Cada Semana
+
+Cada carpeta semana-XX/ debe tener esta estructura estandarizada:
+
+```text
+semana-XX/
+├── README.md              # Descripción general de la semana
+├── RUBRICA_EVALUACION.md  # Criterios de evaluación
+├── 1- teoría/             # Lecciones y conceptos teóricos
+├── 2- ejercicios/         # Prácticas guiadas paso a paso
+├── 3- recursos/           # Material complementario
+└── 4- proyecto/           # Proyecto integrador de la semana
+    ├── README.md          # Instrucciones del proyecto
+    ├── instrucciones.md   # Detalles específicos
+    ├── entregables/       # Archivos a entregar
+    ├── recursos/          # Material de apoyo
+    └── solucion/          # Solución de referencia
+````
 
 ### Formato de Lecciones
 
@@ -101,6 +119,7 @@ git commit -m "feat: añadir función de login"
 ### Temas Obligatorios por Semana
 
 **Fase 1: GitHub Foundations Certification (Semanas 1-6)**
+
 1. **Semana 1**: Instalación, configuración inicial, conceptos básicos Git
 2. **Semana 2**: Repositories, staging area, commits, historial
 3. **Semana 3**: Branches, checkout, merge básico
@@ -108,19 +127,11 @@ git commit -m "feat: añadir función de login"
 5. **Semana 5**: Remote repositories, push, pull, fetch, colaboración
 6. **Semana 6**: GitHub features: Issues, Pull Requests, Reviews, Projects
 
-**Fase 2: GitHub Actions Certification (Semanas 7-10)**
-7. **Semana 7**: GitHub Actions fundamentos, workflows, YAML syntax
-8. **Semana 8**: CI/CD pipelines, build, test, deploy automation
-9. **Semana 9**: Custom actions, marketplace, advanced workflows
-10. **Semana 10**: Deployment strategies, environments, secrets, approvals
+**Fase 2: GitHub Actions Certification (Semanas 7-10)** 7. **Semana 7**: GitHub Actions fundamentos, workflows, YAML syntax 8. **Semana 8**: CI/CD pipelines, build, test, deploy automation 9. **Semana 9**: Custom actions, marketplace, advanced workflows 10. **Semana 10**: Deployment strategies, environments, secrets, approvals
 
-**Fase 3: GitHub Advanced Security (Semanas 11-12)**
-11. **Semana 11**: Security features, code scanning, dependency review
-12. **Semana 12**: Vulnerability management, secret scanning, security advisories
+**Fase 3: GitHub Advanced Security (Semanas 11-12)** 11. **Semana 11**: Security features, code scanning, dependency review 12. **Semana 12**: Vulnerability management, secret scanning, security advisories
 
-**Fase 4: GitHub Administration + Proyecto Final (Semanas 13-14)**
-13. **Semana 13**: Enterprise administration, organizations, teams, permissions
-14. **Semana 14**: Proyecto final integrador, preparación certificaciones
+**Fase 4: GitHub Administration + Proyecto Final (Semanas 13-14)** 13. **Semana 13**: Enterprise administration, organizations, teams, permissions 14. **Semana 14**: Proyecto final integrador, preparación certificaciones
 
 ### Audiencia Objetivo
 

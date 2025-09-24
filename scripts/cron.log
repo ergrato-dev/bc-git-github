@@ -4,3 +4,32 @@
  create mode 100644 scripts/auto-commit.log
  create mode 100644 scripts/cron.log
 Auto-commit completed: chore(content): update bootcamp materials
+[main e2f7abb] chore(content): update bootcamp materials
+ 30 files changed, 1114 insertions(+), 43 deletions(-)
+ create mode 100644 _docs/recursos/certificaciones-github.md
+ create mode 100644 _docs/semana-02/README.md
+ create mode 100644 _docs/semana-03/README.md
+ create mode 100644 _docs/semana-03/RUBRICA_EVALUACION.md
+ create mode 100644 _docs/semana-04/README.md
+ create mode 100644 _docs/semana-04/RUBRICA_EVALUACION.md
+ create mode 100644 _docs/semana-05/README.md
+ create mode 100644 _docs/semana-05/RUBRICA_EVALUACION.md
+ create mode 100644 _docs/semana-06/README.md
+ create mode 100644 _docs/semana-06/RUBRICA_EVALUACION.md
+ create mode 100644 _docs/semana-07/README.md
+ create mode 100644 _docs/semana-07/RUBRICA_EVALUACION.md
+ create mode 100644 _docs/semana-08/README.md
+ create mode 100644 _docs/semana-08/RUBRICA_EVALUACION.md
+ create mode 100644 _docs/semana-09/README.md
+ create mode 100644 _docs/semana-09/RUBRICA_EVALUACION.md
+ create mode 100644 _docs/semana-10/README.md
+ create mode 100644 _docs/semana-10/RUBRICA_EVALUACION.md
+ create mode 100644 _docs/semana-11/README.md
+ create mode 100644 _docs/semana-11/RUBRICA_EVALUACION.md
+ create mode 100644 _docs/semana-12/README.md
+ create mode 100644 _docs/semana-12/RUBRICA_EVALUACION.md
+ create mode 100644 _docs/semana-13/README.md
+ create mode 100644 _docs/semana-13/RUBRICA_EVALUACION.md
+ create mode 100644 _docs/semana-14/README.md
+ create mode 100644 _docs/semana-14/RUBRICA_EVALUACION.md
+Auto-commit completed: chore(content): update bootcamp materials

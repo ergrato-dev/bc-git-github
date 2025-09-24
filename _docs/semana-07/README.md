@@ -5,7 +5,7 @@
 Al finalizar esta semana serás capaz de:
 
 - ✅ Comprender la arquitectura de GitHub Actions
-- ✅ Crear workflows básicos usando sintaxis YAML  
+- ✅ Crear workflows básicos usando sintaxis YAML
 - ✅ Configurar triggers y eventos para workflows
 - ✅ Usar actions del marketplace y runners
 - ✅ Implementar workflows de CI básicos
