@@ -2,7 +2,7 @@
 
 ## Contexto del Proyecto
 
-Este repositorio contiene el material educativo para un bootcamp intensivo de **10 semanas** enfocado en Git y GitHub. El objetivo es formar desarrolladores con dominio completo de control de versiones y colaboración en equipos de desarrollo.
+Este repositorio contiene el material educativo para un bootcamp intensivo de **14 semanas** enfocado en Git y GitHub. El objetivo es formar desarrolladores con dominio completo de control de versiones, colaboración en equipos de desarrollo, y preparación completa para las **4 certificaciones oficiales de GitHub**: Foundations, Actions, Advanced Security y Administration.
 
 ## Estructura del Proyecto
 
@@ -28,16 +28,20 @@ Cuando generes contenido para el bootcamp, sigue esta estructura:
 ```
 _docs/
 ├── README.md (índice principal)
-├── semana-01/ (Fundamentos)
-├── semana-02/ (Repositorios y commits)
+├── semana-01/ (Git Foundations)
+├── semana-02/ (Repositories y commits)
 ├── semana-03/ (Branching básico)
-├── semana-04/ (Merge y resolución de conflictos)
-├── semana-05/ (Trabajo colaborativo)
-├── semana-06/ (GitHub workflows)
-├── semana-07/ (Git avanzado)
-├── semana-08/ (CI/CD básico)
-├── semana-09/ (Estrategias de branching)
-├── semana-10/ (Proyecto final)
+├── semana-04/ (Merge conflicts)
+├── semana-05/ (Remote repositories)
+├── semana-06/ (GitHub features)
+├── semana-07/ (GitHub Actions fundamentos)
+├── semana-08/ (CI/CD pipelines)
+├── semana-09/ (Actions avanzadas)
+├── semana-10/ (Deployment strategies)
+├── semana-11/ (Security features)
+├── semana-12/ (Vulnerability management)
+├── semana-13/ (Enterprise administration)
+├── semana-14/ (Proyecto final + exámenes)
 ├── recursos/
 ├── ejercicios/
 └── evaluaciones/
@@ -96,16 +100,27 @@ git commit -m "feat: añadir función de login"
 
 ### Temas Obligatorios por Semana
 
-1. **Semana 1**: Instalación, configuración inicial, conceptos básicos
-2. **Semana 2**: Repositorios, staging area, commits, historial
+**Fase 1: GitHub Foundations Certification (Semanas 1-6)**
+1. **Semana 1**: Instalación, configuración inicial, conceptos básicos Git
+2. **Semana 2**: Repositories, staging area, commits, historial
 3. **Semana 3**: Branches, checkout, merge básico
-4. **Semana 4**: Conflictos de merge, estrategias de resolución
-5. **Semana 5**: Repositorios remotos, push, pull, fetch
-6. **Semana 6**: GitHub features: Issues, Pull Requests, Reviews
-7. **Semana 7**: Rebase, cherry-pick, reset, revert
-8. **Semana 8**: GitHub Actions básico, integración continua
-9. **Semana 9**: Git Flow, GitHub Flow, estrategias de branching
-10. **Semana 10**: Proyecto integrador, mejores prácticas profesionales
+4. **Semana 4**: Merge conflicts, estrategias de resolución
+5. **Semana 5**: Remote repositories, push, pull, fetch, colaboración
+6. **Semana 6**: GitHub features: Issues, Pull Requests, Reviews, Projects
+
+**Fase 2: GitHub Actions Certification (Semanas 7-10)**
+7. **Semana 7**: GitHub Actions fundamentos, workflows, YAML syntax
+8. **Semana 8**: CI/CD pipelines, build, test, deploy automation
+9. **Semana 9**: Custom actions, marketplace, advanced workflows
+10. **Semana 10**: Deployment strategies, environments, secrets, approvals
+
+**Fase 3: GitHub Advanced Security (Semanas 11-12)**
+11. **Semana 11**: Security features, code scanning, dependency review
+12. **Semana 12**: Vulnerability management, secret scanning, security advisories
+
+**Fase 4: GitHub Administration + Proyecto Final (Semanas 13-14)**
+13. **Semana 13**: Enterprise administration, organizations, teams, permissions
+14. **Semana 14**: Proyecto final integrador, preparación certificaciones
 
 ### Audiencia Objetivo
 

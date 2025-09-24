@@ -1,34 +1,76 @@
-# 🚀 Bootcamp Git/GitHub - 10 Semanas
+# 🚀 Bootcamp Git/GitHub - 14 Semanas
 
-Bienvenido al bootcamp intensivo de Git y GitHub. Este programa de 10 semanas te llevará desde los fundamentos hasta el dominio profesional del control de versiones.
+Bienvenido al bootcamp intensivo de Git y GitHub. Este programa de 14 semanas te llevará desde los fundamentos hasta la preparación completa para las **Certificaciones Oficiales de GitHub**, incluyendo dominio profesional del control de versiones, automatización y seguridad.
 
 ## 📚 Estructura del Bootcamp
 
 ### Módulos por Semana
 
-| Semana             | Tema Principal           | Enfoque                         | Duración |
-| ------------------ | ------------------------ | ------------------------------- | -------- |
-| [01](./semana-01/) | Fundamentos de Git       | Instalación y conceptos básicos | 5 días   |
-| [02](./semana-02/) | Repositorios y Commits   | Workflow básico de trabajo      | 5 días   |
-| [03](./semana-03/) | Branching Básico         | Creación y manejo de ramas      | 5 días   |
-| [04](./semana-04/) | Merge y Conflictos       | Resolución de conflictos        | 5 días   |
-| [05](./semana-05/) | Trabajo Colaborativo     | Repositorios remotos            | 5 días   |
-| [06](./semana-06/) | GitHub Workflows         | Issues, PRs, Reviews            | 5 días   |
-| [07](./semana-07/) | Git Avanzado             | Rebase, reset, cherry-pick      | 5 días   |
-| [08](./semana-08/) | CI/CD Básico             | GitHub Actions introducción     | 5 días   |
-| [09](./semana-09/) | Estrategias de Branching | Git Flow, GitHub Flow           | 5 días   |
-| [10](./semana-10/) | Proyecto Final           | Integración de conocimientos    | 5 días   |
+#### 📘 Fase 1: GitHub Foundations Certification (Semanas 1-6)
 
-## 🎯 Objetivos de Aprendizaje
+| Semana             | Tema Principal         | Enfoque                               | Certificación      |
+| ------------------ | ---------------------- | ------------------------------------- | ------------------ |
+| [01](./semana-01/) | Fundamentos de Git     | Instalación y conceptos básicos       | GitHub Foundations |
+| [02](./semana-02/) | Repositories y Commits | Workflow básico de trabajo            | GitHub Foundations |
+| [03](./semana-03/) | Branching y Merging    | Creación y manejo de branches         | GitHub Foundations |
+| [04](./semana-04/) | Merge Conflicts        | Resolución de conflictos              | GitHub Foundations |
+| [05](./semana-05/) | Remote Repositories    | Colaboración con repositorios remotos | GitHub Foundations |
+| [06](./semana-06/) | GitHub Features        | Issues, PRs, Reviews, Projects        | GitHub Foundations |
+
+#### 🔧 Fase 2: GitHub Actions Certification (Semanas 7-10)
+
+| Semana             | Tema Principal             | Enfoque                          | Certificación  |
+| ------------------ | -------------------------- | -------------------------------- | -------------- |
+| [07](./semana-07/) | GitHub Actions Fundamentos | Workflows, sintaxis YAML         | GitHub Actions |
+| [08](./semana-08/) | CI/CD Pipelines            | Build, test, deploy automation   | GitHub Actions |
+| [09](./semana-09/) | Actions Avanzadas          | Custom actions, marketplace      | GitHub Actions |
+| [10](./semana-10/) | Estrategias de Deployment  | Environments, secrets, approvals | GitHub Actions |
+
+#### 🛡️ Fase 3: GitHub Advanced Security (Semanas 11-12)
+
+| Semana             | Tema Principal           | Enfoque                              | Certificación     |
+| ------------------ | ------------------------ | ------------------------------------ | ----------------- |
+| [11](./semana-11/) | Security Features        | Code scanning, dependency review     | Advanced Security |
+| [12](./semana-12/) | Vulnerability Management | Secret scanning, security advisories | Advanced Security |
+
+#### 👥 Fase 4: GitHub Administration + Proyecto Final (Semanas 13-14)
+
+| Semana             | Tema Principal            | Enfoque                           | Certificación  |
+| ------------------ | ------------------------- | --------------------------------- | -------------- |
+| [13](./semana-13/) | Enterprise Administration | Organizations, teams, permissions | Administration |
+| [14](./semana-14/) | Proyecto Final & Examen   | Preparación certificaciones       | Todas          |
+
+## 🎯 Objetivos de Aprendizaje y Certificaciones
 
 Al finalizar el bootcamp serás capaz de:
 
+### 🏅 GitHub Foundations Certification
+
 - ✅ Dominar todos los comandos esenciales de Git
 - ✅ Trabajar eficientemente en equipos usando GitHub
-- ✅ Implementar estrategias de branching profesionales
-- ✅ Configurar workflows de CI/CD básicos
-- ✅ Resolver conflictos complejos de merge
-- ✅ Aplicar mejores prácticas de la industria
+- ✅ Gestionar repositories, branches y merge conflicts
+- ✅ Usar GitHub features (Issues, PRs, Projects, Wiki)
+
+### 🏅 GitHub Actions Certification
+
+- ✅ Crear y mantener workflows de CI/CD
+- ✅ Implementar estrategias de deployment automatizado
+- ✅ Desarrollar custom actions y usar marketplace
+- ✅ Gestionar secrets, environments y approvals
+
+### 🏅 GitHub Advanced Security Certification
+
+- ✅ Implementar code scanning y dependency review
+- ✅ Gestionar vulnerabilidades y secret scanning
+- ✅ Configurar security policies y advisories
+- ✅ Aplicar security best practices en desarrollo
+
+### 🏅 GitHub Administration Certification
+
+- ✅ Administrar organizations y enterprise accounts
+- ✅ Gestionar teams, permissions y access controls
+- ✅ Configurar compliance y audit logging
+- ✅ Implementar governance y policies empresariales
 
 ## 📖 Recursos Adicionales
 
@@ -46,10 +88,11 @@ Al finalizar el bootcamp serás capaz de:
 
 ## 📅 Cronograma
 
-**Modalidad**: Presencial/Virtual híbrida
-**Duración**: 10 semanas (50 días hábiles)
-**Horario**: Lunes a Viernes, 4 horas diarias
-**Certificación**: Al completar exitosamente todas las evaluaciones
+**Modalidad**: Presencial/Virtual híbrida  
+**Duración**: 14 semanas (70 días hábiles)  
+**Horario**: Lunes a Viernes, 4 horas diarias  
+**Certificaciones**: Preparación para las 4 certificaciones oficiales de GitHub  
+**Exámenes**: Simulacros y preparación para certificaciones al final de cada fase
 
 ## 🏆 Evaluación
 

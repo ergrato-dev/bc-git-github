@@ -1,0 +1,6 @@
+[main e24f572] chore(content): update bootcamp materials
+ 3 files changed, 1 insertion(+)
+ create mode 100644 _docs/semana-01/RUBRICA_EVALUACION.md
+ create mode 100644 scripts/auto-commit.log
+ create mode 100644 scripts/cron.log
+Auto-commit completed: chore(content): update bootcamp materials
