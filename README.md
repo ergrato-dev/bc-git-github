@@ -1,8 +1,13 @@
 # 🚀 Bootcamp Git & GitHub - 14 Semanas
 
-<div align="center">
+<p align="center">
+  <img src="./assets/logo-bootcamp.svg" alt="Bootcamp Git & GitHub Logo" width="400">
+</p>
 
-![Bootcamp Logo](./assets/logo-bootcamp.svg)</div>
+<!-- Si el logo no carga, puedes usar esta alternativa con emojis:
+# 🎓 BOOTCAMP GIT & GITHUB 📚
+## 🚀 14 Semanas Intensivas 💻
+-->
 
 **Domina Git y GitHub desde fundamentos hasta nivel profesional**  
 _Preparación completa para las 4 Certificaciones Oficiales de GitHub_
