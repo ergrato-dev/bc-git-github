@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Documentación de Git
+    url: https://git-scm.com/doc
+    about: Documentación oficial de Git
+  - name: 📚 GitHub Docs
+    url: https://docs.github.com/
+    about: Documentación oficial de GitHub
+  - name: 🎓 GitHub Skills
+    url: https://skills.github.com/
+    about: Cursos interactivos de GitHub

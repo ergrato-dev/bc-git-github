@@ -6,64 +6,72 @@
     }
   ],
   "settings": {
-    "peacock.color": "#7C3AED",
-    "peacock.remoteColor": "#A855F7",
+    // ═══════════════════════════════════════════════════════════════════════
+    // PEACOCK - Color naranja de Git (#F05032)
+    // ═══════════════════════════════════════════════════════════════════════
+    "peacock.color": "#F05032",
+    "peacock.remoteColor": "#FF6F47",
     "peacock.surpriseMeOnStartup": false,
+    "peacock.favoriteColors": [
+      {
+        "name": "Git Orange",
+        "value": "#F05032"
+      },
+      {
+        "name": "GitHub Green",
+        "value": "#238636"
+      },
+      {
+        "name": "GitHub Blue",
+        "value": "#58a6ff"
+      },
+      {
+        "name": "GitHub Dark",
+        "value": "#0d1117"
+      }
+    ],
+    
+    // ═══════════════════════════════════════════════════════════════════════
+    // OPTIMIZACIÓN DE RECURSOS - Solo una pestaña activa
+    // ═══════════════════════════════════════════════════════════════════════
     "workbench.editor.enablePreview": true,
     "workbench.editor.enablePreviewFromQuickOpen": true,
     "workbench.editor.limit.enabled": true,
-    "workbench.editor.limit.value": 3,
+    "workbench.editor.limit.value": 1,
     "workbench.editor.limit.perEditorGroup": true,
     "workbench.editor.showTabs": "single",
     "workbench.editor.wrapTabs": false,
     "workbench.editor.scrollToSwitchTabs": false,
     "workbench.editor.revealIfOpen": true,
     "workbench.editor.focusRecentEditorAfterClose": true,
-    "peacock.favoriteColors": [
-      {
-        "name": "Vibrant Purple",
-        "value": "#7C3AED"
-      },
-      {
-        "name": "Purple Light",
-        "value": "#A855F7"
-      },
-      {
-        "name": "GitHub Dark",
-        "value": "#24292e"
-      },
-      {
-        "name": "GitHub Blue",
-        "value": "#0366d6"
-      },
-      {
-        "name": "GitHub Green",
-        "value": "#28a745"
-      }
-    ],
+    "workbench.editor.closeEmptyGroups": true,
+    "workbench.editor.closeOnFileDelete": true,
+    
+    // ═══════════════════════════════════════════════════════════════════════
+    // COLORES PERSONALIZADOS - Tema Git/GitHub (naranja)
+    // ═══════════════════════════════════════════════════════════════════════
     "workbench.colorCustomizations": {
-      "titleBar.activeBackground": "#7c3aed",
-      "titleBar.activeForeground": "#e7e7e7",
-      "titleBar.inactiveBackground": "#7c3aed99",
-      "titleBar.inactiveForeground": "#e7e7e799",
-      "statusBar.background": "#7c3aed",
-      "statusBar.foreground": "#e7e7e7",
-      "statusBar.noFolderBackground": "#7C3AED",
+      "titleBar.activeBackground": "#F05032",
+      "titleBar.activeForeground": "#ffffff",
+      "titleBar.inactiveBackground": "#F0503299",
+      "titleBar.inactiveForeground": "#ffffff99",
+      "statusBar.background": "#F05032",
+      "statusBar.foreground": "#ffffff",
+      "statusBar.noFolderBackground": "#F05032",
       "statusBar.noFolderForeground": "#ffffff",
-      "activityBar.background": "#9b69f1",
-      "activityBar.foreground": "#15202b",
-      "activityBar.inactiveForeground": "#15202b99",
-      "activityBarBadge.background": "#f4b18a",
-      "activityBarBadge.foreground": "#15202b",
-      "sideBar.border": "#9b69f1",
-      "tab.activeModifiedBorder": "#F59E0B",
-      "editorGroupHeader.tabsBackground": "#1F2937",
-      "activityBar.activeBackground": "#9b69f1",
-      "commandCenter.border": "#e7e7e799",
-      "sash.hoverBorder": "#9b69f1",
-      "statusBarItem.hoverBackground": "#9b69f1",
-      "statusBarItem.remoteBackground": "#7c3aed",
-      "statusBarItem.remoteForeground": "#e7e7e7"
+      "activityBar.background": "#F05032",
+      "activityBar.foreground": "#ffffff",
+      "activityBar.inactiveForeground": "#ffffff99",
+      "activityBar.activeBackground": "#FF6F47",
+      "activityBarBadge.background": "#238636",
+      "activityBarBadge.foreground": "#ffffff",
+      "tab.activeModifiedBorder": "#238636",
+      "editorGroupHeader.tabsBackground": "#0d1117",
+      "commandCenter.border": "#ffffff99",
+      "sash.hoverBorder": "#F05032",
+      "statusBarItem.hoverBackground": "#FF6F47",
+      "statusBarItem.remoteBackground": "#F05032",
+      "statusBarItem.remoteForeground": "#ffffff"
     }
   },
   "extensions": {

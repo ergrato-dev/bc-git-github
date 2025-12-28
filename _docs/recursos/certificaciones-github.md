@@ -157,4 +157,4 @@ Para cada certificación, el estudiante debe:
 ---
 
 **🎓 ¿Listo para comenzar tu journey hacia las certificaciones GitHub?**  
-👉 [Iniciar Bootcamp](../semana-01/README.md)
+👉 [Iniciar Bootcamp](../week-01/README.md)

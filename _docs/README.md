@@ -33,35 +33,35 @@ Ejercicios transversales y material de práctica general.
 
 | Semana             | Tema Principal         | Enfoque                               | Certificación      |
 | ------------------ | ---------------------- | ------------------------------------- | ------------------ |
-| [01](./semana-01/) | Fundamentos de Git     | Instalación y conceptos básicos       | GitHub Foundations |
-| [02](./semana-02/) | Repositories y Commits | Workflow básico de trabajo            | GitHub Foundations |
-| [03](./semana-03/) | Branching y Merging    | Creación y manejo de branches         | GitHub Foundations |
-| [04](./semana-04/) | Merge Conflicts        | Resolución de conflictos              | GitHub Foundations |
-| [05](./semana-05/) | Remote Repositories    | Colaboración con repositorios remotos | GitHub Foundations |
-| [06](./semana-06/) | GitHub Features        | Issues, PRs, Reviews, Projects        | GitHub Foundations |
+| [01](./week-01/) | Fundamentos de Git     | Instalación y conceptos básicos       | GitHub Foundations |
+| [02](./week-02/) | Repositories y Commits | Workflow básico de trabajo            | GitHub Foundations |
+| [03](./week-03/) | Branching y Merging    | Creación y manejo de branches         | GitHub Foundations |
+| [04](./week-04/) | Merge Conflicts        | Resolución de conflictos              | GitHub Foundations |
+| [05](./week-05/) | Remote Repositories    | Colaboración con repositorios remotos | GitHub Foundations |
+| [06](./week-06/) | GitHub Features        | Issues, PRs, Reviews, Projects        | GitHub Foundations |
 
 #### 🔧 Fase 2: GitHub Actions Certification (Semanas 7-10)
 
 | Semana             | Tema Principal             | Enfoque                          | Certificación  |
 | ------------------ | -------------------------- | -------------------------------- | -------------- |
-| [07](./semana-07/) | GitHub Actions Fundamentos | Workflows, sintaxis YAML         | GitHub Actions |
-| [08](./semana-08/) | CI/CD Pipelines            | Build, test, deploy automation   | GitHub Actions |
-| [09](./semana-09/) | Actions Avanzadas          | Custom actions, marketplace      | GitHub Actions |
-| [10](./semana-10/) | Estrategias de Deployment  | Environments, secrets, approvals | GitHub Actions |
+| [07](./week-07/) | GitHub Actions Fundamentos | Workflows, sintaxis YAML         | GitHub Actions |
+| [08](./week-08/) | CI/CD Pipelines            | Build, test, deploy automation   | GitHub Actions |
+| [09](./week-09/) | Actions Avanzadas          | Custom actions, marketplace      | GitHub Actions |
+| [10](./week-10/) | Estrategias de Deployment  | Environments, secrets, approvals | GitHub Actions |
 
 #### 🛡️ Fase 3: GitHub Advanced Security (Semanas 11-12)
 
 | Semana             | Tema Principal           | Enfoque                              | Certificación     |
 | ------------------ | ------------------------ | ------------------------------------ | ----------------- |
-| [11](./semana-11/) | Security Features        | Code scanning, dependency review     | Advanced Security |
-| [12](./semana-12/) | Vulnerability Management | Secret scanning, security advisories | Advanced Security |
+| [11](./week-11/) | Security Features        | Code scanning, dependency review     | Advanced Security |
+| [12](./week-12/) | Vulnerability Management | Secret scanning, security advisories | Advanced Security |
 
 #### 👥 Fase 4: GitHub Administration + Proyecto Final (Semanas 13-14)
 
 | Semana             | Tema Principal            | Enfoque                           | Certificación  |
 | ------------------ | ------------------------- | --------------------------------- | -------------- |
-| [13](./semana-13/) | Enterprise Administration | Organizations, teams, permissions | Administration |
-| [14](./semana-14/) | Proyecto Final & Examen   | Preparación certificaciones       | Todas          |
+| [13](./week-13/) | Enterprise Administration | Organizations, teams, permissions | Administration |
+| [14](./week-14/) | Proyecto Final & Examen   | Preparación certificaciones       | Todas          |
 
 ## 🎯 Objetivos de Aprendizaje y Certificaciones
 
@@ -125,4 +125,4 @@ Al finalizar el bootcamp serás capaz de:
 
 ---
 
-**¿Listo para comenzar?** 👉 [Ir a Semana 1](./semana-01/README.md)
+**¿Listo para comenzar?** 👉 [Ir a Semana 1](./week-01/README.md)

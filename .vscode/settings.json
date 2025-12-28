@@ -6,40 +6,53 @@
     }
   ],
   "settings": {
-    "peacock.color": "#7C3AED",
-    "peacock.remoteColor": "#A855F7",
+    // ═══════════════════════════════════════════════════════════════════════
+    // PEACOCK - Color naranja de Git (#F05032)
+    // ═══════════════════════════════════════════════════════════════════════
+    "peacock.color": "#F05032",
+    "peacock.remoteColor": "#FF6F47",
+    
+    // ═══════════════════════════════════════════════════════════════════════
+    // OPTIMIZACIÓN DE RECURSOS - Solo una pestaña activa
+    // ═══════════════════════════════════════════════════════════════════════
     "workbench.editor.enablePreview": true,
     "workbench.editor.enablePreviewFromQuickOpen": true,
     "workbench.editor.limit.enabled": true,
-    "workbench.editor.limit.value": 3,
+    "workbench.editor.limit.value": 1,
     "workbench.editor.limit.perEditorGroup": true,
     "workbench.editor.showTabs": "single",
     "workbench.editor.wrapTabs": false,
     "workbench.editor.scrollToSwitchTabs": false,
     "workbench.editor.revealIfOpen": true,
     "workbench.editor.focusRecentEditorAfterClose": true,
+    "workbench.editor.closeEmptyGroups": true,
+    "workbench.editor.closeOnFileDelete": true,
+    
+    // ═══════════════════════════════════════════════════════════════════════
+    // COLORES PERSONALIZADOS - Tema Git/GitHub
+    // ═══════════════════════════════════════════════════════════════════════
     "workbench.colorCustomizations": {
-      "titleBar.activeBackground": "#7C3AED",
+      "titleBar.activeBackground": "#F05032",
       "titleBar.activeForeground": "#ffffff",
-      "titleBar.inactiveBackground": "#7C3AED99",
+      "titleBar.inactiveBackground": "#F0503299",
       "titleBar.inactiveForeground": "#ffffff99",
-      "statusBar.background": "#7C3AED",
+      "statusBar.background": "#F05032",
       "statusBar.foreground": "#ffffff",
-      "statusBar.debuggingBackground": "#A855F7",
+      "statusBar.debuggingBackground": "#FF6F47",
       "statusBar.debuggingForeground": "#ffffff",
-      "statusBar.noFolderBackground": "#7C3AED",
+      "statusBar.noFolderBackground": "#F05032",
       "statusBar.noFolderForeground": "#ffffff",
-      "activityBar.background": "#7C3AED",
+      "activityBar.background": "#F05032",
       "activityBar.foreground": "#ffffff",
       "activityBar.inactiveForeground": "#ffffff99",
-      "activityBarBadge.background": "#A855F7",
+      "activityBarBadge.background": "#238636",
       "activityBarBadge.foreground": "#ffffff",
-      "panel.border": "#7C3AED",
-      "sideBar.border": "#7C3AED",
-      "editorGroup.border": "#7C3AED",
-      "tab.activeBorder": "#A855F7",
-      "tab.activeModifiedBorder": "#F59E0B",
-      "editorGroupHeader.tabsBackground": "#1F2937"
+      "panel.border": "#F05032",
+      "sideBar.border": "#F05032",
+      "editorGroup.border": "#F05032",
+      "tab.activeBorder": "#F05032",
+      "tab.activeModifiedBorder": "#238636",
+      "editorGroupHeader.tabsBackground": "#0d1117"
     }
   },
   "extensions": {

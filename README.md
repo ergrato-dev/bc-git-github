@@ -1,13 +1,12 @@
-# 🚀 Bootcamp Git & GitHub - 14 Semanas
+# 🚀 Bootcamp Git & GitHub - 16 Semanas
 
 <p align="center">
-  <img src="./assets/logo-bootcamp.svg" alt="Bootcamp Git & GitHub Logo" width="400">
+  <img src="./_assets/banner-bootcamp.svg" alt="Bootcamp Git & GitHub Banner" width="800">
 </p>
 
-<!-- Si el logo no carga, puedes usar esta alternativa con emojis:
-# 🎓 BOOTCAMP GIT & GITHUB 📚
-## 🚀 14 Semanas Intensivas 💻
--->
+<h3 align="center">🎯 Zero to Hero 🦸</h3>
+<p align="center"><strong>De cero conocimiento a profesional certificado en 16 semanas</strong></p>
+<p align="center"><em>⏱️ Dedicación: 6 horas semanales | 📚 Total: 96 horas de formación</em></p>
 
 **Domina Git y GitHub desde fundamentos hasta nivel profesional**  
 _Preparación completa para las 4 Certificaciones Oficiales de GitHub_
@@ -16,6 +15,12 @@ _Preparación completa para las 4 Certificaciones Oficiales de GitHub_
 [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
 [![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)](https://www.markdownguide.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Zero to Hero](https://img.shields.io/badge/Zero_to_Hero-🦸-purple?style=for-the-badge)](.)
+
+<p align="center">
+  <a href="README_EN.md"><img src="https://img.shields.io/badge/🇺🇸_English-0969DA?style=for-the-badge&logoColor=white" alt="English Version"></a>
+  <a href="README.md"><img src="https://img.shields.io/badge/🇪🇸_Español-DC143C?style=for-the-badge&logoColor=white" alt="Versión en Español"></a>
+</p>
 
 </div>
 
@@ -23,16 +28,32 @@ _Preparación completa para las 4 Certificaciones Oficiales de GitHub_
 
 ## 📚 Descripción del Programa
 
-Este bootcamp intensivo de **14 semanas** está diseñado para formar desarrolladores con dominio completo de Git y GitHub, desde conceptos básicos hasta administración empresarial. Al finalizar, estarás preparado para obtener las **4 certificaciones oficiales de GitHub** y trabajar profesionalmente con equipos de desarrollo.
+### 🦸 ¿Qué es Zero to Hero?
+
+Este es un bootcamp **Zero to Hero**: no necesitas conocimientos previos de Git o GitHub. Te llevaremos desde **cero absoluto** hasta un nivel **profesional certificado**, capaz de:
+
+- 🌱 **Zero**: Sin experiencia previa en control de versiones
+- 🚀 **Hero**: Profesional certificado listo para equipos enterprise
+
+| Nivel | Descripción | Semanas |
+|-------|-------------|---------|
+| 🌱 Principiante | Sin conocimiento previo de Git | 1-2 |
+| 📚 Fundamentos | Dominio de comandos básicos | 3-6 |
+| ⚙️ Intermedio | CI/CD y automatización | 7-10 |
+| 🔒 Avanzado | Seguridad y administración | 11-14 |
+| 🦸 Hero | Proyecto final y certificaciones | 15-16 |
+
+Este bootcamp intensivo de **16 semanas** está diseñado para formar desarrolladores con dominio completo de Git y GitHub, desde conceptos básicos hasta administración empresarial. Con una dedicación de **6 horas semanales** (96 horas totales), estarás preparado para obtener las **4 certificaciones oficiales de GitHub** y trabajar profesionalmente con equipos de desarrollo.
 
 ## 🎯 Certificaciones Incluidas
 
-| 🏅 Certificación             | 📅 Semanas | 💰 Valor | 📈 Impacto Salarial |
-| ---------------------------- | ---------- | -------- | ------------------- |
-| **GitHub Foundations**       | 1-6        | $99      | +15%                |
-| **GitHub Actions**           | 7-10       | $200     | +20%                |
-| **GitHub Advanced Security** | 11-12      | $200     | +25%                |
-| **GitHub Administration**    | 13-14      | $200     | +30%                |
+| 🏅 Certificación             | 📅 Semanas | ⏱️ Horas | 💰 Valor | 📈 Impacto Salarial |
+| ---------------------------- | ---------- | ------- | -------- | ------------------- |
+| **GitHub Foundations**       | 1-6        | 36h     | $99      | +15%                |
+| **GitHub Actions**           | 7-10       | 24h     | $200     | +20%                |
+| **GitHub Advanced Security** | 11-13      | 18h     | $200     | +25%                |
+| **GitHub Administration**    | 14-15      | 12h     | $200     | +30%                |
+| **Proyecto Final**           | 16         | 6h      | -        | Integración         |
 
 ## 📖 Estructura del Bootcamp
 
@@ -50,19 +71,25 @@ Este bootcamp intensivo de **14 semanas** está diseñado para formar desarrolla
 - ✅ Enterprise Actions management
 - ✅ Deployment strategies y environments
 
-### 🛡️ Fase 3: Security (Semanas 11-12)
+### 🛡️ Fase 3: Security (Semanas 11-13)
 
 - ✅ Code scanning y vulnerability management
 - ✅ Secret scanning y dependency review
 - ✅ Security policies y compliance
 - ✅ Advanced security features
 
-### 👥 Fase 4: Administration (Semanas 13-14)
+### 👥 Fase 4: Administration (Semanas 14-15)
 
 - ✅ Enterprise administration y governance
 - ✅ Organization management y teams
 - ✅ Access controls y audit logging
-- ✅ Proyecto final integrador
+- ✅ Administrative automation
+
+### 🏆 Fase 5: Proyecto Final (Semana 16)
+
+- ✅ Proyecto integrador completo
+- ✅ Simulacros de certificación
+- ✅ Presentación y graduación
 
 ## 🚀 Inicio Rápido
 
@@ -83,7 +110,7 @@ git clone https://github.com/tu-usuario/bc-git-github.git
 cd bc-git-github
 
 # 3. Comenzar con la Semana 1
-cd _docs/semana-01
+cd _docs/week-01
 ```
 
 ### Configuración Inicial
@@ -102,17 +129,17 @@ git config --list
 ```text
 bc-git-github/
 ├── 📄 README.md                    # Este archivo
-├── 🖼️ assets/                      # Recursos gráficos
-│   └── logo-bootcamp.svg
+├── 🖼️ _assets/                     # Recursos gráficos
+│   └── banner-bootcamp.svg
 ├── ⚙️ .github/                     # Configuraciones GitHub
 │   └── copilot-instructions.md
 ├── 📚 _docs/                       # Documentación del bootcamp
 │   ├── 📋 README.md                # Índice principal
-│   ├── 📝 semana-01/ al semana-14/ # Contenido por semanas
+│   ├── 📝 week-01/ al week-16/     # Contenido por semanas
 │   ├── 💼 recursos/                # Material complementario
 │   ├── 🧪 ejercicios/              # Ejercicios generales
 │   └── 📊 evaluaciones/            # Exámenes y evaluaciones
-└── 🔧 scripts/                     # Scripts de automatización
+└── 🔧 _scripts/                    # Scripts de automatización
     ├── auto-commit.sh              # Commits automáticos
     ├── setup-cron.sh               # Configuración de cron
     └── remove-cron.sh              # Remover cron job
@@ -120,22 +147,26 @@ bc-git-github/
 
 ## 📅 Cronograma
 
-| Semana | Tema                                            | Duración | Certificación  |
-| ------ | ----------------------------------------------- | -------- | -------------- |
-| 1      | [Git Foundations](/_docs/semana-01/)            | 5 días   | Foundations    |
-| 2      | [Repositories y Commits](/_docs/semana-02/)     | 5 días   | Foundations    |
-| 3      | [Branching Básico](/_docs/semana-03/)           | 5 días   | Foundations    |
-| 4      | [Merge Conflicts](/_docs/semana-04/)            | 5 días   | Foundations    |
-| 5      | [Remote Repositories](/_docs/semana-05/)        | 5 días   | Foundations    |
-| 6      | [GitHub Features](/_docs/semana-06/)            | 5 días   | Foundations    |
-| 7      | [GitHub Actions Fundamentos](/_docs/semana-07/) | 5 días   | Actions        |
-| 8      | [CI/CD Pipelines](/_docs/semana-08/)            | 5 días   | Actions        |
-| 9      | [Actions Avanzadas](/_docs/semana-09/)          | 5 días   | Actions        |
-| 10     | [Deployment Strategies](/_docs/semana-10/)      | 5 días   | Actions        |
-| 11     | [Security Features](/_docs/semana-11/)          | 5 días   | Security       |
-| 12     | [Vulnerability Management](/_docs/semana-12/)   | 5 días   | Security       |
-| 13     | [Enterprise Administration](/_docs/semana-13/)  | 5 días   | Administration |
-| 14     | [Proyecto Final](/_docs/semana-14/)             | 5 días   | Integración    |
+| Semana | Tema                                            | Horas | Certificación  |
+| ------ | ----------------------------------------------- | ----- | -------------- |
+| 1      | [Git Foundations](/_docs/week-01/)              | 6h    | Foundations    |
+| 2      | [Repositories y Commits](/_docs/week-02/)       | 6h    | Foundations    |
+| 3      | [Branching Básico](/_docs/week-03/)             | 6h    | Foundations    |
+| 4      | [Merge Conflicts](/_docs/week-04/)              | 6h    | Foundations    |
+| 5      | [Remote Repositories](/_docs/week-05/)          | 6h    | Foundations    |
+| 6      | [GitHub Features](/_docs/week-06/)              | 6h    | Foundations    |
+| 7      | [GitHub Actions Fundamentos](/_docs/week-07/)   | 6h    | Actions        |
+| 8      | [CI/CD Pipelines](/_docs/week-08/)              | 6h    | Actions        |
+| 9      | [Actions Avanzadas](/_docs/week-09/)            | 6h    | Actions        |
+| 10     | [Deployment Strategies](/_docs/week-10/)        | 6h    | Actions        |
+| 11     | [Security Features](/_docs/week-11/)            | 6h    | Security       |
+| 12     | [Vulnerability Management](/_docs/week-12/)     | 6h    | Security       |
+| 13     | [Security Policies](/_docs/week-13/)            | 6h    | Security       |
+| 14     | [Enterprise Administration](/_docs/week-14/)    | 6h    | Administration |
+| 15     | [Administration Avanzado](/_docs/week-15/)      | 6h    | Administration |
+| 16     | [Proyecto Final](/_docs/week-16/)               | 6h    | Integración    |
+
+**Total: 96 horas de formación intensiva**
 
 ## 🎖️ Beneficios del Programa
 
@@ -193,7 +224,7 @@ bc-git-github/
 
 ### Paso 2: Semana 1
 
-1. 📚 Ve a [Semana 1 - Fundamentos](/_docs/semana-01/)
+1. 📚 Ve a [Semana 1 - Fundamentos](/_docs/week-01/)
 2. 🎯 Revisa los objetivos de aprendizaje
 3. 📖 Comienza con la primera lección
 4. ✍️ Realiza los ejercicios prácticos
@@ -207,13 +238,26 @@ bc-git-github/
 
 ## 🤝 Contribuir
 
-¡Las contribuciones son bienvenidas! Si encuentras errores o tienes sugerencias:
+¡Las contribuciones son bienvenidas! Este es un proyecto educativo de código abierto.
 
-1. 🍴 Fork el repositorio
-2. 🌿 Crea una branch para tu feature (`git checkout -b feature/mejora`)
-3. 💾 Commit tus cambios (`git commit -m 'feat: agregar nueva funcionalidad'`)
-4. 📤 Push a la branch (`git push origin feature/mejora`)
-5. 🔄 Abre un Pull Request
+### Cómo Contribuir
+
+1. Lee la [Guía de Contribución](CONTRIBUTING.md)
+2. Revisa el [Código de Conducta](CODE_OF_CONDUCT.md)
+3. 🍴 Fork el repositorio
+4. 🌿 Crea una branch para tu feature (`git checkout -b feature/mejora`)
+5. 💾 Commit tus cambios (`git commit -m 'feat: agregar nueva funcionalidad'`)
+6. 📤 Push a la branch (`git push origin feature/mejora`)
+7. 🔄 Abre un Pull Request
+
+### 📋 Áreas de Contribución
+
+- ✨ Ejercicios adicionales
+- 📚 Mejoras en documentación
+- 🐛 Corrección de errores
+- 🎨 Recursos visuales (diagramas SVG)
+- 🌐 Traducciones
+- 📹 Videos tutoriales
 
 ## 📞 Soporte
 
@@ -235,7 +279,14 @@ bc-git-github/
 
 Este proyecto está bajo la Licencia MIT. Ver [LICENSE](LICENSE) para más detalles.
 
-## 🙏 Reconocimientos
+## � Documentación Adicional
+
+- [🤖 Instrucciones para Copilot](.github/copilot-instructions.md)
+- [🤝 Guía de Contribución](CONTRIBUTING.md)
+- [📜 Código de Conducta](CODE_OF_CONDUCT.md)
+- [🔒 Política de Seguridad](SECURITY.md)
+
+## �🙏 Reconocimientos
 
 - 💖 **GitHub Education** por los recursos y soporte
 - 👥 **Comunidad Open Source** por las mejores prácticas
@@ -248,7 +299,7 @@ Este proyecto está bajo la Licencia MIT. Ver [LICENSE](LICENSE) para más detal
 
 ### 🚀 ¿Listo para transformar tu carrera?
 
-**[📚 Comenzar el Bootcamp](./_docs/semana-01/) • [🎓 Ver Certificaciones](./_docs/recursos/certificaciones-github.md) • [❓ FAQ](./_docs/recursos/faq.md)**
+**[📚 Comenzar el Bootcamp](./_docs/week-01/) • [🎓 Ver Certificaciones](./_docs/recursos/certificaciones-github.md) • [❓ FAQ](./_docs/recursos/faq.md)**
 
 _Desarrollado con ❤️ para la comunidad de desarrolladores_
 

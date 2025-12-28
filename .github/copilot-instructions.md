@@ -2,11 +2,13 @@
 
 ## Contexto del Proyecto
 
-Este repositorio contiene el material educativo para un bootcamp intensivo de **14 semanas** enfocado en Git y GitHub. El objetivo es formar desarrolladores con dominio completo de control de versiones, colaboración en equipos de desarrollo, y preparación completa para las **4 certificaciones oficiales de GitHub**: Foundations, Actions, Advanced Security y Administration.
+Este repositorio contiene el material educativo para un bootcamp intensivo de **16 semanas** (96 horas, 6h/semana) enfocado en Git y GitHub. El objetivo es formar desarrolladores con dominio completo de control de versiones, colaboración en equipos de desarrollo, y preparación completa para las **4 certificaciones oficiales de GitHub**: Foundations, Actions, Advanced Security y Administration.
 
 ## Estructura del Proyecto
 
-- `_docs/` - Toda la documentación del bootcamp está organizada aquí
+- `bootcamp/` - Todo el contenido del bootcamp organizado por semanas
+- `_assets/` - Recursos gráficos globales (banner, logos)
+- `_scripts/` - Scripts de automatización
 - `.github/` - Configuraciones de GitHub y este archivo de instrucciones
 - Cada semana tiene su propia carpeta con material teórico y práctico
 
@@ -26,44 +28,60 @@ Este repositorio contiene el material educativo para un bootcamp intensivo de **
 Cuando generes contenido para el bootcamp, sigue esta estructura:
 
 ````
-_docs/
-├── README.md (índice principal)
-├── semana-01/ (Git Foundations)
-├── semana-02/ (Repositories y commits)
-├── semana-03/ (Branching básico)
-├── semana-04/ (Merge conflicts)
-├── semana-05/ (Remote repositories)
-├── semana-06/ (GitHub features)
-├── semana-07/ (GitHub Actions fundamentos)
-├── semana-08/ (CI/CD pipelines)
-├── semana-09/ (Actions avanzadas)
-├── semana-10/ (Deployment strategies)
-├── semana-11/ (Security features)
-├── semana-12/ (Vulnerability management)
-├── semana-13/ (Enterprise administration)
-├── semana-14/ (Proyecto final + exámenes)
-├── recursos/
-├── ejercicios/
-└── evaluaciones/
+bootcamp/
+├── README.md                     # Índice principal del bootcamp
+├── week-01/                      # Git Foundations
+├── week-02/                      # Repositories y commits
+├── week-03/                      # Branching básico
+├── week-04/                      # Merge conflicts
+├── week-05/                      # Remote repositories
+├── week-06/                      # GitHub features
+├── week-07/                      # GitHub Actions fundamentos
+├── week-08/                      # CI/CD pipelines
+├── week-09/                      # Actions avanzadas
+├── week-10/                      # Deployment strategies
+├── week-11/                      # Security features
+├── week-12/                      # Vulnerability management
+├── week-13/                      # Security policies
+├── week-14/                      # Enterprise administration
+├── week-15/                      # Administration avanzado
+└── week-16/                      # Proyecto final + certificaciones
+````
 
 ### Estructura Interna de Cada Semana
 
-Cada carpeta semana-XX/ debe tener esta estructura estandarizada:
+Cada carpeta week-XX/ debe tener esta estructura estandarizada:
 
 ```text
-semana-XX/
-├── README.md              # Descripción general de la semana
-├── RUBRICA_EVALUACION.md  # Criterios de evaluación
-├── 1- teoría/             # Lecciones y conceptos teóricos
-├── 2- ejercicios/         # Prácticas guiadas paso a paso
-├── 3- recursos/           # Material complementario
-└── 4- proyecto/           # Proyecto integrador de la semana
-    ├── README.md          # Instrucciones del proyecto
-    ├── instrucciones.md   # Detalles específicos
-    ├── entregables/       # Archivos a entregar
-    ├── recursos/          # Material de apoyo
-    └── solucion/          # Solución de referencia
-````
+week-XX/
+├── README.md                     # Descripción general de la semana
+├── rubrica-evaluacion.md         # Criterios de evaluación
+├── 0-assets/                     # Diagramas y recursos visuales (SVG)
+│   └── README.md
+├── 1-teoria/                     # Material teórico
+│   ├── 01-tema-principal.md
+│   ├── 02-segundo-tema.md
+│   └── ...
+├── 2-practicas/                  # Ejercicios guiados
+│   ├── README.md
+│   ├── ejercicio-01-nombre/
+│   │   ├── README.md             # Instrucciones detalladas
+│   │   ├── starter/              # Código inicial
+│   │   └── solution/             # Solución comentada
+│   └── ...
+├── 3-proyecto/                   # Proyecto semanal
+│   └── nombre-proyecto/
+│       ├── README.md
+│       ├── starter/              # Código inicial
+│       └── solution/             # Solución de referencia
+├── 4-recursos/                   # Material adicional
+│   ├── README.md
+│   ├── ebooks-free/              # Libros electrónicos gratuitos
+│   ├── videografia/              # Videos y tutoriales
+│   └── webgrafia/                # Enlaces y documentación
+└── 5-glosario/                   # Términos clave de la semana
+    └── README.md
+```
 
 ### Formato de Lecciones
 
@@ -86,6 +104,52 @@ Cada lección debe incluir:
   - **¿Por qué?**: Razón o contexto para usarlo
   - **¿Para qué sirve?**: Beneficio o resultado esperado
 - **Casos de Error**: Incluir cómo manejar errores comunes
+
+### Estándares Gráficos (0-assets/)
+
+Los diagramas y recursos visuales deben seguir estas especificaciones:
+
+- **Formato**: SVG (Scalable Vector Graphics) - NO usar ASCII art
+- **Tema**: Dark mode (fondo oscuro)
+- **Colores**: Sólidos, sin degradados ni gradientes
+- **Tipografía**: Sans-serif (ej: Arial, Helvetica, Inter, Roboto)
+- **Paleta de colores recomendada**:
+  - Fondo: `#1a1a2e` o `#0d1117`
+  - Texto principal: `#e6e6e6` o `#c9d1d9`
+  - Acentos: `#58a6ff` (azul), `#3fb950` (verde), `#f85149` (rojo)
+  - Bordes: `#30363d`
+
+#### Nomenclatura de archivos SVG:
+
+```
+0-assets/
+├── 01-nombre-diagrama.svg
+├── 02-flujo-trabajo.svg
+├── 03-comparativa.svg
+└── README.md
+```
+
+#### Vinculación de Assets:
+
+Los archivos SVG deben estar **vinculados desde los archivos de teoría** u otros documentos donde corresponda:
+
+```markdown
+<!-- En 1-teoria/01-control-versiones.md -->
+
+## Flujo de Trabajo en Git
+
+El siguiente diagrama muestra el flujo básico:
+
+![Flujo de trabajo Git](../0-assets/01-flujo-trabajo-git.svg)
+
+> **Nota**: Ver [diagrama completo](../0-assets/01-flujo-trabajo-git.svg)
+```
+
+**Reglas de vinculación:**
+- Cada asset debe estar referenciado en al menos un archivo de teoría o práctica
+- Usar rutas relativas (`../0-assets/nombre.svg`)
+- Incluir texto alternativo descriptivo en las imágenes
+- El README de `0-assets/` debe listar todos los assets y dónde se usan
 
 ### Ejemplos de Formato
 
@@ -127,11 +191,27 @@ git commit -m "feat: añadir función de login"
 5. **Semana 5**: Remote repositories, push, pull, fetch, colaboración
 6. **Semana 6**: GitHub features: Issues, Pull Requests, Reviews, Projects
 
-**Fase 2: GitHub Actions Certification (Semanas 7-10)** 7. **Semana 7**: GitHub Actions fundamentos, workflows, YAML syntax 8. **Semana 8**: CI/CD pipelines, build, test, deploy automation 9. **Semana 9**: Custom actions, marketplace, advanced workflows 10. **Semana 10**: Deployment strategies, environments, secrets, approvals
+**Fase 2: GitHub Actions Certification (Semanas 7-10)**
 
-**Fase 3: GitHub Advanced Security (Semanas 11-12)** 11. **Semana 11**: Security features, code scanning, dependency review 12. **Semana 12**: Vulnerability management, secret scanning, security advisories
+7. **Semana 7**: GitHub Actions fundamentos, workflows, YAML syntax
+8. **Semana 8**: CI/CD pipelines, build, test, deploy automation
+9. **Semana 9**: Custom actions, marketplace, advanced workflows
+10. **Semana 10**: Deployment strategies, environments, secrets, approvals
 
-**Fase 4: GitHub Administration + Proyecto Final (Semanas 13-14)** 13. **Semana 13**: Enterprise administration, organizations, teams, permissions 14. **Semana 14**: Proyecto final integrador, preparación certificaciones
+**Fase 3: GitHub Advanced Security (Semanas 11-13)**
+
+11. **Semana 11**: Security features, code scanning, dependency review
+12. **Semana 12**: Vulnerability management, secret scanning
+13. **Semana 13**: Security policies, compliance, security advisories
+
+**Fase 4: GitHub Administration (Semanas 14-15)**
+
+14. **Semana 14**: Enterprise administration, organizations, teams, permissions
+15. **Semana 15**: Administration avanzado, audit logging, automation
+
+**Fase 5: Proyecto Final + Certificaciones (Semana 16)**
+
+16. **Semana 16**: Proyecto final integrador, simulacros de certificación, graduación
 
 ### Audiencia Objetivo
 
@@ -149,10 +229,11 @@ git commit -m "feat: añadir función de login"
 
 ### Formato de Archivos
 
-- **Archivos de lección**: `leccion-XX-titulo.md`
-- **Ejercicios**: `ejercicio-XX-descripcion.md`
-- **Evaluaciones**: `evaluacion-semana-XX.md`
-- **Recursos**: Organizar por tipo (cheatsheets, enlaces, videos)
+- **Archivos de teoría**: `01-nombre-tema.md`, `02-nombre-tema.md` (numerados)
+- **Ejercicios**: Carpetas `ejercicio-01-nombre/`, `ejercicio-02-nombre/` con `README.md`, `starter/` y `solution/`
+- **Evaluaciones**: `rubrica-evaluacion.md` en cada semana
+- **Recursos**: Organizar en subcarpetas `ebooks-free/`, `videografia/`, `webgrafia/`
+- **Glosario**: `README.md` en carpeta `5-glosario/`
 
 ### Formato de Ejercicios
 

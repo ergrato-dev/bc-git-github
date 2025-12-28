@@ -59,13 +59,21 @@ git --version
 
 #### En Windows
 
+> ⚠️ **IMPORTANTE: Usa Git Bash, NO PowerShell ni CMD**
+> 
+> Lee la sección [¿Por qué Git Bash?](#-por-qué-git-bash-en-windows) más abajo antes de continuar.
+
 1. Descargar Git desde: <https://git-scm.com/download/win>
 2. Ejecutar el instalador descargado
-3. Seguir el asistente (usar configuraciones por defecto)
-4. Abrir Git Bash o Command Prompt
+3. **Durante la instalación:**
+   - ✅ Marcar "Git Bash Here" (muy importante)
+   - ✅ Marcar "Add Git Bash Profile to Windows Terminal" (si usas Windows Terminal)
+   - Usar configuraciones por defecto para el resto
+4. **Abrir Git Bash** (NO PowerShell ni CMD)
 5. Verificar instalación:
 
-```cmd
+```bash
+# En Git Bash (NO en PowerShell)
 git --version
 ```
 
@@ -184,6 +192,145 @@ git config --global user.name "Tu Nombre"
 - [Documentación oficial de instalación](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalando-Git)
 - [Guía de configuración inicial](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Configurando-Git-por-primera-vez)
 - [Pro Git Book (Español)](https://git-scm.com/book/es/v2)
+
+---
+
+## 🐚 ¿Por qué Git Bash en Windows?
+
+### ❌ El problema con PowerShell/CMD
+
+| Aspecto | PowerShell/CMD | Git Bash |
+|---------|----------------|----------|
+| **Comandos** | Sintaxis Windows exclusiva | Sintaxis Unix (estándar industria) |
+| **Tutoriales** | 95% incompatibles | 100% compatibles |
+| **Trabajo real** | Aprenderás algo que no usarás | Aprenderás lo que usan los equipos |
+| **Servidores** | No existe en Linux | Mismo entorno que producción |
+
+### ✅ Razones para usar Git Bash
+
+#### 1️⃣ **Compatibilidad Universal**
+
+```bash
+# Este comando funciona en Git Bash, macOS, Linux, y cualquier servidor
+ls -la ~/.ssh
+
+# En PowerShell tendrías que usar:
+# Get-ChildItem -Force $env:USERPROFILE\.ssh
+# (Y esto NO funciona en ningún otro sistema)
+```
+
+#### 2️⃣ **El Mundo Real usa Unix/Linux**
+
+```text
+📊 Estadísticas de servidores en producción:
+├── 🐧 Linux: 96.3% de servidores web
+├── 🪟 Windows: 3.7%
+└── 🍎 macOS: ~0% (desarrollo local únicamente)
+
+💡 Conclusión: Aprender comandos Unix es inversión a largo plazo
+```
+
+#### 3️⃣ **Toda la Documentación está en Unix**
+
+```bash
+# 📚 Stack Overflow, GitHub docs, tutoriales, blogs...
+# Todos usan comandos Unix:
+
+cd ~/projects
+mkdir -p src/components
+touch README.md
+cat .gitignore
+rm -rf node_modules
+
+# ⚠️ Ninguno de estos funciona en PowerShell nativo
+```
+
+#### 4️⃣ **GitHub Actions y CI/CD usan Bash**
+
+```yaml
+# .github/workflows/deploy.yml
+jobs:
+  build:
+    runs-on: ubuntu-latest  # 🐧 Linux!
+    steps:
+      - run: |
+          npm install
+          npm run build
+          # Todo es bash, no PowerShell
+```
+
+#### 5️⃣ **Consistencia en el Equipo**
+
+```text
+👥 En un equipo típico:
+├── 🍎 Desarrollador 1: macOS (Terminal = bash/zsh)
+├── 🐧 Desarrollador 2: Linux (Terminal = bash)
+├── 🪟 Desarrollador 3: Windows + Git Bash ✅
+└── 🪟 Desarrollador 4: Windows + PowerShell ❌ (el "raro" del equipo)
+```
+
+### 🎯 Configurar Git Bash como Terminal por Defecto
+
+#### En VS Code
+
+```json
+// settings.json (Ctrl+Shift+P → "Preferences: Open Settings JSON")
+{
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "icon": "terminal-bash"
+    }
+  }
+}
+```
+
+#### En Windows Terminal
+
+1. Abrir Windows Terminal
+2. `Ctrl + ,` (Settings)
+3. En "Default profile" seleccionar **Git Bash**
+4. Guardar
+
+### 🔄 Tabla de Equivalencias
+
+| Acción | Git Bash (Unix) | PowerShell |
+|--------|-----------------|------------|
+| Listar archivos | `ls -la` | `Get-ChildItem -Force` |
+| Crear carpeta | `mkdir -p folder/sub` | `New-Item -ItemType Directory -Path folder\sub` |
+| Eliminar carpeta | `rm -rf folder` | `Remove-Item -Recurse -Force folder` |
+| Ver contenido | `cat file.txt` | `Get-Content file.txt` |
+| Copiar archivo | `cp file.txt backup.txt` | `Copy-Item file.txt backup.txt` |
+| Mover archivo | `mv old.txt new.txt` | `Move-Item old.txt new.txt` |
+| Directorio actual | `pwd` | `Get-Location` |
+| Ir a home | `cd ~` | `cd $HOME` |
+| Variables entorno | `echo $PATH` | `echo $env:PATH` |
+| Limpiar pantalla | `clear` | `Clear-Host` |
+
+> 💡 **Nota**: PowerShell tiene aliases como `ls`, `cat`, `pwd`, pero su comportamiento es diferente y causa confusión.
+
+### ⚡ TL;DR (Resumen Ejecutivo)
+
+```text
+🏆 USA GIT BASH porque:
+
+1. ✅ Es el estándar de la industria
+2. ✅ Todos los tutoriales funcionarán
+3. ✅ Prepara para servidores Linux (donde correrá tu código)
+4. ✅ Mismo entorno que tus compañeros en macOS/Linux
+5. ✅ GitHub Actions usa bash
+6. ✅ Docker usa bash
+7. ✅ AWS/GCP/Azure CLI usan bash
+
+❌ NO USES PowerShell para Git porque:
+- Aprenderás sintaxis que no usarás en el mundo real
+- Los tutoriales no funcionarán
+- Serás "el raro" del equipo
+- Tendrás que re-aprender todo al usar servidores
+```
+
+---
 
 ## 🏆 Criterios de Evaluación
 
