@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 550">
+  <!-- Fondo -->
+  <rect width="850" height="550" fill="#0d1117"/>
+  
+  <!-- Título -->
+  <text x="425" y="35" font-family="Arial, sans-serif" font-size="20" fill="#c9d1d9" text-anchor="middle" font-weight="bold">Anatomía de un Commit en Git</text>
+  
+  <!-- Commit principal -->
+  <rect x="250" y="70" width="350" height="280" rx="12" fill="#1a1a2e" stroke="#58a6ff" stroke-width="3"/>
+  
+  <!-- Header del commit -->
+  <rect x="250" y="70" width="350" height="40" rx="12" fill="#21262d"/>
+  <text x="425" y="97" font-family="Arial, sans-serif" font-size="16" fill="#58a6ff" text-anchor="middle" font-weight="bold">COMMIT OBJECT</text>
+  
+  <!-- SHA-1 Hash -->
+  <rect x="270" y="125" width="310" height="35" rx="5" fill="#21262d" stroke="#3fb950" stroke-width="1"/>
+  <text x="285" y="140" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">SHA-1 Hash:</text>
+  <text x="285" y="155" font-family="monospace" font-size="11" fill="#3fb950">a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0</text>
+  
+  <!-- Tree (snapshot) -->
+  <rect x="270" y="170" width="310" height="35" rx="5" fill="#21262d" stroke="#f0883e" stroke-width="1"/>
+  <text x="285" y="185" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">Tree (Snapshot):</text>
+  <text x="285" y="200" font-family="monospace" font-size="11" fill="#f0883e">9f8e7d6c5b4a3210fedcba0987654321abcdef12</text>
+  
+  <!-- Parent -->
+  <rect x="270" y="215" width="310" height="35" rx="5" fill="#21262d" stroke="#8957e5" stroke-width="1"/>
+  <text x="285" y="230" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">Parent:</text>
+  <text x="285" y="245" font-family="monospace" font-size="11" fill="#8957e5">b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1</text>
+  
+  <!-- Author -->
+  <rect x="270" y="260" width="150" height="35" rx="5" fill="#21262d" stroke="#58a6ff" stroke-width="1"/>
+  <text x="285" y="275" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">Author:</text>
+  <text x="285" y="290" font-family="Arial, sans-serif" font-size="11" fill="#58a6ff">Juan Pérez</text>
+  
+  <!-- Committer -->
+  <rect x="430" y="260" width="150" height="35" rx="5" fill="#21262d" stroke="#58a6ff" stroke-width="1"/>
+  <text x="445" y="275" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">Committer:</text>
+  <text x="445" y="290" font-family="Arial, sans-serif" font-size="11" fill="#58a6ff">Juan Pérez</text>
+  
+  <!-- Timestamp -->
+  <rect x="270" y="305" width="310" height="30" rx="5" fill="#21262d" stroke="#6e7681" stroke-width="1"/>
+  <text x="285" y="325" font-family="Arial, sans-serif" font-size="11" fill="#6e7681">📅 2025-01-15 10:30:45 -0500</text>
+  
+  <!-- Conventional Commit Message -->
+  <rect x="50" y="380" width="750" height="150" rx="10" fill="#1a1a2e" stroke="#3fb950" stroke-width="2"/>
+  <text x="425" y="405" font-family="Arial, sans-serif" font-size="14" fill="#3fb950" text-anchor="middle" font-weight="bold">📝 COMMIT MESSAGE (Conventional Commits)</text>
+  
+  <!-- Type -->
+  <rect x="70" y="420" width="60" height="25" rx="5" fill="#238636"/>
+  <text x="100" y="438" font-family="monospace" font-size="12" fill="#ffffff" text-anchor="middle">feat</text>
+  
+  <!-- Scope -->
+  <text x="140" y="438" font-family="monospace" font-size="14" fill="#c9d1d9">(</text>
+  <rect x="150" y="420" width="60" height="25" rx="5" fill="#1f6feb"/>
+  <text x="180" y="438" font-family="monospace" font-size="12" fill="#ffffff" text-anchor="middle">auth</text>
+  <text x="220" y="438" font-family="monospace" font-size="14" fill="#c9d1d9">):</text>
+  
+  <!-- Description -->
+  <text x="240" y="438" font-family="monospace" font-size="12" fill="#c9d1d9">agregar validación de contraseña</text>
+  
+  <!-- Body -->
+  <text x="70" y="470" font-family="Arial, sans-serif" font-size="11" fill="#8b949e">Body (opcional):</text>
+  <text x="70" y="490" font-family="monospace" font-size="11" fill="#c9d1d9">- Implementa validación de longitud mínima (8 caracteres)</text>
+  <text x="70" y="505" font-family="monospace" font-size="11" fill="#c9d1d9">- Añade verificación de caracteres especiales</text>
+  
+  <!-- Líneas conectoras del Tree -->
+  <line x1="620" y1="187" x2="700" y2="150" stroke="#f0883e" stroke-width="1" stroke-dasharray="4,2"/>
+  
+  <!-- Mini tree -->
+  <rect x="700" y="100" width="130" height="120" rx="8" fill="#21262d" stroke="#f0883e" stroke-width="1"/>
+  <text x="765" y="125" font-family="Arial, sans-serif" font-size="11" fill="#f0883e" text-anchor="middle" font-weight="bold">Tree (Snapshot)</text>
+  <text x="715" y="150" font-family="monospace" font-size="10" fill="#c9d1d9">📁 src/</text>
+  <text x="725" y="168" font-family="monospace" font-size="10" fill="#c9d1d9">├─ auth.js</text>
+  <text x="725" y="186" font-family="monospace" font-size="10" fill="#c9d1d9">└─ index.js</text>
+  <text x="715" y="204" font-family="monospace" font-size="10" fill="#c9d1d9">📄 README.md</text>
+  
+  <!-- Parent commit -->
+  <line x1="250" y1="232" x2="50" y2="200" stroke="#8957e5" stroke-width="1" stroke-dasharray="4,2"/>
+  
+  <circle cx="50" cy="180" r="30" fill="#21262d" stroke="#8957e5" stroke-width="2"/>
+  <text x="50" y="175" font-family="Arial, sans-serif" font-size="10" fill="#8957e5" text-anchor="middle">Parent</text>
+  <text x="50" y="190" font-family="Arial, sans-serif" font-size="10" fill="#8957e5" text-anchor="middle">Commit</text>
+  
+  <!-- Leyenda de tipos -->
+  <text x="630" y="405" font-family="Arial, sans-serif" font-size="11" fill="#c9d1d9" font-weight="bold">Tipos comunes:</text>
+  <text x="630" y="425" font-family="monospace" font-size="10" fill="#238636">feat</text>
+  <text x="680" y="425" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">nueva feature</text>
+  <text x="630" y="442" font-family="monospace" font-size="10" fill="#f85149">fix</text>
+  <text x="680" y="442" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">corrección bug</text>
+  <text x="630" y="459" font-family="monospace" font-size="10" fill="#58a6ff">docs</text>
+  <text x="680" y="459" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">documentación</text>
+  <text x="630" y="476" font-family="monospace" font-size="10" fill="#f0883e">refactor</text>
+  <text x="695" y="476" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">mejora código</text>
+  <text x="630" y="493" font-family="monospace" font-size="10" fill="#8957e5">chore</text>
+  <text x="680" y="493" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">mantenimiento</text>
+</svg>

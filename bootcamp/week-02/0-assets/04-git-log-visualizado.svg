@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Fondo -->
+  <rect width="800" height="450" fill="#0d1117"/>
+  
+  <!-- Título -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="18" fill="#c9d1d9" text-anchor="middle" font-weight="bold">Navegando el Historial con git log</text>
+  
+  <!-- Terminal simulada -->
+  <rect x="30" y="50" width="740" height="380" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  
+  <!-- Barra de título terminal -->
+  <rect x="30" y="50" width="740" height="25" rx="8" fill="#21262d"/>
+  <circle cx="50" cy="62" r="6" fill="#f85149"/>
+  <circle cx="70" cy="62" r="6" fill="#f0883e"/>
+  <circle cx="90" cy="62" r="6" fill="#3fb950"/>
+  <text x="400" y="67" font-family="Arial, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Terminal — git log --oneline --graph</text>
+  
+  <!-- Comando -->
+  <text x="50" y="100" font-family="monospace" font-size="12" fill="#3fb950">$</text>
+  <text x="65" y="100" font-family="monospace" font-size="12" fill="#c9d1d9">git log --oneline --graph --all</text>
+  
+  <!-- Output del git log -->
+  <!-- Commit más reciente (HEAD) -->
+  <text x="50" y="130" font-family="monospace" font-size="11" fill="#f85149">*</text>
+  <text x="70" y="130" font-family="monospace" font-size="11" fill="#f0883e">a1b2c3d</text>
+  <text x="140" y="130" font-family="monospace" font-size="11" fill="#58a6ff">(HEAD -> main)</text>
+  <text x="280" y="130" font-family="monospace" font-size="11" fill="#c9d1d9">feat: agregar sistema de login</text>
+  
+  <!-- Línea vertical -->
+  <text x="50" y="150" font-family="monospace" font-size="11" fill="#f85149">|</text>
+  
+  <!-- Segundo commit -->
+  <text x="50" y="170" font-family="monospace" font-size="11" fill="#f85149">*</text>
+  <text x="70" y="170" font-family="monospace" font-size="11" fill="#f0883e">b2c3d4e</text>
+  <text x="155" y="170" font-family="monospace" font-size="11" fill="#c9d1d9">docs: actualizar README con instrucciones</text>
+  
+  <!-- Línea vertical -->
+  <text x="50" y="190" font-family="monospace" font-size="11" fill="#f85149">|</text>
+  
+  <!-- Tercer commit -->
+  <text x="50" y="210" font-family="monospace" font-size="11" fill="#f85149">*</text>
+  <text x="70" y="210" font-family="monospace" font-size="11" fill="#f0883e">c3d4e5f</text>
+  <text x="155" y="210" font-family="monospace" font-size="11" fill="#c9d1d9">fix: corregir typo en header</text>
+  
+  <!-- Línea vertical -->
+  <text x="50" y="230" font-family="monospace" font-size="11" fill="#f85149">|</text>
+  
+  <!-- Cuarto commit -->
+  <text x="50" y="250" font-family="monospace" font-size="11" fill="#f85149">*</text>
+  <text x="70" y="250" font-family="monospace" font-size="11" fill="#f0883e">d4e5f6g</text>
+  <text x="155" y="250" font-family="monospace" font-size="11" fill="#c9d1d9">feat: crear estructura HTML base</text>
+  
+  <!-- Línea vertical -->
+  <text x="50" y="270" font-family="monospace" font-size="11" fill="#f85149">|</text>
+  
+  <!-- Quinto commit (primer commit) -->
+  <text x="50" y="290" font-family="monospace" font-size="11" fill="#f85149">*</text>
+  <text x="70" y="290" font-family="monospace" font-size="11" fill="#f0883e">e5f6g7h</text>
+  <text x="155" y="290" font-family="monospace" font-size="11" fill="#c9d1d9">chore: initial commit</text>
+  
+  <!-- Explicaciones a la derecha -->
+  <rect x="500" y="115" width="250" height="185" rx="5" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <text x="515" y="138" font-family="Arial, sans-serif" font-size="11" fill="#58a6ff" font-weight="bold">Anatomía del output:</text>
+  
+  <text x="515" y="165" font-family="monospace" font-size="10" fill="#f85149">*</text>
+  <text x="535" y="165" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">= commit marker</text>
+  
+  <text x="515" y="190" font-family="monospace" font-size="10" fill="#f0883e">a1b2c3d</text>
+  <text x="575" y="190" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">= SHA corto</text>
+  
+  <text x="515" y="215" font-family="monospace" font-size="10" fill="#58a6ff">(HEAD)</text>
+  <text x="565" y="215" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">= posición actual</text>
+  
+  <text x="515" y="240" font-family="monospace" font-size="10" fill="#3fb950">main</text>
+  <text x="550" y="240" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">= branch name</text>
+  
+  <text x="515" y="265" font-family="monospace" font-size="10" fill="#c9d1d9">feat:</text>
+  <text x="550" y="265" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">= tipo (Conv. Commits)</text>
+  
+  <text x="515" y="290" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">mensaje = descripción</text>
+  
+  <!-- Comandos útiles abajo -->
+  <rect x="50" y="320" width="320" height="100" rx="5" fill="#21262d"/>
+  <text x="65" y="340" font-family="Arial, sans-serif" font-size="11" fill="#3fb950" font-weight="bold">📋 Comandos útiles:</text>
+  <text x="65" y="360" font-family="monospace" font-size="10" fill="#c9d1d9">git log --oneline</text>
+  <text x="65" y="377" font-family="monospace" font-size="10" fill="#c9d1d9">git log -n 5</text>
+  <text x="65" y="394" font-family="monospace" font-size="10" fill="#c9d1d9">git log --since="1 week ago"</text>
+  <text x="65" y="411" font-family="monospace" font-size="10" fill="#c9d1d9">git log --author="Juan"</text>
+  
+  <!-- Navegación -->
+  <rect x="390" y="320" width="180" height="100" rx="5" fill="#21262d"/>
+  <text x="405" y="340" font-family="Arial, sans-serif" font-size="11" fill="#f0883e" font-weight="bold">🔍 Inspeccionar:</text>
+  <text x="405" y="360" font-family="monospace" font-size="10" fill="#c9d1d9">git show a1b2c3d</text>
+  <text x="405" y="377" font-family="monospace" font-size="10" fill="#c9d1d9">git diff HEAD~2..HEAD</text>
+  <text x="405" y="394" font-family="monospace" font-size="10" fill="#c9d1d9">git log -p</text>
+  <text x="405" y="411" font-family="monospace" font-size="10" fill="#c9d1d9">git shortlog</text>
+  
+  <!-- Referencias -->
+  <rect x="590" y="320" width="160" height="100" rx="5" fill="#21262d"/>
+  <text x="605" y="340" font-family="Arial, sans-serif" font-size="11" fill="#8957e5" font-weight="bold">📌 Referencias:</text>
+  <text x="605" y="360" font-family="monospace" font-size="10" fill="#c9d1d9">HEAD</text>
+  <text x="655" y="360" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">= actual</text>
+  <text x="605" y="377" font-family="monospace" font-size="10" fill="#c9d1d9">HEAD~1</text>
+  <text x="660" y="377" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">= anterior</text>
+  <text x="605" y="394" font-family="monospace" font-size="10" fill="#c9d1d9">HEAD~2</text>
+  <text x="660" y="394" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">= 2 atrás</text>
+  <text x="605" y="411" font-family="monospace" font-size="10" fill="#c9d1d9">main</text>
+  <text x="645" y="411" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">= branch</text>
+</svg>

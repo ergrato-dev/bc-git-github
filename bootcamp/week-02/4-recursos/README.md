@@ -1,6 +1,6 @@
 # 📚 Recursos - Week 02
 
-Esta carpeta contiene recursos adicionales para profundizar en los temas de la semana.
+Recursos adicionales para profundizar en **staging area**, **commits** y **navegación del historial**.
 
 ---
 
@@ -14,6 +14,15 @@ Esta carpeta contiene recursos adicionales para profundizar en los temas de la s
 
 ---
 
+## 🎯 Temas Cubiertos Esta Semana
+
+- Staging area y flujo de trabajo
+- Commits profesionales y Conventional Commits
+- Navegación del historial (log, show, diff)
+- Deshacer cambios (restore, reset, revert)
+
+---
+
 ## 💡 Cómo Usar Estos Recursos
 
 1. **Primero**: Completa la teoría y prácticas de la semana
@@ -22,4 +31,12 @@ Esta carpeta contiene recursos adicionales para profundizar en los temas de la s
 
 ---
 
-[⬅️ Volver a la semana](../README.md)
+## 🔗 Navegación
+
+| ⬅️ Proyecto | 🏠 Semana | Glosario ➡️ |
+|:------------|:---------:|------------:|
+| [Proyecto](../3-proyecto/README.md) | [Week 02](../README.md) | [Glosario](../5-glosario/README.md) |
+
+---
+
+_Recursos Week 02 | Bootcamp Git/GitHub | 2025_
