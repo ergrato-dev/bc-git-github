@@ -5,11 +5,11 @@
 </p>
 
 <h3 align="center">🎯 Zero to Hero 🦸</h3>
-<p align="center"><strong>De cero conocimiento a profesional certificado en 16 semanas</strong></p>
+<p align="center"><strong>De cero conocimiento a profesional preparado para certificarte en 16 semanas</strong></p>
 <p align="center"><em>⏱️ Dedicación: 6 horas semanales | 📚 Total: 96 horas de formación</em></p>
 
 **Domina Git y GitHub desde fundamentos hasta nivel profesional**  
-_Preparación completa para las 4 Certificaciones Oficiales de GitHub_
+_Te preparamos para aprobar las 4 Certificaciones Oficiales de GitHub con alta probabilidad de éxito_
 
 [![GitHub](https://img.shields.io/badge/GitHub-Bootcamp-blue?style=for-the-badge&logo=github)](https://github.com)
 [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
@@ -33,7 +33,7 @@ _Preparación completa para las 4 Certificaciones Oficiales de GitHub_
 Este es un bootcamp **Zero to Hero**: no necesitas conocimientos previos de Git o GitHub. Te llevaremos desde **cero absoluto** hasta un nivel **profesional certificado**, capaz de:
 
 - 🌱 **Zero**: Sin experiencia previa en control de versiones
-- 🚀 **Hero**: Profesional certificado listo para equipos enterprise
+- 🚀 **Hero**: Profesional preparado para certificarte y trabajar en equipos enterprise
 
 | Nivel | Descripción | Semanas |
 |-------|-------------|---------|
@@ -43,17 +43,23 @@ Este es un bootcamp **Zero to Hero**: no necesitas conocimientos previos de Git 
 | 🔒 Avanzado | Seguridad y administración | 11-14 |
 | 🦸 Hero | Proyecto final y certificaciones | 15-16 |
 
-Este bootcamp intensivo de **16 semanas** está diseñado para formar desarrolladores con dominio completo de Git y GitHub, desde conceptos básicos hasta administración empresarial. Con una dedicación de **6 horas semanales** (96 horas totales), estarás preparado para obtener las **4 certificaciones oficiales de GitHub** y trabajar profesionalmente con equipos de desarrollo.
+Este bootcamp intensivo de **16 semanas** está diseñado para formar desarrolladores con dominio completo de Git y GitHub, desde conceptos básicos hasta administración empresarial. Con una dedicación de **6 horas semanales** (96 horas totales), estarás **preparado para presentarte a los exámenes** de las **4 certificaciones oficiales de GitHub** con alta probabilidad de éxito, y trabajar profesionalmente con equipos de desarrollo.
 
-## 🎯 Certificaciones Incluidas
+> ⚠️ **Nota importante**: Este bootcamp **NO otorga las certificaciones**. Te prepara con el conocimiento y práctica necesarios para que puedas **aprobar los exámenes oficiales de GitHub** por tu cuenta. Las certificaciones son emitidas únicamente por GitHub tras aprobar sus exámenes.
 
-| 🏅 Certificación             | 📅 Semanas | ⏱️ Horas | 💰 Valor | 📈 Impacto Salarial |
-| ---------------------------- | ---------- | ------- | -------- | ------------------- |
-| **GitHub Foundations**       | 1-6        | 36h     | $99      | +15%                |
-| **GitHub Actions**           | 7-10       | 24h     | $200     | +20%                |
-| **GitHub Advanced Security** | 11-13      | 18h     | $200     | +25%                |
-| **GitHub Administration**    | 14-15      | 12h     | $200     | +30%                |
-| **Proyecto Final**           | 16         | 6h      | -        | Integración         |
+## 🎯 Preparación para Certificaciones
+
+Este bootcamp cubre el 100% del temario oficial de las 4 certificaciones de GitHub:
+
+| 🏅 Certificación             | 📅 Semanas | ⏱️ Horas | 💰 Costo Examen* | 📈 Impacto Salarial |
+| ---------------------------- | ---------- | ------- | ---------------- | ------------------- |
+| **GitHub Foundations**       | 1-6        | 36h     | $99 USD          | +15%                |
+| **GitHub Actions**           | 7-10       | 24h     | $200 USD         | +20%                |
+| **GitHub Advanced Security** | 11-13      | 18h     | $200 USD         | +25%                |
+| **GitHub Administration**    | 14-15      | 12h     | $200 USD         | +30%                |
+| **Proyecto Final**           | 16         | 6h      | -                | Integración         |
+
+*Los exámenes de certificación se pagan directamente a GitHub. El bootcamp no incluye el costo de los exámenes.
 
 ## 📖 Estructura del Bootcamp
 

@@ -5,11 +5,11 @@
 </p>
 
 <h3 align="center">🎯 Zero to Hero 🦸</h3>
-<p align="center"><strong>From zero knowledge to certified professional in 16 weeks</strong></p>
+<p align="center"><strong>From zero knowledge to certification-ready professional in 16 weeks</strong></p>
 <p align="center"><em>⏱️ Commitment: 6 hours per week | 📚 Total: 96 hours of training</em></p>
 
 **Master Git and GitHub from fundamentals to professional level**  
-_Complete preparation for 4 Official GitHub Certifications_
+_We prepare you to pass all 4 Official GitHub Certifications with high success rate_
 
 [![GitHub](https://img.shields.io/badge/GitHub-Bootcamp-blue?style=for-the-badge&logo=github)](https://github.com)
 [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
@@ -33,7 +33,7 @@ _Complete preparation for 4 Official GitHub Certifications_
 This is a **Zero to Hero** bootcamp: no prior knowledge of Git or GitHub required. We'll take you from **absolute zero** to a **certified professional** level, capable of:
 
 - 🌱 **Zero**: No prior experience with version control
-- 🚀 **Hero**: Certified professional ready for enterprise teams
+- 🚀 **Hero**: Certification-ready professional prepared for enterprise teams
 
 | Level | Description | Weeks |
 |-------|-------------|-------|
@@ -43,17 +43,23 @@ This is a **Zero to Hero** bootcamp: no prior knowledge of Git or GitHub require
 | 🔒 Advanced | Security and administration | 11-14 |
 | 🦸 Hero | Final project and certifications | 15-16 |
 
-This intensive **16-week** bootcamp is designed to train developers with complete mastery of Git and GitHub, from basic concepts to enterprise administration. With a commitment of **6 hours per week** (96 hours total), you'll be prepared to obtain **4 official GitHub certifications** and work professionally with development teams.
+This intensive **16-week** bootcamp is designed to train developers with complete mastery of Git and GitHub, from basic concepts to enterprise administration. With a commitment of **6 hours per week** (96 hours total), you'll be **prepared to take the exams** for **4 official GitHub certifications** with high success probability, and work professionally with development teams.
 
-## 🎯 Included Certifications
+> ⚠️ **Important note**: This bootcamp **does NOT grant certifications**. It prepares you with the knowledge and practice needed to **pass GitHub's official exams** on your own. Certifications are issued only by GitHub after passing their exams.
 
-| 🏅 Certification | 📅 Weeks | ⏱️ Hours | 💰 Value | 📈 Salary Impact |
-| ---------------- | -------- | ------- | -------- | ---------------- |
-| **GitHub Foundations** | 1-6 | 36h | $99 | +15% |
-| **GitHub Actions** | 7-10 | 24h | $200 | +20% |
-| **GitHub Advanced Security** | 11-13 | 18h | $200 | +25% |
-| **GitHub Administration** | 14-15 | 12h | $200 | +30% |
+## 🎯 Certification Preparation
+
+This bootcamp covers 100% of the official syllabus for all 4 GitHub certifications:
+
+| 🏅 Certification | 📅 Weeks | ⏱️ Hours | 💰 Exam Cost* | 📈 Salary Impact |
+| ---------------- | -------- | ------- | ------------- | ---------------- |
+| **GitHub Foundations** | 1-6 | 36h | $99 USD | +15% |
+| **GitHub Actions** | 7-10 | 24h | $200 USD | +20% |
+| **GitHub Advanced Security** | 11-13 | 18h | $200 USD | +25% |
+| **GitHub Administration** | 14-15 | 12h | $200 USD | +30% |
 | **Final Project** | 16 | 6h | - | Integration |
+
+*Certification exams are paid directly to GitHub. The bootcamp does not include exam costs.
 
 ## 📖 Bootcamp Structure
 
