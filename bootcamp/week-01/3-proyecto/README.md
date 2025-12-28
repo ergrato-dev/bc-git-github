@@ -1,13 +1,13 @@
-# 🚀 Proyecto Semana 1: Mi Primer Repositorio Git
+# 🚀 Proyecto Semana 1: Mi Primer Repository Git
 
 ## 📋 Descripción del Proyecto
 
-Crear tu primer repositorio Git personal aplicando todos los fundamentos aprendidos durante la semana 1. Este proyecto te permitirá demostrar tu comprensión de los conceptos básicos de control de versiones y configuración de Git.
+Crear tu primer repository Git personal aplicando todos los fundamentos aprendidos durante la semana 1. Este proyecto te permitirá demostrar tu comprensión de los conceptos básicos de control de versiones y configuración de Git.
 
 ## 🎯 Objetivos del Proyecto
 
 - ✅ Aplicar configuración completa de Git
-- ✅ Crear y gestionar tu primer repositorio desde cero
+- ✅ Crear y gestionar tu primer repository desde cero
 - ✅ Practicar el workflow básico de Git (add, commit, log)
 - ✅ Documentar tu proceso de aprendizaje
 - ✅ Establecer buenas prácticas desde el inicio
@@ -15,45 +15,105 @@ Crear tu primer repositorio Git personal aplicando todos los fundamentos aprendi
 ## 📁 Estructura del Proyecto
 
 ```text
-week-01/
-├── 4-proyecto/
-│   ├── README.md          # Instrucciones principales
-│   ├── instrucciones.md   # Pasos detallados del proyecto
-│   └── entregables/       # Tu repositorio creado aquí
-│       └── mi-primer-repo/    # El repositorio que crearás
-└── 3-recursos/            # Templates y ejemplos de apoyo
-    ├── plantilla-README.md
-    └── ejemplo-gitignore.md
+3-proyecto/
+├── README.md              # Este archivo (instrucciones principales)
+├── instrucciones.md       # Pasos detallados del proyecto
+├── starter/               # Archivos iniciales (opcional)
+└── solution/              # Solución de referencia (no incluida en repo)
 ```
+
+> **Nota**: La carpeta `solution/` contiene la solución de referencia para instructores y está excluida del repositorio público mediante `.gitignore`.
 
 ## ⏰ Información del Proyecto
 
-**Tiempo estimado:** 2-3 horas  
+**Tiempo estimado:** 2 horas  
 **Modalidad:** Individual  
 **Dificultad:** Principiante ⭐⭐⚪⚪⚪
 
 ## 📝 Entregables Principales
 
-- [ ] Repositorio Git configurado correctamente
-- [ ] Al menos 5 commits con mensajes descriptivos
+- [ ] Repository Git configurado correctamente
+- [ ] Al menos 5 commits con mensajes descriptivos (Conventional Commits)
 - [ ] Archivo README.md profesional
 - [ ] Archivo .gitignore apropiado
-- [ ] Reflexión personal sobre Git (documento separate)
+- [ ] Reflexión personal sobre Git (documento separado)
 
 ## 🏆 Criterios de Evaluación
 
-| Criterio          | Peso | Descripción                                     |
-| ----------------- | ---- | ----------------------------------------------- |
-| **Funcionalidad** | 40%  | El proyecto cumple con todos los requerimientos |
-| **Código**        | 30%  | Calidad, organización y best practices          |
-| **Documentación** | 20%  | README y comentarios claros                     |
-| **Creatividad**   | 10%  | Mejoras o características adicionales           |
+| Criterio | Peso | Descripción |
+|----------|------|-------------|
+| **README.md** | 30% | Documentación completa y profesional (ver requisitos abajo) |
+| **Commits** | 30% | Mínimo 5 commits con mensajes descriptivos (Conventional Commits) |
+| **Configuración** | 20% | Git configurado correctamente + .gitignore apropiado |
+| **Creatividad** | 20% | Mejoras adicionales, reflexión personal, organización |
+
+---
+
+## 📝 Requisitos del README.md (OBLIGATORIO)
+
+> **⚠️ IMPORTANTE**: El README.md es el entregable más importante de este proyecto. Aprender a documentar es tan importante como aprender a programar.
+
+### Secciones Mínimas Requeridas
+
+Tu README.md **DEBE** incluir todas estas secciones:
+
+| Sección | Descripción | Obligatorio |
+|---------|-------------|-------------|
+| **Título y descripción** | Nombre del proyecto + qué es | ✅ Sí |
+| **Sobre mí** | Tu nombre, bootcamp, fecha | ✅ Sí |
+| **Objetivos del proyecto** | Qué aprendiste/lograste | ✅ Sí |
+| **Tecnologías utilizadas** | Git, Markdown, Terminal | ✅ Sí |
+| **Comandos aprendidos** | Lista de comandos Git con descripción | ✅ Sí |
+| **Reflexión personal** | Qué fue fácil, qué fue difícil, qué quieres aprender | ✅ Sí |
+| **Capturas de pantalla** | Terminal mostrando comandos ejecutados | 👍 Recomendado |
+| **Recursos utilizados** | Enlaces a documentación que consultaste | 👍 Recomendado |
+
+### Formato Esperado
+
+```markdown
+# 🎯 [Título de tu proyecto]
+
+## 📝 Descripción
+[Breve descripción de qué es este repositorio]
+
+## 👤 Sobre Mí
+- **Nombre:** [Tu nombre]
+- **Bootcamp:** Git/GitHub - Semana 1
+- **Fecha:** [Fecha]
+
+## 🎯 Objetivos del Proyecto
+- [ ] Objetivo 1
+- [x] Objetivo completado
+
+## 🛠️ Tecnologías Utilizadas
+- Git
+- Markdown
+- Terminal/Git Bash
+
+## 📚 Comandos Git Aprendidos
+| Comando | Descripción |
+|---------|-------------|
+| `git init` | Inicializar repository |
+| `git add` | Agregar al staging |
+| ... | ... |
+
+## 💭 Reflexión Personal
+[Tu reflexión aquí...]
+```
+
+### ❌ README NO Aceptado
+
+- Vacío o solo con el título
+- Sin formato Markdown
+- Copiado de otro compañero
+- Sin reflexión personal
+- Menos de 3 secciones
 
 ## 📚 Recursos de Apoyo
 
-- Revisar las lecciones de la carpeta `1- teoría/`
-- Consultar ejercicios resueltos en `2- ejercicios/`
-- Usar material adicional de `3- recursos/`
+- Revisar las lecciones de la carpeta `../1-teoria/`
+- Consultar ejercicios guiados en `../2-practicas/`
+- Usar plantillas de `../4-recursos/`
 - Preguntar en el foro o Discord del bootcamp
 
 ---

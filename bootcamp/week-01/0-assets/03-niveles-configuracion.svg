@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350" font-family="Inter, Roboto, Arial, sans-serif">
+  <!-- Background -->
+  <rect width="700" height="350" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="350" y="35" fill="#c9d1d9" font-size="18" font-weight="600" text-anchor="middle">Niveles de Configuración en Git</text>
+  
+  <!-- Priority indicator -->
+  <text x="80" y="75" fill="#8b949e" font-size="11">MAYOR</text>
+  <text x="70" y="90" fill="#8b949e" font-size="11">PRIORIDAD</text>
+  <path d="M 100 100 L 100 280" stroke="#30363d" stroke-width="2" stroke-dasharray="5,5"/>
+  <polygon points="100,280 95,270 105,270" fill="#30363d"/>
+  <text x="80" y="295" fill="#8b949e" font-size="11">MENOR</text>
+  <text x="70" y="310" fill="#8b949e" font-size="11">PRIORIDAD</text>
+  
+  <!-- Level 1: Local (highest priority) -->
+  <g transform="translate(150, 60)">
+    <rect width="500" height="65" rx="8" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+    <circle cx="30" cy="32" r="18" fill="#238636"/>
+    <text x="30" y="37" fill="#ffffff" font-size="14" font-weight="600" text-anchor="middle">1</text>
+    <text x="70" y="28" fill="#3fb950" font-size="14" font-weight="600">🏠 Local (Repository)</text>
+    <text x="70" y="48" fill="#8b949e" font-size="11">.git/config → Solo este proyecto</text>
+    <text x="350" y="38" fill="#58a6ff" font-size="10" font-family="monospace">git config --local user.name "Dev"</text>
+  </g>
+  
+  <!-- Level 2: Global (user) -->
+  <g transform="translate(150, 140)">
+    <rect width="500" height="65" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+    <circle cx="30" cy="32" r="18" fill="#1f6feb"/>
+    <text x="30" y="37" fill="#ffffff" font-size="14" font-weight="600" text-anchor="middle">2</text>
+    <text x="70" y="28" fill="#58a6ff" font-size="14" font-weight="600">👤 Global (User)</text>
+    <text x="70" y="48" fill="#8b949e" font-size="11">~/.gitconfig → Todos tus proyectos</text>
+    <text x="350" y="38" fill="#58a6ff" font-size="10" font-family="monospace">git config --global user.email "x@y.com"</text>
+  </g>
+  
+  <!-- Level 3: System (lowest priority) -->
+  <g transform="translate(150, 220)">
+    <rect width="500" height="65" rx="8" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+    <circle cx="30" cy="32" r="18" fill="#9e6a03"/>
+    <text x="30" y="37" fill="#ffffff" font-size="14" font-weight="600" text-anchor="middle">3</text>
+    <text x="70" y="28" fill="#f0883e" font-size="14" font-weight="600">🌐 System (Machine)</text>
+    <text x="70" y="48" fill="#8b949e" font-size="11">/etc/gitconfig → Todos los usuarios</text>
+    <text x="350" y="38" fill="#58a6ff" font-size="10" font-family="monospace">git config --system core.editor vim</text>
+  </g>
+  
+  <!-- Override explanation -->
+  <rect x="150" y="300" width="500" height="35" rx="6" fill="#21262d" stroke="#30363d"/>
+  <text x="400" y="322" fill="#c9d1d9" font-size="12" text-anchor="middle">⚡ Las configuraciones más específicas sobrescriben las más generales</text>
+</svg>

@@ -175,6 +175,7 @@ evaluaciones-privadas/
 # Soluciones que no deben ser públicas (hasta después de la entrega)
 */solucion-completa/
 **/respuestas-ejercicios.md
+**/3-proyecto/**/solution/
 
 # Archivos de progreso individual
 progreso-*.json

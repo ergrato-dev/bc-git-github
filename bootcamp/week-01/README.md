@@ -34,7 +34,9 @@ week-01/
 │   └── 03-configuracion.md
 ├── 2-practicas/                 # Ejercicios guiados
 │   ├── README.md
-│   └── ejercicio-01-instalacion.md
+│   ├── ejercicio-01-instalacion/
+│   ├── ejercicio-02-configuracion/
+│   └── ejercicio-03-primer-repo/
 ├── 3-proyecto/                  # Proyecto semanal
 │   └── README.md
 ├── 4-recursos/                  # Material adicional
@@ -49,34 +51,36 @@ week-01/
 
 ## 📝 Contenidos
 
-### 1️⃣ Teoría (2 horas)
+### 1️⃣ Teoría (1.5 horas)
 
-| # | Tema | Descripción |
-|---|------|-------------|
-| 01 | [Control de Versiones](1-teoria/01-control-versiones.md) | Qué es y por qué es importante |
-| 02 | [Historia de Git](1-teoria/02-historia-git.md) | Origen y evolución de Git |
-| 03 | [Configuración](1-teoria/03-configuracion.md) | Instalación y configuración inicial |
+| # | Tema | Descripción | Tiempo |
+|---|------|-------------|--------|
+| 01 | [Control de Versiones](1-teoria/01-control-versiones.md) | Qué es y por qué es importante | 30 min |
+| 02 | [Historia de Git](1-teoria/02-historia-git.md) | Origen y evolución de Git | 30 min |
+| 03 | [Configuración](1-teoria/03-configuracion.md) | Instalación y configuración inicial | 30 min |
 
-### 2️⃣ Prácticas (3 horas)
+### 2️⃣ Prácticas (2.5 horas)
 
-| # | Ejercicio | Descripción | Dificultad |
-|---|-----------|-------------|------------|
-| 01 | [Instalación](2-practicas/ejercicio-01-instalacion.md) | Instalar y verificar Git | ⭐ |
+| # | Ejercicio | Descripción | Tiempo | Dificultad |
+|---|-----------|-------------|--------|------------|
+| 01 | [Instalación de Git](2-practicas/ejercicio-01-instalacion/) | Instalar y verificar Git en tu sistema | 45 min | ⭐ |
+| 02 | [Configuración Inicial](2-practicas/ejercicio-02-configuracion/) | Configurar identidad y preferencias | 45 min | ⭐ |
+| 03 | [Primer Repository](2-practicas/ejercicio-03-primer-repo/) | Crear tu primer repository local | 60 min | ⭐⭐ |
 
-### 3️⃣ Proyecto (3 horas)
+### 3️⃣ Proyecto (2 horas)
 
 - **Proyecto**: [Mi Primer Repository](3-proyecto/README.md)
 - Crear y gestionar un repository local con commits significativos
 
 ---
 
-## ⏱️ Distribución del Tiempo (8 horas)
+## ⏱️ Distribución del Tiempo (6 horas)
 
 | Actividad | Tiempo | Porcentaje |
 |-----------|--------|------------|
-| Teoría | 2h | 25% |
-| Prácticas | 3h | 37.5% |
-| Proyecto | 3h | 37.5% |
+| Teoría | 1.5h | 25% |
+| Prácticas | 2.5h | 42% |
+| Proyecto | 2h | 33% |
 
 ---
 

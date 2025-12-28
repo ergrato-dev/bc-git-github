@@ -62,18 +62,15 @@ week-XX/
 │   ├── 01-tema-principal.md
 │   ├── 02-segundo-tema.md
 │   └── ...
-├── 2-practicas/                  # Ejercicios guiados
+├── 2-practicas/                  # Ejercicios guiados (sin soluciones)
 │   ├── README.md
 │   ├── ejercicio-01-nombre/
-│   │   ├── README.md             # Instrucciones detalladas
-│   │   ├── starter/              # Código inicial
-│   │   └── solution/             # Solución comentada
+│   │   └── README.md             # Instrucciones paso a paso
 │   └── ...
 ├── 3-proyecto/                   # Proyecto semanal
-│   └── nombre-proyecto/
-│       ├── README.md
-│       ├── starter/              # Código inicial
-│       └── solution/             # Solución de referencia
+│   ├── README.md                 # Instrucciones del proyecto
+│   ├── starter/                  # Código/archivos iniciales (opcional)
+│   └── solution/                 # Solución de referencia (en .gitignore)
 ├── 4-recursos/                   # Material adicional
 │   ├── README.md
 │   ├── ebooks-free/              # Libros electrónicos gratuitos

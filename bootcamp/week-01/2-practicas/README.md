@@ -2,45 +2,76 @@
 
 ## 📋 Descripción
 
-Esta carpeta contiene ejercicios guiados para practicar los conceptos aprendidos en la teoría.
+Esta carpeta contiene ejercicios guiados para practicar los fundamentos de Git aprendidos en la teoría.
 
 ---
 
 ## 🎯 Objetivos
 
-- Aplicar los conceptos teóricos en casos prácticos
-- Practicar comandos y flujos de trabajo reales
+- Instalar y configurar Git correctamente
+- Practicar comandos básicos en un entorno real
 - Desarrollar habilidades de resolución de problemas
+- Establecer buenas prácticas desde el inicio
+
+---
+
+## ⏱️ Tiempo Total: 2.5 horas
 
 ---
 
 ## 📂 Estructura de Ejercicios
 
-Cada ejercicio contiene:
+```
+2-practicas/
+├── README.md                          # Este archivo
+├── ejercicio-01-instalacion/          # Instalar Git (45 min)
+│   └── README.md                      # Instrucciones paso a paso
+├── ejercicio-02-configuracion/        # Configurar identidad (45 min)
+│   └── README.md                      # Instrucciones paso a paso
+└── ejercicio-03-primer-repo/          # Primer repository (60 min)
+    └── README.md                      # Instrucciones paso a paso
+```
 
-```
-ejercicio-XX-nombre/
-├── README.md           # Instrucciones detalladas
-├── starter/            # Código/archivos iniciales
-└── solution/           # Solución completa comentada
-```
+> **Nota**: Los ejercicios son guías paso a paso. Las soluciones se validan durante la entrega del proyecto semanal.
 
 ---
 
 ## 📝 Lista de Ejercicios
 
-| # | Ejercicio | Descripción | Dificultad |
-|---|-----------|-------------|------------|
-| 01 | (pendiente) | (pendiente) | ⭐ |
+| # | Ejercicio | Descripción | Tiempo | Dificultad |
+|---|-----------|-------------|--------|------------|
+| 01 | [Instalación de Git](ejercicio-01-instalacion/) | Instalar y verificar Git en tu sistema | 45 min | ⭐ |
+| 02 | [Configuración Inicial](ejercicio-02-configuracion/) | Configurar identidad y preferencias | 45 min | ⭐ |
+| 03 | [Primer Repository](ejercicio-03-primer-repo/) | Crear tu primer repository local | 60 min | ⭐⭐ |
 
 ---
 
 ## ✅ Checklist de Progreso
 
-- [ ] Ejercicio 01
-- [ ] Ejercicio 02
-- [ ] Ejercicio 03
-- [ ] Ejercicio 04
+- [ ] **Ejercicio 01**: Git instalado y funcionando
+- [ ] **Ejercicio 02**: Identidad configurada (nombre + email)
+- [ ] **Ejercicio 03**: Repository creado con commits
+
+---
+
+## 📖 Cómo Usar Estos Ejercicios
+
+### Paso 1: Lee las instrucciones
+Cada ejercicio tiene un `README.md` con instrucciones detalladas.
+
+### Paso 2: Sigue el formato de comentarios
+```bash
+# ¿QUÉ VAMOS A HACER?: [descripción]
+# ¿POR QUÉ LO HACEMOS?: [razón]
+# ¿PARA QUÉ SIRVE?: [beneficio]
+git [comando]
+```
+
+### Paso 3: Verifica tu trabajo
+Compara con la carpeta `solucion/` de cada ejercicio.
+
+### Paso 4: Documenta problemas
+Si encuentras errores, anótalos para discutir en clase.
 
 ---
 

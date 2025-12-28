@@ -20,13 +20,17 @@ Git utiliza un sistema de configuración **jerárquico** con tres niveles:
 
 ```text
 🔺 MAYOR PRIORIDAD
-├── 🏠 Local (Repository)     ~/.git/config
+├── 🏠 Local (Repository)     .git/config
 ├── 👤 Global (User)          ~/.gitconfig
 └── 🌐 System (Machine)       /etc/gitconfig
 🔻 MENOR PRIORIDAD
 ```
 
 **Regla**: Las configuraciones más específicas sobrescriben las más generales.
+
+![Niveles de configuración de Git](../0-assets/03-niveles-configuracion.svg)
+
+> **Diagrama**: Jerarquía de configuración de Git. Las configuraciones locales tienen mayor prioridad que las globales.
 
 ---
 
@@ -169,6 +173,144 @@ git config user.email "maria.personal@gmail.com"
 
 # Ahora este repo usará el email personal
 ```
+
+---
+
+## 🖥️ EQUIPOS COMPARTIDOS: Guía Especial
+
+> **⚠️ SECCIÓN CRÍTICA para estudiantes en laboratorios, bootcamps o coworkings**
+
+### 🚨 El Problema de los Equipos Compartidos
+
+Cuando múltiples personas usan el mismo equipo (laboratorio, bootcamp, biblioteca):
+
+```text
+┌─────────────────────────────────────────────────────────────────┐
+│                    ❌ PROBLEMA COMÚN                            │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│   09:00 - Cohorte A: Estudiante configura --global              │
+│           "Ana López" <ana@email.com>                           │
+│                                                                 │
+│   13:00 - Cohorte B: Otro estudiante hace commits...            │
+│           ¡Aparecen como "Ana López"! 😱                        │
+│                                                                 │
+│   17:00 - Cohorte C: Mismo problema, diferentes víctimas        │
+│                                                                 │
+│   Resultado: Commits mezclados, autoría incorrecta,             │
+│              imposible evaluar trabajo individual               │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### ✅ La Solución: SIEMPRE Usar --local
+
+En equipos compartidos, **NUNCA** uses `--global`. Siempre usa `--local`:
+
+```bash
+# ❌ NUNCA en equipos compartidos:
+git config --global user.name "Tu Nombre"
+
+# ✅ SIEMPRE en equipos compartidos:
+cd mi-proyecto/
+git config --local user.name "Tu Nombre"
+git config --local user.email "tu.email@ejemplo.com"
+```
+
+### 🔐 Protocolo de Seguridad para Equipos Compartidos
+
+#### **Al INICIAR sesión (antes de trabajar):**
+
+```bash
+# 1. Verificar quién está configurado actualmente
+git config user.name
+git config user.email
+
+# 2. Si es otro nombre, NO hagas commits todavía
+# 3. Navega a tu proyecto
+cd ~/tu-proyecto/
+
+# 4. Configura tu identidad LOCAL
+git config --local user.name "Tu Nombre Real"
+git config --local user.email "tu.email@real.com"
+
+# 5. Verifica que quedó correctamente
+git config user.name   # Debe ser TU nombre
+```
+
+#### **Al TERMINAR sesión (antes de irte):**
+
+```bash
+# Limpiar credenciales cacheadas (si aplica)
+git credential-cache exit
+
+# Verificar que no dejaste sesión de GitHub activa en el browser
+# (cerrar sesión manualmente)
+```
+
+### 🛡️ Configuraciones de Protección
+
+```bash
+# FORZAR que Git pida identidad si no está configurada localmente
+git config --global user.useConfigOnly true
+
+# Con esta config, Git dará ERROR si intentas commit sin config local
+# Mensaje: "user.name and user.email must be set"
+```
+
+### 📋 Script de Verificación Rápida
+
+Crea este alias para verificar tu identidad en 1 segundo:
+
+```bash
+git config --global alias.whoami '!echo "══════════════════════════════" && echo "👤 Usuario: $(git config user.name)" && echo "📧 Email: $(git config user.email)" && echo "══════════════════════════════"'
+```
+
+Úsalo antes de cada sesión de trabajo:
+
+```bash
+git whoami
+# ══════════════════════════════
+# 👤 Usuario: Tu Nombre
+# 📧 Email: tu.email@ejemplo.com
+# ══════════════════════════════
+```
+
+### 🔧 ¿Hiciste commits con identidad incorrecta?
+
+#### Corregir el ÚLTIMO commit:
+
+```bash
+# 1. Configura tu identidad correcta
+git config --local user.name "Tu Nombre Real"
+git config --local user.email "tu.email@real.com"
+
+# 2. Corrige el último commit
+git commit --amend --reset-author --no-edit
+```
+
+#### Corregir VARIOS commits (antes de push):
+
+```bash
+# Cambiar autor de los últimos N commits
+git rebase -i HEAD~3   # últimos 3 commits
+
+# En el editor: cambiar "pick" por "edit" en cada commit
+# Luego para cada uno:
+git commit --amend --reset-author --no-edit
+git rebase --continue
+```
+
+### 📊 Tabla de Decisión: ¿Global o Local?
+
+| Situación | Usar | Comando |
+|-----------|------|---------|
+| **Tu laptop personal** | `--global` | `git config --global user.name "..."` |
+| **PC de trabajo (solo tú)** | `--global` | `git config --global user.name "..."` |
+| **Laboratorio de universidad** | `--local` | `git config --local user.name "..."` |
+| **Bootcamp / Academia** | `--local` | `git config --local user.name "..."` |
+| **Coworking compartido** | `--local` | `git config --local user.name "..."` |
+| **PC de un amigo** | `--local` | `git config --local user.name "..."` |
 
 ---
 

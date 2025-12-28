@@ -6,34 +6,18 @@
     }
   ],
   "settings": {
-    // ═══════════════════════════════════════════════════════════════════════
-    // PEACOCK - Color naranja de Git (#F05032)
-    // ═══════════════════════════════════════════════════════════════════════
     "peacock.color": "#F05032",
     "peacock.remoteColor": "#FF6F47",
+    "peacock.affectActivityBar": true,
+    "peacock.affectStatusBar": true,
+    "peacock.affectTitleBar": true,
     "peacock.surpriseMeOnStartup": false,
     "peacock.favoriteColors": [
-      {
-        "name": "Git Orange",
-        "value": "#F05032"
-      },
-      {
-        "name": "GitHub Green",
-        "value": "#238636"
-      },
-      {
-        "name": "GitHub Blue",
-        "value": "#58a6ff"
-      },
-      {
-        "name": "GitHub Dark",
-        "value": "#0d1117"
-      }
+      { "name": "Git Orange", "value": "#F05032" },
+      { "name": "GitHub Green", "value": "#238636" },
+      { "name": "GitHub Blue", "value": "#58a6ff" },
+      { "name": "GitHub Dark", "value": "#0d1117" }
     ],
-    
-    // ═══════════════════════════════════════════════════════════════════════
-    // OPTIMIZACIÓN DE RECURSOS - Solo una pestaña activa
-    // ═══════════════════════════════════════════════════════════════════════
     "workbench.editor.enablePreview": true,
     "workbench.editor.enablePreviewFromQuickOpen": true,
     "workbench.editor.limit.enabled": true,
@@ -46,10 +30,6 @@
     "workbench.editor.focusRecentEditorAfterClose": true,
     "workbench.editor.closeEmptyGroups": true,
     "workbench.editor.closeOnFileDelete": true,
-    
-    // ═══════════════════════════════════════════════════════════════════════
-    // COLORES PERSONALIZADOS - Tema Git/GitHub (naranja)
-    // ═══════════════════════════════════════════════════════════════════════
     "workbench.colorCustomizations": {
       "titleBar.activeBackground": "#F05032",
       "titleBar.activeForeground": "#ffffff",
@@ -77,7 +57,6 @@
   "extensions": {
     "recommendations": [
       "johnpapa.vscode-peacock",
-      "ms-vscode.vscode-git",
       "eamodio.gitlens",
       "github.vscode-pull-request-github",
       "github.copilot",
@@ -85,8 +64,7 @@
       "davidanson.vscode-markdownlint",
       "yzhang.markdown-all-in-one",
       "shd101wyy.markdown-preview-enhanced",
-      "ms-vscode.live-server",
-      "bradlc.vscode-tailwindcss"
+      "ms-vscode.live-server"
     ]
   }
 }

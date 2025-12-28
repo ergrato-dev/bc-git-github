@@ -134,6 +134,12 @@ Desarrollador A    Desarrollador B
 - ✅ **Flexibilidad total**: Multiple workflows posibles
 - ✅ **Velocidad**: Operaciones locales son instantáneas
 
+### 📊 Comparativa Visual
+
+![Comparativa de sistemas de control de versiones](../0-assets/02-sistemas-vcs-comparativa.svg)
+
+> **Diagrama**: Evolución de los sistemas de control de versiones, desde locales hasta distribuidos.
+
 ---
 
 ## 🏆 ¿Por Qué Git es el Estándar?
@@ -228,6 +234,12 @@ git merge nueva-feature
 3. **Confirmo** cambios con mensaje descriptivo (`git commit`)
 4. **Comparto** cambios con el equipo (`git push`)
 5. **Recibo** cambios de otros (`git pull`)
+
+### 📊 Diagrama del Flujo Básico
+
+![Flujo básico de Git](../0-assets/01-git-workflow-basico.svg)
+
+> **Diagrama**: El flujo de trabajo básico entre Working Directory, Staging Area y Repository.
 
 ---
 
