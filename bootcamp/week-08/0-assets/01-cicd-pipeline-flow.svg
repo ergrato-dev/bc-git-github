@@ -1,0 +1,139 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#58a6ff"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="500" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" fill="#e6edf3" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">CI/CD Pipeline Flow</text>
+  
+  <!-- CI Section Background -->
+  <rect x="30" y="60" width="420" height="180" rx="8" fill="#161b22" stroke="#238636" stroke-width="2"/>
+  <text x="240" y="85" fill="#3fb950" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">CONTINUOUS INTEGRATION (CI)</text>
+  
+  <!-- CD Section Background -->
+  <rect x="470" y="60" width="400" height="180" rx="8" fill="#161b22" stroke="#1f6feb" stroke-width="2"/>
+  <text x="670" y="85" fill="#58a6ff" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">CONTINUOUS DELIVERY / DEPLOYMENT (CD)</text>
+  
+  <!-- Stage 1: Code -->
+  <rect x="50" y="110" width="80" height="60" rx="6" fill="#238636"/>
+  <text x="90" y="135" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">CODE</text>
+  <text x="90" y="152" fill="#e6edf3" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Push/PR</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="130" y1="140" x2="155" y2="140" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Stage 2: Lint -->
+  <rect x="160" y="110" width="80" height="60" rx="6" fill="#1f6feb"/>
+  <text x="200" y="135" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">LINT</text>
+  <text x="200" y="152" fill="#e6edf3" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">ESLint/Prettier</text>
+  
+  <!-- Arrow 2 -->
+  <line x1="240" y1="140" x2="265" y2="140" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Stage 3: Build -->
+  <rect x="270" y="110" width="80" height="60" rx="6" fill="#8957e5"/>
+  <text x="310" y="135" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">BUILD</text>
+  <text x="310" y="152" fill="#e6edf3" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Compile/Bundle</text>
+  
+  <!-- Arrow 3 -->
+  <line x1="350" y1="140" x2="375" y2="140" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Stage 4: Test -->
+  <rect x="380" y="110" width="80" height="60" rx="6" fill="#f0883e"/>
+  <text x="420" y="135" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">TEST</text>
+  <text x="420" y="152" fill="#e6edf3" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Unit/Integration</text>
+  
+  <!-- Arrow 4 (crossing to CD) -->
+  <line x1="460" y1="140" x2="505" y2="140" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Stage 5: Package -->
+  <rect x="510" y="110" width="80" height="60" rx="6" fill="#da3633"/>
+  <text x="550" y="135" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">PACKAGE</text>
+  <text x="550" y="152" fill="#e6edf3" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Docker/npm</text>
+  
+  <!-- Arrow 5 -->
+  <line x1="590" y1="140" x2="615" y2="140" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Stage 6: Stage -->
+  <rect x="620" y="110" width="80" height="60" rx="6" fill="#bf8700"/>
+  <text x="660" y="135" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">STAGE</text>
+  <text x="660" y="152" fill="#e6edf3" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Staging Env</text>
+  
+  <!-- Arrow 6 -->
+  <line x1="700" y1="140" x2="725" y2="140" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Stage 7: Deploy -->
+  <rect x="730" y="110" width="80" height="60" rx="6" fill="#238636"/>
+  <text x="770" y="135" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">DEPLOY</text>
+  <text x="770" y="152" fill="#e6edf3" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Production</text>
+  
+  <!-- CI Details -->
+  <text x="50" y="205" fill="#7d8590" font-family="Arial, sans-serif" font-size="10">• Automatizado en cada push</text>
+  <text x="50" y="220" fill="#7d8590" font-family="Arial, sans-serif" font-size="10">• Feedback rápido (&lt;10 min)</text>
+  <text x="50" y="235" fill="#7d8590" font-family="Arial, sans-serif" font-size="10">• Fail fast si hay errores</text>
+  
+  <!-- CD Details -->
+  <text x="490" y="205" fill="#7d8590" font-family="Arial, sans-serif" font-size="10">• Delivery: Manual approval</text>
+  <text x="490" y="220" fill="#7d8590" font-family="Arial, sans-serif" font-size="10">• Deployment: Automático</text>
+  <text x="490" y="235" fill="#7d8590" font-family="Arial, sans-serif" font-size="10">• Environments protegidos</text>
+  
+  <!-- Feedback Loop -->
+  <path d="M 770 180 L 770 280 L 90 280 L 90 180" stroke="#58a6ff" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/>
+  <text x="430" y="300" fill="#58a6ff" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Feedback Loop</text>
+  
+  <!-- Triggers Section -->
+  <rect x="30" y="330" width="270" height="150" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="165" y="355" fill="#e6edf3" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">🎯 Triggers</text>
+  
+  <circle cx="55" cy="385" r="6" fill="#3fb950"/>
+  <text x="70" y="390" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11">push - Cada commit</text>
+  
+  <circle cx="55" cy="410" r="6" fill="#1f6feb"/>
+  <text x="70" y="415" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11">pull_request - PRs a main</text>
+  
+  <circle cx="55" cy="435" r="6" fill="#8957e5"/>
+  <text x="70" y="440" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11">schedule - Cron jobs</text>
+  
+  <circle cx="55" cy="460" r="6" fill="#f0883e"/>
+  <text x="70" y="465" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11">workflow_dispatch - Manual</text>
+  
+  <!-- Artifacts Section -->
+  <rect x="315" y="330" width="270" height="150" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="450" y="355" fill="#e6edf3" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">📦 Artifacts</text>
+  
+  <rect x="335" y="375" width="100" height="35" rx="4" fill="#21262d"/>
+  <text x="385" y="397" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">build/dist</text>
+  
+  <rect x="445" y="375" width="100" height="35" rx="4" fill="#21262d"/>
+  <text x="495" y="397" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">coverage/</text>
+  
+  <rect x="335" y="420" width="100" height="35" rx="4" fill="#21262d"/>
+  <text x="385" y="442" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">test-results/</text>
+  
+  <rect x="445" y="420" width="100" height="35" rx="4" fill="#21262d"/>
+  <text x="495" y="442" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">logs/</text>
+  
+  <text x="450" y="475" fill="#7d8590" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Retention: 90 días (default)</text>
+  
+  <!-- Environments Section -->
+  <rect x="600" y="330" width="270" height="150" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="735" y="355" fill="#e6edf3" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">🌍 Environments</text>
+  
+  <rect x="620" y="375" width="70" height="40" rx="4" fill="#21262d" stroke="#3fb950" stroke-width="1"/>
+  <text x="655" y="400" fill="#3fb950" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">dev</text>
+  
+  <rect x="700" y="375" width="70" height="40" rx="4" fill="#21262d" stroke="#bf8700" stroke-width="1"/>
+  <text x="735" y="400" fill="#bf8700" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">staging</text>
+  
+  <rect x="780" y="375" width="70" height="40" rx="4" fill="#21262d" stroke="#da3633" stroke-width="1"/>
+  <text x="815" y="400" fill="#da3633" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">production</text>
+  
+  <text x="620" y="445" fill="#7d8590" font-family="Arial, sans-serif" font-size="10">• Protection rules</text>
+  <text x="620" y="460" fill="#7d8590" font-family="Arial, sans-serif" font-size="10">• Required reviewers</text>
+  <text x="620" y="475" fill="#7d8590" font-family="Arial, sans-serif" font-size="10">• Environment secrets</text>
+</svg>

@@ -1,0 +1,91 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" fill="#e6edf3" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">Testing Pyramid</text>
+  
+  <!-- Pyramid Structure -->
+  <!-- E2E Tests (Top) -->
+  <polygon points="400,80 480,180 320,180" fill="#da3633"/>
+  <text x="400" y="145" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">E2E</text>
+  <text x="400" y="160" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">10%</text>
+  
+  <!-- Integration Tests (Middle) -->
+  <polygon points="320,180 480,180 540,280 260,280" fill="#bf8700"/>
+  <text x="400" y="225" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">INTEGRATION</text>
+  <text x="400" y="245" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">20%</text>
+  
+  <!-- Unit Tests (Base) -->
+  <polygon points="260,280 540,280 600,380 200,380" fill="#238636"/>
+  <text x="400" y="325" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">UNIT TESTS</text>
+  <text x="400" y="350" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">70%</text>
+  
+  <!-- Side Arrows with Labels -->
+  <!-- Speed Arrow (Left) -->
+  <line x1="150" y1="380" x2="150" y2="80" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrowUp)"/>
+  <text x="140" y="230" fill="#58a6ff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="end" transform="rotate(-90, 140, 230)">VELOCIDAD</text>
+  
+  <!-- Cost Arrow (Right) -->
+  <line x1="650" y1="80" x2="650" y2="380" stroke="#f85149" stroke-width="2" marker-end="url(#arrowDown)"/>
+  <text x="660" y="230" fill="#f85149" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" transform="rotate(90, 660, 230)">COSTO</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowUp" markerWidth="10" markerHeight="7" refX="5" refY="7" orient="auto">
+      <polygon points="0 7, 5 0, 10 7" fill="#58a6ff"/>
+    </marker>
+    <marker id="arrowDown" markerWidth="10" markerHeight="7" refX="5" refY="0" orient="auto">
+      <polygon points="0 0, 5 7, 10 0" fill="#f85149"/>
+    </marker>
+  </defs>
+  
+  <!-- Details Panel - E2E -->
+  <rect x="520" y="70" width="250" height="100" rx="6" fill="#161b22" stroke="#da3633" stroke-width="1"/>
+  <text x="645" y="95" fill="#da3633" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">🔴 E2E Tests</text>
+  <text x="535" y="115" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10">• Cypress, Playwright, Selenium</text>
+  <text x="535" y="130" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10">• Flujo completo del usuario</text>
+  <text x="535" y="145" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10">• Lentos (~minutos por test)</text>
+  <text x="535" y="160" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10">• Ejecutar en CI, no local</text>
+  
+  <!-- Details Panel - Integration -->
+  <rect x="520" y="185" width="250" height="100" rx="6" fill="#161b22" stroke="#bf8700" stroke-width="1"/>
+  <text x="645" y="210" fill="#bf8700" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">🟡 Integration Tests</text>
+  <text x="535" y="230" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10">• API testing, DB queries</text>
+  <text x="535" y="245" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10">• Componentes interactuando</text>
+  <text x="535" y="260" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10">• Service containers en CI</text>
+  <text x="535" y="275" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10">• ~segundos por test</text>
+  
+  <!-- Details Panel - Unit -->
+  <rect x="520" y="300" width="250" height="100" rx="6" fill="#161b22" stroke="#238636" stroke-width="1"/>
+  <text x="645" y="325" fill="#3fb950" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">🟢 Unit Tests</text>
+  <text x="535" y="345" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10">• Jest, Mocha, PyTest, JUnit</text>
+  <text x="535" y="360" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10">• Funciones aisladas, mocks</text>
+  <text x="535" y="375" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10">• Muy rápidos (~ms por test)</text>
+  <text x="535" y="390" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10">• Ejecutar en cada commit</text>
+  
+  <!-- Details Panel - Left Side -->
+  <rect x="30" y="70" width="150" height="100" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="105" y="95" fill="#e6edf3" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">⚡ Velocidad</text>
+  <text x="45" y="120" fill="#3fb950" font-family="Arial, sans-serif" font-size="10">Unit: ~1ms</text>
+  <text x="45" y="140" fill="#bf8700" font-family="Arial, sans-serif" font-size="10">Integration: ~1s</text>
+  <text x="45" y="160" fill="#da3633" font-family="Arial, sans-serif" font-size="10">E2E: ~1min</text>
+  
+  <rect x="30" y="185" width="150" height="100" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="105" y="210" fill="#e6edf3" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">💰 Costo</text>
+  <text x="45" y="235" fill="#3fb950" font-family="Arial, sans-serif" font-size="10">Unit: Bajo</text>
+  <text x="45" y="255" fill="#bf8700" font-family="Arial, sans-serif" font-size="10">Integration: Medio</text>
+  <text x="45" y="275" fill="#da3633" font-family="Arial, sans-serif" font-size="10">E2E: Alto</text>
+  
+  <rect x="30" y="300" width="150" height="100" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="105" y="325" fill="#e6edf3" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">🎯 Confianza</text>
+  <text x="45" y="350" fill="#3fb950" font-family="Arial, sans-serif" font-size="10">Unit: Función OK</text>
+  <text x="45" y="370" fill="#bf8700" font-family="Arial, sans-serif" font-size="10">Integ: Módulos OK</text>
+  <text x="45" y="390" fill="#da3633" font-family="Arial, sans-serif" font-size="10">E2E: Sistema OK</text>
+  
+  <!-- GitHub Actions Example -->
+  <rect x="30" y="420" width="740" height="65" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="445" fill="#e6edf3" font-family="Arial, sans-serif" font-size="12" font-weight="bold">GitHub Actions Strategy:</text>
+  <text x="50" y="465" fill="#7d8590" font-family="Arial, sans-serif" font-size="10" font-family="monospace">jobs: unit-tests → integration-tests → e2e-tests (needs: [unit-tests, integration-tests])</text>
+  <text x="50" y="478" fill="#58a6ff" font-family="Arial, sans-serif" font-size="9">Tip: Usar matrix para E2E en diferentes browsers: [chromium, firefox, webkit]</text>
+</svg>
