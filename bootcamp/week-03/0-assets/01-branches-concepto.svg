@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#58a6ff"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">Concepto de Branches en Git</text>
+  
+  <!-- Main branch line -->
+  <line x1="80" y1="200" x2="720" y2="200" stroke="#3fb950" stroke-width="3"/>
+  <text x="80" y="230" fill="#3fb950" font-family="Arial, sans-serif" font-size="14" font-weight="bold">main</text>
+  
+  <!-- Feature branch line -->
+  <path d="M 300 200 Q 350 120 400 120 L 550 120 Q 600 120 620 200" fill="none" stroke="#58a6ff" stroke-width="3"/>
+  <text x="420" y="100" fill="#58a6ff" font-family="Arial, sans-serif" font-size="14" font-weight="bold">feature/login</text>
+  
+  <!-- Commits on main -->
+  <circle cx="150" cy="200" r="15" fill="#0d1117" stroke="#3fb950" stroke-width="3"/>
+  <text x="150" y="205" fill="#3fb950" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">C1</text>
+  
+  <circle cx="230" cy="200" r="15" fill="#0d1117" stroke="#3fb950" stroke-width="3"/>
+  <text x="230" y="205" fill="#3fb950" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">C2</text>
+  
+  <circle cx="300" cy="200" r="15" fill="#0d1117" stroke="#3fb950" stroke-width="3"/>
+  <text x="300" y="205" fill="#3fb950" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">C3</text>
+  
+  <circle cx="620" cy="200" r="15" fill="#0d1117" stroke="#a371f7" stroke-width="3"/>
+  <text x="620" y="205" fill="#a371f7" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">M</text>
+  
+  <circle cx="700" cy="200" r="15" fill="#0d1117" stroke="#3fb950" stroke-width="3"/>
+  <text x="700" y="205" fill="#3fb950" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">C7</text>
+  
+  <!-- Commits on feature branch -->
+  <circle cx="400" cy="120" r="15" fill="#0d1117" stroke="#58a6ff" stroke-width="3"/>
+  <text x="400" y="125" fill="#58a6ff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">C4</text>
+  
+  <circle cx="480" cy="120" r="15" fill="#0d1117" stroke="#58a6ff" stroke-width="3"/>
+  <text x="480" y="125" fill="#58a6ff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">C5</text>
+  
+  <circle cx="550" cy="120" r="15" fill="#0d1117" stroke="#58a6ff" stroke-width="3"/>
+  <text x="550" y="125" fill="#58a6ff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">C6</text>
+  
+  <!-- Legend -->
+  <rect x="80" y="280" width="640" height="100" fill="#161b22" rx="8"/>
+  <text x="100" y="305" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Leyenda:</text>
+  
+  <!-- Main legend -->
+  <circle cx="120" cy="330" r="8" fill="#3fb950"/>
+  <text x="140" y="335" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">Commits en main (linea principal)</text>
+  
+  <!-- Feature legend -->
+  <circle cx="120" cy="360" r="8" fill="#58a6ff"/>
+  <text x="140" y="365" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">Commits en feature branch (desarrollo paralelo)</text>
+  
+  <!-- Merge legend -->
+  <circle cx="450" cy="330" r="8" fill="#a371f7"/>
+  <text x="470" y="335" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">Merge commit (union de branches)</text>
+  
+  <!-- Info -->
+  <text x="450" y="365" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">Un branch es un puntero movil a un commit</text>
+</svg>

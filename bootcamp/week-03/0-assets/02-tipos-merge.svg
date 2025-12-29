@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">Tipos de Merge en Git</text>
+  
+  <!-- FAST-FORWARD SECTION -->
+  <rect x="30" y="60" width="360" height="200" fill="#161b22" rx="8"/>
+  <text x="210" y="90" fill="#3fb950" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Fast-Forward Merge</text>
+  
+  <!-- FF Before -->
+  <text x="50" y="120" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">ANTES:</text>
+  <line x1="70" y1="145" x2="200" y2="145" stroke="#3fb950" stroke-width="2"/>
+  <circle cx="90" cy="145" r="10" fill="#0d1117" stroke="#3fb950" stroke-width="2"/>
+  <circle cx="130" cy="145" r="10" fill="#0d1117" stroke="#3fb950" stroke-width="2"/>
+  <text x="130" y="170" fill="#3fb950" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">main</text>
+  
+  <line x1="130" y1="145" x2="200" y2="145" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="170" cy="145" r="10" fill="#0d1117" stroke="#58a6ff" stroke-width="2"/>
+  <text x="170" y="125" fill="#58a6ff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">feature</text>
+  
+  <!-- FF After -->
+  <text x="220" y="120" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">DESPUES:</text>
+  <line x1="240" y1="145" x2="370" y2="145" stroke="#3fb950" stroke-width="2"/>
+  <circle cx="260" cy="145" r="10" fill="#0d1117" stroke="#3fb950" stroke-width="2"/>
+  <circle cx="300" cy="145" r="10" fill="#0d1117" stroke="#3fb950" stroke-width="2"/>
+  <circle cx="340" cy="145" r="10" fill="#0d1117" stroke="#3fb950" stroke-width="2"/>
+  <text x="340" y="170" fill="#3fb950" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">main</text>
+  
+  <!-- FF Description -->
+  <text x="210" y="200" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">main simplemente avanza al ultimo commit</text>
+  <text x="210" y="220" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">No se crea nuevo commit de merge</text>
+  <text x="210" y="245" fill="#58a6ff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">git merge feature (sin divergencia)</text>
+  
+  <!-- THREE-WAY MERGE SECTION -->
+  <rect x="410" y="60" width="360" height="200" fill="#161b22" rx="8"/>
+  <text x="590" y="90" fill="#a371f7" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Three-Way Merge (Recursive)</text>
+  
+  <!-- 3W Before -->
+  <text x="430" y="120" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">ANTES:</text>
+  <line x1="450" y1="155" x2="540" y2="155" stroke="#3fb950" stroke-width="2"/>
+  <circle cx="470" cy="155" r="10" fill="#0d1117" stroke="#3fb950" stroke-width="2"/>
+  <circle cx="510" cy="155" r="10" fill="#0d1117" stroke="#3fb950" stroke-width="2"/>
+  <text x="510" y="180" fill="#3fb950" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">main</text>
+  
+  <path d="M 470 155 Q 490 125 520 125" fill="none" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="520" cy="125" r="10" fill="#0d1117" stroke="#58a6ff" stroke-width="2"/>
+  <text x="520" y="115" fill="#58a6ff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">feature</text>
+  
+  <!-- 3W After -->
+  <text x="590" y="120" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">DESPUES:</text>
+  <line x1="620" y1="155" x2="750" y2="155" stroke="#3fb950" stroke-width="2"/>
+  <circle cx="640" cy="155" r="10" fill="#0d1117" stroke="#3fb950" stroke-width="2"/>
+  <circle cx="680" cy="155" r="10" fill="#0d1117" stroke="#3fb950" stroke-width="2"/>
+  <circle cx="740" cy="155" r="10" fill="#0d1117" stroke="#a371f7" stroke-width="2"/>
+  <text x="740" y="145" fill="#a371f7" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">M</text>
+  <text x="740" y="180" fill="#3fb950" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">main</text>
+  
+  <path d="M 640 155 Q 660 125 690 125 L 740 155" fill="none" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="690" cy="125" r="10" fill="#0d1117" stroke="#58a6ff" stroke-width="2"/>
+  
+  <!-- 3W Description -->
+  <text x="590" y="200" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Se crea un nuevo commit de merge</text>
+  <text x="590" y="220" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Combina cambios de ambos branches</text>
+  <text x="590" y="245" fill="#a371f7" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">git merge feature (con divergencia)</text>
+  
+  <!-- COMPARISON TABLE -->
+  <rect x="80" y="280" width="640" height="200" fill="#161b22" rx="8"/>
+  <text x="400" y="310" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Comparacion</text>
+  
+  <!-- Headers -->
+  <text x="200" y="340" fill="#58a6ff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Fast-Forward</text>
+  <text x="520" y="340" fill="#a371f7" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Three-Way</text>
+  
+  <!-- Divider -->
+  <line x1="360" y1="320" x2="360" y2="470" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- FF characteristics -->
+  <text x="200" y="365" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Historial lineal</text>
+  <text x="200" y="385" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Sin commit de merge</text>
+  <text x="200" y="405" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Mas limpio</text>
+  <text x="200" y="425" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Solo si no hay divergencia</text>
+  <text x="200" y="455" fill="#3fb950" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">git merge --ff-only feature</text>
+  
+  <!-- 3W characteristics -->
+  <text x="520" y="365" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Historial ramificado</text>
+  <text x="520" y="385" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Crea commit de merge</text>
+  <text x="520" y="405" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Preserva contexto</text>
+  <text x="520" y="425" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Cuando hay divergencia</text>
+  <text x="520" y="455" fill="#a371f7" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">git merge --no-ff feature</text>
+</svg>

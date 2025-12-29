@@ -1,21 +1,24 @@
-# � Week 03: Branching Básico
+# 🌿 Week 03: Branching Básico
+
+> **Duración**: 6 horas | **Nivel**: Principiante-Intermedio | **Certificación**: GitHub Foundations
 
 ## 🎯 Objetivos de Aprendizaje
 
 Al finalizar esta semana serás capaz de:
 
-- ✅ Comprender el concepto de branches y su importancia
-- ✅ Crear, cambiar y eliminar branches
-- ✅ Realizar merge básico entre branches
-- ✅ Entender HEAD y referencias en Git
-- ✅ Implementar un flujo de trabajo con branches
+- ✅ Comprender el concepto de branches y su importancia en desarrollo colaborativo
+- ✅ Crear, cambiar y eliminar branches con `git branch` y `git switch`
+- ✅ Entender HEAD y las referencias en Git
+- ✅ Realizar merge básico entre branches (fast-forward y recursive)
+- ✅ Implementar un flujo de trabajo básico con feature branches
 
 ---
 
 ## 📚 Requisitos Previos
 
-- Completar Week 01 y Week 02
-- Dominio de commits y staging area
+- ✅ Completar [Week 01: Fundamentos de Git](../week-01/README.md)
+- ✅ Completar [Week 02: Repositories y Commits](../week-02/README.md)
+- ✅ Dominio de commits, staging area e historial
 
 ---
 
@@ -24,61 +27,66 @@ Al finalizar esta semana serás capaz de:
 ```
 week-03/
 ├── README.md                 # Este archivo
-├── rubrica-evaluacion.md     # Criterios de evaluación
-├── 0-assets/                 # Diagramas y recursos visuales
-├── 1-teoria/                 # Material teórico
-├── 2-practicas/              # Ejercicios guiados
-├── 3-proyecto/               # Proyecto semanal
+├── rubrica-evaluacion.md     # Criterios de evaluación (100 pts)
+├── 0-assets/                 # Diagramas SVG (branches, merge, HEAD)
+├── 1-teoria/                 # 4 lecciones teóricas
+├── 2-practicas/              # 4 ejercicios guiados
+├── 3-proyecto/               # Proyecto: Feature Development
 ├── 4-recursos/               # Material adicional
-└── 5-glosario/               # Términos clave
+└── 5-glosario/               # Términos clave de branching
 ```
 
 ---
 
 ## 📝 Contenidos
 
-### 1️⃣ Teoría
+### 1️⃣ Teoría (1.5 horas - 25%)
 
-| Tema | Descripción |
-|------|-------------|
-| Branches | Concepto y estructura interna |
-| Git Branch | Crear y listar branches |
-| Git Checkout/Switch | Cambiar entre branches |
-| HEAD | Entender las referencias |
-| Git Merge | Combinar branches (fast-forward y recursive) |
-| Estrategias de Branching | Introducción a Git Flow |
+| Lección | Tema | Archivo |
+|---------|------|---------|
+| 01 | Branches en Git | [01-branches-git.md](1-teoria/01-branches-git.md) |
+| 02 | Navegación entre Branches | [02-navegacion-branches.md](1-teoria/02-navegacion-branches.md) |
+| 03 | Merge Básico | [03-merge-basico.md](1-teoria/03-merge-basico.md) |
+| 04 | Estrategias de Branching | [04-estrategias-branching.md](1-teoria/04-estrategias-branching.md) |
 
-### 2️⃣ Prácticas
+### 2️⃣ Prácticas (2.5 horas - 42%)
 
-| Ejercicio | Descripción |
-|-----------|-------------|
-| Práctica 01 | Crear y navegar entre branches |
-| Práctica 02 | Merge fast-forward |
-| Práctica 03 | Merge con commit |
-| Práctica 04 | Flujo feature branch |
+| Ejercicio | Descripción | Tiempo |
+|-----------|-------------|--------|
+| [Ejercicio 01](2-practicas/ejercicio-01-branches/README.md) | Crear y navegar entre branches | 35 min |
+| [Ejercicio 02](2-practicas/ejercicio-02-merge-ff/README.md) | Merge fast-forward | 35 min |
+| [Ejercicio 03](2-practicas/ejercicio-03-merge-commit/README.md) | Merge con commit (recursive) | 40 min |
+| [Ejercicio 04](2-practicas/ejercicio-04-feature-branch/README.md) | Flujo feature branch completo | 40 min |
 
-### 3️⃣ Proyecto
+### 3️⃣ Proyecto (2 horas - 33%)
 
-**Proyecto Feature Development**: Simular desarrollo de features usando branches independientes y merge al branch principal.
+**Proyecto: Feature Development Simulation**
+
+Simular el desarrollo de una aplicación con múltiples features usando branches independientes, merge al branch principal, y documentación del flujo de trabajo.
+
+📁 [Ver instrucciones del proyecto](3-proyecto/README.md)
 
 ---
 
-## ⏱️ Distribución del Tiempo (8 horas)
+## ⏱️ Distribución del Tiempo (6 horas)
 
-| Actividad | Tiempo |
-|-----------|--------|
-| 📖 Teoría | 3 horas |
-| 💻 Prácticas | 3 horas |
-| 🏗️ Proyecto | 2 horas |
+| Actividad | Tiempo | Porcentaje |
+|-----------|--------|------------|
+| 📖 Teoría | 1.5 horas | 25% |
+| 💻 Prácticas | 2.5 horas | 42% |
+| 🏗️ Proyecto | 2 horas | 33% |
 
 ---
 
 ## 📌 Entregables
 
-1. ✅ Repository con mínimo 3 branches (main, develop, feature)
-2. ✅ Demostración de merge fast-forward y merge commit
-3. ✅ Diagrama de branches del proyecto
-4. ✅ Proyecto feature development completado
+| # | Entregable | Puntos |
+|---|------------|--------|
+| 1 | Repository con mínimo 3 branches (main, develop, feature/*) | 25 pts |
+| 2 | Demostración de merge fast-forward y merge commit | 25 pts |
+| 3 | Proyecto feature development completado | 30 pts |
+| 4 | Documentación del flujo de branches | 20 pts |
+| | **Total** | **100 pts** |
 
 ---
 
@@ -90,7 +98,13 @@ week-03/
 <td><strong>GitHub Foundations</strong></td>
 </tr>
 <tr>
-<td colspan="2">Esta semana cubre: Branches, Merging, Git workflow basics</td>
+<td colspan="2">
+<strong>Temas cubiertos esta semana:</strong><br>
+• Git branches and their purpose<br>
+• Creating and switching branches<br>
+• Merging branches (fast-forward, recursive)<br>
+• Basic branching workflows
+</td>
 </tr>
 </table>
 
@@ -104,4 +118,8 @@ week-03/
 
 ---
 
-_Week 03 | Bootcamp Git/GitHub_
+<div align="center">
+
+**Week 03** | Bootcamp Git/GitHub | 2025
+
+</div>

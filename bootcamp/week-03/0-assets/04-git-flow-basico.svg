@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">Git Flow Basico - Feature Branch Workflow</text>
+  
+  <!-- Main branch -->
+  <line x1="80" y1="120" x2="720" y2="120" stroke="#3fb950" stroke-width="4"/>
+  <rect x="20" y="105" width="50" height="30" fill="#238636" rx="4"/>
+  <text x="45" y="125" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">main</text>
+  
+  <!-- Main commits -->
+  <circle cx="150" cy="120" r="12" fill="#0d1117" stroke="#3fb950" stroke-width="3"/>
+  <text x="150" y="100" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">v1.0</text>
+  
+  <circle cx="450" cy="120" r="12" fill="#0d1117" stroke="#a371f7" stroke-width="3"/>
+  <text x="450" y="100" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">merge</text>
+  
+  <circle cx="620" cy="120" r="12" fill="#0d1117" stroke="#a371f7" stroke-width="3"/>
+  <text x="620" y="100" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">merge</text>
+  
+  <circle cx="700" cy="120" r="12" fill="#0d1117" stroke="#3fb950" stroke-width="3"/>
+  <text x="700" y="100" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">v1.1</text>
+  
+  <!-- Develop branch -->
+  <line x1="150" y1="120" x2="150" y2="200" stroke="#58a6ff" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="150" y1="200" x2="700" y2="200" stroke="#58a6ff" stroke-width="3"/>
+  <rect x="20" y="185" width="65" height="30" fill="#1f6feb" rx="4"/>
+  <text x="52" y="205" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">develop</text>
+  
+  <!-- Develop commits -->
+  <circle cx="200" cy="200" r="10" fill="#0d1117" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="270" cy="200" r="10" fill="#0d1117" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="380" cy="200" r="10" fill="#0d1117" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="500" cy="200" r="10" fill="#0d1117" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="570" cy="200" r="10" fill="#0d1117" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="650" cy="200" r="10" fill="#0d1117" stroke="#58a6ff" stroke-width="2"/>
+  
+  <!-- Merge lines develop to main -->
+  <line x1="380" y1="200" x2="450" y2="120" stroke="#a371f7" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="650" y1="200" x2="620" y2="120" stroke="#a371f7" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- Feature 1 branch -->
+  <path d="M 200 200 Q 220 260 250 280 L 350 280 Q 380 280 380 200" fill="none" stroke="#f0883e" stroke-width="2"/>
+  <text x="300" y="310" fill="#f0883e" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">feature/login</text>
+  <circle cx="270" cy="280" r="8" fill="#0d1117" stroke="#f0883e" stroke-width="2"/>
+  <circle cx="320" cy="280" r="8" fill="#0d1117" stroke="#f0883e" stroke-width="2"/>
+  
+  <!-- Feature 2 branch -->
+  <path d="M 500 200 Q 520 260 550 280 L 620 280 Q 650 280 650 200" fill="none" stroke="#f778ba" stroke-width="2"/>
+  <text x="585" y="310" fill="#f778ba" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">feature/dashboard</text>
+  <circle cx="570" cy="280" r="8" fill="#0d1117" stroke="#f778ba" stroke-width="2"/>
+  
+  <!-- Workflow steps -->
+  <rect x="50" y="350" width="700" height="130" fill="#161b22" rx="8"/>
+  <text x="400" y="375" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Flujo de Trabajo Feature Branch</text>
+  
+  <!-- Step 1 -->
+  <circle cx="100" cy="410" r="15" fill="#238636"/>
+  <text x="100" y="415" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">1</text>
+  <text x="100" y="445" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Crear branch</text>
+  <text x="100" y="460" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">git switch -c</text>
+  
+  <!-- Step 2 -->
+  <circle cx="240" cy="410" r="15" fill="#1f6feb"/>
+  <text x="240" y="415" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">2</text>
+  <text x="240" y="445" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Desarrollar</text>
+  <text x="240" y="460" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">commits</text>
+  
+  <!-- Step 3 -->
+  <circle cx="380" cy="410" r="15" fill="#f0883e"/>
+  <text x="380" y="415" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">3</text>
+  <text x="380" y="445" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Pull Request</text>
+  <text x="380" y="460" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">code review</text>
+  
+  <!-- Step 4 -->
+  <circle cx="520" cy="410" r="15" fill="#a371f7"/>
+  <text x="520" y="415" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">4</text>
+  <text x="520" y="445" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Merge</text>
+  <text x="520" y="460" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">git merge</text>
+  
+  <!-- Step 5 -->
+  <circle cx="660" cy="410" r="15" fill="#f85149"/>
+  <text x="660" y="415" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">5</text>
+  <text x="660" y="445" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Eliminar branch</text>
+  <text x="660" y="460" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">git branch -d</text>
+  
+  <!-- Arrows between steps -->
+  <line x1="120" y1="410" x2="215" y2="410" stroke="#30363d" stroke-width="2"/>
+  <line x1="265" y1="410" x2="355" y2="410" stroke="#30363d" stroke-width="2"/>
+  <line x1="405" y1="410" x2="495" y2="410" stroke="#30363d" stroke-width="2"/>
+  <line x1="545" y1="410" x2="635" y2="410" stroke="#30363d" stroke-width="2"/>
+</svg>
