@@ -1,0 +1,94 @@
+<svg viewBox="0 0 800 550" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="550" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">Proceso de Resolucion de Conflictos</text>
+  
+  <!-- Step 1: Detect -->
+  <rect x="50" y="70" width="160" height="100" fill="#161b22" rx="8" stroke="#f85149" stroke-width="2"/>
+  <circle cx="80" cy="95" r="15" fill="#f85149"/>
+  <text x="80" y="100" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">1</text>
+  <text x="130" y="95" fill="#f85149" font-family="Arial, sans-serif" font-size="13" font-weight="bold">DETECTAR</text>
+  <text x="130" y="125" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">git merge feature</text>
+  <text x="130" y="145" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">CONFLICT (content)</text>
+  <text x="130" y="160" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Automatic merge failed</text>
+  
+  <!-- Arrow 1-2 -->
+  <line x1="210" y1="120" x2="260" y2="120" stroke="#30363d" stroke-width="2"/>
+  <polygon points="260,115 275,120 260,125" fill="#30363d"/>
+  
+  <!-- Step 2: Identify -->
+  <rect x="280" y="70" width="160" height="100" fill="#161b22" rx="8" stroke="#f0883e" stroke-width="2"/>
+  <circle cx="310" cy="95" r="15" fill="#f0883e"/>
+  <text x="310" y="100" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">2</text>
+  <text x="360" y="95" fill="#f0883e" font-family="Arial, sans-serif" font-size="13" font-weight="bold">IDENTIFICAR</text>
+  <text x="360" y="125" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">git status</text>
+  <text x="360" y="145" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">both modified:</text>
+  <text x="360" y="160" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">archivo.js</text>
+  
+  <!-- Arrow 2-3 -->
+  <line x1="440" y1="120" x2="490" y2="120" stroke="#30363d" stroke-width="2"/>
+  <polygon points="490,115 505,120 490,125" fill="#30363d"/>
+  
+  <!-- Step 3: Open -->
+  <rect x="510" y="70" width="160" height="100" fill="#161b22" rx="8" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="540" cy="95" r="15" fill="#58a6ff"/>
+  <text x="540" y="100" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">3</text>
+  <text x="590" y="95" fill="#58a6ff" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ABRIR</text>
+  <text x="590" y="125" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">code archivo.js</text>
+  <text x="590" y="145" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Ver marcadores</text>
+  <text x="590" y="160" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">&lt;&lt;&lt; === &gt;&gt;&gt;</text>
+  
+  <!-- Central resolution section -->
+  <rect x="100" y="200" width="600" height="180" fill="#161b22" rx="10" stroke="#3fb950" stroke-width="2"/>
+  <text x="400" y="230" fill="#3fb950" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">PASO 4: RESOLVER</text>
+  
+  <!-- Options -->
+  <rect x="130" y="250" width="160" height="110" fill="#21262d" rx="6"/>
+  <text x="210" y="275" fill="#3fb950" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Accept Current</text>
+  <text x="210" y="295" fill="#8b949e" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Conservar tu version</text>
+  <text x="210" y="315" fill="#c9d1d9" font-family="monospace" font-size="9" text-anchor="middle">git checkout --ours</text>
+  <text x="210" y="335" fill="#c9d1d9" font-family="monospace" font-size="9" text-anchor="middle">archivo.js</text>
+  
+  <rect x="320" y="250" width="160" height="110" fill="#21262d" rx="6"/>
+  <text x="400" y="275" fill="#a371f7" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Accept Incoming</text>
+  <text x="400" y="295" fill="#8b949e" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Conservar version entrante</text>
+  <text x="400" y="315" fill="#c9d1d9" font-family="monospace" font-size="9" text-anchor="middle">git checkout --theirs</text>
+  <text x="400" y="335" fill="#c9d1d9" font-family="monospace" font-size="9" text-anchor="middle">archivo.js</text>
+  
+  <rect x="510" y="250" width="160" height="110" fill="#21262d" rx="6"/>
+  <text x="590" y="275" fill="#58a6ff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Accept Both</text>
+  <text x="590" y="295" fill="#8b949e" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Combinar ambas versiones</text>
+  <text x="590" y="315" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Editar manualmente</text>
+  <text x="590" y="335" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">+ eliminar marcadores</text>
+  
+  <!-- Arrow to step 5 -->
+  <line x1="400" y1="380" x2="400" y2="410" stroke="#30363d" stroke-width="2"/>
+  <polygon points="395,410 400,425 405,410" fill="#30363d"/>
+  
+  <!-- Step 5: Stage -->
+  <rect x="200" y="430" width="180" height="100" fill="#161b22" rx="8" stroke="#a371f7" stroke-width="2"/>
+  <circle cx="230" cy="455" r="15" fill="#a371f7"/>
+  <text x="230" y="460" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">5</text>
+  <text x="290" y="455" fill="#a371f7" font-family="Arial, sans-serif" font-size="13" font-weight="bold">STAGE</text>
+  <text x="290" y="485" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">git add archivo.js</text>
+  <text x="290" y="505" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Marcar como resuelto</text>
+  <text x="290" y="520" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">en el staging area</text>
+  
+  <!-- Arrow 5-6 -->
+  <line x1="380" y1="480" x2="420" y2="480" stroke="#30363d" stroke-width="2"/>
+  <polygon points="420,475 435,480 420,485" fill="#30363d"/>
+  
+  <!-- Step 6: Commit -->
+  <rect x="440" y="430" width="180" height="100" fill="#161b22" rx="8" stroke="#3fb950" stroke-width="2"/>
+  <circle cx="470" cy="455" r="15" fill="#3fb950"/>
+  <text x="470" y="460" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">6</text>
+  <text x="530" y="455" fill="#3fb950" font-family="Arial, sans-serif" font-size="13" font-weight="bold">COMMIT</text>
+  <text x="530" y="485" fill="#c9d1d9" font-family="monospace" font-size="10" text-anchor="middle">git commit</text>
+  <text x="530" y="505" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Completar el merge</text>
+  <text x="530" y="520" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">con mensaje automatico</text>
+  
+  <!-- Success indicator -->
+  <circle cx="650" cy="480" r="25" fill="#3fb95033" stroke="#3fb950" stroke-width="2"/>
+  <text x="650" y="487" fill="#3fb950" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">OK</text>
+</svg>

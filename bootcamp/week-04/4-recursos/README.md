@@ -1,25 +1,74 @@
-# 📚 Recursos - Week 04
+# Recursos - Week 04: Merge Conflicts
 
-Esta carpeta contiene recursos adicionales para profundizar en los temas de la semana.
+Material adicional para profundizar en la resolucion de conflictos de merge.
 
 ---
 
-## 📂 Contenido
+## Contenido
 
-| Carpeta | Descripción |
+| Carpeta | Descripcion |
 |---------|-------------|
-| [ebooks-free/](ebooks-free/) | Libros electrónicos gratuitos |
-| [videografia/](videografia/) | Videos y tutoriales recomendados |
-| [webgrafia/](webgrafia/) | Enlaces y documentación oficial |
+| [ebooks-free/](ebooks-free/) | Libros electronicos gratuitos sobre Git |
+| [videografia/](videografia/) | Videos y tutoriales sobre conflictos |
+| [webgrafia/](webgrafia/) | Documentacion oficial y articulos |
 
 ---
 
-## 💡 Cómo Usar Estos Recursos
+## Recursos Destacados de la Semana
 
-1. **Primero**: Completa la teoría y prácticas de la semana
-2. **Después**: Consulta estos recursos para profundizar
-3. **Opcional**: Explora temas avanzados según tu interés
+### Documentacion Oficial
+
+- [Git - Basic Merge Conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts)
+- [GitHub - Resolving Merge Conflicts](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts)
+- [VS Code - Source Control](https://code.visualstudio.com/docs/sourcecontrol/overview)
+
+### Herramientas Recomendadas
+
+| Herramienta | Tipo | Descripcion |
+|-------------|------|-------------|
+| VS Code | Editor | Interfaz visual integrada para conflictos |
+| Meld | GUI | Herramienta grafica de 3 paneles |
+| kdiff3 | GUI | Comparador con auto-merge |
+| vimdiff | CLI | Para usuarios de Vim |
+| IntelliJ | IDE | Excelente resolucion visual |
+
+### Comandos Clave
+
+```bash
+# Ver conflictos pendientes
+git diff --name-only --diff-filter=U
+
+# Configurar mergetool
+git config --global merge.tool meld
+
+# Usar nuestra version
+git checkout --ours archivo.txt
+
+# Usar su version
+git checkout --theirs archivo.txt
+
+# Abortar merge
+git merge --abort
+```
 
 ---
 
-[⬅️ Volver a la semana](../README.md)
+## Como Usar Estos Recursos
+
+1. **Primero**: Completa teoria y practicas de la semana
+2. **Despues**: Consulta los videos para ver ejemplos visuales
+3. **Finalmente**: Lee articulos avanzados para casos especiales
+
+---
+
+## Navegacion
+
+| Seccion | Enlace |
+|---------|--------|
+| Semana | [README](../README.md) |
+| Teoria | [1-teoria/](../1-teoria/) |
+| Practicas | [2-practicas/](../2-practicas/) |
+
+---
+
+*Week 04 | Bootcamp Git/GitHub*
