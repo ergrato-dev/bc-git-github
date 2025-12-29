@@ -1,0 +1,102 @@
+<svg viewBox="0 0 900 550" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow4" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#58a6ff"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="550" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="24" font-weight="bold">Incident Response Plan</text>
+  <text x="450" y="65" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="14">NIST Incident Response Framework</text>
+  
+  <!-- Central Circle - Continuous -->
+  <circle cx="450" cy="280" r="70" fill="#1a1a2e" stroke="#58a6ff" stroke-width="2"/>
+  <text x="450" y="275" text-anchor="middle" fill="#58a6ff" font-family="Arial, sans-serif" font-size="14" font-weight="bold">CONTINUOUS</text>
+  <text x="450" y="295" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">IMPROVEMENT</text>
+  
+  <!-- Phase 1: Preparation (Top) -->
+  <rect x="375" y="90" width="150" height="80" rx="8" fill="#1a1a2e" stroke="#3fb950" stroke-width="2"/>
+  <text x="450" y="115" text-anchor="middle" fill="#3fb950" font-family="Arial, sans-serif" font-size="14" font-weight="bold">1. PREPARATION</text>
+  <text x="450" y="135" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Define team &amp; roles</text>
+  <text x="450" y="150" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Setup tools</text>
+  <text x="450" y="165" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Training</text>
+  
+  <!-- Arrow from Prep to Detection -->
+  <path d="M 525 140 Q 600 140 620 200" fill="none" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow4)"/>
+  
+  <!-- Phase 2: Detection (Right) -->
+  <rect x="620" y="200" width="150" height="80" rx="8" fill="#1a1a2e" stroke="#d29922" stroke-width="2"/>
+  <text x="695" y="225" text-anchor="middle" fill="#d29922" font-family="Arial, sans-serif" font-size="14" font-weight="bold">2. DETECTION</text>
+  <text x="695" y="245" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Identify incident</text>
+  <text x="695" y="260" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Assess severity</text>
+  <text x="695" y="275" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Alert team</text>
+  
+  <!-- Arrow from Detection to Containment -->
+  <path d="M 695 280 Q 695 340 620 370" fill="none" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow4)"/>
+  
+  <!-- Phase 3: Containment (Bottom Right) -->
+  <rect x="540" y="360" width="150" height="80" rx="8" fill="#1a1a2e" stroke="#f85149" stroke-width="2"/>
+  <text x="615" y="385" text-anchor="middle" fill="#f85149" font-family="Arial, sans-serif" font-size="14" font-weight="bold">3. CONTAINMENT</text>
+  <text x="615" y="405" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Stop bleeding</text>
+  <text x="615" y="420" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Isolate affected</text>
+  <text x="615" y="435" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Preserve evidence</text>
+  
+  <!-- Arrow from Containment to Eradication -->
+  <path d="M 540 400 Q 470 430 400 400" fill="none" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow4)"/>
+  
+  <!-- Phase 4: Eradication (Bottom Left) -->
+  <rect x="210" y="360" width="150" height="80" rx="8" fill="#1a1a2e" stroke="#a371f7" stroke-width="2"/>
+  <text x="285" y="385" text-anchor="middle" fill="#a371f7" font-family="Arial, sans-serif" font-size="14" font-weight="bold">4. ERADICATION</text>
+  <text x="285" y="405" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Remove threat</text>
+  <text x="285" y="420" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Patch systems</text>
+  <text x="285" y="435" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Verify clean</text>
+  
+  <!-- Arrow from Eradication to Recovery -->
+  <path d="M 210 400 Q 140 400 130 300" fill="none" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow4)"/>
+  
+  <!-- Phase 5: Recovery (Left) -->
+  <rect x="130" y="200" width="150" height="80" rx="8" fill="#1a1a2e" stroke="#58a6ff" stroke-width="2"/>
+  <text x="205" y="225" text-anchor="middle" fill="#58a6ff" font-family="Arial, sans-serif" font-size="14" font-weight="bold">5. RECOVERY</text>
+  <text x="205" y="245" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Restore systems</text>
+  <text x="205" y="260" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Validate function</text>
+  <text x="205" y="275" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Monitor closely</text>
+  
+  <!-- Arrow from Recovery to Lessons -->
+  <path d="M 205 200 Q 205 140 280 115" fill="none" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow4)"/>
+  
+  <!-- Phase 6: Lessons Learned (Top Left) -->
+  <rect x="130" y="90" width="180" height="80" rx="8" fill="#1a1a2e" stroke="#e3b341" stroke-width="2"/>
+  <text x="220" y="115" text-anchor="middle" fill="#e3b341" font-family="Arial, sans-serif" font-size="14" font-weight="bold">6. POST-MORTEM</text>
+  <text x="220" y="135" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Document timeline</text>
+  <text x="220" y="150" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Identify improvements</text>
+  <text x="220" y="165" text-anchor="middle" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Update procedures</text>
+  
+  <!-- Arrow from Lessons back to Prep -->
+  <path d="M 310 130 L 375 130" fill="none" stroke="#3fb950" stroke-width="2" marker-end="url(#arrow4)"/>
+  
+  <!-- Communication Box -->
+  <rect x="700" y="90" width="170" height="100" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="785" y="115" text-anchor="middle" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="12" font-weight="bold">📢 Communication</text>
+  <text x="710" y="140" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Internal: Team, Mgmt</text>
+  <text x="710" y="157" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• External: Users, Media</text>
+  <text x="710" y="174" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="10">• Legal/Compliance</text>
+  
+  <!-- Severity Response -->
+  <rect x="50" y="460" width="800" height="60" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="450" y="485" text-anchor="middle" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="13" font-weight="bold">Response Time by Severity</text>
+  
+  <circle cx="150" cy="505" r="8" fill="#f85149"/>
+  <text x="170" y="510" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">Critical: 1h response, 24h resolve</text>
+  
+  <circle cx="380" cy="505" r="8" fill="#d29922"/>
+  <text x="400" y="510" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">High: 4h response, 72h resolve</text>
+  
+  <circle cx="610" cy="505" r="8" fill="#e3b341"/>
+  <text x="630" y="510" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">Medium: 24h response, 7d resolve</text>
+  
+  <!-- Footer -->
+  <text x="450" y="540" text-anchor="middle" fill="#6e7681" font-family="Arial, sans-serif" font-size="11">Week 12 - Incident Response | Based on NIST SP 800-61</text>
+</svg>
