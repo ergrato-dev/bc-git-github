@@ -1,0 +1,82 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">GitHub Actions - Arquitectura</text>
+  
+  <!-- Repository Section -->
+  <rect x="50" y="60" width="200" height="120" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+  <text x="150" y="90" fill="#58a6ff" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">📁 Repository</text>
+  <text x="150" y="115" fill="#8b949e" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">.github/workflows/</text>
+  <rect x="70" y="130" width="160" height="35" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <text x="150" y="152" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">ci.yml, deploy.yml</text>
+  
+  <!-- Arrow 1 -->
+  <path d="M250 120 L300 120" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Event Trigger -->
+  <rect x="300" y="60" width="200" height="120" rx="8" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+  <text x="400" y="90" fill="#3fb950" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">⚡ Event Trigger</text>
+  <text x="400" y="115" fill="#8b949e" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">push, pull_request</text>
+  <text x="400" y="135" fill="#8b949e" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">schedule, dispatch</text>
+  <text x="400" y="155" fill="#8b949e" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">release, workflow_call</text>
+  
+  <!-- Arrow 2 -->
+  <path d="M500 120 L550 120" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Workflow -->
+  <rect x="550" y="60" width="200" height="120" rx="8" fill="#161b22" stroke="#a371f7" stroke-width="2"/>
+  <text x="650" y="90" fill="#a371f7" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">📋 Workflow</text>
+  <text x="650" y="115" fill="#8b949e" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">name: CI Pipeline</text>
+  <text x="650" y="135" fill="#8b949e" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">on: [push, pull_request]</text>
+  <text x="650" y="155" fill="#8b949e" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">jobs: build, test, deploy</text>
+  
+  <!-- Arrow Down -->
+  <path d="M650 180 L650 210" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Jobs Section -->
+  <text x="400" y="240" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Jobs (ejecutan en paralelo por defecto)</text>
+  
+  <!-- Job 1 -->
+  <rect x="50" y="260" width="220" height="100" rx="8" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <text x="160" y="290" fill="#f0883e" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Job: build</text>
+  <text x="160" y="315" fill="#8b949e" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">runs-on: ubuntu-latest</text>
+  <text x="160" y="335" fill="#8b949e" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">steps: checkout, setup, build</text>
+  
+  <!-- Job 2 -->
+  <rect x="290" y="260" width="220" height="100" rx="8" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <text x="400" y="290" fill="#f0883e" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Job: test</text>
+  <text x="400" y="315" fill="#8b949e" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">needs: build</text>
+  <text x="400" y="335" fill="#8b949e" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">steps: checkout, test, coverage</text>
+  
+  <!-- Job 3 -->
+  <rect x="530" y="260" width="220" height="100" rx="8" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <text x="640" y="290" fill="#f0883e" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Job: deploy</text>
+  <text x="640" y="315" fill="#8b949e" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">needs: [build, test]</text>
+  <text x="640" y="335" fill="#8b949e" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">steps: deploy to production</text>
+  
+  <!-- Arrows between jobs -->
+  <path d="M270 310 L290 310" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M510 310 L530 310" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Runners Section -->
+  <text x="400" y="400" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Runners (máquinas que ejecutan jobs)</text>
+  
+  <!-- GitHub-hosted -->
+  <rect x="100" y="420" width="250" height="60" rx="8" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+  <text x="225" y="445" fill="#3fb950" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">🌐 GitHub-hosted Runners</text>
+  <text x="225" y="465" fill="#8b949e" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">ubuntu-latest, windows-latest, macos-latest</text>
+  
+  <!-- Self-hosted -->
+  <rect x="450" y="420" width="250" height="60" rx="8" fill="#161b22" stroke="#a371f7" stroke-width="2"/>
+  <text x="575" y="445" fill="#a371f7" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">🖥️ Self-hosted Runners</text>
+  <text x="575" y="465" fill="#8b949e" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Tu propia infraestructura</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#58a6ff"/>
+    </marker>
+  </defs>
+</svg>
