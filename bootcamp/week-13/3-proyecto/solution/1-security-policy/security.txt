@@ -1,0 +1,31 @@
+# NexaCloud Technologies - Security Contact Information
+# RFC 9116: https://www.rfc-editor.org/rfc/rfc9116
+# Generated: 2025-12-29
+# https://securitytxt.org/
+
+# Primary contact for security reports
+Contact: mailto:security@nexacloud.io
+
+# GitHub Private Vulnerability Reporting (preferred)
+Contact: https://github.com/nexacloud/platform/security/advisories/new
+
+# This file expires in one year (RFC 9116 requirement)
+Expires: 2026-12-29T23:59:59.000Z
+
+# PGP key for encrypted communications
+Encryption: https://nexacloud.io/.well-known/pgp-key.txt
+
+# Security researchers acknowledgment page
+Acknowledgments: https://nexacloud.io/security/thanks
+
+# Our security policy with full details
+Policy: https://github.com/nexacloud/platform/security/policy
+
+# Languages we can communicate in
+Preferred-Languages: en, es
+
+# Canonical URL for this file
+Canonical: https://nexacloud.io/.well-known/security.txt
+
+# We're hiring security professionals!
+Hiring: https://nexacloud.io/careers/security

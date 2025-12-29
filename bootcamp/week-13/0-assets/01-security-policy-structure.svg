@@ -1,0 +1,86 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="600" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="450" y="40" fill="#e6edf3" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">Security Policy Structure</text>
+  <text x="450" y="65" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Componentes de una política de seguridad completa</text>
+  
+  <!-- Central SECURITY.md Box -->
+  <rect x="325" y="90" width="250" height="80" rx="8" fill="#1a3a5c" stroke="#58a6ff" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="125" fill="#58a6ff" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">SECURITY.md</text>
+  <text x="450" y="150" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Archivo principal de política</text>
+  
+  <!-- Lines from center to sections -->
+  <line x1="350" y1="170" x2="150" y2="220" stroke="#30363d" stroke-width="2"/>
+  <line x1="450" y1="170" x2="450" y2="220" stroke="#30363d" stroke-width="2"/>
+  <line x1="550" y1="170" x2="750" y2="220" stroke="#30363d" stroke-width="2"/>
+  
+  <!-- Section 1: Supported Versions -->
+  <rect x="50" y="220" width="200" height="100" rx="6" fill="#1c2128" stroke="#3fb950" stroke-width="2"/>
+  <text x="150" y="250" fill="#3fb950" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Supported Versions</text>
+  <text x="150" y="275" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">| Version | Supported |</text>
+  <text x="150" y="292" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">| 2.x.x   | ✅        |</text>
+  <text x="150" y="309" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">| 1.x.x   | ❌        |</text>
+  
+  <!-- Section 2: Reporting -->
+  <rect x="350" y="220" width="200" height="100" rx="6" fill="#1c2128" stroke="#f85149" stroke-width="2"/>
+  <text x="450" y="250" fill="#f85149" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Reporting a Vulnerability</text>
+  <text x="450" y="275" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">• Email: security@example.com</text>
+  <text x="450" y="292" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">• PGP Key: [Key ID]</text>
+  <text x="450" y="309" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">• Response: 48 hours</text>
+  
+  <!-- Section 3: Policy -->
+  <rect x="650" y="220" width="200" height="100" rx="6" fill="#1c2128" stroke="#a371f7" stroke-width="2"/>
+  <text x="750" y="250" fill="#a371f7" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Security Update Policy</text>
+  <text x="750" y="275" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">• Critical: 24-48h</text>
+  <text x="750" y="292" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">• High: 7 days</text>
+  <text x="750" y="309" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">• Medium: 30 days</text>
+  
+  <!-- Second Row -->
+  <line x1="150" y1="320" x2="150" y2="360" stroke="#30363d" stroke-width="2"/>
+  <line x1="450" y1="320" x2="450" y2="360" stroke="#30363d" stroke-width="2"/>
+  <line x1="750" y1="320" x2="750" y2="360" stroke="#30363d" stroke-width="2"/>
+  
+  <!-- Section 4: Configuration -->
+  <rect x="50" y="360" width="200" height="80" rx="6" fill="#1c2128" stroke="#d29922" stroke-width="2"/>
+  <text x="150" y="390" fill="#d29922" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Security Configuration</text>
+  <text x="150" y="415" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">• 2FA required</text>
+  <text x="150" y="432" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">• Signed commits</text>
+  
+  <!-- Section 5: Scope -->
+  <rect x="350" y="360" width="200" height="80" rx="6" fill="#1c2128" stroke="#39c5cf" stroke-width="2"/>
+  <text x="450" y="390" fill="#39c5cf" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Scope &amp; Exclusions</text>
+  <text x="450" y="415" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">In scope: *.example.com</text>
+  <text x="450" y="432" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Out: third-party services</text>
+  
+  <!-- Section 6: Known Gaps -->
+  <rect x="650" y="360" width="200" height="80" rx="6" fill="#1c2128" stroke="#6e7681" stroke-width="2"/>
+  <text x="750" y="390" fill="#6e7681" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Known Security Gaps</text>
+  <text x="750" y="415" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">• Future enhancements</text>
+  <text x="750" y="432" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">• Roadmap items</text>
+  
+  <!-- security.txt Section -->
+  <rect x="50" y="480" width="380" height="100" rx="6" fill="#161b22" stroke="#58a6ff" stroke-width="1"/>
+  <text x="240" y="505" fill="#58a6ff" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">/.well-known/security.txt</text>
+  <text x="70" y="530" fill="#8b949e" font-family="monospace" font-size="10" text-anchor="start">Contact: mailto:security@example.com</text>
+  <text x="70" y="545" fill="#8b949e" font-family="monospace" font-size="10" text-anchor="start">Expires: 2025-12-31T23:59:59.000Z</text>
+  <text x="70" y="560" fill="#8b949e" font-family="monospace" font-size="10" text-anchor="start">Preferred-Languages: en, es</text>
+  <text x="70" y="575" fill="#8b949e" font-family="monospace" font-size="10" text-anchor="start">Policy: https://example.com/security</text>
+  
+  <!-- Organization Policies -->
+  <rect x="470" y="480" width="380" height="100" rx="6" fill="#161b22" stroke="#a371f7" stroke-width="1"/>
+  <text x="660" y="505" fill="#a371f7" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Organization Security Policies</text>
+  <text x="490" y="530" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="start">• Base permissions: Read</text>
+  <text x="490" y="548" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="start">• Branch protection rules</text>
+  <text x="490" y="566" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="start">• Required status checks</text>
+  <text x="700" y="530" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="start">• Secret scanning</text>
+  <text x="700" y="548" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="start">• Push protection</text>
+  <text x="700" y="566" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11" text-anchor="start">• Dependency review</text>
+</svg>

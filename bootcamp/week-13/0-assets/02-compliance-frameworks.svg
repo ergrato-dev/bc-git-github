@@ -1,0 +1,94 @@
+<svg viewBox="0 0 950 650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="950" height="650" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="475" y="40" fill="#e6edf3" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">Compliance Frameworks</text>
+  <text x="475" y="65" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Principales frameworks de compliance y su enfoque</text>
+  
+  <!-- SOC 2 -->
+  <rect x="30" y="100" width="270" height="240" rx="8" fill="#1c2128" stroke="#58a6ff" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="30" y="100" width="270" height="40" rx="8" fill="#1a3a5c"/>
+  <text x="165" y="127" fill="#58a6ff" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">SOC 2</text>
+  <text x="50" y="165" fill="#e6edf3" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Trust Services Criteria:</text>
+  <text x="50" y="190" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Security (Common Criteria)</text>
+  <text x="50" y="208" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Availability</text>
+  <text x="50" y="226" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Processing Integrity</text>
+  <text x="50" y="244" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Confidentiality</text>
+  <text x="50" y="262" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Privacy</text>
+  <rect x="50" y="280" width="80" height="22" rx="4" fill="#238636"/>
+  <text x="90" y="295" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">SaaS/Cloud</text>
+  <rect x="140" y="280" width="60" height="22" rx="4" fill="#1f6feb"/>
+  <text x="170" y="295" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Type II</text>
+  <text x="50" y="325" fill="#6e7681" font-family="Arial, sans-serif" font-size="10">Auditoría: Anual</text>
+  
+  <!-- GDPR -->
+  <rect x="340" y="100" width="270" height="240" rx="8" fill="#1c2128" stroke="#3fb950" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="340" y="100" width="270" height="40" rx="8" fill="#1a4d2e"/>
+  <text x="475" y="127" fill="#3fb950" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">GDPR</text>
+  <text x="360" y="165" fill="#e6edf3" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Principios Clave:</text>
+  <text x="360" y="190" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Lawfulness &amp; Transparency</text>
+  <text x="360" y="208" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Purpose Limitation</text>
+  <text x="360" y="226" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Data Minimization</text>
+  <text x="360" y="244" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Accuracy &amp; Storage Limit</text>
+  <text x="360" y="262" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Security (Art. 32)</text>
+  <rect x="360" y="280" width="60" height="22" rx="4" fill="#238636"/>
+  <text x="390" y="295" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">EU/EEA</text>
+  <rect x="430" y="280" width="80" height="22" rx="4" fill="#9e6a03"/>
+  <text x="470" y="295" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Mandatory</text>
+  <text x="360" y="325" fill="#6e7681" font-family="Arial, sans-serif" font-size="10">Multas: hasta 4% revenue global</text>
+  
+  <!-- HIPAA -->
+  <rect x="650" y="100" width="270" height="240" rx="8" fill="#1c2128" stroke="#f85149" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="650" y="100" width="270" height="40" rx="8" fill="#4d1a1a"/>
+  <text x="785" y="127" fill="#f85149" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">HIPAA</text>
+  <text x="670" y="165" fill="#e6edf3" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Reglas Principales:</text>
+  <text x="670" y="190" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Privacy Rule</text>
+  <text x="670" y="208" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Security Rule</text>
+  <text x="670" y="226" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Breach Notification</text>
+  <text x="670" y="244" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• PHI Protection</text>
+  <text x="670" y="262" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• BAA Requirements</text>
+  <rect x="670" y="280" width="80" height="22" rx="4" fill="#f85149"/>
+  <text x="710" y="295" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Healthcare</text>
+  <rect x="760" y="280" width="50" height="22" rx="4" fill="#6e7681"/>
+  <text x="785" y="295" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">USA</text>
+  <text x="670" y="325" fill="#6e7681" font-family="Arial, sans-serif" font-size="10">Multas: hasta $1.5M/año</text>
+  
+  <!-- PCI-DSS -->
+  <rect x="120" y="370" width="270" height="240" rx="8" fill="#1c2128" stroke="#d29922" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="120" y="370" width="270" height="40" rx="8" fill="#4d3a1a"/>
+  <text x="255" y="397" fill="#d29922" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">PCI-DSS v4.0</text>
+  <text x="140" y="435" fill="#e6edf3" font-family="Arial, sans-serif" font-size="12" font-weight="bold">12 Requirements:</text>
+  <text x="140" y="460" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Firewall &amp; Network Security</text>
+  <text x="140" y="478" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Secure Configuration</text>
+  <text x="140" y="496" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Protect Cardholder Data</text>
+  <text x="140" y="514" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Encryption in Transit</text>
+  <text x="140" y="532" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Access Control &amp; Monitoring</text>
+  <rect x="140" y="550" width="90" height="22" rx="4" fill="#d29922"/>
+  <text x="185" y="565" fill="#000000" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Payments</text>
+  <rect x="240" y="550" width="60" height="22" rx="4" fill="#6e7681"/>
+  <text x="270" y="565" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Global</text>
+  <text x="140" y="595" fill="#6e7681" font-family="Arial, sans-serif" font-size="10">Niveles: 1-4 según transacciones</text>
+  
+  <!-- ISO 27001 -->
+  <rect x="560" y="370" width="270" height="240" rx="8" fill="#1c2128" stroke="#a371f7" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="560" y="370" width="270" height="40" rx="8" fill="#3d2a5c"/>
+  <text x="695" y="397" fill="#a371f7" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">ISO 27001</text>
+  <text x="580" y="435" fill="#e6edf3" font-family="Arial, sans-serif" font-size="12" font-weight="bold">ISMS Framework:</text>
+  <text x="580" y="460" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Risk Assessment</text>
+  <text x="580" y="478" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Security Controls (Annex A)</text>
+  <text x="580" y="496" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Continuous Improvement</text>
+  <text x="580" y="514" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• Management Commitment</text>
+  <text x="580" y="532" fill="#b0b5bd" font-family="Arial, sans-serif" font-size="11">• 93 Controls in 4 Themes</text>
+  <rect x="580" y="550" width="100" height="22" rx="4" fill="#a371f7"/>
+  <text x="630" y="565" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">All Industries</text>
+  <rect x="690" y="550" width="80" height="22" rx="4" fill="#238636"/>
+  <text x="730" y="565" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Certified</text>
+  <text x="580" y="595" fill="#6e7681" font-family="Arial, sans-serif" font-size="10">Certificación: 3 años + auditorías</text>
+</svg>
