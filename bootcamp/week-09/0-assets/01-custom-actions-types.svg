@@ -1,0 +1,106 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .title { fill: #e6e6e6; font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; }
+      .subtitle { fill: #8b949e; font-family: Arial, sans-serif; font-size: 14px; }
+      .box-js { fill: #1a1a2e; stroke: #f0883e; stroke-width: 2; rx: 8; }
+      .box-composite { fill: #1a1a2e; stroke: #a371f7; stroke-width: 2; rx: 8; }
+      .box-docker { fill: #1a1a2e; stroke: #58a6ff; stroke-width: 2; rx: 8; }
+      .header-js { fill: #f0883e; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; }
+      .header-composite { fill: #a371f7; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; }
+      .header-docker { fill: #58a6ff; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; }
+      .text { fill: #c9d1d9; font-family: Arial, sans-serif; font-size: 12px; }
+      .text-small { fill: #8b949e; font-family: Arial, sans-serif; font-size: 11px; }
+      .icon { fill: #3fb950; font-family: Arial, sans-serif; font-size: 14px; }
+      .label { fill: #e6e6e6; font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; }
+      .pro { fill: #3fb950; font-family: Arial, sans-serif; font-size: 11px; }
+      .con { fill: #f85149; font-family: Arial, sans-serif; font-size: 11px; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="900" height="500"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title">Tipos de Custom Actions</text>
+  <text x="450" y="55" text-anchor="middle" class="subtitle">Comparación entre JavaScript, Composite y Docker Actions</text>
+  
+  <!-- JavaScript Action Box -->
+  <rect x="30" y="80" width="270" height="390" class="box-js"/>
+  <text x="165" y="110" text-anchor="middle" class="header-js">⚡ JavaScript Action</text>
+  
+  <text x="50" y="140" class="label">Ejecución:</text>
+  <text x="50" y="158" class="text">Node.js (node16/node20)</text>
+  
+  <text x="50" y="185" class="label">Archivos:</text>
+  <text x="50" y="203" class="text">• action.yml</text>
+  <text x="50" y="220" class="text">• dist/index.js (compilado)</text>
+  <text x="50" y="237" class="text">• package.json</text>
+  
+  <text x="50" y="264" class="label">Velocidad:</text>
+  <text x="50" y="282" class="text">🚀 Muy rápida (sin container)</text>
+  
+  <text x="50" y="309" class="label">Ventajas:</text>
+  <text x="50" y="327" class="pro">✓ Más rápida de ejecutar</text>
+  <text x="50" y="344" class="pro">✓ Acceso a @actions/core</text>
+  <text x="50" y="361" class="pro">✓ @actions/github para API</text>
+  <text x="50" y="378" class="pro">✓ Async/await nativo</text>
+  
+  <text x="50" y="405" class="label">Desventajas:</text>
+  <text x="50" y="423" class="con">✗ Requiere compilar (ncc)</text>
+  <text x="50" y="440" class="con">✗ Solo Node.js</text>
+  <text x="50" y="457" class="con">✗ Más código inicial</text>
+  
+  <!-- Composite Action Box -->
+  <rect x="315" y="80" width="270" height="390" class="box-composite"/>
+  <text x="450" y="110" text-anchor="middle" class="header-composite">🔗 Composite Action</text>
+  
+  <text x="335" y="140" class="label">Ejecución:</text>
+  <text x="335" y="158" class="text">Steps secuenciales (YAML)</text>
+  
+  <text x="335" y="185" class="label">Archivos:</text>
+  <text x="335" y="203" class="text">• action.yml (todo incluido)</text>
+  <text x="335" y="220" class="text">• scripts/*.sh (opcional)</text>
+  <text x="335" y="237" class="text-small">  Sin compilación necesaria</text>
+  
+  <text x="335" y="264" class="label">Velocidad:</text>
+  <text x="335" y="282" class="text">⚡ Rápida (nativa)</text>
+  
+  <text x="335" y="309" class="label">Ventajas:</text>
+  <text x="335" y="327" class="pro">✓ Solo YAML, sin código</text>
+  <text x="335" y="344" class="pro">✓ Reutiliza otras actions</text>
+  <text x="335" y="361" class="pro">✓ Fácil de mantener</text>
+  <text x="335" y="378" class="pro">✓ Cualquier shell script</text>
+  
+  <text x="335" y="405" class="label">Desventajas:</text>
+  <text x="335" y="423" class="con">✗ Menos flexible</text>
+  <text x="335" y="440" class="con">✗ Sin lógica compleja</text>
+  <text x="335" y="457" class="con">✗ Debugging limitado</text>
+  
+  <!-- Docker Action Box -->
+  <rect x="600" y="80" width="270" height="390" class="box-docker"/>
+  <text x="735" y="110" text-anchor="middle" class="header-docker">🐳 Docker Action</text>
+  
+  <text x="620" y="140" class="label">Ejecución:</text>
+  <text x="620" y="158" class="text">Container Docker</text>
+  
+  <text x="620" y="185" class="label">Archivos:</text>
+  <text x="620" y="203" class="text">• action.yml</text>
+  <text x="620" y="220" class="text">• Dockerfile</text>
+  <text x="620" y="237" class="text">• entrypoint.sh</text>
+  
+  <text x="620" y="264" class="label">Velocidad:</text>
+  <text x="620" y="282" class="text">🐢 Más lenta (build container)</text>
+  
+  <text x="620" y="309" class="label">Ventajas:</text>
+  <text x="620" y="327" class="pro">✓ Cualquier lenguaje</text>
+  <text x="620" y="344" class="pro">✓ Ambiente aislado</text>
+  <text x="620" y="361" class="pro">✓ Dependencias custom</text>
+  <text x="620" y="378" class="pro">✓ Reproducible 100%</text>
+  
+  <text x="620" y="405" class="label">Desventajas:</text>
+  <text x="620" y="423" class="con">✗ Tiempo de build</text>
+  <text x="620" y="440" class="con">✗ Solo Linux runners</text>
+  <text x="620" y="457" class="con">✗ Mayor complejidad</text>
+</svg>

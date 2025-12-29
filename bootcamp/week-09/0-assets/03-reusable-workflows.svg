@@ -1,0 +1,108 @@
+<svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .title { fill: #e6e6e6; font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; }
+      .subtitle { fill: #8b949e; font-family: Arial, sans-serif; font-size: 14px; }
+      .box-repo { fill: #1a1a2e; stroke: #58a6ff; stroke-width: 2; rx: 8; }
+      .box-workflow { fill: #21262d; stroke: #a371f7; stroke-width: 2; rx: 6; }
+      .box-caller { fill: #21262d; stroke: #3fb950; stroke-width: 2; rx: 6; }
+      .box-code { fill: #161b22; stroke: #30363d; stroke-width: 1; rx: 4; }
+      .header { fill: #58a6ff; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; }
+      .header-purple { fill: #a371f7; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; }
+      .header-green { fill: #3fb950; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; }
+      .text { fill: #c9d1d9; font-family: Arial, sans-serif; font-size: 12px; }
+      .code { fill: #79c0ff; font-family: monospace; font-size: 10px; }
+      .code-key { fill: #ff7b72; font-family: monospace; font-size: 10px; }
+      .code-string { fill: #a5d6ff; font-family: monospace; font-size: 10px; }
+      .label { fill: #e6e6e6; font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; }
+      .arrow { stroke: #f0883e; stroke-width: 3; fill: none; marker-end: url(#arrowhead-orange); }
+      .arrow-dashed { stroke: #3fb950; stroke-width: 2; stroke-dasharray: 8,4; fill: none; marker-end: url(#arrowhead-green); }
+    </style>
+    <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f0883e"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3fb950"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="900" height="520"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title">Reusable Workflows</text>
+  <text x="450" y="55" text-anchor="middle" class="subtitle">Compartir workflows entre múltiples repositorios</text>
+  
+  <!-- Central Repository (Reusable) -->
+  <rect x="300" y="75" width="300" height="230" class="box-repo"/>
+  <text x="450" y="100" text-anchor="middle" class="header">📦 org/shared-workflows</text>
+  <text x="450" y="118" text-anchor="middle" class="text">Repositorio central</text>
+  
+  <!-- Reusable Workflow -->
+  <rect x="315" y="130" width="270" height="160" class="box-workflow"/>
+  <text x="450" y="152" text-anchor="middle" class="header-purple">🔄 ci-template.yml</text>
+  
+  <rect x="325" y="165" width="250" height="115" class="box-code"/>
+  <text x="335" y="182" class="code-key">on:</text>
+  <text x="345" y="196" class="code-key">workflow_call:</text>
+  <text x="355" y="210" class="code-key">inputs:</text>
+  <text x="365" y="224" class="code">node-version:</text>
+  <text x="375" y="238" class="code-key">type:</text>
+  <text x="410" y="238" class="code-string">string</text>
+  <text x="355" y="252" class="code-key">secrets:</text>
+  <text x="365" y="266" class="code">npm-token:</text>
+  <text x="375" y="280" class="code-key">required:</text>
+  <text x="430" y="280" class="code">true</text>
+  
+  <!-- Repo A (Caller) -->
+  <rect x="30" y="340" width="250" height="160" class="box-caller"/>
+  <text x="155" y="365" text-anchor="middle" class="header-green">📁 repo-frontend</text>
+  
+  <rect x="45" y="380" width="220" height="105" class="box-code"/>
+  <text x="55" y="397" class="code-key">jobs:</text>
+  <text x="65" y="411" class="code">ci:</text>
+  <text x="75" y="425" class="code-key">uses:</text>
+  <text x="105" y="439" class="code-string">org/shared-workflows/</text>
+  <text x="105" y="453" class="code-string">.github/workflows/ci.yml@v1</text>
+  <text x="75" y="467" class="code-key">with:</text>
+  <text x="85" y="481" class="code">node-version: '20'</text>
+  
+  <!-- Repo B (Caller) -->
+  <rect x="325" y="340" width="250" height="160" class="box-caller"/>
+  <text x="450" y="365" text-anchor="middle" class="header-green">📁 repo-backend</text>
+  
+  <rect x="340" y="380" width="220" height="105" class="box-code"/>
+  <text x="350" y="397" class="code-key">jobs:</text>
+  <text x="360" y="411" class="code">ci:</text>
+  <text x="370" y="425" class="code-key">uses:</text>
+  <text x="400" y="439" class="code-string">org/shared-workflows/</text>
+  <text x="400" y="453" class="code-string">.github/workflows/ci.yml@v1</text>
+  <text x="370" y="467" class="code-key">secrets:</text>
+  <text x="430" y="467" class="code">inherit</text>
+  
+  <!-- Repo C (Caller) -->
+  <rect x="620" y="340" width="250" height="160" class="box-caller"/>
+  <text x="745" y="365" text-anchor="middle" class="header-green">📁 repo-api</text>
+  
+  <rect x="635" y="380" width="220" height="105" class="box-code"/>
+  <text x="645" y="397" class="code-key">jobs:</text>
+  <text x="655" y="411" class="code">ci:</text>
+  <text x="665" y="425" class="code-key">uses:</text>
+  <text x="695" y="439" class="code-string">org/shared-workflows/</text>
+  <text x="695" y="453" class="code-string">.github/workflows/ci.yml@v1</text>
+  <text x="665" y="467" class="code-key">with:</text>
+  <text x="675" y="481" class="code">node-version: '18'</text>
+  
+  <!-- Arrows from repos to central -->
+  <path d="M 155 340 Q 155 300 300 260" class="arrow"/>
+  <path d="M 450 305 L 450 340" class="arrow"/>
+  <path d="M 745 340 Q 745 300 600 260" class="arrow"/>
+  
+  <!-- Legend -->
+  <rect x="680" y="80" width="190" height="80" class="box-code"/>
+  <text x="775" y="100" text-anchor="middle" class="label">Beneficios</text>
+  <text x="690" y="120" class="text">✓ DRY - No repetir código</text>
+  <text x="690" y="138" class="text">✓ Mantenimiento central</text>
+  <text x="690" y="156" class="text">✓ Versionado (@v1, @main)</text>
+</svg>

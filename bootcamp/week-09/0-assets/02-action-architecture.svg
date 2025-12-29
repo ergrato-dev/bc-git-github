@@ -1,0 +1,123 @@
+<svg viewBox="0 0 900 550" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .title { fill: #e6e6e6; font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; }
+      .subtitle { fill: #8b949e; font-family: Arial, sans-serif; font-size: 14px; }
+      .box { fill: #1a1a2e; stroke: #30363d; stroke-width: 2; rx: 8; }
+      .box-main { fill: #1a1a2e; stroke: #58a6ff; stroke-width: 2; rx: 8; }
+      .box-input { fill: #21262d; stroke: #3fb950; stroke-width: 2; rx: 6; }
+      .box-output { fill: #21262d; stroke: #f0883e; stroke-width: 2; rx: 6; }
+      .box-code { fill: #161b22; stroke: #30363d; stroke-width: 1; rx: 4; }
+      .header { fill: #58a6ff; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; }
+      .header-green { fill: #3fb950; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; }
+      .header-orange { fill: #f0883e; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; }
+      .text { fill: #c9d1d9; font-family: Arial, sans-serif; font-size: 12px; }
+      .code { fill: #79c0ff; font-family: monospace; font-size: 11px; }
+      .code-key { fill: #ff7b72; font-family: monospace; font-size: 11px; }
+      .code-string { fill: #a5d6ff; font-family: monospace; font-size: 11px; }
+      .label { fill: #e6e6e6; font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; }
+      .arrow { stroke: #8b949e; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .connector { stroke: #58a6ff; stroke-width: 2; stroke-dasharray: 5,3; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b949e"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="900" height="550"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title">Arquitectura de una Custom Action</text>
+  <text x="450" y="55" text-anchor="middle" class="subtitle">Estructura de archivos y flujo de datos</text>
+  
+  <!-- action.yml Box -->
+  <rect x="30" y="80" width="350" height="440" class="box-main"/>
+  <text x="205" y="105" text-anchor="middle" class="header">📄 action.yml</text>
+  
+  <!-- action.yml content -->
+  <rect x="45" y="120" width="320" height="385" class="box-code"/>
+  <text x="55" y="140" class="code-key">name:</text>
+  <text x="100" y="140" class="code-string">'My Custom Action'</text>
+  <text x="55" y="158" class="code-key">description:</text>
+  <text x="130" y="158" class="code-string">'Does something'</text>
+  <text x="55" y="176" class="code-key">author:</text>
+  <text x="105" y="176" class="code-string">'username'</text>
+  
+  <text x="55" y="200" class="code-key">inputs:</text>
+  <text x="65" y="218" class="code">  token:</text>
+  <text x="75" y="236" class="code-key">    description:</text>
+  <text x="170" y="236" class="code-string">'GitHub token'</text>
+  <text x="75" y="254" class="code-key">    required:</text>
+  <text x="145" y="254" class="code">true</text>
+  <text x="65" y="272" class="code">  message:</text>
+  <text x="75" y="290" class="code-key">    description:</text>
+  <text x="170" y="290" class="code-string">'Message text'</text>
+  <text x="75" y="308" class="code-key">    default:</text>
+  <text x="140" y="308" class="code-string">'Hello'</text>
+  
+  <text x="55" y="338" class="code-key">outputs:</text>
+  <text x="65" y="356" class="code">  result:</text>
+  <text x="75" y="374" class="code-key">    description:</text>
+  <text x="170" y="374" class="code-string">'Output value'</text>
+  
+  <text x="55" y="404" class="code-key">runs:</text>
+  <text x="65" y="422" class="code-key">  using:</text>
+  <text x="115" y="422" class="code-string">'node20'</text>
+  <text x="65" y="440" class="code-key">  main:</text>
+  <text x="105" y="440" class="code-string">'dist/index.js'</text>
+  
+  <text x="55" y="470" class="code-key">branding:</text>
+  <text x="65" y="488" class="code-key">  icon:</text>
+  <text x="105" y="488" class="code-string">'check-circle'</text>
+  <text x="65" y="506" class="code-key">  color:</text>
+  <text x="110" y="506" class="code-string">'green'</text>
+  
+  <!-- Inputs Box -->
+  <rect x="420" y="90" width="220" height="130" class="box-input"/>
+  <text x="530" y="115" text-anchor="middle" class="header-green">📥 INPUTS</text>
+  <text x="432" y="140" class="text">Parámetros de entrada:</text>
+  <text x="432" y="158" class="code">$INPUT_TOKEN</text>
+  <text x="432" y="176" class="code">$INPUT_MESSAGE</text>
+  <text x="432" y="198" class="text">Acceso en código:</text>
+  <text x="432" y="214" class="code">core.getInput('token')</text>
+  
+  <!-- Arrow from inputs to action -->
+  <path d="M 420 155 L 380 155" class="arrow"/>
+  
+  <!-- Outputs Box -->
+  <rect x="420" y="240" width="220" height="110" class="box-output"/>
+  <text x="530" y="265" text-anchor="middle" class="header-orange">📤 OUTPUTS</text>
+  <text x="432" y="288" class="text">Valores de salida:</text>
+  <text x="432" y="306" class="code">steps.x.outputs.result</text>
+  <text x="432" y="328" class="text">En código:</text>
+  <text x="432" y="344" class="code">core.setOutput('r', v)</text>
+  
+  <!-- Arrow from action to outputs -->
+  <path d="M 380 295 L 420 295" class="arrow"/>
+  
+  <!-- Code Structure Box -->
+  <rect x="660" y="90" width="210" height="200" class="box"/>
+  <text x="765" y="115" text-anchor="middle" class="label">📁 Estructura</text>
+  <text x="675" y="140" class="code">my-action/</text>
+  <text x="685" y="158" class="code">├── action.yml</text>
+  <text x="685" y="176" class="code">├── package.json</text>
+  <text x="685" y="194" class="code">├── src/</text>
+  <text x="695" y="212" class="code">│   └── index.js</text>
+  <text x="685" y="230" class="code">├── dist/</text>
+  <text x="695" y="248" class="code">│   └── index.js</text>
+  <text x="685" y="266" class="code">└── README.md</text>
+  
+  <!-- Usage Box -->
+  <rect x="420" y="370" width="450" height="150" class="box"/>
+  <text x="645" y="395" text-anchor="middle" class="label">🚀 Uso en Workflow</text>
+  <rect x="435" y="410" width="420" height="95" class="box-code"/>
+  <text x="445" y="430" class="code-key">- name:</text>
+  <text x="495" y="430" class="code-string">Run my action</text>
+  <text x="455" y="450" class="code-key">uses:</text>
+  <text x="495" y="450" class="code-string">owner/my-action@v1</text>
+  <text x="455" y="470" class="code-key">with:</text>
+  <text x="465" y="490" class="code">token: ${{ secrets.GITHUB_TOKEN }}</text>
+  <text x="465" y="508" class="code">message: 'Hello World'</text>
+</svg>
