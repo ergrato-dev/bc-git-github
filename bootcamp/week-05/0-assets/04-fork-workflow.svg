@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .title { fill: #c9d1d9; font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; }
+      .subtitle { fill: #8b949e; font-family: Arial, sans-serif; font-size: 14px; }
+      .label { fill: #c9d1d9; font-family: Arial, sans-serif; font-size: 13px; }
+      .label-small { fill: #8b949e; font-family: Arial, sans-serif; font-size: 11px; }
+      .label-cmd { fill: #f0883e; font-family: monospace; font-size: 11px; }
+      .box-upstream { fill: #3d1f1f; stroke: #f85149; stroke-width: 2; }
+      .box-origin { fill: #1f2a3f; stroke: #58a6ff; stroke-width: 2; }
+      .box-local { fill: #1f3a1f; stroke: #3fb950; stroke-width: 2; }
+      .box-info { fill: #21262d; stroke: #30363d; stroke-width: 1; }
+      .arrow-fork { stroke: #f0883e; stroke-width: 3; fill: none; marker-end: url(#arrow-orange); }
+      .arrow-clone { stroke: #3fb950; stroke-width: 3; fill: none; marker-end: url(#arrow-green); }
+      .arrow-push { stroke: #58a6ff; stroke-width: 3; fill: none; marker-end: url(#arrow-blue); }
+      .arrow-pr { stroke: #a371f7; stroke-width: 3; fill: none; marker-end: url(#arrow-purple); stroke-dasharray: 8,4; }
+      .arrow-sync { stroke: #f85149; stroke-width: 2; fill: none; marker-end: url(#arrow-red); }
+      .text-red { fill: #f85149; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; }
+      .text-blue { fill: #58a6ff; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; }
+      .text-green { fill: #3fb950; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; }
+      .text-purple { fill: #a371f7; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; }
+      .text-orange { fill: #f0883e; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; }
+      .step { fill: #21262d; stroke: #8b949e; stroke-width: 1; }
+      .step-num { fill: #c9d1d9; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; }
+    </style>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f0883e"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3fb950"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#58a6ff"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#a371f7"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f85149"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="900" height="600"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title">Fork Workflow</text>
+  <text x="450" y="55" text-anchor="middle" class="subtitle">Flujo de trabajo con origin y upstream para contribuir a proyectos</text>
+  
+  <!-- UPSTREAM (Original) -->
+  <rect x="300" y="80" width="300" height="100" rx="8" class="box-upstream"/>
+  <text x="450" y="110" text-anchor="middle" class="text-red">UPSTREAM</text>
+  <text x="450" y="130" text-anchor="middle" class="label">Repositorio Original</text>
+  <text x="450" y="150" text-anchor="middle" class="label-small">github.com/original-owner/project</text>
+  <text x="450" y="168" text-anchor="middle" class="label-small">No tienes permisos de push</text>
+  
+  <!-- ORIGIN (Your Fork) -->
+  <rect x="550" y="220" width="300" height="100" rx="8" class="box-origin"/>
+  <text x="700" y="250" text-anchor="middle" class="text-blue">ORIGIN</text>
+  <text x="700" y="270" text-anchor="middle" class="label">Tu Fork en GitHub</text>
+  <text x="700" y="290" text-anchor="middle" class="label-small">github.com/tu-usuario/project</text>
+  <text x="700" y="308" text-anchor="middle" class="label-small">Tienes control total</text>
+  
+  <!-- LOCAL -->
+  <rect x="300" y="360" width="300" height="100" rx="8" class="box-local"/>
+  <text x="450" y="390" text-anchor="middle" class="text-green">LOCAL</text>
+  <text x="450" y="410" text-anchor="middle" class="label">Tu computadora</text>
+  <text x="450" y="430" text-anchor="middle" class="label-small">~/projects/project</text>
+  <text x="450" y="448" text-anchor="middle" class="label-small">Donde trabajas</text>
+  
+  <!-- Step 1: Fork -->
+  <circle cx="620" cy="130" r="15" class="step"/>
+  <text x="620" y="135" text-anchor="middle" class="step-num">1</text>
+  <path d="M600 130 L555 180" class="arrow-fork"/>
+  <text x="610" y="175" class="text-orange">Fork</text>
+  
+  <!-- Step 2: Clone -->
+  <circle cx="530" cy="340" r="15" class="step"/>
+  <text x="530" y="345" text-anchor="middle" class="step-num">2</text>
+  <path d="M630 320 L530 360" class="arrow-clone"/>
+  <text x="550" y="330" class="text-green">Clone</text>
+  
+  <!-- Step 3: Push -->
+  <circle cx="650" cy="340" r="15" class="step"/>
+  <text x="650" y="345" text-anchor="middle" class="step-num">3</text>
+  <path d="M600 385 L700 320" class="arrow-push"/>
+  <text x="680" y="365" class="text-blue">Push</text>
+  
+  <!-- Step 4: Pull Request -->
+  <circle cx="470" cy="200" r="15" class="step"/>
+  <text x="470" y="205" text-anchor="middle" class="step-num">4</text>
+  <path d="M550 230 L460 180" class="arrow-pr"/>
+  <text x="490" y="215" class="text-purple">PR</text>
+  
+  <!-- Step 5: Sync -->
+  <circle cx="320" cy="250" r="15" class="step"/>
+  <text x="320" y="255" text-anchor="middle" class="step-num">5</text>
+  <path d="M350 180 L350 360" class="arrow-sync"/>
+  <text x="310" y="270" class="text-red">Sync</text>
+  
+  <!-- Commands Section -->
+  <rect x="30" y="490" width="840" height="90" rx="8" class="box-info"/>
+  <text x="450" y="515" text-anchor="middle" class="label" style="font-weight: bold;">Comandos del Fork Workflow</text>
+  
+  <!-- Commands -->
+  <text x="50" y="545" class="label-cmd">git remote add upstream https://github.com/original/repo.git</text>
+  <text x="50" y="565" class="label-small">Agregar remote al repositorio original</text>
+  
+  <text x="500" y="545" class="label-cmd">git fetch upstream</text>
+  <text x="500" y="565" class="label-small">Obtener cambios del original</text>
+  
+  <text x="700" y="545" class="label-cmd">git merge upstream/main</text>
+  <text x="700" y="565" class="label-small">Sincronizar con upstream</text>
+  
+  <!-- Legend -->
+  <rect x="30" y="80" width="240" height="150" rx="8" class="box-info"/>
+  <text x="150" y="105" text-anchor="middle" class="label" style="font-weight: bold;">Pasos del Flujo</text>
+  <text x="50" y="130" class="text-orange">1. Fork</text>
+  <text x="100" y="130" class="label-small">Copiar repo a tu cuenta</text>
+  <text x="50" y="150" class="text-green">2. Clone</text>
+  <text x="100" y="150" class="label-small">Descargar a local</text>
+  <text x="50" y="170" class="text-blue">3. Push</text>
+  <text x="100" y="170" class="label-small">Subir cambios a tu fork</text>
+  <text x="50" y="190" class="text-purple">4. PR</text>
+  <text x="100" y="190" class="label-small">Pull Request al original</text>
+  <text x="50" y="210" class="text-red">5. Sync</text>
+  <text x="100" y="210" class="label-small">Actualizar desde upstream</text>
+</svg>

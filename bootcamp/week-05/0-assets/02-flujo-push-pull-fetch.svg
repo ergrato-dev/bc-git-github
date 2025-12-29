@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .title { fill: #c9d1d9; font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; }
+      .subtitle { fill: #8b949e; font-family: Arial, sans-serif; font-size: 14px; }
+      .label { fill: #c9d1d9; font-family: Arial, sans-serif; font-size: 13px; }
+      .label-small { fill: #8b949e; font-family: Arial, sans-serif; font-size: 11px; }
+      .label-cmd { fill: #f0883e; font-family: monospace; font-size: 12px; }
+      .box-repo { fill: #21262d; stroke: #30363d; stroke-width: 2; rx: 8; }
+      .box-push { fill: #1f3a1f; stroke: #3fb950; stroke-width: 2; }
+      .box-fetch { fill: #1f2a3f; stroke: #58a6ff; stroke-width: 2; }
+      .box-pull { fill: #2d1f3f; stroke: #a371f7; stroke-width: 2; }
+      .arrow-push { stroke: #3fb950; stroke-width: 3; fill: none; marker-end: url(#arrow-green); }
+      .arrow-fetch { stroke: #58a6ff; stroke-width: 3; fill: none; marker-end: url(#arrow-blue); }
+      .arrow-merge { stroke: #a371f7; stroke-width: 3; fill: none; marker-end: url(#arrow-purple); }
+      .text-green { fill: #3fb950; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; }
+      .text-blue { fill: #58a6ff; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; }
+      .text-purple { fill: #a371f7; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; }
+      .commit { fill: #30363d; stroke: #8b949e; stroke-width: 1; }
+      .commit-new { fill: #238636; stroke: #3fb950; stroke-width: 2; }
+      .commit-remote { fill: #1f6feb; stroke: #58a6ff; stroke-width: 2; }
+    </style>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3fb950"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#58a6ff"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#a371f7"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="900" height="550"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title">Flujo Push, Pull y Fetch</text>
+  <text x="450" y="55" text-anchor="middle" class="subtitle">Sincronizacion entre repositorios local y remoto</text>
+  
+  <!-- PUSH SECTION -->
+  <rect x="30" y="80" width="260" height="200" rx="8" class="box-push"/>
+  <text x="160" y="105" text-anchor="middle" class="text-green">GIT PUSH</text>
+  <text x="160" y="125" text-anchor="middle" class="label-small">Enviar commits locales al remoto</text>
+  
+  <!-- Push diagram -->
+  <rect x="50" y="145" width="80" height="50" rx="4" class="box-repo"/>
+  <text x="90" y="175" text-anchor="middle" class="label-small">LOCAL</text>
+  <circle cx="70" cy="160" r="8" class="commit"/>
+  <circle cx="90" cy="160" r="8" class="commit"/>
+  <circle cx="110" cy="160" r="8" class="commit-new"/>
+  
+  <rect x="190" y="145" width="80" height="50" rx="4" class="box-repo"/>
+  <text x="230" y="175" text-anchor="middle" class="label-small">REMOTE</text>
+  <circle cx="210" cy="160" r="8" class="commit"/>
+  <circle cx="230" cy="160" r="8" class="commit"/>
+  
+  <path d="M135 165 L185 165" class="arrow-push"/>
+  
+  <text x="160" y="220" text-anchor="middle" class="label-cmd">git push origin main</text>
+  <text x="160" y="240" text-anchor="middle" class="label-small">Sube nuevos commits al remote</text>
+  <text x="160" y="260" text-anchor="middle" class="label-small">Requiere permisos de escritura</text>
+  
+  <!-- FETCH SECTION -->
+  <rect x="320" y="80" width="260" height="200" rx="8" class="box-fetch"/>
+  <text x="450" y="105" text-anchor="middle" class="text-blue">GIT FETCH</text>
+  <text x="450" y="125" text-anchor="middle" class="label-small">Descargar sin modificar local</text>
+  
+  <!-- Fetch diagram -->
+  <rect x="340" y="145" width="80" height="50" rx="4" class="box-repo"/>
+  <text x="380" y="175" text-anchor="middle" class="label-small">LOCAL</text>
+  <circle cx="360" cy="160" r="8" class="commit"/>
+  <circle cx="380" cy="160" r="8" class="commit"/>
+  
+  <rect x="480" y="145" width="80" height="50" rx="4" class="box-repo"/>
+  <text x="520" y="175" text-anchor="middle" class="label-small">REMOTE</text>
+  <circle cx="500" cy="160" r="8" class="commit"/>
+  <circle cx="520" cy="160" r="8" class="commit"/>
+  <circle cx="540" cy="160" r="8" class="commit-remote"/>
+  
+  <path d="M475 165 L425 165" class="arrow-fetch"/>
+  
+  <text x="450" y="220" text-anchor="middle" class="label-cmd">git fetch origin</text>
+  <text x="450" y="240" text-anchor="middle" class="label-small">Actualiza origin/main localmente</text>
+  <text x="450" y="260" text-anchor="middle" class="label-small">NO modifica tu branch actual</text>
+  
+  <!-- PULL SECTION -->
+  <rect x="610" y="80" width="260" height="200" rx="8" class="box-pull"/>
+  <text x="740" y="105" text-anchor="middle" class="text-purple">GIT PULL</text>
+  <text x="740" y="125" text-anchor="middle" class="label-small">Fetch + Merge automatico</text>
+  
+  <!-- Pull diagram -->
+  <rect x="630" y="145" width="80" height="50" rx="4" class="box-repo"/>
+  <text x="670" y="175" text-anchor="middle" class="label-small">LOCAL</text>
+  <circle cx="650" cy="160" r="8" class="commit"/>
+  <circle cx="670" cy="160" r="8" class="commit"/>
+  <circle cx="690" cy="160" r="8" class="commit-remote"/>
+  
+  <rect x="770" y="145" width="80" height="50" rx="4" class="box-repo"/>
+  <text x="810" y="175" text-anchor="middle" class="label-small">REMOTE</text>
+  <circle cx="790" cy="160" r="8" class="commit"/>
+  <circle cx="810" cy="160" r="8" class="commit"/>
+  <circle cx="830" cy="160" r="8" class="commit-remote"/>
+  
+  <path d="M765 165 L715 165" class="arrow-merge"/>
+  
+  <text x="740" y="220" text-anchor="middle" class="label-cmd">git pull origin main</text>
+  <text x="740" y="240" text-anchor="middle" class="label-small">Descarga Y hace merge</text>
+  <text x="740" y="260" text-anchor="middle" class="label-small">Puede generar conflictos</text>
+  
+  <!-- Comparison Table -->
+  <rect x="30" y="310" width="840" height="220" rx="8" class="box-repo"/>
+  <text x="450" y="340" text-anchor="middle" class="label" style="font-weight: bold;">Comparativa de Comandos</text>
+  
+  <!-- Headers -->
+  <text x="160" y="375" text-anchor="middle" class="text-green">PUSH</text>
+  <text x="450" y="375" text-anchor="middle" class="text-blue">FETCH</text>
+  <text x="740" y="375" text-anchor="middle" class="text-purple">PULL</text>
+  
+  <!-- Direccion -->
+  <text x="50" y="405" class="label-small">Direccion:</text>
+  <text x="160" y="405" text-anchor="middle" class="label">Local a Remote</text>
+  <text x="450" y="405" text-anchor="middle" class="label">Remote a Local</text>
+  <text x="740" y="405" text-anchor="middle" class="label">Remote a Local</text>
+  
+  <!-- Modifica -->
+  <text x="50" y="435" class="label-small">Modifica:</text>
+  <text x="160" y="435" text-anchor="middle" class="label">Remote</text>
+  <text x="450" y="435" text-anchor="middle" class="label">Solo refs remotas</text>
+  <text x="740" y="435" text-anchor="middle" class="label">Branch local</text>
+  
+  <!-- Merge -->
+  <text x="50" y="465" class="label-small">Merge:</text>
+  <text x="160" y="465" text-anchor="middle" class="label">No aplica</text>
+  <text x="450" y="465" text-anchor="middle" class="label">No (manual)</text>
+  <text x="740" y="465" text-anchor="middle" class="label">Automatico</text>
+  
+  <!-- Uso -->
+  <text x="50" y="495" class="label-small">Uso comun:</text>
+  <text x="160" y="495" text-anchor="middle" class="label">Compartir trabajo</text>
+  <text x="450" y="495" text-anchor="middle" class="label">Ver cambios antes</text>
+  <text x="740" y="495" text-anchor="middle" class="label">Actualizar rapido</text>
+</svg>

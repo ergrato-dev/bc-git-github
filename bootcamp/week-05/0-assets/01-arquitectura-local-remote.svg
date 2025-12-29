@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .title { fill: #c9d1d9; font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; }
+      .subtitle { fill: #8b949e; font-family: Arial, sans-serif; font-size: 14px; }
+      .label { fill: #c9d1d9; font-family: Arial, sans-serif; font-size: 13px; }
+      .label-small { fill: #8b949e; font-family: Arial, sans-serif; font-size: 11px; }
+      .box-local { fill: #1f3a1f; stroke: #3fb950; stroke-width: 2; }
+      .box-remote { fill: #1f2a3f; stroke: #58a6ff; stroke-width: 2; }
+      .box-working { fill: #21262d; stroke: #30363d; stroke-width: 1; }
+      .arrow { stroke: #8b949e; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .arrow-push { stroke: #3fb950; stroke-width: 2; fill: none; marker-end: url(#arrowhead-green); }
+      .arrow-pull { stroke: #58a6ff; stroke-width: 2; fill: none; marker-end: url(#arrowhead-blue); }
+      .icon-local { fill: #3fb950; }
+      .icon-remote { fill: #58a6ff; }
+      .text-green { fill: #3fb950; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; }
+      .text-blue { fill: #58a6ff; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; }
+      .divider { stroke: #30363d; stroke-width: 1; stroke-dasharray: 5,5; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b949e"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3fb950"/>
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#58a6ff"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="900" height="500"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title">Arquitectura Local vs Remote</text>
+  <text x="450" y="55" text-anchor="middle" class="subtitle">Git como sistema de control de versiones distribuido</text>
+  
+  <!-- Divider line -->
+  <line x1="450" y1="80" x2="450" y2="450" class="divider"/>
+  <text x="450" y="475" text-anchor="middle" class="label-small">NETWORK (Internet/SSH)</text>
+  
+  <!-- LOCAL SIDE -->
+  <text x="225" y="90" text-anchor="middle" class="text-green">LOCAL (Tu Computadora)</text>
+  
+  <!-- Working Directory -->
+  <rect x="50" y="120" width="350" height="70" rx="8" class="box-working"/>
+  <text x="225" y="145" text-anchor="middle" class="label">Working Directory</text>
+  <text x="225" y="165" text-anchor="middle" class="label-small">Archivos que editas directamente</text>
+  <text x="225" y="180" text-anchor="middle" class="label-small">index.html, app.js, styles.css</text>
+  
+  <!-- Staging Area -->
+  <rect x="50" y="210" width="350" height="60" rx="8" class="box-working"/>
+  <text x="225" y="235" text-anchor="middle" class="label">Staging Area (Index)</text>
+  <text x="225" y="255" text-anchor="middle" class="label-small">Cambios preparados para commit</text>
+  
+  <!-- Local Repository -->
+  <rect x="50" y="290" width="350" height="100" rx="8" class="box-local"/>
+  <text x="225" y="320" text-anchor="middle" class="label">Local Repository (.git/)</text>
+  <text x="225" y="345" text-anchor="middle" class="label-small">Historial completo de commits</text>
+  <text x="225" y="365" text-anchor="middle" class="label-small">Branches: main, feature-x, develop</text>
+  <text x="225" y="380" text-anchor="middle" class="label-small">Refs: HEAD, origin/main</text>
+  
+  <!-- Arrows local -->
+  <path d="M225 190 L225 210" class="arrow"/>
+  <text x="235" y="205" class="label-small">git add</text>
+  
+  <path d="M225 270 L225 290" class="arrow"/>
+  <text x="235" y="285" class="label-small">git commit</text>
+  
+  <!-- REMOTE SIDE -->
+  <text x="675" y="90" text-anchor="middle" class="text-blue">REMOTE (GitHub/GitLab)</text>
+  
+  <!-- Remote Repository -->
+  <rect x="500" y="200" width="350" height="180" rx="8" class="box-remote"/>
+  <text x="675" y="235" text-anchor="middle" class="label">Remote Repository</text>
+  <text x="675" y="260" text-anchor="middle" class="label-small">github.com/user/project</text>
+  
+  <!-- Remote contents -->
+  <rect x="520" y="280" width="150" height="80" rx="4" class="box-working"/>
+  <text x="595" y="305" text-anchor="middle" class="label-small">Commits</text>
+  <text x="595" y="325" text-anchor="middle" class="label-small">a1b2c3d</text>
+  <text x="595" y="345" text-anchor="middle" class="label-small">e4f5g6h</text>
+  
+  <rect x="680" y="280" width="150" height="80" rx="4" class="box-working"/>
+  <text x="755" y="305" text-anchor="middle" class="label-small">Branches</text>
+  <text x="755" y="325" text-anchor="middle" class="label-small">main</text>
+  <text x="755" y="345" text-anchor="middle" class="label-small">develop</text>
+  
+  <!-- Push arrow -->
+  <path d="M400 320 L500 270" class="arrow-push"/>
+  <text x="450" y="280" text-anchor="middle" class="text-green">git push</text>
+  
+  <!-- Pull/Fetch arrows -->
+  <path d="M500 330 L400 370" class="arrow-blue"/>
+  <text x="445" y="365" text-anchor="middle" class="text-blue">git pull</text>
+  <text x="445" y="380" text-anchor="middle" class="text-blue">git fetch</text>
+  
+  <!-- Legend -->
+  <rect x="520" y="410" width="320" height="70" rx="8" class="box-working"/>
+  <text x="680" y="432" text-anchor="middle" class="label">Flujo de datos</text>
+  <line x1="540" y1="450" x2="590" y2="450" class="arrow-push"/>
+  <text x="600" y="454" class="text-green">push: local a remote</text>
+  <line x1="540" y1="468" x2="590" y2="468" class="arrow-pull"/>
+  <text x="600" y="472" class="text-blue">pull/fetch: remote a local</text>
+</svg>

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .title { fill: #c9d1d9; font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; }
+      .subtitle { fill: #8b949e; font-family: Arial, sans-serif; font-size: 14px; }
+      .label { fill: #c9d1d9; font-family: Arial, sans-serif; font-size: 13px; }
+      .label-small { fill: #8b949e; font-family: Arial, sans-serif; font-size: 11px; }
+      .label-cmd { fill: #f0883e; font-family: monospace; font-size: 11px; }
+      .box-local { fill: #1f3a1f; stroke: #3fb950; stroke-width: 2; }
+      .box-remote { fill: #1f2a3f; stroke: #58a6ff; stroke-width: 2; }
+      .box-info { fill: #21262d; stroke: #30363d; stroke-width: 1; }
+      .branch-local { fill: #238636; stroke: #3fb950; stroke-width: 2; }
+      .branch-remote { fill: #1f6feb; stroke: #58a6ff; stroke-width: 2; }
+      .branch-tracking { fill: #2d333b; stroke: #a371f7; stroke-width: 2; stroke-dasharray: 4,2; }
+      .commit { fill: #30363d; stroke: #8b949e; stroke-width: 1; }
+      .line-track { stroke: #a371f7; stroke-width: 2; stroke-dasharray: 5,3; }
+      .arrow { stroke: #8b949e; stroke-width: 1; fill: none; marker-end: url(#arrowhead); }
+      .text-green { fill: #3fb950; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; }
+      .text-blue { fill: #58a6ff; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; }
+      .text-purple { fill: #a371f7; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b949e"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="900" height="500"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title">Tracking Branches</text>
+  <text x="450" y="55" text-anchor="middle" class="subtitle">Relacion entre branches locales y remotos</text>
+  
+  <!-- LOCAL SECTION -->
+  <rect x="30" y="80" width="400" height="180" rx="8" class="box-local"/>
+  <text x="230" y="105" text-anchor="middle" class="text-green">LOCAL REPOSITORY</text>
+  
+  <!-- Local branches -->
+  <rect x="50" y="125" width="120" height="35" rx="6" class="branch-local"/>
+  <text x="110" y="147" text-anchor="middle" class="label">main</text>
+  
+  <rect x="50" y="175" width="120" height="35" rx="6" class="branch-local"/>
+  <text x="110" y="197" text-anchor="middle" class="label">feature-x</text>
+  
+  <!-- Remote tracking branches -->
+  <rect x="200" y="125" width="120" height="35" rx="6" class="branch-tracking"/>
+  <text x="260" y="147" text-anchor="middle" class="label-small">origin/main</text>
+  
+  <rect x="200" y="175" width="120" height="35" rx="6" class="branch-tracking"/>
+  <text x="260" y="197" text-anchor="middle" class="label-small">origin/feature-x</text>
+  
+  <!-- Tracking label -->
+  <text x="345" y="145" class="text-purple">Tracking</text>
+  <text x="345" y="160" class="text-purple">branches</text>
+  <text x="345" y="180" class="label-small">(read-only)</text>
+  
+  <!-- Track lines -->
+  <line x1="170" y1="142" x2="200" y2="142" class="line-track"/>
+  <line x1="170" y1="192" x2="200" y2="192" class="line-track"/>
+  
+  <!-- REMOTE SECTION -->
+  <rect x="470" y="80" width="400" height="180" rx="8" class="box-remote"/>
+  <text x="670" y="105" text-anchor="middle" class="text-blue">REMOTE REPOSITORY (origin)</text>
+  
+  <!-- Remote branches -->
+  <rect x="630" y="125" width="120" height="35" rx="6" class="branch-remote"/>
+  <text x="690" y="147" text-anchor="middle" class="label">main</text>
+  
+  <rect x="630" y="175" width="120" height="35" rx="6" class="branch-remote"/>
+  <text x="690" y="197" text-anchor="middle" class="label">feature-x</text>
+  
+  <text x="510" y="155" class="label-small">github.com/</text>
+  <text x="510" y="170" class="label-small">user/repo</text>
+  
+  <!-- Connection arrows -->
+  <path d="M320 142 C 400 142, 400 142, 630 142" class="line-track"/>
+  <path d="M320 192 C 400 192, 400 192, 630 192" class="line-track"/>
+  
+  <!-- Commands Section -->
+  <rect x="30" y="280" width="840" height="200" rx="8" class="box-info"/>
+  <text x="450" y="310" text-anchor="middle" class="label" style="font-weight: bold;">Comandos para Tracking Branches</text>
+  
+  <!-- Command 1 -->
+  <rect x="50" y="330" width="250" height="130" rx="6" class="box-info"/>
+  <text x="175" y="355" text-anchor="middle" class="text-green">Ver tracking</text>
+  <text x="175" y="380" text-anchor="middle" class="label-cmd">git branch -vv</text>
+  <text x="60" y="405" class="label-small">Muestra:</text>
+  <text x="60" y="425" class="label-small">* main   a1b2c3 [origin/main]</text>
+  <text x="60" y="445" class="label-small">  feat-x d4e5f6 [origin/feat-x]</text>
+  
+  <!-- Command 2 -->
+  <rect x="325" y="330" width="250" height="130" rx="6" class="box-info"/>
+  <text x="450" y="355" text-anchor="middle" class="text-blue">Establecer upstream</text>
+  <text x="450" y="380" text-anchor="middle" class="label-cmd">git push -u origin main</text>
+  <text x="335" y="405" class="label-small">Alternativas:</text>
+  <text x="335" y="425" class="label-cmd">git branch -u origin/main</text>
+  <text x="335" y="445" class="label-cmd">git branch --set-upstream-to</text>
+  
+  <!-- Command 3 -->
+  <rect x="600" y="330" width="250" height="130" rx="6" class="box-info"/>
+  <text x="725" y="355" text-anchor="middle" class="text-purple">Comparar con remote</text>
+  <text x="725" y="380" text-anchor="middle" class="label-cmd">git status</text>
+  <text x="610" y="405" class="label-small">Resultado:</text>
+  <text x="610" y="425" class="label-small">Your branch is ahead of</text>
+  <text x="610" y="445" class="label-small">'origin/main' by 2 commits</text>
+</svg>
