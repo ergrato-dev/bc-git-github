@@ -1,22 +1,30 @@
-# � Week 11: Security Features
+# 🔒 Week 11: Security Features
+
+> **Fase 3: GitHub Advanced Security** (Semana 1 de 3)
+> 
+> Introducción a GitHub Advanced Security: Code Scanning, Dependabot, Secret Scanning y Security Policies.
+
+---
 
 ## 🎯 Objetivos de Aprendizaje
 
 Al finalizar esta semana serás capaz de:
 
+- ✅ Comprender el ecosistema de GitHub Advanced Security (GHAS)
 - ✅ Implementar Code Scanning con CodeQL
-- ✅ Configurar Dependabot para actualizaciones
-- ✅ Usar Dependency Review en PRs
-- ✅ Habilitar Secret Scanning
-- ✅ Crear Security Policies para repositories
+- ✅ Configurar Dependabot alerts y security updates
+- ✅ Habilitar y configurar Secret Scanning
+- ✅ Crear Dependency Review en Pull Requests
+- ✅ Establecer Security Policies con SECURITY.md
 
 ---
 
 ## 📚 Requisitos Previos
 
-- Completar Week 01 a Week 10
-- Repository con código para análisis
-- Entender conceptos básicos de seguridad
+- ✅ Completar Weeks 01-10 (Git + GitHub Actions)
+- ✅ Repository público con código (JavaScript, Python o similar)
+- ✅ Cuenta GitHub con acceso a Security features
+- ✅ Conocimientos básicos de vulnerabilidades (CVE, CVSS)
 
 ---
 
@@ -25,63 +33,156 @@ Al finalizar esta semana serás capaz de:
 ```
 week-11/
 ├── README.md                 # Este archivo
-├── rubrica-evaluacion.md     # Criterios de evaluación
-├── 0-assets/                 # Diagramas y recursos visuales
-├── 1-teoria/                 # Material teórico
-├── 2-practicas/              # Ejercicios guiados
-├── 3-proyecto/               # Proyecto semanal
+├── rubrica-evaluacion.md     # Criterios de evaluación (100 pts)
+├── 0-assets/                 # Diagramas SVG
+│   ├── 01-ghas-overview.svg
+│   ├── 02-code-scanning-flow.svg
+│   ├── 03-dependabot-flow.svg
+│   └── 04-secret-scanning.svg
+├── 1-teoria/                 # Material teórico (90 min)
+│   ├── 01-github-advanced-security.md
+│   ├── 02-code-scanning.md
+│   ├── 03-dependabot.md
+│   └── 04-secret-scanning.md
+├── 2-practicas/              # Ejercicios guiados (150 min)
+│   ├── ejercicio-01-code-scanning/
+│   ├── ejercicio-02-dependabot/
+│   ├── ejercicio-03-dependency-review/
+│   └── ejercicio-04-secret-scanning/
+├── 3-proyecto/               # Proyecto semanal (2h)
 ├── 4-recursos/               # Material adicional
-└── 5-glosario/               # Términos clave
+└── 5-glosario/               # Términos de seguridad
 ```
 
 ---
 
-## 📝 Contenidos
+## 📖 Contenido Teórico (90 minutos)
 
-### 1️⃣ Teoría
-
-| Tema | Descripción |
-|------|-------------|
-| GitHub Advanced Security | Overview de features |
-| Code Scanning | CodeQL y análisis estático |
-| Dependabot | Alerts y actualizaciones |
-| Dependency Review | Análisis en Pull Requests |
-| Secret Scanning | Detección de credenciales |
-| Security Policies | SECURITY.md y advisories |
-
-### 2️⃣ Prácticas
-
-| Ejercicio | Descripción |
-|-----------|-------------|
-| Práctica 01 | Habilitar Code Scanning con CodeQL |
-| Práctica 02 | Configurar Dependabot alerts |
-| Práctica 03 | Implementar Dependency Review |
-| Práctica 04 | Configurar Secret Scanning |
-
-### 3️⃣ Proyecto
-
-**Proyecto Security Hardening**: Implementar todas las features de seguridad en un repository existente y documentar el proceso.
+| # | Lección | Duración | Temas |
+|---|---------|----------|-------|
+| 01 | [GitHub Advanced Security](1-teoria/01-github-advanced-security.md) | 20 min | GHAS overview, features, licensing, público vs privado |
+| 02 | [Code Scanning](1-teoria/02-code-scanning.md) | 25 min | CodeQL, SARIF, custom queries, workflow configuration |
+| 03 | [Dependabot](1-teoria/03-dependabot.md) | 25 min | Alerts, security updates, version updates, auto-merge |
+| 04 | [Secret Scanning](1-teoria/04-secret-scanning.md) | 20 min | Tokens detectados, push protection, custom patterns |
 
 ---
 
-## ⏱️ Distribución del Tiempo (8 horas)
+## 💻 Ejercicios Prácticos (150 minutos)
 
-| Actividad | Tiempo |
-|-----------|--------|
-| 📖 Teoría | 3 horas |
-| 💻 Prácticas | 3 horas |
-| 🏗️ Proyecto | 2 horas |
+| # | Ejercicio | Duración | Habilidades |
+|---|-----------|----------|-------------|
+| 01 | [Code Scanning con CodeQL](2-practicas/ejercicio-01-code-scanning/) | 40 min | Habilitar CodeQL, interpretar resultados, fix vulnerabilities |
+| 02 | [Configurar Dependabot](2-practicas/ejercicio-02-dependabot/) | 35 min | dependabot.yml, alerts, auto-merge PRs |
+| 03 | [Dependency Review](2-practicas/ejercicio-03-dependency-review/) | 35 min | Workflow de review, bloquear PRs inseguros |
+| 04 | [Secret Scanning](2-practicas/ejercicio-04-secret-scanning/) | 40 min | Push protection, custom patterns, alertas |
 
 ---
 
-## 📌 Entregables
+## 🏗️ Proyecto Semanal (2 horas)
 
-1. ✅ Code Scanning habilitado y funcionando
-2. ✅ Dependabot configurado con auto-merge
-3. ✅ Dependency Review en workflow de PR
-4. ✅ Secret Scanning activo
-5. ✅ SECURITY.md con política definida
-6. ✅ Proyecto security hardening completado
+### Security Hardening Pipeline
+
+**Objetivo**: Implementar un pipeline completo de seguridad que integre todas las features de GHAS en un repository existente.
+
+**Entregables**:
+1. Repository con Code Scanning habilitado
+2. Dependabot configurado con auto-merge seguro
+3. Workflow de Dependency Review
+4. Secret Scanning con push protection
+5. SECURITY.md con política de divulgación
+6. Documentación del proceso
+
+📋 [Ver instrucciones completas](3-proyecto/README.md)
+
+---
+
+## ⏱️ Distribución del Tiempo (6 horas)
+
+| Actividad | Tiempo | Porcentaje |
+|-----------|--------|------------|
+| 📖 Teoría | 1.5 horas | 25% |
+| 💻 Prácticas | 2.5 horas | 42% |
+| 🏗️ Proyecto | 2 horas | 33% |
+| **Total** | **6 horas** | **100%** |
+
+---
+
+## 📊 Evaluación
+
+| Criterio | Puntos |
+|----------|--------|
+| Comprensión de GHAS | 15 pts |
+| Code Scanning funcional | 20 pts |
+| Dependabot configurado | 15 pts |
+| Dependency Review workflow | 15 pts |
+| Secret Scanning activo | 10 pts |
+| Proyecto Security Hardening | 25 pts |
+| **Total** | **100 pts** |
+
+📋 [Ver rúbrica detallada](rubrica-evaluacion.md)
+
+---
+
+## 🔑 Conceptos Clave
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                 GitHub Advanced Security                     │
+├─────────────────┬─────────────────┬─────────────────────────┤
+│  Code Scanning  │   Dependabot    │    Secret Scanning      │
+│    (CodeQL)     │    (Alerts)     │   (Push Protection)     │
+├─────────────────┼─────────────────┼─────────────────────────┤
+│ Análisis SAST   │ Dep. vulnerable │ Tokens/API keys         │
+│ Custom queries  │ Security updates│ Custom patterns         │
+│ SARIF reports   │ Version updates │ Alert notifications     │
+└─────────────────┴─────────────────┴─────────────────────────┘
+```
+
+---
+
+## 📌 Quick Reference
+
+### Habilitar Code Scanning
+```yaml
+# .github/workflows/codeql.yml
+name: "CodeQL"
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: github/codeql-action/init@v3
+        with:
+          languages: javascript
+      - uses: github/codeql-action/analyze@v3
+```
+
+### Configurar Dependabot
+```yaml
+# .github/dependabot.yml
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+```
+
+### Dependency Review Action
+```yaml
+- uses: actions/dependency-review-action@v4
+  with:
+    fail-on-severity: moderate
+```
 
 ---
 
@@ -89,11 +190,18 @@ week-11/
 
 <table>
 <tr>
-<td>🏅</td>
-<td><strong>GitHub Advanced Security</strong></td>
+<td width="60">🛡️</td>
+<td><strong>GitHub Advanced Security Certification</strong></td>
 </tr>
 <tr>
-<td colspan="2">Esta semana cubre: Code Scanning, Dependabot, Secret Scanning, Security policies</td>
+<td colspan="2">
+<em>Esta semana cubre:</em><br>
+• Code Scanning y CodeQL<br>
+• Dependabot alerts y updates<br>
+• Secret Scanning y push protection<br>
+• Dependency Review<br>
+• Security Policies
+</td>
 </tr>
 </table>
 
@@ -107,4 +215,10 @@ week-11/
 
 ---
 
-_Week 11 | Bootcamp Git/GitHub_
+<div align="center">
+
+**Week 11** · Security Features · Bootcamp Git/GitHub
+
+*Fase 3: GitHub Advanced Security (1/3)*
+
+</div>

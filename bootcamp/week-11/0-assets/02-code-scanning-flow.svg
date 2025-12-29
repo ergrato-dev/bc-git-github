@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .title { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #58a6ff; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 14px; fill: #b0b5bd; }
+      .box { stroke-width: 2; rx: 8; }
+      .box-step { fill: #1a1a2e; stroke: #a371f7; }
+      .box-output { fill: #1a1a2e; stroke: #3fb950; }
+      .box-alert { fill: #1a1a2e; stroke: #f85149; }
+      .box-codeql { fill: #21262d; stroke: #58a6ff; }
+      .label { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #e6e6e6; }
+      .desc { font-family: Arial, sans-serif; font-size: 11px; fill: #b0b5bd; }
+      .step-num { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #a371f7; }
+      .icon { font-family: Arial, sans-serif; font-size: 20px; }
+      .arrow { stroke: #a371f7; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .code { font-family: monospace; font-size: 10px; fill: #7ee787; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#a371f7"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="900" height="480"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title">Code Scanning con CodeQL - Flujo de Análisis</text>
+  <text x="450" y="55" text-anchor="middle" class="subtitle">Análisis de seguridad estático automatizado (SAST)</text>
+  
+  <!-- Flow Row 1: Trigger -> Init -> Build -->
+  <!-- Step 1: Trigger -->
+  <rect x="50" y="90" width="150" height="90" class="box box-step"/>
+  <text x="60" y="110" class="step-num">PASO 1</text>
+  <text x="125" y="135" text-anchor="middle" class="icon">⚡</text>
+  <text x="125" y="158" text-anchor="middle" class="label">Trigger</text>
+  <text x="125" y="172" text-anchor="middle" class="desc">push / pull_request</text>
+  
+  <line x1="200" y1="135" x2="240" y2="135" class="arrow"/>
+  
+  <!-- Step 2: Checkout -->
+  <rect x="250" y="90" width="150" height="90" class="box box-step"/>
+  <text x="260" y="110" class="step-num">PASO 2</text>
+  <text x="325" y="135" text-anchor="middle" class="icon">📥</text>
+  <text x="325" y="158" text-anchor="middle" class="label">Checkout</text>
+  <text x="325" y="172" text-anchor="middle" class="desc">actions/checkout</text>
+  
+  <line x1="400" y1="135" x2="440" y2="135" class="arrow"/>
+  
+  <!-- Step 3: CodeQL Init -->
+  <rect x="450" y="90" width="150" height="90" class="box box-codeql"/>
+  <text x="460" y="110" class="step-num">PASO 3</text>
+  <text x="525" y="135" text-anchor="middle" class="icon">🔧</text>
+  <text x="525" y="158" text-anchor="middle" class="label">CodeQL Init</text>
+  <text x="525" y="172" text-anchor="middle" class="desc">codeql-action/init</text>
+  
+  <line x1="600" y1="135" x2="640" y2="135" class="arrow"/>
+  
+  <!-- Step 4: Autobuild -->
+  <rect x="650" y="90" width="150" height="90" class="box box-step"/>
+  <text x="660" y="110" class="step-num">PASO 4</text>
+  <text x="725" y="135" text-anchor="middle" class="icon">🔨</text>
+  <text x="725" y="158" text-anchor="middle" class="label">Autobuild</text>
+  <text x="725" y="172" text-anchor="middle" class="desc">Compila el código</text>
+  
+  <!-- Arrow down -->
+  <line x1="725" y1="180" x2="725" y2="220" class="arrow"/>
+  
+  <!-- Flow Row 2: Analyze -> SARIF -> Upload -->
+  <!-- Step 5: Analyze -->
+  <rect x="650" y="230" width="150" height="90" class="box box-codeql"/>
+  <text x="660" y="250" class="step-num">PASO 5</text>
+  <text x="725" y="275" text-anchor="middle" class="icon">🔍</text>
+  <text x="725" y="298" text-anchor="middle" class="label">Analyze</text>
+  <text x="725" y="312" text-anchor="middle" class="desc">codeql-action/analyze</text>
+  
+  <line x1="640" y1="275" x2="600" y2="275" class="arrow"/>
+  
+  <!-- Step 6: SARIF -->
+  <rect x="450" y="230" width="150" height="90" class="box box-output"/>
+  <text x="460" y="250" class="step-num">PASO 6</text>
+  <text x="525" y="275" text-anchor="middle" class="icon">📄</text>
+  <text x="525" y="298" text-anchor="middle" class="label">SARIF Report</text>
+  <text x="525" y="312" text-anchor="middle" class="desc">Resultados en JSON</text>
+  
+  <line x1="440" y1="275" x2="400" y2="275" class="arrow"/>
+  
+  <!-- Step 7: Upload -->
+  <rect x="250" y="230" width="150" height="90" class="box box-step"/>
+  <text x="260" y="250" class="step-num">PASO 7</text>
+  <text x="325" y="275" text-anchor="middle" class="icon">📤</text>
+  <text x="325" y="298" text-anchor="middle" class="label">Upload Results</text>
+  <text x="325" y="312" text-anchor="middle" class="desc">GitHub Security Tab</text>
+  
+  <line x1="240" y1="275" x2="200" y2="275" class="arrow"/>
+  
+  <!-- Step 8: Alerts -->
+  <rect x="50" y="230" width="150" height="90" class="box box-alert"/>
+  <text x="60" y="250" class="step-num">PASO 8</text>
+  <text x="125" y="275" text-anchor="middle" class="icon">⚠️</text>
+  <text x="125" y="298" text-anchor="middle" class="label">Security Alerts</text>
+  <text x="125" y="312" text-anchor="middle" class="desc">Vulnerabilidades</text>
+  
+  <!-- Workflow Example -->
+  <rect x="50" y="350" width="800" height="110" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="70" y="375" class="label">📝 Ejemplo de Workflow (codeql.yml)</text>
+  <text x="70" y="400" class="code">- uses: github/codeql-action/init@v3</text>
+  <text x="70" y="415" class="code">    with:</text>
+  <text x="70" y="430" class="code">      languages: javascript, python    # Lenguajes a analizar</text>
+  <text x="70" y="445" class="code">- uses: github/codeql-action/analyze@v3</text>
+  
+  <!-- Languages supported -->
+  <text x="550" y="400" class="desc">Lenguajes soportados:</text>
+  <text x="550" y="415" class="desc">JavaScript, TypeScript, Python, Java,</text>
+  <text x="550" y="430" class="desc">C/C++, C#, Go, Ruby, Swift, Kotlin</text>
+</svg>

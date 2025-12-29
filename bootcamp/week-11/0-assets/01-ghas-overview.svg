@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .title { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #58a6ff; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 14px; fill: #b0b5bd; }
+      .box { stroke-width: 2; rx: 8; }
+      .box-ghas { fill: #1a1a2e; stroke: #58a6ff; }
+      .box-code { fill: #1a1a2e; stroke: #a371f7; }
+      .box-dep { fill: #1a1a2e; stroke: #3fb950; }
+      .box-secret { fill: #1a1a2e; stroke: #f85149; }
+      .box-supply { fill: #1a1a2e; stroke: #d29922; }
+      .label { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #e6e6e6; }
+      .desc { font-family: Arial, sans-serif; font-size: 11px; fill: #b0b5bd; }
+      .icon { font-family: Arial, sans-serif; font-size: 24px; }
+      .arrow { stroke: #484f58; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .connector { stroke: #484f58; stroke-width: 1; stroke-dasharray: 4,4; }
+      .badge-public { fill: #238636; }
+      .badge-private { fill: #8b949e; }
+      .badge-text { font-family: Arial, sans-serif; font-size: 9px; fill: #ffffff; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#484f58"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="900" height="500"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title">GitHub Advanced Security (GHAS) - Overview</text>
+  <text x="450" y="55" text-anchor="middle" class="subtitle">Ecosistema completo de seguridad para código</text>
+  
+  <!-- Main GHAS Container -->
+  <rect x="50" y="80" width="800" height="400" class="box box-ghas" fill-opacity="0.3"/>
+  <text x="70" y="105" class="label" fill="#58a6ff">🛡️ GitHub Advanced Security</text>
+  
+  <!-- Row 1: Core Features -->
+  <!-- Code Scanning -->
+  <rect x="80" y="130" width="230" height="140" class="box box-code"/>
+  <text x="195" y="160" text-anchor="middle" class="icon">🔍</text>
+  <text x="195" y="185" text-anchor="middle" class="label" fill="#a371f7">Code Scanning</text>
+  <text x="195" y="205" text-anchor="middle" class="desc">Análisis estático de código</text>
+  <text x="195" y="220" text-anchor="middle" class="desc">con CodeQL</text>
+  <text x="195" y="245" text-anchor="middle" class="desc">• SAST automático</text>
+  <text x="195" y="260" text-anchor="middle" class="desc">• Custom queries</text>
+  
+  <!-- Secret Scanning -->
+  <rect x="335" y="130" width="230" height="140" class="box box-secret"/>
+  <text x="450" y="160" text-anchor="middle" class="icon">🔑</text>
+  <text x="450" y="185" text-anchor="middle" class="label" fill="#f85149">Secret Scanning</text>
+  <text x="450" y="205" text-anchor="middle" class="desc">Detección de credenciales</text>
+  <text x="450" y="220" text-anchor="middle" class="desc">expuestas en código</text>
+  <text x="450" y="245" text-anchor="middle" class="desc">• Push protection</text>
+  <text x="450" y="260" text-anchor="middle" class="desc">• Custom patterns</text>
+  
+  <!-- Dependabot -->
+  <rect x="590" y="130" width="230" height="140" class="box box-dep"/>
+  <text x="705" y="160" text-anchor="middle" class="icon">🤖</text>
+  <text x="705" y="185" text-anchor="middle" class="label" fill="#3fb950">Dependabot</text>
+  <text x="705" y="205" text-anchor="middle" class="desc">Gestión de dependencias</text>
+  <text x="705" y="220" text-anchor="middle" class="desc">vulnerables</text>
+  <text x="705" y="245" text-anchor="middle" class="desc">• Security alerts</text>
+  <text x="705" y="260" text-anchor="middle" class="desc">• Auto PRs</text>
+  
+  <!-- Row 2: Supporting Features -->
+  <!-- Dependency Review -->
+  <rect x="150" y="300" width="200" height="100" class="box box-supply"/>
+  <text x="250" y="335" text-anchor="middle" class="icon">📋</text>
+  <text x="250" y="360" text-anchor="middle" class="label" fill="#d29922">Dependency Review</text>
+  <text x="250" y="380" text-anchor="middle" class="desc">Análisis en Pull Requests</text>
+  
+  <!-- Security Advisories -->
+  <rect x="380" y="300" width="200" height="100" class="box box-ghas"/>
+  <text x="480" y="335" text-anchor="middle" class="icon">📢</text>
+  <text x="480" y="360" text-anchor="middle" class="label" fill="#58a6ff">Security Advisories</text>
+  <text x="480" y="380" text-anchor="middle" class="desc">Divulgación coordinada</text>
+  
+  <!-- Security Policies -->
+  <rect x="610" y="300" width="200" height="100" class="box box-ghas"/>
+  <text x="710" y="335" text-anchor="middle" class="icon">📜</text>
+  <text x="710" y="360" text-anchor="middle" class="label" fill="#58a6ff">SECURITY.md</text>
+  <text x="710" y="380" text-anchor="middle" class="desc">Políticas de seguridad</text>
+  
+  <!-- Availability Badges -->
+  <rect x="80" y="430" width="160" height="30" rx="4" class="badge-public"/>
+  <text x="160" y="450" text-anchor="middle" class="badge-text">✅ Repos Públicos: GRATIS</text>
+  
+  <rect x="260" y="430" width="200" height="30" rx="4" class="badge-private"/>
+  <text x="360" y="450" text-anchor="middle" class="badge-text">🔒 Repos Privados: GHAS License</text>
+  
+  <!-- Connectors -->
+  <line x1="195" y1="270" x2="250" y2="300" class="connector"/>
+  <line x1="450" y1="270" x2="480" y2="300" class="connector"/>
+  <line x1="705" y1="270" x2="710" y2="300" class="connector"/>
+  
+  <!-- Legend -->
+  <text x="550" y="450" class="desc">Dependabot: disponible en todos los repos</text>
+</svg>
