@@ -1,0 +1,82 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#58a6ff"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">Code Review Process</text>
+  
+  <!-- Left Side - Review Actions -->
+  <text x="200" y="70" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Acciones del Reviewer</text>
+  
+  <!-- Action 1: Comment -->
+  <rect x="50" y="90" width="300" height="70" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="85" cy="125" r="20" fill="#58a6ff"/>
+  <text x="85" y="130" fill="#0d1117" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">💬</text>
+  <text x="120" y="115" fill="#58a6ff" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Comment</text>
+  <text x="120" y="135" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">Comentar sin aprobar ni rechazar</text>
+  <text x="120" y="150" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">Ideal para preguntas o discusion</text>
+  
+  <!-- Action 2: Approve -->
+  <rect x="50" y="170" width="300" height="70" rx="8" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+  <circle cx="85" cy="205" r="20" fill="#3fb950"/>
+  <text x="85" y="210" fill="#0d1117" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">✓</text>
+  <text x="120" y="195" fill="#3fb950" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Approve</text>
+  <text x="120" y="215" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">Aprobar los cambios propuestos</text>
+  <text x="120" y="230" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">PR listo para merge</text>
+  
+  <!-- Action 3: Request Changes -->
+  <rect x="50" y="250" width="300" height="70" rx="8" fill="#161b22" stroke="#f85149" stroke-width="2"/>
+  <circle cx="85" cy="285" r="20" fill="#f85149"/>
+  <text x="85" y="290" fill="#0d1117" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">✗</text>
+  <text x="120" y="275" fill="#f85149" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Request Changes</text>
+  <text x="120" y="295" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">Solicitar modificaciones antes de merge</text>
+  <text x="120" y="310" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">Bloquea el PR hasta resolver</text>
+  
+  <!-- Right Side - Review Types -->
+  <text x="600" y="70" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Tipos de Comentarios</text>
+  
+  <!-- Type 1: Line Comment -->
+  <rect x="450" y="90" width="300" height="60" rx="8" fill="#161b22" stroke="#a371f7" stroke-width="2"/>
+  <text x="470" y="115" fill="#a371f7" font-family="Arial, sans-serif" font-size="13" font-weight="bold">Line Comment</text>
+  <text x="470" y="135" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">Comentario en linea especifica de codigo</text>
+  
+  <!-- Type 2: Suggestion -->
+  <rect x="450" y="160" width="300" height="60" rx="8" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <text x="470" y="185" fill="#f0883e" font-family="Arial, sans-serif" font-size="13" font-weight="bold">Suggestion</text>
+  <text x="470" y="205" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">Proponer cambio especifico (aplicable)</text>
+  
+  <!-- Type 3: File Comment -->
+  <rect x="450" y="230" width="300" height="60" rx="8" fill="#161b22" stroke="#238636" stroke-width="2"/>
+  <text x="470" y="255" fill="#238636" font-family="Arial, sans-serif" font-size="13" font-weight="bold">File Comment</text>
+  <text x="470" y="275" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">Comentario general sobre un archivo</text>
+  
+  <!-- Type 4: Review Summary -->
+  <rect x="450" y="300" width="300" height="60" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+  <text x="470" y="325" fill="#58a6ff" font-family="Arial, sans-serif" font-size="13" font-weight="bold">Review Summary</text>
+  <text x="470" y="345" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">Resumen general del review</text>
+  
+  <!-- Best Practices Section -->
+  <rect x="50" y="380" width="700" height="100" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <text x="400" y="405" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Mejores Practicas de Code Review</text>
+  
+  <text x="80" y="430" fill="#3fb950" font-family="Arial, sans-serif" font-size="12">✓ Ser constructivo</text>
+  <text x="80" y="450" fill="#3fb950" font-family="Arial, sans-serif" font-size="12">✓ Explicar el "por que"</text>
+  <text x="80" y="470" fill="#3fb950" font-family="Arial, sans-serif" font-size="12">✓ Sugerir alternativas</text>
+  
+  <text x="280" y="430" fill="#3fb950" font-family="Arial, sans-serif" font-size="12">✓ Revisar en &lt;24h</text>
+  <text x="280" y="450" fill="#3fb950" font-family="Arial, sans-serif" font-size="12">✓ Cambios pequenos</text>
+  <text x="280" y="470" fill="#3fb950" font-family="Arial, sans-serif" font-size="12">✓ Usar checklists</text>
+  
+  <text x="480" y="430" fill="#f85149" font-family="Arial, sans-serif" font-size="12">✗ Criticar sin solucion</text>
+  <text x="480" y="450" fill="#f85149" font-family="Arial, sans-serif" font-size="12">✗ Ignorar contexto</text>
+  <text x="480" y="470" fill="#f85149" font-family="Arial, sans-serif" font-size="12">✗ Reviews muy largos</text>
+  
+  <!-- Footer -->
+  <text x="400" y="495" fill="#8b949e" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Week 06 | GitHub Features | Code Reviews</text>
+</svg>

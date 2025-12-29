@@ -1,0 +1,110 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="500" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">GitHub Projects - Tablero Kanban</text>
+  
+  <!-- Column 1: Backlog -->
+  <rect x="30" y="60" width="200" height="380" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <rect x="30" y="60" width="200" height="40" rx="8" fill="#21262d"/>
+  <text x="130" y="85" fill="#8b949e" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">📋 Backlog</text>
+  <circle cx="200" cy="80" r="12" fill="#30363d"/>
+  <text x="200" y="85" fill="#8b949e" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">3</text>
+  
+  <!-- Backlog Cards -->
+  <rect x="45" y="115" width="170" height="70" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <circle cx="60" cy="130" r="6" fill="#3fb950"/>
+  <text x="75" y="135" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="11">#15 User auth</text>
+  <rect x="55" y="150" width="35" height="16" rx="8" fill="#7057ff"/>
+  <text x="72" y="161" fill="#fff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">feature</text>
+  <text x="55" y="175" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">@maria</text>
+  
+  <rect x="45" y="195" width="170" height="70" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <circle cx="60" cy="210" r="6" fill="#3fb950"/>
+  <text x="75" y="215" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="11">#18 API docs</text>
+  <rect x="55" y="230" width="30" height="16" rx="8" fill="#0075ca"/>
+  <text x="70" y="241" fill="#fff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">docs</text>
+  <text x="55" y="255" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Unassigned</text>
+  
+  <rect x="45" y="275" width="170" height="70" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <circle cx="60" cy="290" r="6" fill="#3fb950"/>
+  <text x="75" y="295" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="11">#22 Dark mode</text>
+  <rect x="55" y="310" width="60" height="16" rx="8" fill="#a2eeef"/>
+  <text x="85" y="321" fill="#000" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">enhancement</text>
+  <text x="55" y="335" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">@carlos</text>
+  
+  <!-- Column 2: To Do -->
+  <rect x="245" y="60" width="200" height="380" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <rect x="245" y="60" width="200" height="40" rx="8" fill="#21262d"/>
+  <text x="345" y="85" fill="#58a6ff" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">📝 To Do</text>
+  <circle cx="415" cy="80" r="12" fill="#30363d"/>
+  <text x="415" y="85" fill="#8b949e" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">2</text>
+  
+  <!-- To Do Cards -->
+  <rect x="260" y="115" width="170" height="70" rx="6" fill="#0d1117" stroke="#58a6ff"/>
+  <circle cx="275" cy="130" r="6" fill="#3fb950"/>
+  <text x="290" y="135" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="11">#12 Fix navbar</text>
+  <rect x="270" y="150" width="30" height="16" rx="8" fill="#d73a4a"/>
+  <text x="285" y="161" fill="#fff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">bug</text>
+  <text x="270" y="175" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">@juan</text>
+  
+  <rect x="260" y="195" width="170" height="70" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <circle cx="275" cy="210" r="6" fill="#3fb950"/>
+  <text x="290" y="215" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="11">#14 Add tests</text>
+  <rect x="270" y="230" width="45" height="16" rx="8" fill="#fbca04"/>
+  <text x="292" y="241" fill="#000" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">testing</text>
+  <text x="270" y="255" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">@ana</text>
+  
+  <!-- Column 3: In Progress -->
+  <rect x="460" y="60" width="200" height="380" rx="8" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <rect x="460" y="60" width="200" height="40" rx="8" fill="#21262d"/>
+  <text x="560" y="85" fill="#f0883e" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">🔄 In Progress</text>
+  <circle cx="630" cy="80" r="12" fill="#30363d"/>
+  <text x="630" y="85" fill="#8b949e" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">1</text>
+  
+  <!-- In Progress Card -->
+  <rect x="475" y="115" width="170" height="70" rx="6" fill="#0d1117" stroke="#f0883e" stroke-width="2"/>
+  <circle cx="490" cy="130" r="6" fill="#3fb950"/>
+  <text x="505" y="135" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="11">#10 Login page</text>
+  <rect x="485" y="150" width="35" height="16" rx="8" fill="#7057ff"/>
+  <text x="502" y="161" fill="#fff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">feature</text>
+  <rect x="525" y="150" width="25" height="16" rx="8" fill="#d73a4a"/>
+  <text x="537" y="161" fill="#fff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">P1</text>
+  <text x="485" y="175" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">@pedro</text>
+  
+  <!-- Column 4: Done -->
+  <rect x="675" y="60" width="200" height="380" rx="8" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+  <rect x="675" y="60" width="200" height="40" rx="8" fill="#21262d"/>
+  <text x="775" y="85" fill="#3fb950" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">✅ Done</text>
+  <circle cx="845" cy="80" r="12" fill="#30363d"/>
+  <text x="845" y="85" fill="#8b949e" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">2</text>
+  
+  <!-- Done Cards -->
+  <rect x="690" y="115" width="170" height="70" rx="6" fill="#0d1117" stroke="#3fb950"/>
+  <circle cx="705" cy="130" r="6" fill="#8957e5"/>
+  <text x="720" y="135" fill="#8b949e" font-family="Arial, sans-serif" font-size="11" text-decoration="line-through">#8 Setup CI</text>
+  <rect x="700" y="150" width="60" height="16" rx="8" fill="#238636"/>
+  <text x="730" y="161" fill="#fff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">completed</text>
+  <text x="700" y="175" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">@maria</text>
+  
+  <rect x="690" y="195" width="170" height="70" rx="6" fill="#0d1117" stroke="#3fb950"/>
+  <circle cx="705" cy="210" r="6" fill="#8957e5"/>
+  <text x="720" y="215" fill="#8b949e" font-family="Arial, sans-serif" font-size="11" text-decoration="line-through">#5 Init repo</text>
+  <rect x="700" y="230" width="60" height="16" rx="8" fill="#238636"/>
+  <text x="730" y="241" fill="#fff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">completed</text>
+  <text x="700" y="255" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">@juan</text>
+  
+  <!-- Legend -->
+  <rect x="30" y="450" width="840" height="40" rx="6" fill="#161b22" stroke="#30363d"/>
+  <text x="50" y="475" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">Estados:</text>
+  <circle cx="110" cy="470" r="6" fill="#3fb950"/>
+  <text x="125" y="475" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Open Issue</text>
+  <circle cx="210" cy="470" r="6" fill="#8957e5"/>
+  <text x="225" y="475" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Merged PR</text>
+  
+  <text x="350" y="475" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">Arrastra tarjetas entre columnas para actualizar estado</text>
+  
+  <!-- Footer -->
+  <text x="790" y="475" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Week 06</text>
+</svg>

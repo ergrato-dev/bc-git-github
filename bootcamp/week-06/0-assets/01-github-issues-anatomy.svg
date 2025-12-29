@@ -1,0 +1,80 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow1" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#58a6ff"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">Anatomia de un GitHub Issue</text>
+  
+  <!-- Issue Card -->
+  <rect x="50" y="60" width="450" height="380" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  
+  <!-- Issue Header -->
+  <rect x="50" y="60" width="450" height="50" rx="8" fill="#21262d"/>
+  <circle cx="80" cy="85" r="12" fill="#3fb950"/>
+  <text x="100" y="90" fill="#3fb950" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Open</text>
+  <text x="170" y="90" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="14">#42 - Bug: Login fails on mobile</text>
+  
+  <!-- Title Section -->
+  <text x="70" y="135" fill="#8b949e" font-family="Arial, sans-serif" font-size="12">TITLE</text>
+  <rect x="70" y="145" width="410" height="30" rx="4" fill="#0d1117" stroke="#30363d"/>
+  <text x="80" y="165" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="13">Bug: Login button not responding on mobile devices</text>
+  
+  <!-- Description Section -->
+  <text x="70" y="200" fill="#8b949e" font-family="Arial, sans-serif" font-size="12">DESCRIPTION</text>
+  <rect x="70" y="210" width="410" height="80" rx="4" fill="#0d1117" stroke="#30363d"/>
+  <text x="80" y="235" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">## Steps to reproduce</text>
+  <text x="80" y="255" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">1. Open app on mobile</text>
+  <text x="80" y="270" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">2. Navigate to login page</text>
+  <text x="80" y="285" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">3. Tap login button...</text>
+  
+  <!-- Labels -->
+  <text x="70" y="315" fill="#8b949e" font-family="Arial, sans-serif" font-size="12">LABELS</text>
+  <rect x="70" y="325" width="45" height="20" rx="10" fill="#d73a4a"/>
+  <text x="92" y="339" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">bug</text>
+  <rect x="125" y="325" width="65" height="20" rx="10" fill="#0075ca"/>
+  <text x="157" y="339" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">priority</text>
+  <rect x="200" y="325" width="55" height="20" rx="10" fill="#7057ff"/>
+  <text x="227" y="339" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">mobile</text>
+  
+  <!-- Assignee & Milestone -->
+  <text x="70" y="375" fill="#8b949e" font-family="Arial, sans-serif" font-size="12">ASSIGNEE</text>
+  <circle cx="85" cy="395" r="12" fill="#238636"/>
+  <text x="105" y="400" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="12">@developer</text>
+  
+  <text x="200" y="375" fill="#8b949e" font-family="Arial, sans-serif" font-size="12">MILESTONE</text>
+  <text x="200" y="400" fill="#58a6ff" font-family="Arial, sans-serif" font-size="12">v2.0 Release</text>
+  
+  <text x="350" y="375" fill="#8b949e" font-family="Arial, sans-serif" font-size="12">PROJECT</text>
+  <text x="350" y="400" fill="#58a6ff" font-family="Arial, sans-serif" font-size="12">Sprint 5</text>
+  
+  <!-- Right Side - Components -->
+  <text x="550" y="80" fill="#e6e6e6" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Componentes</text>
+  
+  <!-- Component boxes -->
+  <rect x="530" y="100" width="240" height="45" rx="6" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+  <text x="650" y="128" fill="#3fb950" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">Title + Number (#42)</text>
+  
+  <rect x="530" y="155" width="240" height="45" rx="6" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+  <text x="650" y="183" fill="#58a6ff" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">Description (Markdown)</text>
+  
+  <rect x="530" y="210" width="240" height="45" rx="6" fill="#161b22" stroke="#a371f7" stroke-width="2"/>
+  <text x="650" y="238" fill="#a371f7" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">Labels (categorizar)</text>
+  
+  <rect x="530" y="265" width="240" height="45" rx="6" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <text x="650" y="293" fill="#f0883e" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">Assignees (responsables)</text>
+  
+  <rect x="530" y="320" width="240" height="45" rx="6" fill="#161b22" stroke="#f85149" stroke-width="2"/>
+  <text x="650" y="348" fill="#f85149" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">Milestone (agrupacion)</text>
+  
+  <rect x="530" y="375" width="240" height="45" rx="6" fill="#161b22" stroke="#238636" stroke-width="2"/>
+  <text x="650" y="403" fill="#238636" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">Project (tablero)</text>
+  
+  <!-- Footer -->
+  <text x="400" y="470" fill="#8b949e" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Week 06 | GitHub Features | Issues</text>
+</svg>

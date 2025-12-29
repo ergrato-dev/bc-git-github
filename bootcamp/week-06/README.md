@@ -1,109 +1,153 @@
-# � Week 06: GitHub Features
+# Week 06: GitHub Features
 
-## 🎯 Objetivos de Aprendizaje
-
-Al finalizar esta semana serás capaz de:
-
-- ✅ Crear y gestionar Issues efectivamente
-- ✅ Dominar el flujo de Pull Requests
-- ✅ Realizar Code Reviews profesionales
-- ✅ Usar GitHub Projects para gestión de proyectos
-- ✅ Configurar templates y automatizaciones básicas
+Semana final de la Fase 1 - Dominando la colaboracion en GitHub.
 
 ---
 
-## 📚 Requisitos Previos
+## Objetivos de Aprendizaje
+
+Al finalizar esta semana seras capaz de:
+
+- Crear y gestionar Issues con labels, milestones y assignees
+- Dominar el flujo completo de Pull Requests
+- Realizar Code Reviews profesionales
+- Usar GitHub Projects para gestion de proyectos
+- Configurar templates de Issue y PR
+
+---
+
+## Requisitos Previos
 
 - Completar Week 01 a Week 05
 - Cuenta de GitHub activa
-- Experiencia con remote repositories
+- Experiencia con remote repositories, push, pull, fork
 
 ---
 
-## 🗂️ Estructura de la Semana
+## Estructura de la Semana
 
 ```
 week-06/
 ├── README.md                 # Este archivo
-├── rubrica-evaluacion.md     # Criterios de evaluación
-├── 0-assets/                 # Diagramas y recursos visuales
-├── 1-teoria/                 # Material teórico
-├── 2-practicas/              # Ejercicios guiados
-├── 3-proyecto/               # Proyecto semanal
+├── rubrica-evaluacion.md     # Criterios de evaluacion
+├── 0-assets/                 # Diagramas SVG
+├── 1-teoria/                 # 4 lecciones teoricas
+├── 2-practicas/              # 4 ejercicios guiados
+├── 3-proyecto/               # Open Source Simulation
 ├── 4-recursos/               # Material adicional
-└── 5-glosario/               # Términos clave
+└── 5-glosario/               # Terminos clave
 ```
 
 ---
 
-## 📝 Contenidos
+## Contenidos
 
-### 1️⃣ Teoría
+### Teoria (4 lecciones)
 
-| Tema | Descripción |
-|------|-------------|
-| Issues | Gestión de tareas y bugs |
-| Pull Requests | Flujo completo de PRs |
-| Code Reviews | Mejores prácticas de revisión |
-| GitHub Projects | Tableros Kanban y planificación |
-| Templates | Issue y PR templates |
-| GitHub Discussions | Foros de comunidad |
+| Leccion | Tema | Duracion |
+|---------|------|----------|
+| 01 | GitHub Issues | 25 min |
+| 02 | Pull Requests | 25 min |
+| 03 | Code Reviews | 20 min |
+| 04 | GitHub Projects | 20 min |
 
-### 2️⃣ Prácticas
+### Practicas (4 ejercicios)
 
-| Ejercicio | Descripción |
-|-----------|-------------|
-| Práctica 01 | Crear y gestionar Issues con labels |
-| Práctica 02 | Pull Request completo con revisión |
-| Práctica 03 | Configurar Project board |
-| Práctica 04 | Crear templates personalizados |
+| Ejercicio | Descripcion | Duracion |
+|-----------|-------------|----------|
+| 01 | Gestion de Issues | 35 min |
+| 02 | Pull Request completo | 40 min |
+| 03 | Code Review workflow | 35 min |
+| 04 | Project board + Templates | 40 min |
 
-### 3️⃣ Proyecto
+### Proyecto
 
-**Proyecto Open Source Simulation**: Simular contribución a proyecto open source con Issues, Fork, Pull Request y Code Review.
+**Open Source Simulation** - Simular contribucion a proyecto open source con Issues, Fork, Pull Request y Code Review.
 
 ---
 
-## ⏱️ Distribución del Tiempo (8 horas)
+## Distribucion del Tiempo (6 horas)
 
-| Actividad | Tiempo |
-|-----------|--------|
-| 📖 Teoría | 3 horas |
-| 💻 Prácticas | 3 horas |
-| 🏗️ Proyecto | 2 horas |
-
----
-
-## 📌 Entregables
-
-1. ✅ Repository con mínimo 5 Issues documentados
-2. ✅ Pull Request con code review completado
-3. ✅ Project board configurado con automaciones
-4. ✅ Templates de Issue y PR implementados
-5. ✅ Proyecto open source simulation completado
+| Actividad | Tiempo | Porcentaje |
+|-----------|--------|------------|
+| Teoria | 1.5 horas | 25% |
+| Practicas | 2.5 horas | 42% |
+| Proyecto | 2 horas | 33% |
 
 ---
 
-## 🎓 Certificación Asociada
+## Entregables
 
-<table>
-<tr>
-<td>🏅</td>
-<td><strong>GitHub Foundations</strong></td>
-</tr>
-<tr>
-<td colspan="2">Esta semana cubre: Issues, Pull Requests, Code Reviews, Projects - <strong>Semana final de preparación para certificación Foundations</strong></td>
-</tr>
-</table>
+1. Repository con minimo 5 Issues documentados
+2. Pull Request con code review completado
+3. Project board configurado con columnas
+4. Templates de Issue y PR implementados
+5. Proyecto open source simulation completado
 
 ---
 
-## 🔗 Navegación
+## Referencia Rapida
 
-| ⬅️ Anterior | 🏠 Inicio | Siguiente ➡️ |
-|:------------|:---------:|-------------:|
-| [Week 05: Remote Repositories](../week-05/README.md) | [Bootcamp](../README.md) | [Week 07: GitHub Actions Fundamentos](../week-07/README.md) |
+### Issues
+
+```markdown
+# Crear Issue desde CLI (GitHub CLI)
+gh issue create --title "Bug: login fails" --body "Description" --label "bug"
+
+# Listar Issues
+gh issue list
+
+# Ver Issue especifico
+gh issue view 123
+```
+
+### Pull Requests
+
+```bash
+# Crear PR desde CLI
+gh pr create --title "feat: add login" --body "Description"
+
+# Listar PRs
+gh pr list
+
+# Revisar PR
+gh pr checkout 123
+gh pr review --approve
+```
+
+### Projects
+
+```markdown
+# Acceso: Repository > Projects > New project
+
+Columnas tipicas:
+- Backlog
+- To Do
+- In Progress
+- In Review
+- Done
+```
 
 ---
 
-_Week 06 | Bootcamp Git/GitHub_
+## Certificacion Asociada
+
+**GitHub Foundations** - Esta semana completa la Fase 1 del bootcamp:
+
+| Dominio | Temas Week 06 |
+|---------|---------------|
+| Domain 2: Working with GitHub Repositories | Issues, Projects |
+| Domain 3: Collaboration Features | Pull Requests, Code Reviews |
+| Domain 6: GitHub Community | Discussions, Templates |
+
+---
+
+## Navegacion
+
+| Anterior | Inicio | Siguiente |
+|:---------|:------:|----------:|
+| [Week 05](../week-05/README.md) | [Bootcamp](../README.md) | [Week 07](../week-07/README.md) |
+
+---
+
+*Week 06 | Bootcamp Git/GitHub*
