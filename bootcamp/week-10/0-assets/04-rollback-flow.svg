@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #c9d1d9; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 14px; fill: #b0b5bd; }
+      .section-title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #c9d1d9; }
+      .label { font-family: Arial, sans-serif; font-size: 12px; fill: #c9d1d9; }
+      .label-bold { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #c9d1d9; }
+      .label-small { font-family: Arial, sans-serif; font-size: 10px; fill: #b0b5bd; }
+      .box-gray { fill: #21262d; stroke: #30363d; stroke-width: 2; rx: 6; }
+      .box-blue { fill: #1f6feb; stroke: #58a6ff; stroke-width: 2; rx: 6; }
+      .box-green { fill: #238636; stroke: #3fb950; stroke-width: 2; rx: 6; }
+      .box-red { fill: #da3633; stroke: #f85149; stroke-width: 2; rx: 6; }
+      .box-orange { fill: #9e6a03; stroke: #f0883e; stroke-width: 2; rx: 6; }
+      .box-purple { fill: #8957e5; stroke: #a371f7; stroke-width: 2; rx: 6; }
+      .arrow { stroke: #58a6ff; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .arrow-red { stroke: #f85149; stroke-width: 2; fill: none; marker-end: url(#arrowred); }
+      .arrow-green { stroke: #3fb950; stroke-width: 2; fill: none; marker-end: url(#arrowgreen); }
+      .line-dashed { stroke: #f85149; stroke-width: 2; stroke-dasharray: 5,5; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#58a6ff"/>
+    </marker>
+    <marker id="arrowred" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f85149"/>
+    </marker>
+    <marker id="arrowgreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3fb950"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="900" height="550"/>
+  
+  <!-- Title -->
+  <text class="title" x="450" y="35" text-anchor="middle">Rollback Strategies</text>
+  <text class="subtitle" x="450" y="55" text-anchor="middle">Recuperación automática ante fallos de deployment</text>
+  
+  <!-- AUTOMATED ROLLBACK FLOW -->
+  <text class="section-title" x="450" y="90" text-anchor="middle">Flujo de Rollback Automático</text>
+  
+  <!-- Deploy New Version -->
+  <rect class="box-blue" x="50" y="120" width="120" height="55"/>
+  <text class="label-bold" x="110" y="142" text-anchor="middle" fill="#fff">Deploy v2.0</text>
+  <text class="label-small" x="110" y="160" text-anchor="middle" fill="#c9d1d9">New release</text>
+  
+  <line x1="170" y1="147" x2="210" y2="147" class="arrow"/>
+  
+  <!-- Health Check -->
+  <rect class="box-orange" x="220" y="120" width="120" height="55"/>
+  <text class="label-bold" x="280" y="142" text-anchor="middle" fill="#fff">Health Check</text>
+  <text class="label-small" x="280" y="160" text-anchor="middle" fill="#c9d1d9">30s timeout</text>
+  
+  <!-- Branch: Success -->
+  <line x1="340" y1="135" x2="410" y2="115" class="arrow-green"/>
+  <rect class="box-green" x="420" y="100" width="120" height="40"/>
+  <text class="label-bold" x="480" y="125" text-anchor="middle" fill="#fff">✓ Healthy</text>
+  
+  <!-- Branch: Failure -->
+  <line x1="340" y1="160" x2="410" y2="180" class="arrow-red"/>
+  <rect class="box-red" x="420" y="160" width="120" height="50"/>
+  <text class="label-bold" x="480" y="182" text-anchor="middle" fill="#fff">✗ Unhealthy</text>
+  <text class="label-small" x="480" y="198" text-anchor="middle" fill="#c9d1d9">Trigger rollback</text>
+  
+  <!-- Rollback Action -->
+  <line x1="540" y1="185" x2="580" y2="185" class="arrow-red"/>
+  <rect class="box-purple" x="590" y="160" width="130" height="50"/>
+  <text class="label-bold" x="655" y="182" text-anchor="middle" fill="#fff">Rollback v1.9</text>
+  <text class="label-small" x="655" y="198" text-anchor="middle" fill="#c9d1d9">Previous stable</text>
+  
+  <!-- Verify Rollback -->
+  <line x1="720" y1="185" x2="760" y2="185" class="arrow"/>
+  <rect class="box-green" x="770" y="160" width="100" height="50"/>
+  <text class="label-bold" x="820" y="182" text-anchor="middle" fill="#fff">Verified</text>
+  <text class="label-small" x="820" y="198" text-anchor="middle" fill="#c9d1d9">v1.9 live</text>
+  
+  <!-- ROLLBACK METHODS -->
+  <text class="section-title" x="450" y="245" text-anchor="middle">Métodos de Rollback</text>
+  
+  <!-- Method 1: Re-run Previous -->
+  <rect class="box-gray" x="50" y="265" width="260" height="110"/>
+  <rect x="50" y="265" width="260" height="30" fill="#1f6feb" rx="6"/>
+  <text class="label-bold" x="180" y="285" text-anchor="middle" fill="#fff">Re-run Previous Workflow</text>
+  
+  <text class="label" x="70" y="310">Actions → Workflow runs</text>
+  <text class="label-small" x="70" y="328">→ Seleccionar run anterior</text>
+  <text class="label-small" x="70" y="346">→ "Re-run all jobs"</text>
+  <text class="label-small" x="70" y="364" fill="#3fb950">✓ Rápido, sin cambios de código</text>
+  
+  <!-- Method 2: Revert Commit -->
+  <rect class="box-gray" x="320" y="265" width="260" height="110"/>
+  <rect x="320" y="265" width="260" height="30" fill="#238636" rx="6"/>
+  <text class="label-bold" x="450" y="285" text-anchor="middle" fill="#fff">Git Revert</text>
+  
+  <text class="label" x="340" y="310">git revert HEAD</text>
+  <text class="label-small" x="340" y="328">→ Crea commit inverso</text>
+  <text class="label-small" x="340" y="346">→ Push triggerea deploy</text>
+  <text class="label-small" x="340" y="364" fill="#3fb950">✓ Mantiene historial limpio</text>
+  
+  <!-- Method 3: workflow_dispatch -->
+  <rect class="box-gray" x="590" y="265" width="260" height="110"/>
+  <rect x="590" y="265" width="260" height="30" fill="#8957e5" rx="6"/>
+  <text class="label-bold" x="720" y="285" text-anchor="middle" fill="#fff">Manual Dispatch</text>
+  
+  <text class="label" x="610" y="310">workflow_dispatch:</text>
+  <text class="label-small" x="610" y="328">inputs: version, target</text>
+  <text class="label-small" x="610" y="346">→ Seleccionar versión</text>
+  <text class="label-small" x="610" y="364" fill="#3fb950">✓ Control total del deploy</text>
+  
+  <!-- VERSION TRACKING -->
+  <text class="section-title" x="450" y="415" text-anchor="middle">Tracking de Versiones</text>
+  
+  <!-- Version history boxes -->
+  <rect class="box-green" x="100" y="435" width="140" height="70"/>
+  <text class="label-bold" x="170" y="458" text-anchor="middle" fill="#fff">v1.9 (stable)</text>
+  <text class="label-small" x="170" y="478" text-anchor="middle" fill="#c9d1d9">Dec 28, 10:30</text>
+  <text class="label-small" x="170" y="493" text-anchor="middle" fill="#3fb950">← CURRENT</text>
+  
+  <rect class="box-red" x="260" y="435" width="140" height="70"/>
+  <text class="label-bold" x="330" y="458" text-anchor="middle" fill="#fff">v2.0 (failed)</text>
+  <text class="label-small" x="330" y="478" text-anchor="middle" fill="#c9d1d9">Dec 29, 09:15</text>
+  <text class="label-small" x="330" y="493" text-anchor="middle" fill="#f85149">Health check fail</text>
+  
+  <rect class="box-gray" x="420" y="435" width="140" height="70"/>
+  <text class="label-bold" x="490" y="458" text-anchor="middle">v1.8</text>
+  <text class="label-small" x="490" y="478" text-anchor="middle">Dec 25, 14:20</text>
+  <text class="label-small" x="490" y="493" text-anchor="middle">Available</text>
+  
+  <rect class="box-gray" x="580" y="435" width="140" height="70"/>
+  <text class="label-bold" x="650" y="458" text-anchor="middle">v1.7</text>
+  <text class="label-small" x="650" y="478" text-anchor="middle">Dec 20, 11:45</text>
+  <text class="label-small" x="650" y="493" text-anchor="middle">Available</text>
+  
+  <rect class="box-gray" x="740" y="435" width="80" height="70"/>
+  <text class="label" x="780" y="475" text-anchor="middle">...</text>
+  
+  <!-- Footer -->
+  <text class="label-small" x="450" y="535" text-anchor="middle">Tip: Usa deployment_status webhook para automatizar alertas de rollback</text>
+</svg>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #c9d1d9; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 14px; fill: #b0b5bd; }
+      .section-title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #c9d1d9; }
+      .label { font-family: Arial, sans-serif; font-size: 12px; fill: #c9d1d9; }
+      .label-bold { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #c9d1d9; }
+      .label-small { font-family: Arial, sans-serif; font-size: 10px; fill: #b0b5bd; }
+      .box-gray { fill: #21262d; stroke: #30363d; stroke-width: 2; rx: 8; }
+      .box-blue { fill: #1f6feb; stroke: #58a6ff; stroke-width: 2; rx: 6; }
+      .box-green { fill: #238636; stroke: #3fb950; stroke-width: 2; rx: 6; }
+      .box-orange { fill: #9e6a03; stroke: #f0883e; stroke-width: 2; rx: 6; }
+      .box-purple { fill: #8957e5; stroke: #a371f7; stroke-width: 2; rx: 6; }
+      .box-red { fill: #da3633; stroke: #f85149; stroke-width: 2; rx: 6; }
+      .icon-shield { fill: #3fb950; }
+      .icon-clock { fill: #f0883e; }
+      .icon-users { fill: #58a6ff; }
+      .icon-branch { fill: #a371f7; }
+      .arrow { stroke: #58a6ff; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .line-connect { stroke: #30363d; stroke-width: 2; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#58a6ff"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="900" height="520"/>
+  
+  <!-- Title -->
+  <text class="title" x="450" y="35" text-anchor="middle">Environment Protection Rules</text>
+  <text class="subtitle" x="450" y="55" text-anchor="middle">Controles de seguridad para deployments en GitHub Actions</text>
+  
+  <!-- PROTECTION RULES OVERVIEW -->
+  
+  <!-- Rule 1: Required Reviewers -->
+  <rect class="box-gray" x="50" y="85" width="380" height="120"/>
+  <rect x="50" y="85" width="380" height="35" fill="#1f6feb" rx="8"/>
+  <text class="label-bold" x="240" y="108" text-anchor="middle" fill="#ffffff">Required Reviewers</text>
+  
+  <circle cx="80" cy="145" r="15" class="box-blue"/>
+  <text class="label" x="80" y="150" text-anchor="middle" fill="#fff">👤</text>
+  
+  <text class="label" x="110" y="140">Aprobación manual requerida</text>
+  <text class="label-small" x="110" y="158">Hasta 6 reviewers por environment</text>
+  <text class="label-small" x="110" y="175">Cualquiera puede aprobar (o todos)</text>
+  <text class="label-small" x="110" y="192" fill="#3fb950">✓ Ideal para: production, críticos</text>
+  
+  <!-- Rule 2: Wait Timer -->
+  <rect class="box-gray" x="470" y="85" width="380" height="120"/>
+  <rect x="470" y="85" width="380" height="35" fill="#9e6a03" rx="8"/>
+  <text class="label-bold" x="660" y="108" text-anchor="middle" fill="#ffffff">Wait Timer</text>
+  
+  <circle cx="500" cy="145" r="15" class="box-orange"/>
+  <text class="label" x="500" y="150" text-anchor="middle" fill="#fff">⏱</text>
+  
+  <text class="label" x="530" y="140">Delay antes de deployment</text>
+  <text class="label-small" x="530" y="158">0 a 43,200 minutos (30 días)</text>
+  <text class="label-small" x="530" y="175">Tiempo para review o cancelar</text>
+  <text class="label-small" x="530" y="192" fill="#3fb950">✓ Ideal para: staging, QA</text>
+  
+  <!-- Rule 3: Deployment Branches -->
+  <rect class="box-gray" x="50" y="225" width="380" height="120"/>
+  <rect x="50" y="225" width="380" height="35" fill="#8957e5" rx="8"/>
+  <text class="label-bold" x="240" y="248" text-anchor="middle" fill="#ffffff">Deployment Branches</text>
+  
+  <circle cx="80" cy="285" r="15" class="box-purple"/>
+  <text class="label" x="80" y="290" text-anchor="middle" fill="#fff">🌿</text>
+  
+  <text class="label" x="110" y="280">Restringir branches permitidos</text>
+  <text class="label-small" x="110" y="298">All branches / Selected / Protected</text>
+  <text class="label-small" x="110" y="315">Patterns: main, release/*</text>
+  <text class="label-small" x="110" y="332" fill="#3fb950">✓ Ideal para: control de releases</text>
+  
+  <!-- Rule 4: Custom Rules (Beta) -->
+  <rect class="box-gray" x="470" y="225" width="380" height="120"/>
+  <rect x="470" y="225" width="380" height="35" fill="#238636" rx="8"/>
+  <text class="label-bold" x="660" y="248" text-anchor="middle" fill="#ffffff">Custom Deployment Rules</text>
+  
+  <circle cx="500" cy="285" r="15" class="box-green"/>
+  <text class="label" x="500" y="290" text-anchor="middle" fill="#fff">⚙</text>
+  
+  <text class="label" x="530" y="280">Integraciones externas</text>
+  <text class="label-small" x="530" y="298">GitHub Apps como gates</text>
+  <text class="label-small" x="530" y="315">Validaciones automatizadas</text>
+  <text class="label-small" x="530" y="332" fill="#3fb950">✓ Ideal para: compliance, auditoría</text>
+  
+  <!-- WORKFLOW EXAMPLE -->
+  <text class="section-title" x="450" y="380" text-anchor="middle">Flujo de Deployment con Protection Rules</text>
+  
+  <!-- Pipeline boxes -->
+  <rect class="box-blue" x="50" y="400" width="100" height="50"/>
+  <text class="label-bold" x="100" y="422" text-anchor="middle" fill="#fff">Build</text>
+  <text class="label-small" x="100" y="438" text-anchor="middle" fill="#c9d1d9">✓ Pass</text>
+  
+  <line x1="150" y1="425" x2="180" y2="425" class="arrow"/>
+  
+  <rect class="box-green" x="190" y="400" width="100" height="50"/>
+  <text class="label-bold" x="240" y="422" text-anchor="middle" fill="#fff">Dev</text>
+  <text class="label-small" x="240" y="438" text-anchor="middle" fill="#c9d1d9">Auto</text>
+  
+  <line x1="290" y1="425" x2="320" y2="425" class="arrow"/>
+  
+  <rect class="box-orange" x="330" y="400" width="120" height="50"/>
+  <text class="label-bold" x="390" y="422" text-anchor="middle" fill="#fff">Staging</text>
+  <text class="label-small" x="390" y="438" text-anchor="middle" fill="#c9d1d9">⏱ 5 min wait</text>
+  
+  <line x1="450" y1="425" x2="480" y2="425" class="arrow"/>
+  
+  <!-- Approval Gate -->
+  <rect class="box-purple" x="490" y="395" width="130" height="60"/>
+  <text class="label-bold" x="555" y="418" text-anchor="middle" fill="#fff">Approval Gate</text>
+  <text class="label-small" x="555" y="435" text-anchor="middle" fill="#c9d1d9">👤 Pending review</text>
+  <text class="label-small" x="555" y="448" text-anchor="middle" fill="#f0883e">Waiting...</text>
+  
+  <line x1="620" y1="425" x2="650" y2="425" class="arrow"/>
+  
+  <rect class="box-red" x="660" y="400" width="120" height="50"/>
+  <text class="label-bold" x="720" y="422" text-anchor="middle" fill="#fff">Production</text>
+  <text class="label-small" x="720" y="438" text-anchor="middle" fill="#c9d1d9">👤👤 2 reviewers</text>
+  
+  <!-- Status indicator -->
+  <rect x="800" y="400" width="60" height="50" fill="#21262d" stroke="#3fb950" stroke-width="2" rx="6"/>
+  <text class="label-small" x="830" y="420" text-anchor="middle" fill="#3fb950">Live</text>
+  <text class="label-small" x="830" y="438" text-anchor="middle" fill="#3fb950">v2.1.0</text>
+  
+  <!-- Footer -->
+  <text class="label-small" x="450" y="500" text-anchor="middle">Settings → Environments → [environment] → Protection rules</text>
+</svg>

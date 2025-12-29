@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #c9d1d9; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 14px; fill: #b0b5bd; }
+      .section-title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #c9d1d9; }
+      .label { font-family: Arial, sans-serif; font-size: 12px; fill: #c9d1d9; }
+      .label-small { font-family: Arial, sans-serif; font-size: 10px; fill: #b0b5bd; }
+      .box-blue { fill: #1f6feb; stroke: #58a6ff; stroke-width: 2; rx: 6; }
+      .box-green { fill: #238636; stroke: #3fb950; stroke-width: 2; rx: 6; }
+      .box-purple { fill: #8957e5; stroke: #a371f7; stroke-width: 2; rx: 6; }
+      .box-orange { fill: #9e6a03; stroke: #f0883e; stroke-width: 2; rx: 6; }
+      .box-gray { fill: #21262d; stroke: #30363d; stroke-width: 2; rx: 6; }
+      .arrow { stroke: #58a6ff; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .line-dashed { stroke: #30363d; stroke-width: 2; stroke-dasharray: 5,5; }
+      .traffic-100 { fill: #3fb950; }
+      .traffic-partial { fill: #f0883e; }
+      .pro { fill: #3fb950; }
+      .con { fill: #f85149; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#58a6ff"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="900" height="600"/>
+  
+  <!-- Title -->
+  <text class="title" x="450" y="35" text-anchor="middle">Deployment Strategies</text>
+  <text class="subtitle" x="450" y="55" text-anchor="middle">Comparativa de estrategias de despliegue</text>
+  
+  <!-- BLUE-GREEN DEPLOYMENT -->
+  <text class="section-title" x="150" y="95" text-anchor="middle" fill="#58a6ff">Blue-Green Deployment</text>
+  
+  <!-- Load Balancer -->
+  <rect class="box-purple" x="100" y="110" width="100" height="40"/>
+  <text class="label" x="150" y="135" text-anchor="middle">Load Balancer</text>
+  
+  <!-- Blue Environment (Active) -->
+  <rect class="box-blue" x="50" y="180" width="90" height="60"/>
+  <text class="label" x="95" y="205" text-anchor="middle">Blue</text>
+  <text class="label-small" x="95" y="225" text-anchor="middle">(v1.0 - Active)</text>
+  
+  <!-- Green Environment (Standby) -->
+  <rect class="box-green" x="160" y="180" width="90" height="60"/>
+  <text class="label" x="205" y="205" text-anchor="middle">Green</text>
+  <text class="label-small" x="205" y="225" text-anchor="middle">(v2.0 - Standby)</text>
+  
+  <!-- Traffic Arrow Blue-Green -->
+  <line x1="150" y1="150" x2="95" y2="180" class="arrow"/>
+  <line x1="150" y1="150" x2="205" y2="180" class="line-dashed"/>
+  
+  <!-- Traffic indicator -->
+  <circle cx="95" cy="260" r="8" class="traffic-100"/>
+  <text class="label-small" x="110" y="264">100%</text>
+  <circle cx="205" cy="260" r="8" class="box-gray"/>
+  <text class="label-small" x="220" y="264">0%</text>
+  
+  <!-- CANARY DEPLOYMENT -->
+  <text class="section-title" x="450" y="95" text-anchor="middle" fill="#f0883e">Canary Deployment</text>
+  
+  <!-- Load Balancer Canary -->
+  <rect class="box-purple" x="400" y="110" width="100" height="40"/>
+  <text class="label" x="450" y="135" text-anchor="middle">Load Balancer</text>
+  
+  <!-- Production -->
+  <rect class="box-blue" x="350" y="180" width="90" height="60"/>
+  <text class="label" x="395" y="205" text-anchor="middle">Production</text>
+  <text class="label-small" x="395" y="225" text-anchor="middle">(v1.0)</text>
+  
+  <!-- Canary -->
+  <rect class="box-orange" x="460" y="180" width="90" height="60"/>
+  <text class="label" x="505" y="205" text-anchor="middle">Canary</text>
+  <text class="label-small" x="505" y="225" text-anchor="middle">(v2.0)</text>
+  
+  <!-- Traffic Arrows Canary -->
+  <line x1="450" y1="150" x2="395" y2="180" class="arrow"/>
+  <line x1="450" y1="150" x2="505" y2="180" class="arrow"/>
+  
+  <!-- Traffic indicators -->
+  <circle cx="395" cy="260" r="8" class="traffic-100"/>
+  <text class="label-small" x="410" y="264">95%</text>
+  <circle cx="505" cy="260" r="8" class="traffic-partial"/>
+  <text class="label-small" x="520" y="264">5%</text>
+  
+  <!-- ROLLING DEPLOYMENT -->
+  <text class="section-title" x="750" y="95" text-anchor="middle" fill="#3fb950">Rolling Deployment</text>
+  
+  <!-- Server instances -->
+  <rect class="box-green" x="680" y="120" width="50" height="35"/>
+  <text class="label-small" x="705" y="142" text-anchor="middle">v2.0</text>
+  
+  <rect class="box-green" x="740" y="120" width="50" height="35"/>
+  <text class="label-small" x="765" y="142" text-anchor="middle">v2.0</text>
+  
+  <rect class="box-orange" x="800" y="120" width="50" height="35"/>
+  <text class="label-small" x="825" y="142" text-anchor="middle">v1→v2</text>
+  
+  <rect class="box-blue" x="680" y="165" width="50" height="35"/>
+  <text class="label-small" x="705" y="187" text-anchor="middle">v1.0</text>
+  
+  <rect class="box-blue" x="740" y="165" width="50" height="35"/>
+  <text class="label-small" x="765" y="187" text-anchor="middle">v1.0</text>
+  
+  <rect class="box-blue" x="800" y="165" width="50" height="35"/>
+  <text class="label-small" x="825" y="187" text-anchor="middle">v1.0</text>
+  
+  <!-- Progress bar -->
+  <rect x="680" y="215" width="170" height="15" rx="3" fill="#21262d" stroke="#30363d"/>
+  <rect x="680" y="215" width="85" height="15" rx="3" fill="#3fb950"/>
+  <text class="label-small" x="765" y="245" text-anchor="middle">50% completado</text>
+  
+  <!-- COMPARISON TABLE -->
+  <text class="section-title" x="450" y="310" text-anchor="middle">Comparativa de Estrategias</text>
+  
+  <!-- Table Header -->
+  <rect x="50" y="325" width="200" height="30" fill="#21262d" stroke="#30363d"/>
+  <rect x="250" y="325" width="200" height="30" fill="#21262d" stroke="#30363d"/>
+  <rect x="450" y="325" width="200" height="30" fill="#21262d" stroke="#30363d"/>
+  <rect x="650" y="325" width="200" height="30" fill="#21262d" stroke="#30363d"/>
+  
+  <text class="label" x="150" y="345" text-anchor="middle">Característica</text>
+  <text class="label" x="350" y="345" text-anchor="middle" fill="#58a6ff">Blue-Green</text>
+  <text class="label" x="550" y="345" text-anchor="middle" fill="#f0883e">Canary</text>
+  <text class="label" x="750" y="345" text-anchor="middle" fill="#3fb950">Rolling</text>
+  
+  <!-- Row 1: Rollback -->
+  <rect x="50" y="355" width="200" height="30" fill="#161b22" stroke="#30363d"/>
+  <rect x="250" y="355" width="200" height="30" fill="#161b22" stroke="#30363d"/>
+  <rect x="450" y="355" width="200" height="30" fill="#161b22" stroke="#30363d"/>
+  <rect x="650" y="355" width="200" height="30" fill="#161b22" stroke="#30363d"/>
+  
+  <text class="label-small" x="150" y="375" text-anchor="middle">Velocidad Rollback</text>
+  <text class="label-small" x="350" y="375" text-anchor="middle" fill="#3fb950">Instantáneo</text>
+  <text class="label-small" x="550" y="375" text-anchor="middle" fill="#3fb950">Rápido</text>
+  <text class="label-small" x="750" y="375" text-anchor="middle" fill="#f0883e">Gradual</text>
+  
+  <!-- Row 2: Resources -->
+  <rect x="50" y="385" width="200" height="30" fill="#0d1117" stroke="#30363d"/>
+  <rect x="250" y="385" width="200" height="30" fill="#0d1117" stroke="#30363d"/>
+  <rect x="450" y="385" width="200" height="30" fill="#0d1117" stroke="#30363d"/>
+  <rect x="650" y="385" width="200" height="30" fill="#0d1117" stroke="#30363d"/>
+  
+  <text class="label-small" x="150" y="405" text-anchor="middle">Recursos Necesarios</text>
+  <text class="label-small" x="350" y="405" text-anchor="middle" fill="#f85149">2x infraestructura</text>
+  <text class="label-small" x="550" y="405" text-anchor="middle" fill="#f0883e">+5-10% adicional</text>
+  <text class="label-small" x="750" y="405" text-anchor="middle" fill="#3fb950">Misma infraestructura</text>
+  
+  <!-- Row 3: Risk -->
+  <rect x="50" y="415" width="200" height="30" fill="#161b22" stroke="#30363d"/>
+  <rect x="250" y="415" width="200" height="30" fill="#161b22" stroke="#30363d"/>
+  <rect x="450" y="415" width="200" height="30" fill="#161b22" stroke="#30363d"/>
+  <rect x="650" y="415" width="200" height="30" fill="#161b22" stroke="#30363d"/>
+  
+  <text class="label-small" x="150" y="435" text-anchor="middle">Riesgo de Impacto</text>
+  <text class="label-small" x="350" y="435" text-anchor="middle" fill="#3fb950">Bajo (switch)</text>
+  <text class="label-small" x="550" y="435" text-anchor="middle" fill="#3fb950">Muy bajo (5%)</text>
+  <text class="label-small" x="750" y="435" text-anchor="middle" fill="#f0883e">Medio (gradual)</text>
+  
+  <!-- Row 4: Complexity -->
+  <rect x="50" y="445" width="200" height="30" fill="#0d1117" stroke="#30363d"/>
+  <rect x="250" y="445" width="200" height="30" fill="#0d1117" stroke="#30363d"/>
+  <rect x="450" y="445" width="200" height="30" fill="#0d1117" stroke="#30363d"/>
+  <rect x="650" y="445" width="200" height="30" fill="#0d1117" stroke="#30363d"/>
+  
+  <text class="label-small" x="150" y="465" text-anchor="middle">Complejidad</text>
+  <text class="label-small" x="350" y="465" text-anchor="middle" fill="#3fb950">Baja</text>
+  <text class="label-small" x="550" y="465" text-anchor="middle" fill="#f0883e">Media-Alta</text>
+  <text class="label-small" x="750" y="465" text-anchor="middle" fill="#3fb950">Baja</text>
+  
+  <!-- Row 5: Use Case -->
+  <rect x="50" y="475" width="200" height="40" fill="#161b22" stroke="#30363d"/>
+  <rect x="250" y="475" width="200" height="40" fill="#161b22" stroke="#30363d"/>
+  <rect x="450" y="475" width="200" height="40" fill="#161b22" stroke="#30363d"/>
+  <rect x="650" y="475" width="200" height="40" fill="#161b22" stroke="#30363d"/>
+  
+  <text class="label-small" x="150" y="495" text-anchor="middle">Caso de Uso Ideal</text>
+  <text class="label-small" x="350" y="495" text-anchor="middle">Releases críticos,</text>
+  <text class="label-small" x="350" y="508" text-anchor="middle">zero downtime</text>
+  <text class="label-small" x="550" y="495" text-anchor="middle">Features nuevas,</text>
+  <text class="label-small" x="550" y="508" text-anchor="middle">A/B testing</text>
+  <text class="label-small" x="750" y="495" text-anchor="middle">Updates frecuentes,</text>
+  <text class="label-small" x="750" y="508" text-anchor="middle">recursos limitados</text>
+  
+  <!-- Footer -->
+  <text class="subtitle" x="450" y="560" text-anchor="middle">GitHub Actions soporta todas estas estrategias con environments y protection rules</text>
+  <text class="label-small" x="450" y="580" text-anchor="middle">Semana 10 - Deployment Strategies</text>
+</svg>

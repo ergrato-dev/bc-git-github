@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #c9d1d9; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 14px; fill: #b0b5bd; }
+      .section-title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #c9d1d9; }
+      .label { font-family: Arial, sans-serif; font-size: 12px; fill: #c9d1d9; }
+      .label-bold { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #c9d1d9; }
+      .label-small { font-family: Arial, sans-serif; font-size: 10px; fill: #b0b5bd; }
+      .box-dev { fill: #238636; stroke: #3fb950; stroke-width: 2; rx: 8; }
+      .box-staging { fill: #9e6a03; stroke: #f0883e; stroke-width: 2; rx: 8; }
+      .box-prod { fill: #da3633; stroke: #f85149; stroke-width: 2; rx: 8; }
+      .box-gray { fill: #21262d; stroke: #30363d; stroke-width: 2; rx: 6; }
+      .box-blue { fill: #1f6feb; stroke: #58a6ff; stroke-width: 2; rx: 6; }
+      .box-purple { fill: #8957e5; stroke: #a371f7; stroke-width: 2; rx: 6; }
+      .arrow { stroke: #58a6ff; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .arrow-success { stroke: #3fb950; stroke-width: 2; fill: none; marker-end: url(#arrowgreen); }
+      .line-dashed { stroke: #30363d; stroke-width: 1; stroke-dasharray: 4,4; }
+      .icon-check { fill: #3fb950; }
+      .icon-lock { fill: #f0883e; }
+      .icon-key { fill: #a371f7; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#58a6ff"/>
+    </marker>
+    <marker id="arrowgreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3fb950"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="900" height="550"/>
+  
+  <!-- Title -->
+  <text class="title" x="450" y="35" text-anchor="middle">GitHub Environments Pipeline</text>
+  <text class="subtitle" x="450" y="55" text-anchor="middle">Flujo de deployment con environments configurados</text>
+  
+  <!-- PIPELINE FLOW -->
+  
+  <!-- Source: Push/PR -->
+  <rect class="box-gray" x="50" y="100" width="100" height="50" rx="6"/>
+  <text class="label-bold" x="100" y="122" text-anchor="middle">Push</text>
+  <text class="label-small" x="100" y="138" text-anchor="middle">main branch</text>
+  
+  <!-- Arrow to Build -->
+  <line x1="150" y1="125" x2="180" y2="125" class="arrow"/>
+  
+  <!-- Build Stage -->
+  <rect class="box-blue" x="190" y="100" width="100" height="50"/>
+  <text class="label-bold" x="240" y="122" text-anchor="middle">Build</text>
+  <text class="label-small" x="240" y="138" text-anchor="middle">compile + test</text>
+  
+  <!-- Arrow to Dev -->
+  <line x1="290" y1="125" x2="320" y2="125" class="arrow-success"/>
+  
+  <!-- DEV Environment -->
+  <rect class="box-dev" x="330" y="85" width="140" height="80"/>
+  <text class="label-bold" x="400" y="110" text-anchor="middle" fill="#ffffff">Development</text>
+  <text class="label-small" x="400" y="128" text-anchor="middle" fill="#c9d1d9">dev.example.com</text>
+  <text class="label-small" x="400" y="145" text-anchor="middle" fill="#c9d1d9">Auto-deploy</text>
+  <circle cx="350" cy="150" r="6" class="icon-check"/>
+  
+  <!-- Arrow to Staging -->
+  <line x1="470" y1="125" x2="500" y2="125" class="arrow"/>
+  
+  <!-- STAGING Environment -->
+  <rect class="box-staging" x="510" y="85" width="140" height="80"/>
+  <text class="label-bold" x="580" y="110" text-anchor="middle" fill="#ffffff">Staging</text>
+  <text class="label-small" x="580" y="128" text-anchor="middle" fill="#c9d1d9">staging.example.com</text>
+  <text class="label-small" x="580" y="145" text-anchor="middle" fill="#c9d1d9">Wait timer: 5min</text>
+  <circle cx="530" cy="150" r="6" class="icon-lock"/>
+  
+  <!-- Arrow to Prod -->
+  <line x1="650" y1="125" x2="680" y2="125" class="arrow"/>
+  
+  <!-- PRODUCTION Environment -->
+  <rect class="box-prod" x="690" y="85" width="160" height="80"/>
+  <text class="label-bold" x="770" y="110" text-anchor="middle" fill="#ffffff">Production</text>
+  <text class="label-small" x="770" y="128" text-anchor="middle" fill="#c9d1d9">app.example.com</text>
+  <text class="label-small" x="770" y="145" text-anchor="middle" fill="#c9d1d9">Required reviewers: 2</text>
+  <circle cx="710" cy="150" r="6" class="icon-lock"/>
+  
+  <!-- ENVIRONMENT DETAILS SECTION -->
+  <text class="section-title" x="450" y="210" text-anchor="middle">Configuración de Environments</text>
+  
+  <!-- Dev Config Box -->
+  <rect class="box-gray" x="50" y="230" width="250" height="150"/>
+  <rect x="50" y="230" width="250" height="30" fill="#238636" rx="6"/>
+  <text class="label-bold" x="175" y="250" text-anchor="middle" fill="#ffffff">Development</text>
+  
+  <text class="label-small" x="65" y="275" fill="#8b949e">Secrets:</text>
+  <text class="label" x="75" y="295">DEV_API_KEY</text>
+  <text class="label" x="75" y="312">DEV_DATABASE_URL</text>
+  
+  <text class="label-small" x="65" y="335" fill="#8b949e">Variables:</text>
+  <text class="label" x="75" y="355">ENV=development</text>
+  <text class="label" x="75" y="372">DEBUG=true</text>
+  
+  <!-- Staging Config Box -->
+  <rect class="box-gray" x="325" y="230" width="250" height="150"/>
+  <rect x="325" y="230" width="250" height="30" fill="#9e6a03" rx="6"/>
+  <text class="label-bold" x="450" y="250" text-anchor="middle" fill="#ffffff">Staging</text>
+  
+  <text class="label-small" x="340" y="275" fill="#8b949e">Secrets:</text>
+  <text class="label" x="350" y="295">STAGING_API_KEY</text>
+  <text class="label" x="350" y="312">STAGING_DATABASE_URL</text>
+  
+  <text class="label-small" x="340" y="335" fill="#8b949e">Protection Rules:</text>
+  <text class="label" x="350" y="355">Wait timer: 5 minutes</text>
+  <text class="label" x="350" y="372">Branch: main only</text>
+  
+  <!-- Prod Config Box -->
+  <rect class="box-gray" x="600" y="230" width="250" height="150"/>
+  <rect x="600" y="230" width="250" height="30" fill="#da3633" rx="6"/>
+  <text class="label-bold" x="725" y="250" text-anchor="middle" fill="#ffffff">Production</text>
+  
+  <text class="label-small" x="615" y="275" fill="#8b949e">Secrets:</text>
+  <text class="label" x="625" y="295">PROD_API_KEY</text>
+  <text class="label" x="625" y="312">PROD_DATABASE_URL</text>
+  
+  <text class="label-small" x="615" y="335" fill="#8b949e">Protection Rules:</text>
+  <text class="label" x="625" y="355">Required reviewers: 2</text>
+  <text class="label" x="625" y="372">Branch: main + tags</text>
+  
+  <!-- YAML EXAMPLE -->
+  <text class="section-title" x="450" y="420" text-anchor="middle">Workflow YAML Reference</text>
+  
+  <rect class="box-gray" x="100" y="435" width="700" height="90"/>
+  <text class="label" x="120" y="458" fill="#f0883e">jobs:</text>
+  <text class="label" x="140" y="475" fill="#79c0ff">deploy-prod:</text>
+  <text class="label" x="160" y="492" fill="#c9d1d9">environment:</text>
+  <text class="label" x="180" y="509" fill="#a5d6ff">name: production</text>
+  <text class="label" x="420" y="458" fill="#c9d1d9">url: ${{ steps.deploy.outputs.url }}</text>
+  <text class="label" x="420" y="475" fill="#8b949e"># Secrets disponibles:</text>
+  <text class="label" x="420" y="492" fill="#a5d6ff">${{ secrets.PROD_API_KEY }}</text>
+  <text class="label" x="420" y="509" fill="#a5d6ff">${{ vars.ENV }}</text>
+  
+  <!-- Footer -->
+  <text class="label-small" x="450" y="540" text-anchor="middle">Semana 10 - GitHub Environments</text>
+</svg>
