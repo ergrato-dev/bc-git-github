@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <marker id="arrowBk" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#58a6ff"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="500" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#e6e6e6" text-anchor="middle">Backup &amp; Disaster Recovery Strategy</text>
+  
+  <!-- GitHub Cloud -->
+  <rect x="350" y="60" width="200" height="80" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+  <text x="450" y="90" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#58a6ff" text-anchor="middle">GitHub Cloud</text>
+  <text x="450" y="115" font-family="Arial, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Primary Source</text>
+  <text x="450" y="130" font-family="Arial, sans-serif" font-size="9" fill="#6e7681" text-anchor="middle">Code, Issues, PRs, Wiki</text>
+  
+  <!-- 3-2-1 Rule -->
+  <rect x="30" y="170" width="250" height="140" rx="8" fill="#161b22" stroke="#238636" stroke-width="2"/>
+  <text x="155" y="195" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#3fb950" text-anchor="middle">3-2-1 Backup Rule</text>
+  
+  <rect x="50" y="215" width="210" height="25" rx="4" fill="#21262d"/>
+  <text x="155" y="232" font-family="Arial, sans-serif" font-size="10" fill="#3fb950" text-anchor="middle">3 copies of data</text>
+  
+  <rect x="50" y="250" width="210" height="25" rx="4" fill="#21262d"/>
+  <text x="155" y="267" font-family="Arial, sans-serif" font-size="10" fill="#58a6ff" text-anchor="middle">2 different storage types</text>
+  
+  <rect x="50" y="285" width="210" height="25" rx="4" fill="#21262d"/>
+  <text x="155" y="302" font-family="Arial, sans-serif" font-size="10" fill="#d29922" text-anchor="middle">1 offsite location</text>
+  
+  <!-- Backup Types -->
+  <rect x="310" y="170" width="280" height="140" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <text x="450" y="195" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e6e6e6" text-anchor="middle">Backup Types</text>
+  
+  <rect x="325" y="215" width="120" height="40" rx="4" fill="#238636"/>
+  <text x="385" y="235" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">Git Clone</text>
+  <text x="385" y="248" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" text-anchor="middle">--mirror</text>
+  
+  <rect x="455" y="215" width="120" height="40" rx="4" fill="#1f6feb"/>
+  <text x="515" y="235" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">API Export</text>
+  <text x="515" y="248" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" text-anchor="middle">Issues, PRs, Wiki</text>
+  
+  <rect x="325" y="265" width="120" height="40" rx="4" fill="#8957e5"/>
+  <text x="385" y="285" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">Migration</text>
+  <text x="385" y="298" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" text-anchor="middle">Archive</text>
+  
+  <rect x="455" y="265" width="120" height="40" rx="4" fill="#bf8700"/>
+  <text x="515" y="285" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">Third-party</text>
+  <text x="515" y="298" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" text-anchor="middle">Tools</text>
+  
+  <!-- Storage Destinations -->
+  <rect x="620" y="170" width="250" height="140" rx="8" fill="#161b22" stroke="#da3633" stroke-width="2"/>
+  <text x="745" y="195" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#f85149" text-anchor="middle">Storage Destinations</text>
+  
+  <rect x="635" y="215" width="105" height="35" rx="4" fill="#21262d"/>
+  <text x="687" y="237" font-family="Arial, sans-serif" font-size="10" fill="#c9d1d9" text-anchor="middle">AWS S3</text>
+  
+  <rect x="750" y="215" width="105" height="35" rx="4" fill="#21262d"/>
+  <text x="802" y="237" font-family="Arial, sans-serif" font-size="10" fill="#c9d1d9" text-anchor="middle">Azure Blob</text>
+  
+  <rect x="635" y="260" width="105" height="35" rx="4" fill="#21262d"/>
+  <text x="687" y="282" font-family="Arial, sans-serif" font-size="10" fill="#c9d1d9" text-anchor="middle">GCS</text>
+  
+  <rect x="750" y="260" width="105" height="35" rx="4" fill="#21262d"/>
+  <text x="802" y="282" font-family="Arial, sans-serif" font-size="10" fill="#c9d1d9" text-anchor="middle">On-Premise</text>
+  
+  <!-- Recovery Metrics -->
+  <rect x="30" y="340" width="250" height="140" rx="8" fill="#161b22" stroke="#bf8700" stroke-width="2"/>
+  <text x="155" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d29922" text-anchor="middle">Recovery Metrics</text>
+  
+  <rect x="50" y="385" width="210" height="40" rx="4" fill="#21262d"/>
+  <text x="155" y="405" font-family="Arial, sans-serif" font-size="11" fill="#d29922" text-anchor="middle">RTO (Recovery Time)</text>
+  <text x="155" y="420" font-family="Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Max downtime acceptable</text>
+  
+  <rect x="50" y="435" width="210" height="40" rx="4" fill="#21262d"/>
+  <text x="155" y="455" font-family="Arial, sans-serif" font-size="11" fill="#58a6ff" text-anchor="middle">RPO (Recovery Point)</text>
+  <text x="155" y="470" font-family="Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Max data loss acceptable</text>
+  
+  <!-- Automation -->
+  <rect x="310" y="340" width="280" height="140" rx="8" fill="#161b22" stroke="#238636" stroke-width="2"/>
+  <text x="450" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#3fb950" text-anchor="middle">Automation Schedule</text>
+  
+  <rect x="325" y="390" width="250" height="25" rx="4" fill="#238636"/>
+  <text x="450" y="407" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">Daily: Git mirrors (cron/Actions)</text>
+  
+  <rect x="325" y="425" width="250" height="25" rx="4" fill="#1f6feb"/>
+  <text x="450" y="442" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">Weekly: Full metadata export</text>
+  
+  <rect x="325" y="460" width="250" height="25" rx="4" fill="#8957e5"/>
+  <text x="450" y="477" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">Monthly: DR test &amp; validation</text>
+  
+  <!-- DR Plan -->
+  <rect x="620" y="340" width="250" height="140" rx="8" fill="#161b22" stroke="#a371f7" stroke-width="2"/>
+  <text x="745" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#a371f7" text-anchor="middle">DR Plan Components</text>
+  
+  <rect x="635" y="390" width="220" height="20" rx="4" fill="#21262d"/>
+  <text x="745" y="404" font-family="Arial, sans-serif" font-size="9" fill="#c9d1d9" text-anchor="middle">1. Runbook documentation</text>
+  
+  <rect x="635" y="415" width="220" height="20" rx="4" fill="#21262d"/>
+  <text x="745" y="429" font-family="Arial, sans-serif" font-size="9" fill="#c9d1d9" text-anchor="middle">2. Contact escalation</text>
+  
+  <rect x="635" y="440" width="220" height="20" rx="4" fill="#21262d"/>
+  <text x="745" y="454" font-family="Arial, sans-serif" font-size="9" fill="#c9d1d9" text-anchor="middle">3. Recovery procedures</text>
+  
+  <rect x="635" y="465" width="220" height="20" rx="4" fill="#21262d"/>
+  <text x="745" y="479" font-family="Arial, sans-serif" font-size="9" fill="#c9d1d9" text-anchor="middle">4. Regular testing schedule</text>
+  
+  <!-- Arrows from GitHub to destinations -->
+  <line x1="450" y1="140" x2="450" y2="165" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrowBk)"/>
+  <line x1="400" y1="140" x2="155" y2="165" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrowBk)"/>
+  <line x1="500" y1="140" x2="745" y2="165" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrowBk)"/>
+</svg>

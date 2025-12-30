@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <marker id="arrowMig" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#58a6ff"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="500" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#e6e6e6" text-anchor="middle">GitHub Migration Process</text>
+  
+  <!-- Phase 1: Assessment -->
+  <rect x="30" y="70" width="180" height="160" rx="8" fill="#161b22" stroke="#bf8700" stroke-width="2"/>
+  <text x="120" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d29922" text-anchor="middle">1. Assessment</text>
+  
+  <rect x="45" y="115" width="150" height="25" rx="4" fill="#21262d"/>
+  <text x="120" y="132" font-family="Arial, sans-serif" font-size="10" fill="#c9d1d9" text-anchor="middle">Inventory repos</text>
+  
+  <rect x="45" y="150" width="150" height="25" rx="4" fill="#21262d"/>
+  <text x="120" y="167" font-family="Arial, sans-serif" font-size="10" fill="#c9d1d9" text-anchor="middle">Identify dependencies</text>
+  
+  <rect x="45" y="185" width="150" height="25" rx="4" fill="#21262d"/>
+  <text x="120" y="202" font-family="Arial, sans-serif" font-size="10" fill="#c9d1d9" text-anchor="middle">Estimate size/time</text>
+  
+  <!-- Phase 2: Preparation -->
+  <rect x="240" y="70" width="180" height="160" rx="8" fill="#161b22" stroke="#1f6feb" stroke-width="2"/>
+  <text x="330" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#58a6ff" text-anchor="middle">2. Preparation</text>
+  
+  <rect x="255" y="115" width="150" height="25" rx="4" fill="#21262d"/>
+  <text x="330" y="132" font-family="Arial, sans-serif" font-size="10" fill="#c9d1d9" text-anchor="middle">Setup target org</text>
+  
+  <rect x="255" y="150" width="150" height="25" rx="4" fill="#21262d"/>
+  <text x="330" y="167" font-family="Arial, sans-serif" font-size="10" fill="#c9d1d9" text-anchor="middle">Configure teams</text>
+  
+  <rect x="255" y="185" width="150" height="25" rx="4" fill="#21262d"/>
+  <text x="330" y="202" font-family="Arial, sans-serif" font-size="10" fill="#c9d1d9" text-anchor="middle">Test migration (dry run)</text>
+  
+  <!-- Phase 3: Migration -->
+  <rect x="450" y="70" width="180" height="160" rx="8" fill="#161b22" stroke="#238636" stroke-width="2"/>
+  <text x="540" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#3fb950" text-anchor="middle">3. Migration</text>
+  
+  <rect x="465" y="115" width="150" height="25" rx="4" fill="#21262d"/>
+  <text x="540" y="132" font-family="Arial, sans-serif" font-size="10" fill="#c9d1d9" text-anchor="middle">Export from source</text>
+  
+  <rect x="465" y="150" width="150" height="25" rx="4" fill="#21262d"/>
+  <text x="540" y="167" font-family="Arial, sans-serif" font-size="10" fill="#c9d1d9" text-anchor="middle">Import to target</text>
+  
+  <rect x="465" y="185" width="150" height="25" rx="4" fill="#21262d"/>
+  <text x="540" y="202" font-family="Arial, sans-serif" font-size="10" fill="#c9d1d9" text-anchor="middle">Migrate metadata</text>
+  
+  <!-- Phase 4: Validation -->
+  <rect x="660" y="70" width="210" height="160" rx="8" fill="#161b22" stroke="#a371f7" stroke-width="2"/>
+  <text x="765" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#a371f7" text-anchor="middle">4. Validation</text>
+  
+  <rect x="675" y="115" width="180" height="25" rx="4" fill="#21262d"/>
+  <text x="765" y="132" font-family="Arial, sans-serif" font-size="10" fill="#c9d1d9" text-anchor="middle">Verify commit history</text>
+  
+  <rect x="675" y="150" width="180" height="25" rx="4" fill="#21262d"/>
+  <text x="765" y="167" font-family="Arial, sans-serif" font-size="10" fill="#c9d1d9" text-anchor="middle">Check branches/tags</text>
+  
+  <rect x="675" y="185" width="180" height="25" rx="4" fill="#21262d"/>
+  <text x="765" y="202" font-family="Arial, sans-serif" font-size="10" fill="#c9d1d9" text-anchor="middle">Validate issues/PRs</text>
+  
+  <!-- Arrows between phases -->
+  <line x1="210" y1="150" x2="235" y2="150" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrowMig)"/>
+  <line x1="420" y1="150" x2="445" y2="150" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrowMig)"/>
+  <line x1="630" y1="150" x2="655" y2="150" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrowMig)"/>
+  
+  <!-- Migration Tools -->
+  <rect x="30" y="260" width="410" height="120" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <text x="235" y="285" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e6e6e6" text-anchor="middle">Migration Tools</text>
+  
+  <rect x="50" y="305" width="180" height="60" rx="4" fill="#238636"/>
+  <text x="140" y="330" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">GEI</text>
+  <text x="140" y="350" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" text-anchor="middle">GitHub Enterprise Importer</text>
+  
+  <rect x="250" y="305" width="180" height="60" rx="4" fill="#1f6feb"/>
+  <text x="340" y="330" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">GitHub Importer</text>
+  <text x="340" y="350" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" text-anchor="middle">Web-based import</text>
+  
+  <!-- What Migrates -->
+  <rect x="460" y="260" width="410" height="120" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <text x="665" y="285" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e6e6e6" text-anchor="middle">What Migrates</text>
+  
+  <rect x="480" y="305" width="90" height="60" rx="4" fill="#21262d" stroke="#3fb950" stroke-width="1"/>
+  <text x="525" y="330" font-family="Arial, sans-serif" font-size="10" fill="#3fb950" text-anchor="middle">✓ Code</text>
+  <text x="525" y="348" font-family="Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Full history</text>
+  
+  <rect x="580" y="305" width="90" height="60" rx="4" fill="#21262d" stroke="#3fb950" stroke-width="1"/>
+  <text x="625" y="330" font-family="Arial, sans-serif" font-size="10" fill="#3fb950" text-anchor="middle">✓ Branches</text>
+  <text x="625" y="348" font-family="Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">All refs</text>
+  
+  <rect x="680" y="305" width="90" height="60" rx="4" fill="#21262d" stroke="#3fb950" stroke-width="1"/>
+  <text x="725" y="330" font-family="Arial, sans-serif" font-size="10" fill="#3fb950" text-anchor="middle">✓ Issues</text>
+  <text x="725" y="348" font-family="Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">With comments</text>
+  
+  <rect x="780" y="305" width="80" height="60" rx="4" fill="#21262d" stroke="#bf8700" stroke-width="1"/>
+  <text x="820" y="330" font-family="Arial, sans-serif" font-size="10" fill="#d29922" text-anchor="middle">~ PRs</text>
+  <text x="820" y="348" font-family="Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Partial</text>
+  
+  <!-- Sources -->
+  <rect x="30" y="400" width="840" height="80" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <text x="450" y="425" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e6e6e6" text-anchor="middle">Supported Sources</text>
+  
+  <rect x="60" y="440" width="120" height="30" rx="4" fill="#da3633"/>
+  <text x="120" y="460" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">GitLab</text>
+  
+  <rect x="200" y="440" width="120" height="30" rx="4" fill="#1f6feb"/>
+  <text x="260" y="460" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">Azure DevOps</text>
+  
+  <rect x="340" y="440" width="120" height="30" rx="4" fill="#f85149"/>
+  <text x="400" y="460" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">Bitbucket</text>
+  
+  <rect x="480" y="440" width="120" height="30" rx="4" fill="#bf8700"/>
+  <text x="540" y="460" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">SVN</text>
+  
+  <rect x="620" y="440" width="120" height="30" rx="4" fill="#6e7681"/>
+  <text x="680" y="460" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">Mercurial</text>
+  
+  <rect x="760" y="440" width="100" height="30" rx="4" fill="#238636"/>
+  <text x="810" y="460" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">GHES</text>
+</svg>
