@@ -1,0 +1,109 @@
+<svg viewBox="0 0 800 550" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="550" fill="#0d1117"/>
+  
+  <text x="400" y="35" fill="#58a6ff" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">Teams &amp; Repository Permissions</text>
+  
+  <!-- Permission Levels Legend -->
+  <rect x="50" y="55" width="700" height="45" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="70" y="75" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Permission Levels:</text>
+  <rect x="190" y="65" width="70" height="25" rx="4" fill="#238636"/>
+  <text x="225" y="82" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Admin</text>
+  <rect x="270" y="65" width="80" height="25" rx="4" fill="#1f6feb"/>
+  <text x="310" y="82" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Maintain</text>
+  <rect x="360" y="65" width="60" height="25" rx="4" fill="#8957e5"/>
+  <text x="390" y="82" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Write</text>
+  <rect x="430" y="65" width="60" height="25" rx="4" fill="#f0883e"/>
+  <text x="460" y="82" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Triage</text>
+  <rect x="500" y="65" width="55" height="25" rx="4" fill="#8b949e"/>
+  <text x="527" y="82" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Read</text>
+  <rect x="565" y="65" width="55" height="25" rx="4" fill="#21262d" stroke="#30363d"/>
+  <text x="592" y="82" fill="#8b949e" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">None</text>
+  
+  <!-- Parent Team -->
+  <rect x="300" y="115" width="200" height="50" rx="6" fill="#238636" stroke="#3fb950" stroke-width="2"/>
+  <text x="400" y="140" fill="#ffffff" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">🏷️ engineering</text>
+  <text x="400" y="155" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Parent Team • 25 members</text>
+  
+  <!-- Lines to child teams -->
+  <line x1="350" y1="165" x2="150" y2="200" stroke="#30363d" stroke-width="2"/>
+  <line x1="400" y1="165" x2="400" y2="200" stroke="#30363d" stroke-width="2"/>
+  <line x1="450" y1="165" x2="650" y2="200" stroke="#30363d" stroke-width="2"/>
+  
+  <!-- Child Team 1: Frontend -->
+  <rect x="50" y="200" width="180" height="45" rx="6" fill="#1f6feb" stroke="#58a6ff" stroke-width="1"/>
+  <text x="140" y="222" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">frontend</text>
+  <text x="140" y="237" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">8 members</text>
+  
+  <!-- Child Team 2: Backend -->
+  <rect x="310" y="200" width="180" height="45" rx="6" fill="#1f6feb" stroke="#58a6ff" stroke-width="1"/>
+  <text x="400" y="222" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">backend</text>
+  <text x="400" y="237" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">10 members</text>
+  
+  <!-- Child Team 3: Platform -->
+  <rect x="570" y="200" width="180" height="45" rx="6" fill="#1f6feb" stroke="#58a6ff" stroke-width="1"/>
+  <text x="660" y="222" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">platform</text>
+  <text x="660" y="237" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">7 members</text>
+  
+  <!-- Repository Access Matrix -->
+  <text x="400" y="280" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Repository Access Matrix</text>
+  
+  <!-- Matrix Header -->
+  <rect x="50" y="295" width="700" height="30" rx="4" fill="#21262d"/>
+  <text x="150" y="315" fill="#8b949e" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Repository</text>
+  <text x="300" y="315" fill="#58a6ff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">frontend</text>
+  <text x="430" y="315" fill="#58a6ff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">backend</text>
+  <text x="560" y="315" fill="#58a6ff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">platform</text>
+  <text x="680" y="315" fill="#f0883e" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">security</text>
+  
+  <!-- Row 1: web-app -->
+  <rect x="50" y="330" width="700" height="35" rx="0" fill="#161b22"/>
+  <text x="150" y="352" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">📁 web-app</text>
+  <rect x="265" y="340" width="70" height="20" rx="3" fill="#8957e5"/>
+  <text x="300" y="354" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Write</text>
+  <rect x="395" y="340" width="70" height="20" rx="3" fill="#8b949e"/>
+  <text x="430" y="354" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Read</text>
+  <rect x="525" y="340" width="70" height="20" rx="3" fill="#21262d" stroke="#30363d"/>
+  <text x="560" y="354" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">None</text>
+  <rect x="645" y="340" width="70" height="20" rx="3" fill="#8b949e"/>
+  <text x="680" y="354" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Read</text>
+  
+  <!-- Row 2: api-service -->
+  <rect x="50" y="370" width="700" height="35" rx="0" fill="#0d1117"/>
+  <text x="150" y="392" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">📁 api-service</text>
+  <rect x="265" y="380" width="70" height="20" rx="3" fill="#8b949e"/>
+  <text x="300" y="394" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Read</text>
+  <rect x="395" y="380" width="70" height="20" rx="3" fill="#8957e5"/>
+  <text x="430" y="394" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Write</text>
+  <rect x="525" y="380" width="70" height="20" rx="3" fill="#8b949e"/>
+  <text x="560" y="394" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Read</text>
+  <rect x="645" y="380" width="70" height="20" rx="3" fill="#8b949e"/>
+  <text x="680" y="394" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Read</text>
+  
+  <!-- Row 3: infrastructure -->
+  <rect x="50" y="410" width="700" height="35" rx="0" fill="#161b22"/>
+  <text x="150" y="432" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">📁 infrastructure</text>
+  <rect x="265" y="420" width="70" height="20" rx="3" fill="#21262d" stroke="#30363d"/>
+  <text x="300" y="434" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">None</text>
+  <rect x="395" y="420" width="70" height="20" rx="3" fill="#8b949e"/>
+  <text x="430" y="434" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Read</text>
+  <rect x="525" y="420" width="70" height="20" rx="3" fill="#238636"/>
+  <text x="560" y="434" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Admin</text>
+  <rect x="645" y="420" width="70" height="20" rx="3" fill="#1f6feb"/>
+  <text x="680" y="434" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Maintain</text>
+  
+  <!-- Row 4: security-tools -->
+  <rect x="50" y="450" width="700" height="35" rx="0" fill="#0d1117"/>
+  <text x="150" y="472" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">📁 security-tools</text>
+  <rect x="265" y="460" width="70" height="20" rx="3" fill="#21262d" stroke="#30363d"/>
+  <text x="300" y="474" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">None</text>
+  <rect x="395" y="460" width="70" height="20" rx="3" fill="#21262d" stroke="#30363d"/>
+  <text x="430" y="474" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">None</text>
+  <rect x="525" y="460" width="70" height="20" rx="3" fill="#8b949e"/>
+  <text x="560" y="474" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Read</text>
+  <rect x="645" y="460" width="70" height="20" rx="3" fill="#238636"/>
+  <text x="680" y="474" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Admin</text>
+  
+  <!-- Footer -->
+  <text x="400" y="515" fill="#8b949e" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Nested teams inherit parent permissions • Child teams can have additional access</text>
+  <text x="400" y="535" fill="#58a6ff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Principle: Least Privilege - Grant minimum access needed</text>
+</svg>

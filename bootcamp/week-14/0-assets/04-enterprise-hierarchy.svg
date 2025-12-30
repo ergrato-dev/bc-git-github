@@ -1,0 +1,102 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" fill="#0d1117"/>
+  
+  <text x="400" y="35" fill="#58a6ff" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">GitHub Enterprise Hierarchy</text>
+  
+  <!-- Enterprise Level -->
+  <rect x="275" y="55" width="250" height="65" rx="8" fill="#8957e5" stroke="#a371f7" stroke-width="2"/>
+  <text x="400" y="80" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">🏛️ Enterprise Account</text>
+  <text x="400" y="100" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">acme-enterprise</text>
+  <text x="400" y="115" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Policies • Billing • Identity • Audit</text>
+  
+  <!-- Lines to Organizations -->
+  <line x1="350" y1="120" x2="200" y2="165" stroke="#30363d" stroke-width="2"/>
+  <line x1="400" y1="120" x2="400" y2="165" stroke="#30363d" stroke-width="2"/>
+  <line x1="450" y1="120" x2="600" y2="165" stroke="#30363d" stroke-width="2"/>
+  
+  <!-- Organization 1: Engineering -->
+  <rect x="75" y="165" width="200" height="55" rx="6" fill="#238636" stroke="#3fb950" stroke-width="2"/>
+  <text x="175" y="190" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">🏢 acme-engineering</text>
+  <text x="175" y="208" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">150 members • 80 repos</text>
+  
+  <!-- Organization 2: Product -->
+  <rect x="300" y="165" width="200" height="55" rx="6" fill="#238636" stroke="#3fb950" stroke-width="2"/>
+  <text x="400" y="190" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">🏢 acme-product</text>
+  <text x="400" y="208" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">50 members • 30 repos</text>
+  
+  <!-- Organization 3: Security -->
+  <rect x="525" y="165" width="200" height="55" rx="6" fill="#238636" stroke="#3fb950" stroke-width="2"/>
+  <text x="625" y="190" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">🏢 acme-security</text>
+  <text x="625" y="208" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">20 members • 15 repos</text>
+  
+  <!-- Teams under Engineering -->
+  <line x1="125" y1="220" x2="100" y2="250" stroke="#30363d" stroke-width="1"/>
+  <line x1="175" y1="220" x2="175" y2="250" stroke="#30363d" stroke-width="1"/>
+  <line x1="225" y1="220" x2="250" y2="250" stroke="#30363d" stroke-width="1"/>
+  
+  <rect x="50" y="250" width="80" height="35" rx="4" fill="#1f6feb" stroke="#58a6ff" stroke-width="1"/>
+  <text x="90" y="272" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">frontend</text>
+  
+  <rect x="140" y="250" width="80" height="35" rx="4" fill="#1f6feb" stroke="#58a6ff" stroke-width="1"/>
+  <text x="180" y="272" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">backend</text>
+  
+  <rect x="230" y="250" width="80" height="35" rx="4" fill="#1f6feb" stroke="#58a6ff" stroke-width="1"/>
+  <text x="270" y="272" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">platform</text>
+  
+  <!-- Teams under Product -->
+  <line x1="375" y1="220" x2="360" y2="250" stroke="#30363d" stroke-width="1"/>
+  <line x1="425" y1="220" x2="440" y2="250" stroke="#30363d" stroke-width="1"/>
+  
+  <rect x="320" y="250" width="80" height="35" rx="4" fill="#1f6feb" stroke="#58a6ff" stroke-width="1"/>
+  <text x="360" y="272" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">design</text>
+  
+  <rect x="410" y="250" width="80" height="35" rx="4" fill="#1f6feb" stroke="#58a6ff" stroke-width="1"/>
+  <text x="450" y="272" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">pm</text>
+  
+  <!-- Teams under Security -->
+  <line x1="600" y1="220" x2="585" y2="250" stroke="#30363d" stroke-width="1"/>
+  <line x1="650" y1="220" x2="665" y2="250" stroke="#30363d" stroke-width="1"/>
+  
+  <rect x="545" y="250" width="80" height="35" rx="4" fill="#1f6feb" stroke="#58a6ff" stroke-width="1"/>
+  <text x="585" y="272" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">appsec</text>
+  
+  <rect x="635" y="250" width="80" height="35" rx="4" fill="#1f6feb" stroke="#58a6ff" stroke-width="1"/>
+  <text x="675" y="272" fill="#ffffff" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">infrasec</text>
+  
+  <!-- Policy Inheritance Box -->
+  <rect x="50" y="310" width="330" height="100" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="215" y="335" fill="#f0883e" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">⚙️ Enterprise Policies (Inherited)</text>
+  <text x="70" y="360" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">• SAML SSO enforced</text>
+  <text x="70" y="378" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">• 2FA required for all members</text>
+  <text x="70" y="396" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">• IP allow list enabled</text>
+  
+  <!-- Billing Box -->
+  <rect x="420" y="310" width="330" height="100" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="585" y="335" fill="#3fb950" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">💰 Centralized Billing</text>
+  <text x="440" y="360" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">• Unified seat management</text>
+  <text x="440" y="378" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">• GHAS licenses pooled</text>
+  <text x="440" y="396" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">• Actions minutes shared</text>
+  
+  <!-- Hierarchy explanation -->
+  <rect x="50" y="425" width="700" height="80" rx="6" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <text x="400" y="450" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Hierarchy Levels</text>
+  
+  <rect x="80" y="460" width="120" height="30" rx="4" fill="#8957e5"/>
+  <text x="140" y="480" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Enterprise</text>
+  <text x="215" y="480" fill="#8b949e" font-family="Arial, sans-serif" font-size="14">→</text>
+  
+  <rect x="240" y="460" width="120" height="30" rx="4" fill="#238636"/>
+  <text x="300" y="480" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Organization</text>
+  <text x="375" y="480" fill="#8b949e" font-family="Arial, sans-serif" font-size="14">→</text>
+  
+  <rect x="400" y="460" width="100" height="30" rx="4" fill="#1f6feb"/>
+  <text x="450" y="480" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Team</text>
+  <text x="515" y="480" fill="#8b949e" font-family="Arial, sans-serif" font-size="14">→</text>
+  
+  <rect x="540" y="460" width="100" height="30" rx="4" fill="#21262d" stroke="#58a6ff"/>
+  <text x="590" y="480" fill="#58a6ff" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">Repository</text>
+  <text x="655" y="480" fill="#8b949e" font-family="Arial, sans-serif" font-size="14">→</text>
+  
+  <rect x="680" y="460" width="60" height="30" rx="4" fill="#21262d" stroke="#3fb950"/>
+  <text x="710" y="480" fill="#3fb950" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">User</text>
+</svg>
