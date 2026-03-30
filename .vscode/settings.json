@@ -67,5 +67,25 @@
       "yzhang.markdown-all-in-one",
       "shd101wyy.markdown-preview-enhanced"
     ]
-  }
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#f37962",
+    "activityBar.background": "#f37962",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#89f69a",
+    "activityBarBadge.foreground": "#15202b",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#f37962",
+    "statusBar.background": "#f05033",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#f37962",
+    "statusBarItem.remoteBackground": "#f05033",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#f05033",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#f0503399",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#f05033"
 }
