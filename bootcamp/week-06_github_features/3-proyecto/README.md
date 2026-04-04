@@ -25,6 +25,7 @@ Al completar este proyecto seras capaz de:
 Eres un desarrollador que quiere contribuir a un proyecto open source. El proyecto es una libreria de utilidades JavaScript mantenida por la comunidad.
 
 Simularas todo el proceso:
+
 1. Encontrar un Issue o proponer mejora
 2. Fork del repositorio
 3. Implementar cambios
@@ -59,7 +60,7 @@ git init
 
 ### 1.2 Crear estructura inicial
 
-```bash
+````bash
 # Crear archivos base
 cat > README.md << 'EOF'
 # OSS Utils Library
@@ -70,15 +71,15 @@ A collection of JavaScript utility functions for common tasks.
 
 ```bash
 npm install oss-utils-library
-```
+````
 
 ## Usage
 
 ```javascript
-const { formatDate, capitalize } = require('oss-utils-library');
+const { formatDate, capitalize } = require("oss-utils-library");
 
 console.log(formatDate(new Date())); // "2025-01-15"
-console.log(capitalize('hello'));    // "Hello"
+console.log(capitalize("hello")); // "Hello"
 ```
 
 ## Contributing
@@ -87,9 +88,10 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 
 ## License
 
-MIT
+CC BY-NC-SA 4.0 — see [LICENSE](../../LICENSE)
 EOF
-```
+
+````
 
 ### 1.3 Crear CONTRIBUTING.md
 
@@ -142,7 +144,7 @@ We use Conventional Commits:
 
 Be respectful and inclusive. See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 EOF
-```
+````
 
 ### 1.4 Crear codigo fuente
 
@@ -332,7 +334,7 @@ Labels: `bug`, `good first issue`
 
 ### 2.2 Crear Issue de Feature
 
-```markdown
+````markdown
 Title: [FEAT] Add slugify function to strings module
 
 ## Description
@@ -342,6 +344,7 @@ Add a function to convert strings to URL-friendly slugs.
 ## Use Case
 
 When generating URLs from titles or names, need to convert:
+
 - "Hello World!" -> "hello-world"
 - "My Amazing Post" -> "my-amazing-post"
 
@@ -349,19 +352,21 @@ When generating URLs from titles or names, need to convert:
 
 ```javascript
 function slugify(str) {
-    return str
-        .toLowerCase()
-        .trim()
-        .replace(/[^\w\s-]/g, '')
-        .replace(/[\s_-]+/g, '-');
+  return str
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/[\s_-]+/g, "-");
 }
 ```
+````
 
 ## Alternatives Considered
 
 - Using external library (slug, slugify)
 - But prefer keeping dependencies minimal
-```
+
+````
 
 Labels: `enhancement`, `help wanted`
 
@@ -383,7 +388,7 @@ Only basic usage shown.
 - Add example for each function
 - Include edge cases
 - Add TypeScript types documentation
-```
+````
 
 Labels: `documentation`, `good first issue`
 
@@ -541,12 +546,15 @@ Closes #2
 
 ```markdown
 # Comentario 1 (praise)
+
 praise: Nice implementation! The regex patterns are well thought out.
 
 # Comentario 2 (suggestion)
+
 suggestion: Consider adding a maxLength parameter to prevent extremely long slugs.
 
 # Comentario 3 (question)
+
 question: Should we handle unicode characters like accents? (cafe -> cafe or café -> cafe?)
 ```
 
@@ -661,15 +669,15 @@ git push
 
 ## Criterios de Evaluacion
 
-| Criterio | Puntos |
-|----------|--------|
-| Issues bien documentados | 15 |
-| Fork y branch workflow correcto | 15 |
-| PR con descripcion completa | 20 |
-| Code review realizado | 15 |
-| Project board configurado | 15 |
-| Documentacion (CONTRIBUTING, CHANGELOG) | 20 |
-| **Total** | **100** |
+| Criterio                                | Puntos  |
+| --------------------------------------- | ------- |
+| Issues bien documentados                | 15      |
+| Fork y branch workflow correcto         | 15      |
+| PR con descripcion completa             | 20      |
+| Code review realizado                   | 15      |
+| Project board configurado               | 15      |
+| Documentacion (CONTRIBUTING, CHANGELOG) | 20      |
+| **Total**                               | **100** |
 
 ---
 
@@ -694,4 +702,4 @@ rm -rf oss-utils-library oss-utils-library-fork
 
 ---
 
-*Proyecto Week 06 | Bootcamp Git/GitHub*
+_Proyecto Week 06 | Bootcamp Git/GitHub_

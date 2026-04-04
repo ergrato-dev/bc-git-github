@@ -93,50 +93,50 @@ Crea el archivo `action.yml` en la raíz:
 # ¿Por qué?: GitHub necesita saber cómo ejecutar la action
 # ¿Para qué sirve?: Otros workflows pueden usar esta action
 
-name: 'Hello World Greeter'
-description: 'Una action que saluda y registra información del evento'
-author: 'Tu Nombre'
+name: "Hello World Greeter"
+description: "Una action que saluda y registra información del evento"
+author: "Tu Nombre"
 
 # ========================================
 # INPUTS - Parámetros de entrada
 # ========================================
 inputs:
   who-to-greet:
-    description: 'Nombre de la persona a saludar'
+    description: "Nombre de la persona a saludar"
     required: true
-    default: 'World'
-  
+    default: "World"
+
   include-emoji:
-    description: 'Incluir emoji en el saludo'
+    description: "Incluir emoji en el saludo"
     required: false
-    default: 'true'
+    default: "true"
 
 # ========================================
 # OUTPUTS - Valores de salida
 # ========================================
 outputs:
   greeting:
-    description: 'El mensaje de saludo generado'
-  
+    description: "El mensaje de saludo generado"
+
   timestamp:
-    description: 'Momento en que se ejecutó el saludo'
-  
+    description: "Momento en que se ejecutó el saludo"
+
   event-info:
-    description: 'Información del evento que triggereó la action'
+    description: "Información del evento que triggereó la action"
 
 # ========================================
 # RUNS - Configuración de ejecución
 # ========================================
 runs:
-  using: 'node20'
-  main: 'dist/index.js'
+  using: "node20"
+  main: "dist/index.js"
 
 # ========================================
 # BRANDING - Para GitHub Marketplace
 # ========================================
 branding:
-  icon: 'message-circle'
-  color: 'blue'
+  icon: "message-circle"
+  color: "blue"
 ```
 
 ---
@@ -150,8 +150,8 @@ Crea el archivo `src/index.js`:
 // ========================================
 // IMPORTS
 // ========================================
-const core = require('@actions/core');
-const github = require('@actions/github');
+const core = require("@actions/core");
+const github = require("@actions/github");
 
 // ========================================
 // FUNCIÓN PRINCIPAL
@@ -164,10 +164,10 @@ async function run() {
     // ¿Qué hace?: Lee los parámetros pasados a la action
     // ¿Por qué?: Necesitamos personalizar el comportamiento
     // ¿Para qué sirve?: El usuario puede configurar el saludo
-    
-    const nameToGreet = core.getInput('who-to-greet', { required: true });
-    const includeEmoji = core.getBooleanInput('include-emoji');
-    
+
+    const nameToGreet = core.getInput("who-to-greet", { required: true });
+    const includeEmoji = core.getBooleanInput("include-emoji");
+
     core.info(`📥 Input recibido: ${nameToGreet}`);
     core.info(`😀 Incluir emoji: ${includeEmoji}`);
 
@@ -177,13 +177,13 @@ async function run() {
     // ¿Qué hace?: Crea el mensaje de saludo personalizado
     // ¿Por qué?: Es la funcionalidad principal de la action
     // ¿Para qué sirve?: Producir el output esperado
-    
-    const emoji = includeEmoji ? '👋 ' : '';
+
+    const emoji = includeEmoji ? "👋 " : "";
     const greeting = `${emoji}Hello, ${nameToGreet}!`;
     const timestamp = new Date().toISOString();
-    
+
     // Mostrar en logs con formato
-    core.startGroup('🎉 Saludo Generado');
+    core.startGroup("🎉 Saludo Generado");
     console.log(greeting);
     console.log(`Timestamp: ${timestamp}`);
     core.endGroup();
@@ -194,17 +194,17 @@ async function run() {
     // ¿Qué hace?: Extrae datos del evento de GitHub
     // ¿Por qué?: Útil para debugging y logging
     // ¿Para qué sirve?: Saber quién/qué triggereó la action
-    
+
     const { context } = github;
     const eventInfo = {
       eventName: context.eventName,
       actor: context.actor,
       repo: `${context.repo.owner}/${context.repo.repo}`,
       ref: context.ref,
-      sha: context.sha.substring(0, 7)
+      sha: context.sha.substring(0, 7),
     };
-    
-    core.startGroup('📊 Información del Evento');
+
+    core.startGroup("📊 Información del Evento");
     core.info(`Event: ${eventInfo.eventName}`);
     core.info(`Actor: ${eventInfo.actor}`);
     core.info(`Repo: ${eventInfo.repo}`);
@@ -218,10 +218,10 @@ async function run() {
     // ¿Qué hace?: Expone valores para otros steps
     // ¿Por qué?: Permite encadenar actions en el workflow
     // ¿Para qué sirve?: Otros steps pueden usar estos valores
-    
-    core.setOutput('greeting', greeting);
-    core.setOutput('timestamp', timestamp);
-    core.setOutput('event-info', JSON.stringify(eventInfo));
+
+    core.setOutput("greeting", greeting);
+    core.setOutput("timestamp", timestamp);
+    core.setOutput("event-info", JSON.stringify(eventInfo));
 
     // ========================================
     // PASO 5: Crear Job Summary
@@ -229,21 +229,23 @@ async function run() {
     // ¿Qué hace?: Genera un resumen visual en la UI de GitHub
     // ¿Por qué?: Mejora la experiencia de usuario
     // ¿Para qué sirve?: Ver resultados sin revisar logs
-    
+
     await core.summary
-      .addHeading('Hello World Action Results')
+      .addHeading("Hello World Action Results")
       .addTable([
-        [{data: 'Campo', header: true}, {data: 'Valor', header: true}],
-        ['Saludo', greeting],
-        ['Timestamp', timestamp],
-        ['Evento', eventInfo.eventName],
-        ['Actor', eventInfo.actor],
-        ['Repositorio', eventInfo.repo]
+        [
+          { data: "Campo", header: true },
+          { data: "Valor", header: true },
+        ],
+        ["Saludo", greeting],
+        ["Timestamp", timestamp],
+        ["Evento", eventInfo.eventName],
+        ["Actor", eventInfo.actor],
+        ["Repositorio", eventInfo.repo],
       ])
       .write();
 
-    core.info('✅ Action completada exitosamente');
-
+    core.info("✅ Action completada exitosamente");
   } catch (error) {
     // ========================================
     // MANEJO DE ERRORES
@@ -251,7 +253,7 @@ async function run() {
     // ¿Qué hace?: Captura errores y marca la action como fallida
     // ¿Por qué?: El workflow debe saber si algo falló
     // ¿Para qué sirve?: Debugging y control de flujo
-    
+
     core.error(`❌ Error en la action: ${error.message}`);
     core.setFailed(error.message);
   }
@@ -281,11 +283,11 @@ Actualiza `package.json` con los scripts:
   "author": "Tu Nombre",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.10.1",
-    "@actions/github": "^6.0.0"
+    "@actions/core": "1.10.1",
+    "@actions/github": "6.0.0"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.38.1"
+    "@vercel/ncc": "0.38.1"
   }
 }
 ```
@@ -338,7 +340,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       # ========================================
       # TEST 1: Uso básico
       # ========================================
@@ -346,13 +348,13 @@ jobs:
         id: hello1
         uses: ./mi-primera-action
         with:
-          who-to-greet: 'GitHub Actions'
-      
+          who-to-greet: "GitHub Actions"
+
       - name: Verificar outputs básico
         run: |
           echo "Greeting: ${{ steps.hello1.outputs.greeting }}"
           echo "Timestamp: ${{ steps.hello1.outputs.timestamp }}"
-      
+
       # ========================================
       # TEST 2: Sin emoji
       # ========================================
@@ -360,9 +362,9 @@ jobs:
         id: hello2
         uses: ./mi-primera-action
         with:
-          who-to-greet: 'Developer'
-          include-emoji: 'false'
-      
+          who-to-greet: "Developer"
+          include-emoji: "false"
+
       - name: Verificar sin emoji
         run: |
           GREETING="${{ steps.hello2.outputs.greeting }}"

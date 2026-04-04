@@ -102,6 +102,52 @@ Cada lección debe incluir:
   - **¿Para qué sirve?**: Beneficio o resultado esperado
 - **Casos de Error**: Incluir cómo manejar errores comunes
 
+### 🔒 Regla de Oro de Versiones (OBLIGATORIA)
+
+**NUNCA generar ejemplos de dependencias con rangos flotantes.** Esta regla aplica sin excepción a todo el contenido del bootcamp.
+
+#### npm / pnpm
+```json
+// ✅ OBLIGATORIO — versión exacta pinneada
+{
+  "dependencies": { "express": "4.21.2" },
+  "devDependencies": { "eslint": "8.57.1", "jest": "29.7.0" }
+}
+
+// ❌ PROHIBIDO — ^ ~ >= y variantes
+{
+  "dependencies": { "express": "^4.18.0" }
+}
+```
+
+#### Python
+```
+# ✅ OBLIGATORIO
+requests==2.31.0
+
+# ❌ PROHIBIDO
+requests>=2.0
+requests~=2.30
+```
+
+#### GitHub Actions (uses:)
+```yaml
+# ✅ PRODUCCIÓN — SHA inmutable con tag anotado como comentario
+- uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
+
+# ⚠️ EDUCATIVO — aceptable en ejemplos didácticos de primeras semanas
+- uses: actions/checkout@v4
+
+# ❌ PROHIBIDO SIEMPRE
+- uses: actions/checkout@main
+- uses: actions/checkout@latest
+- uses: some-third-party/action@v1    # terceros sin SHA = supply-chain risk
+```
+
+**Razón**: un `^` o `>=` en npm, o un `@v1` en Actions de terceros, permite que una
+versión comprometida reemplaze silenciosamente a la revisada. Las versiones exactas /
+SHA pins garantizan builds reproducibles y CVE-trazables.
+
 ### Estándares Gráficos (0-assets/)
 
 Los diagramas y recursos visuales deben seguir estas especificaciones:

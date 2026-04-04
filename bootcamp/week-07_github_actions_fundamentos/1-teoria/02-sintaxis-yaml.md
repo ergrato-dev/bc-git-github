@@ -76,7 +76,7 @@ steps:
 # ========================================
 # NIVEL 1: Metadatos del Workflow
 # ========================================
-name: CI Pipeline                    # Nombre visible en GitHub UI
+name: CI Pipeline # Nombre visible en GitHub UI
 
 # ========================================
 # NIVEL 2: Triggers (Cuándo ejecutar)
@@ -91,7 +91,7 @@ on:
 # NIVEL 3: Variables de entorno globales
 # ========================================
 env:
-  NODE_VERSION: '20'
+  NODE_VERSION: "20"
   CI: true
 
 # ========================================
@@ -104,16 +104,16 @@ jobs:
   build:
     name: Build Application
     runs-on: ubuntu-latest
-    
+
     # Variables de entorno del job
     env:
       BUILD_ENV: production
-    
+
     # Steps del job
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Build
         run: npm run build
 
@@ -122,13 +122,13 @@ jobs:
   # ------------------------------------
   test:
     name: Run Tests
-    needs: build                      # Depende de build
+    needs: build # Depende de build
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Test
         run: npm test
 ```
@@ -147,7 +147,7 @@ jobs:
   build:
     # Nombre del job (aparece en UI)
     name: Build and Compile
-    
+
     steps:
       # Nombre del step (aparece en logs)
       - name: Install dependencies
@@ -172,13 +172,13 @@ on:
     paths:
       - 'src/**'          # Solo si cambia src/
       - '!src/**/*.md'    # Excepto markdown
-  
+
   pull_request:
     types: [opened, synchronize, reopened]
-  
+
   schedule:
     - cron: '0 2 * * *'   # Diario a las 2 AM
-  
+
   workflow_dispatch:       # Manual trigger
     inputs:
       environment:
@@ -197,21 +197,21 @@ on:
 jobs:
   # Identificador único del job (sin espacios)
   build-and-test:
-    name: Build and Test           # Nombre legible
-    runs-on: ubuntu-latest         # Runner
-    
+    name: Build and Test # Nombre legible
+    runs-on: ubuntu-latest # Runner
+
     # Timeout (default: 360 minutos)
     timeout-minutes: 30
-    
+
     # Continuar aunque falle
     continue-on-error: false
-    
+
     # Dependencias
     needs: [lint, security-scan]
-    
+
     # Condicional
     if: github.event_name == 'push'
-    
+
     steps:
       - run: echo "Building..."
 ```
@@ -222,18 +222,18 @@ jobs:
 jobs:
   # GitHub-hosted runners
   linux:
-    runs-on: ubuntu-latest      # Ubuntu 22.04
-  
+    runs-on: ubuntu-latest # Ubuntu 22.04
+
   windows:
-    runs-on: windows-latest     # Windows Server 2022
-  
+    runs-on: windows-latest # Windows Server 2022
+
   mac:
-    runs-on: macos-latest       # macOS 14
-  
+    runs-on: macos-latest # macOS 14
+
   # Versiones específicas
   specific:
     runs-on: ubuntu-22.04
-  
+
   # Self-hosted con labels
   custom:
     runs-on: [self-hosted, linux, x64, gpu]
@@ -245,37 +245,37 @@ jobs:
 steps:
   # Usar una action
   - uses: actions/checkout@v4
-  
+
   # Usar action con parámetros
   - uses: actions/setup-node@v4
     with:
-      node-version: '20'
-      cache: 'npm'
-  
+      node-version: "20"
+      cache: "npm"
+
   # Ejecutar comando
   - run: npm ci
-  
+
   # Comando con nombre
   - name: Run tests
     run: npm test
-  
+
   # Múltiples comandos
   - name: Build and deploy
     run: |
       npm run build
       npm run deploy
-  
+
   # Con variables de entorno
   - name: Deploy
     run: ./deploy.sh
     env:
       API_KEY: ${{ secrets.API_KEY }}
-  
+
   # Con directorio de trabajo
   - name: Build frontend
     run: npm run build
     working-directory: ./frontend
-  
+
   # Con shell específico
   - name: PowerShell script
     run: Get-Process
@@ -328,7 +328,7 @@ jobs:
     # Nivel job
     env:
       BUILD_TARGET: dist
-    
+
     steps:
       - name: Build
         # Nivel step
@@ -378,7 +378,7 @@ jobs:
       - name: Set output
         id: step1
         run: echo "version=1.2.3" >> $GITHUB_OUTPUT
-      
+
       - name: Use output
         run: echo "Version is ${{ steps.step1.outputs.version }}"
 ```
@@ -392,12 +392,12 @@ jobs:
     # Declarar outputs del job
     outputs:
       version: ${{ steps.get-version.outputs.version }}
-    
+
     steps:
       - name: Get version
         id: get-version
         run: echo "version=1.2.3" >> $GITHUB_OUTPUT
-  
+
   build:
     needs: setup
     runs-on: ubuntu-latest
@@ -416,12 +416,12 @@ jobs:
 steps:
   # Checkout básico
   - uses: actions/checkout@v4
-  
+
   # Con historial completo
   - uses: actions/checkout@v4
     with:
       fetch-depth: 0
-  
+
   # Checkout de PR
   - uses: actions/checkout@v4
     with:
@@ -433,13 +433,13 @@ steps:
 ```yaml
 steps:
   - uses: actions/checkout@v4
-  
+
   - name: Setup Node.js
     uses: actions/setup-node@v4
     with:
-      node-version: '20'
-      cache: 'npm'
-  
+      node-version: "20"
+      cache: "npm"
+
   - run: npm ci
   - run: npm test
 ```
@@ -449,7 +449,7 @@ steps:
 ```yaml
 steps:
   - uses: actions/checkout@v4
-  
+
   - name: Cache node modules
     uses: actions/cache@v4
     with:
@@ -457,7 +457,7 @@ steps:
       key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
       restore-keys: |
         ${{ runner.os }}-node-
-  
+
   - run: npm ci
 ```
 
@@ -469,13 +469,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: npm run build
-      
+
       - name: Upload build
         uses: actions/upload-artifact@v4
         with:
           name: build
           path: dist/
-  
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -485,7 +485,7 @@ jobs:
         with:
           name: build
           path: dist/
-      
+
       - run: ./deploy.sh
 ```
 
@@ -496,16 +496,21 @@ jobs:
 ### 1. Versiones Fijadas
 
 ```yaml
-# ✅ CORRECTO: versión específica
+# ✅ CORRECTO para entornos educativos/dev: versión major tag
 - uses: actions/checkout@v4
 
-# ⚠️ ACEPTABLE: major version
-- uses: actions/checkout@v4
+# ✅ RECOMENDADO en producción: commit SHA (inmutable, protege supply-chain)
+# El tag se anota como comentario para legibilidad
+- uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
-# ❌ EVITAR: sin versión o branch
+# ❌ PROHIBIDO: branch flotante o sin versión
 - uses: actions/checkout@main
 - uses: actions/checkout
 ```
+
+> **Regla de Oro — SHA Pinning en Actions**: En pipelines de producción, usar siempre el
+> commit SHA con el tag anotado como comentario. Un tag `@v4` puede ser movido por el
+> maintainer; un SHA es inmutable. Ver [security hardening for GitHub Actions](https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#using-third-party-actions).
 
 ### 2. Nombres Descriptivos
 

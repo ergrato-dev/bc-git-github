@@ -83,7 +83,7 @@ on:
     branches:
       - main                # PR hacia main
       - 'release/**'        # PR hacia release/*
-    
+
 # Ejemplo completo
 on:
   pull_request:
@@ -168,6 +168,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add triage label
+        # ⚠️ PRODUCCIÓN: pinar a commit SHA completo, nunca a @v1
+        # Ejemplo seguro: actions-ecosystem/action-add-labels@01da6e2
         uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: needs-triage
@@ -207,7 +209,7 @@ on:
     # │ │ │ │ │
     # │ │ │ │ │
     # * * * * *
-    
+
     - cron: '0 2 * * *'     # Cada día a las 2:00 AM UTC
     - cron: '30 5 * * 1-5'  # Lun-Vie a las 5:30 AM UTC
     - cron: '0 0 1 * *'     # Primer día de cada mes
@@ -221,13 +223,13 @@ on:
 
 **Ejemplos comunes:**
 
-| Cron | Descripción |
-|------|-------------|
-| `0 * * * *` | Cada hora |
-| `0 0 * * *` | Cada día a medianoche |
-| `0 0 * * 0` | Cada domingo |
-| `0 0 1 * *` | Primer día del mes |
-| `*/15 * * * *` | Cada 15 minutos |
+| Cron             | Descripción                |
+| ---------------- | -------------------------- |
+| `0 * * * *`      | Cada hora                  |
+| `0 0 * * *`      | Cada día a medianoche      |
+| `0 0 * * 0`      | Cada domingo               |
+| `0 0 1 * *`      | Primer día del mes         |
+| `*/15 * * * *`   | Cada 15 minutos            |
 | `0 9-17 * * 1-5` | Cada hora de 9-17, Lun-Vie |
 
 ⚠️ **Nota:** Los schedules usan UTC y pueden tener hasta 15 minutos de delay.
@@ -244,7 +246,7 @@ Permite ejecutar workflows manualmente desde la UI o API.
 on:
   workflow_dispatch:
     # Sin inputs
-    
+
 # Con inputs
 on:
   workflow_dispatch:
@@ -258,12 +260,12 @@ on:
           - development
           - staging
           - production
-      
+
       version:
         description: 'Version to deploy'
         required: true
         type: string
-      
+
       debug:
         description: 'Enable debug mode'
         required: false
@@ -282,6 +284,7 @@ jobs:
 ```
 
 **Tipos de inputs:**
+
 - `string` - Texto libre
 - `boolean` - Checkbox
 - `choice` - Dropdown con opciones
@@ -371,7 +374,7 @@ jobs:
   call-build:
     uses: ./.github/workflows/reusable-build.yml
     with:
-      node-version: '20'
+      node-version: "20"
     secrets:
       npm-token: ${{ secrets.NPM_TOKEN }}
 ```
@@ -383,10 +386,10 @@ Se dispara cuando otro workflow se completa.
 ```yaml
 on:
   workflow_run:
-    workflows: ["Build"]     # Nombre del workflow
+    workflows: ["Build"] # Nombre del workflow
     types:
-      - completed            # Cuando termina
-      - requested            # Cuando inicia
+      - completed # Cuando termina
+      - requested # Cuando inicia
 
 jobs:
   deploy:
@@ -428,20 +431,20 @@ on:
   push:
     branches: [main, develop]
     paths-ignore:
-      - 'docs/**'
-      - '*.md'
-  
+      - "docs/**"
+      - "*.md"
+
   pull_request:
     branches: [main]
     types: [opened, synchronize, reopened]
-  
+
   # Deploy manual
   workflow_dispatch:
     inputs:
       environment:
         type: choice
         options: [staging, production]
-  
+
   # Deploy automático en release
   release:
     types: [published]
@@ -452,7 +455,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm test
-  
+
   deploy:
     needs: test
     if: |
@@ -475,15 +478,15 @@ jobs:
       - name: Only on push
         if: github.event_name == 'push'
         run: echo "This is a push"
-      
+
       - name: Only on PR
         if: github.event_name == 'pull_request'
         run: echo "This is a PR"
-      
+
       - name: Only on main
         if: github.ref == 'refs/heads/main'
         run: echo "This is main branch"
-      
+
       - name: Not on forks
         if: github.event.pull_request.head.repo.full_name == github.repository
         run: echo "Not a fork"

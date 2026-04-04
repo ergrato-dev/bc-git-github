@@ -25,13 +25,13 @@ Repositorio Profesional:
     - Instalación y uso
     - Tecnologías usadas
     - Badges de status
-  
+
   Documentación:
     - CONTRIBUTING.md
     - CODE_OF_CONDUCT.md
     - LICENSE
     - CHANGELOG.md
-  
+
   Estructura:
     - Código organizado
     - Tests incluidos
@@ -49,7 +49,7 @@ Repositorio Profesional:
 # 🚀 Nombre del Proyecto
 
 [![CI](https://github.com/user/repo/actions/workflows/ci.yml/badge.svg)](...)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey.svg)](LICENSE)
 
 > Descripción breve y atractiva del proyecto.
 
@@ -90,7 +90,7 @@ Ver [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## 📄 License
 
-MIT - ver [LICENSE](LICENSE)
+CC BY-NC-SA 4.0 - ver [LICENSE](LICENSE)
 ```
 
 ---
@@ -101,34 +101,35 @@ MIT - ver [LICENSE](LICENSE)
 
 ```yaml
 1. Introducción (2 min):
-   - Nombre y contexto
-   - Problema que resuelve
-   - Por qué lo elegiste
+  - Nombre y contexto
+  - Problema que resuelve
+  - Por qué lo elegiste
 
 2. Demo en Vivo (5 min):
-   - Mostrar funcionalidad principal
-   - Flujo de usuario típico
-   - Features destacados
+  - Mostrar funcionalidad principal
+  - Flujo de usuario típico
+  - Features destacados
 
 3. Arquitectura Técnica (3 min):
-   - Estructura del código
-   - CI/CD pipeline
-   - Medidas de seguridad
+  - Estructura del código
+  - CI/CD pipeline
+  - Medidas de seguridad
 
 4. Aprendizajes (2 min):
-   - Desafíos enfrentados
-   - Cómo los resolviste
-   - Qué harías diferente
+  - Desafíos enfrentados
+  - Cómo los resolviste
+  - Qué harías diferente
 
 5. Q&A (3 min):
-   - Preguntas del público
-   - Feedback
+  - Preguntas del público
+  - Feedback
 ```
 
 ### Tips de Presentación
 
 ```markdown
 ## DO ✅
+
 - Practica antes (al menos 2 veces)
 - Ten backup si la demo falla
 - Habla de tu proceso, no solo del resultado
@@ -136,6 +137,7 @@ MIT - ver [LICENSE](LICENSE)
 - Sé honesto sobre limitaciones
 
 ## DON'T ❌
+
 - No leas las diapositivas
 - No te disculpes excesivamente
 - No intentes mostrar TODO
@@ -163,23 +165,23 @@ MIT - ver [LICENSE](LICENSE)
 
 ```yaml
 1. Estado Inicial:
-   - Mostrar repo en GitHub
-   - README visible
-   - Actions/Security tabs
+  - Mostrar repo en GitHub
+  - README visible
+  - Actions/Security tabs
 
 2. Código:
-   - Estructura de carpetas
-   - Archivo principal
-   - Tests (correrlos en vivo)
+  - Estructura de carpetas
+  - Archivo principal
+  - Tests (correrlos en vivo)
 
 3. CI/CD:
-   - Hacer un pequeño cambio
-   - Push y ver pipeline
-   - Deploy automático
+  - Hacer un pequeño cambio
+  - Push y ver pipeline
+  - Deploy automático
 
 4. Resultado:
-   - Aplicación funcionando
-   - Feature principal en acción
+  - Aplicación funcionando
+  - Feature principal en acción
 ```
 
 ---
@@ -188,13 +190,13 @@ MIT - ver [LICENSE](LICENSE)
 
 ### Lo que los Evaluadores Buscan
 
-| Criterio | Peso | Señales Positivas |
-|----------|------|-------------------|
-| **Claridad** | 25% | Explicación concisa, bien estructurada |
-| **Técnica** | 30% | Código limpio, buenas prácticas |
-| **Completitud** | 20% | Proyecto funcional, documentado |
-| **Presentación** | 15% | Comunicación clara, timing |
-| **Q&A** | 10% | Respuestas informadas |
+| Criterio         | Peso | Señales Positivas                      |
+| ---------------- | ---- | -------------------------------------- |
+| **Claridad**     | 25%  | Explicación concisa, bien estructurada |
+| **Técnica**      | 30%  | Código limpio, buenas prácticas        |
+| **Completitud**  | 20%  | Proyecto funcional, documentado        |
+| **Presentación** | 15%  | Comunicación clara, timing             |
+| **Q&A**          | 10%  | Respuestas informadas                  |
 
 ### Rúbrica Simplificada
 
@@ -230,17 +232,18 @@ Insuficiente (<50%):
 ```markdown
 ## Modelo SBI (Situation-Behavior-Impact)
 
-"Cuando [SITUACIÓN], hiciste [COMPORTAMIENTO], 
+"Cuando [SITUACIÓN], hiciste [COMPORTAMIENTO],
 lo cual causó [IMPACTO]"
 
 ## Ejemplos:
-✅ "En la demo, cuando mostraste el CI pipeline, 
-    fue muy claro ver cómo los tests corren 
-    automáticamente. Eso demostró dominio de Actions."
 
-✅ "En el README, la sección de instalación podría 
-    incluir requisitos previos para que sea más 
-    fácil de seguir."
+✅ "En la demo, cuando mostraste el CI pipeline,
+fue muy claro ver cómo los tests corren
+automáticamente. Eso demostró dominio de Actions."
+
+✅ "En el README, la sección de instalación podría
+incluir requisitos previos para que sea más
+fácil de seguir."
 ```
 
 ### Como Recibir Feedback
@@ -258,12 +261,12 @@ lo cual causó [IMPACTO]"
 
 ## 📝 Resumen
 
-| Elemento | Clave |
-|----------|-------|
-| **README** | Claro, completo, con badges |
-| **Demo** | Practicada, con backup |
-| **Presentación** | 10-15 min, estructurada |
-| **Feedback** | Dar SBI, recibir con apertura |
+| Elemento         | Clave                         |
+| ---------------- | ----------------------------- |
+| **README**       | Claro, completo, con badges   |
+| **Demo**         | Practicada, con backup        |
+| **Presentación** | 10-15 min, estructurada       |
+| **Feedback**     | Dar SBI, recibir con apertura |
 
 ---
 

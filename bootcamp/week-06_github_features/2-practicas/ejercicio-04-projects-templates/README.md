@@ -48,6 +48,7 @@ Agregar columnas adicionales:
 3. Agregar: **In Review**
 
 Reordenar (drag & drop):
+
 - Backlog | Todo | In Progress | In Review | Done
 
 ### Paso 1.3: Agregar campos personalizados
@@ -88,6 +89,7 @@ Reordenar (drag & drop):
 ### Paso 2.3: Asignar valores
 
 Para cada item:
+
 1. Click en el item
 2. En sidebar, asignar:
    - Priority
@@ -134,13 +136,13 @@ Para cada item:
 
 Activar los siguientes:
 
-| Workflow | Configuracion |
-|----------|---------------|
-| Item added to project | Set Status = Backlog |
-| Item reopened | Set Status = Todo |
-| Item closed | Set Status = Done |
-| Pull request merged | Set Status = Done |
-| Code review approved | Set Status = In Review |
+| Workflow              | Configuracion          |
+| --------------------- | ---------------------- |
+| Item added to project | Set Status = Backlog   |
+| Item reopened         | Set Status = Todo      |
+| Item closed           | Set Status = Done      |
+| Pull request merged   | Set Status = Done      |
+| Code review approved  | Set Status = In Review |
 
 ### Paso 4.3: Probar automatizacion
 
@@ -183,7 +185,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-        
+
   - type: input
     id: version
     attributes:
@@ -192,7 +194,7 @@ body:
       placeholder: ex. 1.0.0
     validations:
       required: true
-      
+
   - type: dropdown
     id: severity
     attributes:
@@ -205,7 +207,7 @@ body:
         - Low - Minor issue
     validations:
       required: true
-      
+
   - type: textarea
     id: description
     attributes:
@@ -214,7 +216,7 @@ body:
       placeholder: Describe what happened
     validations:
       required: true
-      
+
   - type: textarea
     id: steps
     attributes:
@@ -226,7 +228,7 @@ body:
         3. See error
     validations:
       required: true
-      
+
   - type: textarea
     id: expected
     attributes:
@@ -234,7 +236,7 @@ body:
       description: What did you expect to happen?
     validations:
       required: true
-      
+
   - type: dropdown
     id: os
     attributes:
@@ -246,7 +248,7 @@ body:
         - Other
     validations:
       required: true
-      
+
   - type: dropdown
     id: browser
     attributes:
@@ -259,14 +261,14 @@ body:
         - Other
     validations:
       required: false
-      
+
   - type: textarea
     id: logs
     attributes:
       label: Relevant Log Output
       description: Please paste any relevant log output
       render: shell
-      
+
   - type: checkboxes
     id: checklist
     attributes:
@@ -292,7 +294,7 @@ body:
     attributes:
       value: |
         Thanks for suggesting a feature!
-        
+
   - type: textarea
     id: problem
     attributes:
@@ -301,7 +303,7 @@ body:
       placeholder: I'm always frustrated when...
     validations:
       required: true
-      
+
   - type: textarea
     id: solution
     attributes:
@@ -309,13 +311,13 @@ body:
       description: Describe your ideal solution
     validations:
       required: true
-      
+
   - type: textarea
     id: alternatives
     attributes:
       label: Alternatives Considered
       description: Other solutions you've thought about
-      
+
   - type: dropdown
     id: priority
     attributes:
@@ -327,7 +329,7 @@ body:
         - Critical for my use case
     validations:
       required: true
-      
+
   - type: checkboxes
     id: contribution
     attributes:
@@ -474,6 +476,8 @@ jobs:
   add-to-project:
     runs-on: ubuntu-latest
     steps:
+      # ⚠️ PRODUCCIÓN: pinar a commit SHA completo, nunca a @v0.5.0 (floating tag)
+      # Ejemplo seguro: actions/add-to-project@5257f09cf96d6c7b31f2cfd853048aa38e875b44
       - uses: actions/add-to-project@v0.5.0
         with:
           project-url: https://github.com/users/TU-USUARIO/projects/1

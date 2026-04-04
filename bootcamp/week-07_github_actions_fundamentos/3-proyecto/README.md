@@ -41,11 +41,11 @@ Al completar este proyecto serás capaz de:
 
 ## ⏰ Información del Proyecto
 
-| Aspecto | Detalle |
-|---------|---------|
-| **Duración estimada** | 2 horas |
-| **Modalidad** | Individual |
-| **Dificultad** | Intermedia |
+| Aspecto                | Detalle                  |
+| ---------------------- | ------------------------ |
+| **Duración estimada**  | 2 horas                  |
+| **Modalidad**          | Individual               |
+| **Dificultad**         | Intermedia               |
 | **Requisitos previos** | Completar ejercicios 1-4 |
 
 ---
@@ -68,8 +68,8 @@ Al completar este proyecto serás capaz de:
     "build": "echo 'Build completado' && mkdir -p dist && cp -r src/* dist/"
   },
   "devDependencies": {
-    "eslint": "^8.56.0",
-    "jest": "^29.7.0"
+    "eslint": "8.57.1",
+    "jest": "29.7.0"
   },
   "keywords": ["ci", "github-actions", "bootcamp"],
   "license": "MIT"
@@ -99,7 +99,7 @@ class Calculator {
 
   divide(a, b) {
     if (b === 0) {
-      throw new Error('División por cero no permitida');
+      throw new Error("División por cero no permitida");
     }
     return a / b;
   }
@@ -111,44 +111,44 @@ module.exports = Calculator;
 ### `tests/calculator.test.js`
 
 ```javascript
-const Calculator = require('../src/calculator');
+const Calculator = require("../src/calculator");
 
-describe('Calculator', () => {
+describe("Calculator", () => {
   let calc;
 
   beforeEach(() => {
     calc = new Calculator();
   });
 
-  describe('add()', () => {
-    test('suma dos números positivos', () => {
+  describe("add()", () => {
+    test("suma dos números positivos", () => {
       expect(calc.add(2, 3)).toBe(5);
     });
 
-    test('suma números negativos', () => {
+    test("suma números negativos", () => {
       expect(calc.add(-1, -2)).toBe(-3);
     });
   });
 
-  describe('subtract()', () => {
-    test('resta dos números', () => {
+  describe("subtract()", () => {
+    test("resta dos números", () => {
       expect(calc.subtract(5, 3)).toBe(2);
     });
   });
 
-  describe('multiply()', () => {
-    test('multiplica dos números', () => {
+  describe("multiply()", () => {
+    test("multiplica dos números", () => {
       expect(calc.multiply(4, 3)).toBe(12);
     });
   });
 
-  describe('divide()', () => {
-    test('divide dos números', () => {
+  describe("divide()", () => {
+    test("divide dos números", () => {
       expect(calc.divide(10, 2)).toBe(5);
     });
 
-    test('lanza error al dividir por cero', () => {
-      expect(() => calc.divide(10, 0)).toThrow('División por cero');
+    test("lanza error al dividir por cero", () => {
+      expect(() => calc.divide(10, 0)).toThrow("División por cero");
     });
   });
 });
@@ -226,16 +226,16 @@ npm test
 
 Crear archivo `.github/workflows/ci.yml` con los siguientes requerimientos:
 
-| Requerimiento | Descripción | Puntos |
-|---------------|-------------|--------|
-| **Nombre descriptivo** | `name: CI Pipeline` | 2 |
-| **Trigger push** | En branches main y develop | 3 |
-| **Trigger pull_request** | En branch main | 3 |
-| **Job lint** | Ejecutar ESLint | 5 |
-| **Job test** | Ejecutar Jest con coverage | 5 |
-| **Job build** | Crear distribución | 5 |
-| **Dependencias** | test depende de lint, build depende de test | 5 |
-| **Cache npm** | Cachear node_modules | 5 |
+| Requerimiento            | Descripción                                 | Puntos |
+| ------------------------ | ------------------------------------------- | ------ |
+| **Nombre descriptivo**   | `name: CI Pipeline`                         | 2      |
+| **Trigger push**         | En branches main y develop                  | 3      |
+| **Trigger pull_request** | En branch main                              | 3      |
+| **Job lint**             | Ejecutar ESLint                             | 5      |
+| **Job test**             | Ejecutar Jest con coverage                  | 5      |
+| **Job build**            | Crear distribución                          | 5      |
+| **Dependencias**         | test depende de lint, build depende de test | 5      |
+| **Cache npm**            | Cachear node_modules                        | 5      |
 
 #### 2.2 Estructura Esperada del Workflow
 
@@ -249,11 +249,11 @@ on:
 jobs:
   lint:
     # TODO: Implementar job de linting
-    
+
   test:
     # TODO: Implementar job de testing
     # Debe depender de lint
-    
+
   build:
     # TODO: Implementar job de build
     # Debe depender de test
@@ -268,10 +268,10 @@ jobs:
 Modificar el job `test` para usar matrix strategy:
 
 | Versión Node.js | Sistema Operativo |
-|-----------------|-------------------|
-| 18 | ubuntu-latest |
-| 20 | ubuntu-latest |
-| 22 | ubuntu-latest |
+| --------------- | ----------------- |
+| 18              | ubuntu-latest     |
+| 20              | ubuntu-latest     |
+| 22              | ubuntu-latest     |
 
 #### 3.2 Configuración Matrix
 
@@ -293,6 +293,7 @@ test:
 #### 4.1 Agregar Artifacts
 
 Configurar upload de:
+
 - Reporte de coverage (carpeta `coverage/`)
 - Build output (carpeta `dist/`)
 
@@ -300,6 +301,7 @@ Configurar upload de:
 
 ```markdown
 <!-- En el README.md del proyecto -->
+
 ![CI Status](https://github.com/TU_USUARIO/TU_REPO/actions/workflows/ci.yml/badge.svg)
 ```
 
@@ -330,27 +332,27 @@ Configurar upload de:
 
 ## 🏆 Criterios de Evaluación
 
-| Criterio | Puntos | Descripción |
-|----------|--------|-------------|
-| **Workflow funcional** | 30 | Pipeline completo que ejecuta sin errores |
-| **Triggers correctos** | 10 | push y pull_request configurados |
-| **Matrix strategy** | 15 | Testing en múltiples versiones Node.js |
-| **Cache implementado** | 10 | npm cache funcionando |
-| **Artifacts** | 10 | Coverage y build subidos |
-| **Job dependencies** | 10 | needs configurado correctamente |
-| **Badge en README** | 5 | Status badge visible |
-| **Código limpio** | 10 | YAML bien formateado y comentado |
-| **TOTAL** | **100** | |
+| Criterio               | Puntos  | Descripción                               |
+| ---------------------- | ------- | ----------------------------------------- |
+| **Workflow funcional** | 30      | Pipeline completo que ejecuta sin errores |
+| **Triggers correctos** | 10      | push y pull_request configurados          |
+| **Matrix strategy**    | 15      | Testing en múltiples versiones Node.js    |
+| **Cache implementado** | 10      | npm cache funcionando                     |
+| **Artifacts**          | 10      | Coverage y build subidos                  |
+| **Job dependencies**   | 10      | needs configurado correctamente           |
+| **Badge en README**    | 5       | Status badge visible                      |
+| **Código limpio**      | 10      | YAML bien formateado y comentado          |
+| **TOTAL**              | **100** |                                           |
 
 ### Escala de Calificación
 
-| Puntos | Calificación | Descripción |
-|--------|--------------|-------------|
-| 90-100 | ⭐⭐⭐⭐⭐ Excelente | Dominio completo |
-| 80-89 | ⭐⭐⭐⭐ Muy Bueno | Muy buen desempeño |
-| 70-79 | ⭐⭐⭐ Bueno | Cumple objetivos |
-| 60-69 | ⭐⭐ Regular | Necesita mejorar |
-| <60 | ⭐ Insuficiente | Requiere repetir |
+| Puntos | Calificación         | Descripción        |
+| ------ | -------------------- | ------------------ |
+| 90-100 | ⭐⭐⭐⭐⭐ Excelente | Dominio completo   |
+| 80-89  | ⭐⭐⭐⭐ Muy Bueno   | Muy buen desempeño |
+| 70-79  | ⭐⭐⭐ Bueno         | Cumple objetivos   |
+| 60-69  | ⭐⭐ Regular         | Necesita mejorar   |
+| <60    | ⭐ Insuficiente      | Requiere repetir   |
 
 ---
 
@@ -375,7 +377,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
       - run: npm ci
       - run: npm run lint
 ```
@@ -389,7 +391,7 @@ jobs:
 - uses: actions/setup-node@v4
   with:
     node-version: ${{ matrix.node-version }}
-    cache: 'npm'
+    cache: "npm"
 ```
 
 </details>
@@ -412,10 +414,10 @@ jobs:
 
 ```yaml
 test:
-  needs: lint  # Este job espera a que lint termine
-  
+  needs: lint # Este job espera a que lint termine
+
 build:
-  needs: test  # Este job espera a que test termine
+  needs: test # Este job espera a que test termine
 ```
 
 </details>
@@ -456,21 +458,25 @@ build:
 Para quienes terminen antes o quieran profundizar:
 
 ### Desafío 1: Workflow de Release (+10 pts)
+
 Crear un segundo workflow que se ejecute en tags `v*` y cree un GitHub Release automático.
 
 ### Desafío 2: Notificaciones (+5 pts)
+
 Agregar notificación a Slack o Discord cuando el pipeline falle.
 
 ### Desafío 3: Code Coverage Badge (+5 pts)
+
 Configurar Codecov o similar para mostrar badge de coverage.
 
 ---
 
 ## 🔗 Navegación
 
-| ⬅️ Anterior | 🏠 Semana | ➡️ Siguiente |
-|:-----------:|:---------:|:------------:|
+|                              ⬅️ Anterior                              |       🏠 Semana        |            ➡️ Siguiente             |
+| :-------------------------------------------------------------------: | :--------------------: | :---------------------------------: |
 | [Ejercicio 04](../2-practicas/ejercicio-04-matrix-strategy/README.md) | [README](../README.md) | [Recursos](../4-recursos/README.md) |
+
 - Preguntar en el foro o Discord del bootcamp
 
 ---

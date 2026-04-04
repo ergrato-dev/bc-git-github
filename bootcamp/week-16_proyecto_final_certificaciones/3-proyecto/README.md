@@ -54,6 +54,7 @@ tu-proyecto-final/
 
 ```markdown
 ## Checklist
+
 - [ ] README.md profesional con badges
 - [ ] CONTRIBUTING.md
 - [ ] LICENSE (MIT, Apache, etc.)
@@ -65,6 +66,7 @@ tu-proyecto-final/
 
 ```markdown
 ## Checklist
+
 - [ ] Mínimo 10 commits con Conventional Commits
 - [ ] Al menos 2 branches (main + feature)
 - [ ] Al menos 1 Pull Request mergeado
@@ -89,21 +91,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Setup
         # Tu setup (Node, Python, etc.)
-        
+
       - name: Install
         run: # install dependencies
-        
+
       - name: Test
         run: # run tests
-        
+
       - name: Lint
         run: # run linter
 ```
 
 **Checklist:**
+
 - [ ] CI workflow funcional
 - [ ] Tests ejecutándose
 - [ ] Badge de status en README
@@ -113,6 +116,7 @@ jobs:
 
 ```markdown
 ## Checklist
+
 - [ ] Branch protection en main
   - [ ] Require PR
   - [ ] Require review
@@ -126,6 +130,7 @@ jobs:
 
 ```markdown
 ## README.md debe incluir:
+
 - [ ] Título y descripción clara
 - [ ] Badges (CI, license, version)
 - [ ] Screenshots/GIFs (si aplica)
@@ -144,7 +149,7 @@ jobs:
 # 🚀 Nombre del Proyecto
 
 [![CI](https://github.com/USER/REPO/workflows/CI/badge.svg)](...)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey.svg)](LICENSE)
 
 > Descripción breve y atractiva.
 
@@ -159,13 +164,13 @@ jobs:
 \`\`\`bash
 git clone https://github.com/USER/REPO.git
 cd REPO
-npm install  # o tu comando
+npm install # o tu comando
 \`\`\`
 
 ## 🚀 Uso
 
 \`\`\`bash
-npm start  # o tu comando
+npm start # o tu comando
 \`\`\`
 
 ## 🛠️ Tech Stack
@@ -180,7 +185,7 @@ Ver [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## 📄 Licencia
 
-MIT - ver [LICENSE](LICENSE)
+CC BY-NC-SA 4.0 - ver [LICENSE](LICENSE)
 
 ## 👤 Autor
 
@@ -193,6 +198,7 @@ MIT - ver [LICENSE](LICENSE)
 ## 💡 Ideas de Proyecto
 
 ### Opción 1: CLI Tool
+
 ```yaml
 Descripción: Herramienta de línea de comandos
 Stack: Node.js, Python, o Go
@@ -203,6 +209,7 @@ Features:
 ```
 
 ### Opción 2: API REST
+
 ```yaml
 Descripción: API con endpoints documentados
 Stack: Express, FastAPI, o similar
@@ -213,6 +220,7 @@ Features:
 ```
 
 ### Opción 3: Automation Scripts
+
 ```yaml
 Descripción: Scripts de automatización
 Stack: Bash, Python
@@ -223,6 +231,7 @@ Features:
 ```
 
 ### Opción 4: Static Site
+
 ```yaml
 Descripción: Sitio web personal/portfolio
 Stack: HTML/CSS/JS, o framework
@@ -240,28 +249,34 @@ Features:
 ## Antes de entregar
 
 ### Estructura
+
 - [ ] Todos los archivos requeridos presentes
 - [ ] Código organizado en carpetas
 
 ### Git
+
 - [ ] 10+ commits con conventional commits
 - [ ] Branch protection configurado
 - [ ] Al menos 1 PR mergeado
 
 ### Actions
+
 - [ ] CI workflow pasa ✅
 - [ ] Badge en README
 
 ### Security
+
 - [ ] SECURITY.md presente
 - [ ] Branch protection activo
 
 ### Documentation
+
 - [ ] README completo y profesional
 - [ ] CONTRIBUTING.md
 - [ ] LICENSE
 
 ### Presentación
+
 - [ ] Puedo explicar cada parte
 - [ ] Demo lista
 ```
@@ -270,14 +285,14 @@ Features:
 
 ## 📊 Evaluación
 
-| Criterio | Puntos | Descripción |
-|----------|--------|-------------|
-| Repository Structure | 10 | Organización y archivos |
-| Git Workflow | 10 | Commits, branches, PRs |
-| GitHub Actions | 10 | CI/CD funcional |
-| Security | 10 | Protection y policies |
-| Documentation | 10 | README y docs |
-| **Total** | **50** | |
+| Criterio             | Puntos | Descripción             |
+| -------------------- | ------ | ----------------------- |
+| Repository Structure | 10     | Organización y archivos |
+| Git Workflow         | 10     | Commits, branches, PRs  |
+| GitHub Actions       | 10     | CI/CD funcional         |
+| Security             | 10     | Protection y policies   |
+| Documentation        | 10     | README y docs           |
+| **Total**            | **50** |                         |
 
 ---
 

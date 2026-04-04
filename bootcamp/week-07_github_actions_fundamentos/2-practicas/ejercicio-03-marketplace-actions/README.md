@@ -19,6 +19,7 @@ Usar actions populares del GitHub Marketplace para crear un workflow de CI compl
 ## 📝 Descripción
 
 En este ejercicio usarás:
+
 1. `actions/checkout` - Checkout del código
 2. `actions/setup-node` - Setup de Node.js
 3. `actions/cache` - Caché de dependencias
@@ -137,7 +138,7 @@ jobs:
   lint:
     name: 🔍 Lint Code
     runs-on: ubuntu-latest
-    
+
     steps:
       # ================================
       # ACTION: actions/checkout
@@ -147,7 +148,7 @@ jobs:
       # ¿PARA QUÉ?: Sin checkout, el runner está vacío
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       # ================================
       # ACTION: actions/setup-node
       # ================================
@@ -158,7 +159,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-      
+
       - name: Run linter
         run: npm run lint
 
@@ -169,16 +170,16 @@ jobs:
     name: 🧪 Run Tests
     runs-on: ubuntu-latest
     needs: lint
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-      
+
       - name: Run tests
         run: npm test
 
@@ -189,18 +190,18 @@ jobs:
     name: 🏗️ Build
     runs-on: ubuntu-latest
     needs: test
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Setup Node.js with cache
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           # Cache automático de npm
           cache: 'npm'
-      
+
       # ================================
       # ACTION: actions/cache (manual)
       # ================================
@@ -218,15 +219,15 @@ jobs:
           # Claves alternativas si no hay match exacto
           restore-keys: |
             ${{ runner.os }}-node-
-      
+
       - name: Install dependencies
         # Solo instalar si el cache no fue encontrado
         if: steps.cache-npm.outputs.cache-hit != 'true'
         run: npm ci || npm install
-      
+
       - name: Build application
         run: npm run build
-      
+
       # ================================
       # ACTION: actions/upload-artifact
       # ================================
@@ -248,7 +249,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-    
+
     steps:
       # ================================
       # ACTION: actions/download-artifact
@@ -261,12 +262,12 @@ jobs:
         with:
           name: build-output
           path: dist/
-      
+
       - name: Show downloaded files
         run: |
           echo "📦 Downloaded artifacts:"
           ls -la dist/
-      
+
       - name: Deploy (simulated)
         run: |
           echo "🚀 Deploying to production..."
@@ -282,7 +283,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [lint, test, build]
     if: always()
-    
+
     steps:
       - name: Check job results
         run: |
@@ -291,7 +292,7 @@ jobs:
           echo "Lint: ${{ needs.lint.result }}"
           echo "Test: ${{ needs.test.result }}"
           echo "Build: ${{ needs.build.result }}"
-      
+
       # Ejemplo de action de terceros (comentado)
       # - name: Slack Notification
       #   uses: slackapi/slack-github-action@v1
@@ -344,17 +345,17 @@ ls -la build-output/
 
 ## 📋 Actions Populares del Marketplace
 
-| Action | Descripción | Uso |
-|--------|-------------|-----|
-| `actions/checkout@v4` | Checkout código | Siempre necesario |
-| `actions/setup-node@v4` | Setup Node.js | Proyectos JS/TS |
-| `actions/setup-python@v5` | Setup Python | Proyectos Python |
-| `actions/cache@v4` | Cache de archivos | Acelerar builds |
-| `actions/upload-artifact@v4` | Subir artifacts | Compartir entre jobs |
-| `actions/download-artifact@v4` | Descargar artifacts | Recibir de jobs |
-| `actions/github-script@v7` | Ejecutar JS con API | Automatización |
-| `peter-evans/create-pull-request@v6` | Crear PRs | Automación de PRs |
-| `softprops/action-gh-release@v1` | Crear releases | Publicaciones |
+| Action                               | Descripción         | Uso                  |
+| ------------------------------------ | ------------------- | -------------------- |
+| `actions/checkout@v4`                | Checkout código     | Siempre necesario    |
+| `actions/setup-node@v4`              | Setup Node.js       | Proyectos JS/TS      |
+| `actions/setup-python@v5`            | Setup Python        | Proyectos Python     |
+| `actions/cache@v4`                   | Cache de archivos   | Acelerar builds      |
+| `actions/upload-artifact@v4`         | Subir artifacts     | Compartir entre jobs |
+| `actions/download-artifact@v4`       | Descargar artifacts | Recibir de jobs      |
+| `actions/github-script@v7`           | Ejecutar JS con API | Automatización       |
+| `peter-evans/create-pull-request@v6` | Crear PRs           | Automación de PRs    |
+| `softprops/action-gh-release@v1`     | Crear releases      | Publicaciones        |
 
 ---
 
@@ -379,6 +380,8 @@ ls -la build-output/
 ```yaml
 # Hint: GitHub Pages deploy
 - name: Deploy to GitHub Pages
+  # ⚠️ PRODUCCIÓN: pinar a commit SHA completo, nunca a @v3 (floating tag)
+  # Ejemplo seguro: peaceiris/actions-gh-pages@4f9cc648dd3e9a5ee88de0428a23c37be3a1380a
   uses: peaceiris/actions-gh-pages@v3
   with:
     github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -389,13 +392,13 @@ ls -la build-output/
 
 ## 📚 Conceptos Aprendidos
 
-| Concepto | Descripción |
-|----------|-------------|
-| `uses` | Usar una action del marketplace |
-| `with` | Parámetros de entrada para actions |
-| `@v4` | Versión de la action |
-| `cache` | Persistir archivos entre ejecuciones |
-| `artifacts` | Compartir archivos entre jobs |
+| Concepto      | Descripción                           |
+| ------------- | ------------------------------------- |
+| `uses`        | Usar una action del marketplace       |
+| `with`        | Parámetros de entrada para actions    |
+| `@v4`         | Versión de la action                  |
+| `cache`       | Persistir archivos entre ejecuciones  |
+| `artifacts`   | Compartir archivos entre jobs         |
 | `hashFiles()` | Función para generar hash de archivos |
 
 ---

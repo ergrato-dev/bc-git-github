@@ -8,6 +8,7 @@
 
 - [Código de Conducta](#-código-de-conducta)
 - [Cómo Contribuir](#-cómo-contribuir)
+- [Regla de Oro de Versiones](#-regla-de-oro-de-versiones)
 - [Estándares de Contenido](#-estándares-de-contenido)
 - [Proceso de Pull Request](#-proceso-de-pull-request)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
@@ -60,7 +61,76 @@ git push origin feature/nombre-descriptivo
 
 ---
 
-## 📝 Estándares de Contenido
+## � Regla de Oro de Versiones
+
+> **Esta regla aplica a todo ejemplo de código en el bootcamp, sin excepción.**
+
+### npm / pnpm packages
+
+| Patrón                  | Estado       | Descripción                                             |
+| ----------------------- | ------------ | ------------------------------------------------------- |
+| `"express": "4.21.2"`   | ✅ CORRECTO  | Versión exacta pinneada                                 |
+| `"express": "^4.18.0"`  | ❌ PROHIBIDO | Caret `^` permite actualizaciones menores sin control   |
+| `"express": ">=4.18.0"` | ❌ PROHIBIDO | Rango abierto — puede instalar cualquier versión futura |
+| `"express": "~4.18.0"`  | ❌ PROHIBIDO | Tilde `~` permite patches sin control                   |
+| `"express": "latest"`   | ❌ PROHIBIDO | No reproducible, no auditable                           |
+
+**Por qué importa**: un `^` o `>=` permite que al hacer `pnpm install` en CI se instale
+una versión diferente a la que probaste localmente. Un paquete comprometido publicado como
+patch (ej: supply chain attack) se instalará automáticamente. Las versiones exactas garantizan
+**builds reproducibles** y permiten auditar CVEs contra una versión conocida.
+
+```json
+// ✅ CORRECTO — todos los ejemplos del bootcamp deben seguir este formato
+{
+  "dependencies": {
+    "express": "4.21.2"
+  },
+  "devDependencies": {
+    "eslint": "8.57.1",
+    "jest": "29.7.0"
+  }
+}
+
+// ❌ PROHIBIDO — nunca usar en ejemplos del bootcamp
+{
+  "dependencies": {
+    "express": "^4.21.2",
+    "lodash": ">=4.0.0",
+    "axios": "~1.6.0"
+  }
+}
+```
+
+### GitHub Actions (uses:)
+
+| Patrón                                                                | Contexto      | Status                                |
+| --------------------------------------------------------------------- | ------------- | ------------------------------------- |
+| `actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2` | Producción    | ✅ SHA pin — inmutable                |
+| `actions/checkout@v4`                                                 | Educativo/dev | ⚠️ Aceptable en ejemplos didácticos   |
+| `actions/checkout@main`                                               | —             | ❌ PROHIBIDO siempre                  |
+| `actions/checkout@latest`                                             | —             | ❌ PROHIBIDO siempre                  |
+| `some-third-party/action@v1`                                          | —             | ❌ PROHIBIDO en producción — usar SHA |
+
+**Por qué importa**: un tag como `@v1` es un puntero mutable. El maintainer puede hacer
+`git tag -f v1 <new-commit>` y tu pipeline ejecutará código diferente al que revisaste.
+Un SHA es inmutable: la ejecución siempre será exactamente el código que auditaste.
+
+### Python (requirements.txt / pyproject.toml)
+
+```
+# ✅ CORRECTO
+requests==2.31.0
+boto3==1.34.0
+
+# ❌ PROHIBIDO
+requests>=2.0
+boto3~=1.34
+```
+
+---
+
+## �📝 Estándares de Contenido
 
 ### Idioma
 
@@ -69,11 +139,11 @@ git push origin feature/nombre-descriptivo
 
 ### Formato de Archivos
 
-| Tipo | Formato | Ejemplo |
-|------|---------|---------|
-| Teoría | `01-nombre-tema.md` | `01-control-versiones.md` |
+| Tipo       | Formato                | Ejemplo                     |
+| ---------- | ---------------------- | --------------------------- |
+| Teoría     | `01-nombre-tema.md`    | `01-control-versiones.md`   |
 | Ejercicios | `ejercicio-XX-nombre/` | `ejercicio-01-instalacion/` |
-| Assets | `XX-nombre.svg` | `01-flujo-git.svg` |
+| Assets     | `XX-nombre.svg`        | `01-flujo-git.svg`          |
 
 ### Estilo de Comandos Git
 
@@ -163,7 +233,7 @@ bc-git-github/
 │       └── 5-glosario/       # Términos clave
 ├── CONTRIBUTING.md           # Esta guía
 ├── CODE_OF_CONDUCT.md        # Código de conducta
-├── LICENSE                   # Licencia MIT
+├── LICENSE                   # Licencia CC BY-NC-SA 4.0
 └── README.md                 # Página principal
 ```
 

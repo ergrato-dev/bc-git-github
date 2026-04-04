@@ -1,7 +1,7 @@
 # 🔍 Ejercicio 01: Code Scanning con CodeQL
 
 > **Duración**: 40 minutos
-> 
+>
 > **Objetivo**: Configurar Code Scanning con CodeQL y corregir vulnerabilidades detectadas.
 
 ---
@@ -48,57 +48,64 @@ Crea `app.js` con vulnerabilidades intencionales:
 // ⚠️ ARCHIVO CON VULNERABILIDADES INTENCIONALES PARA APRENDIZAJE
 // NO USAR EN PRODUCCIÓN
 
-const express = require('express');
-const mysql = require('mysql');
+const express = require("express");
+const mysql = require("mysql");
 const app = express();
 
 // Conexión a base de datos
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'password123', // ❌ Hardcoded credential
-    database: 'myapp'
+  host: "localhost",
+  user: "root",
+  password: "password123", // ❌ Hardcoded credential
+  database: "myapp",
 });
 
 // ❌ VULNERABILIDAD 1: SQL Injection
-app.get('/user', (req, res) => {
-    const userId = req.query.id;
-    // Concatenación directa - VULNERABLE
-    const query = `SELECT * FROM users WHERE id = ${userId}`;
-    db.query(query, (err, results) => {
-        if (err) throw err;
-        res.json(results);
-    });
+app.get("/user", (req, res) => {
+  const userId = req.query.id;
+  // Concatenación directa - VULNERABLE
+  const query = `SELECT * FROM users WHERE id = ${userId}`;
+  db.query(query, (err, results) => {
+    if (err) throw err;
+    res.json(results);
+  });
 });
 
 // ❌ VULNERABILIDAD 2: XSS (Cross-Site Scripting)
-app.get('/search', (req, res) => {
-    const searchTerm = req.query.q;
-    // Respuesta sin sanitizar - VULNERABLE
-    res.send(`<h1>Resultados para: ${searchTerm}</h1>`);
+app.get("/search", (req, res) => {
+  const searchTerm = req.query.q;
+  // Respuesta sin sanitizar - VULNERABLE
+  res.send(`<h1>Resultados para: ${searchTerm}</h1>`);
 });
 
 // ❌ VULNERABILIDAD 3: Path Traversal
-app.get('/file', (req, res) => {
-    const filename = req.query.name;
-    // Sin validación de path - VULNERABLE
-    res.sendFile(`/uploads/${filename}`);
+app.get("/file", (req, res) => {
+  const filename = req.query.name;
+  // Sin validación de path - VULNERABLE
+  res.sendFile(`/uploads/${filename}`);
 });
 
 // ❌ VULNERABILIDAD 4: Command Injection
-const { exec } = require('child_process');
-app.get('/ping', (req, res) => {
-    const host = req.query.host;
-    // Ejecución de comando sin sanitizar - VULNERABLE
-    exec(`ping -c 1 ${host}`, (err, stdout) => {
-        res.send(stdout);
-    });
+const { exec } = require("child_process");
+app.get("/ping", (req, res) => {
+  const host = req.query.host;
+  // Ejecución de comando sin sanitizar - VULNERABLE
+  exec(`ping -c 1 ${host}`, (err, stdout) => {
+    res.send(stdout);
+  });
 });
 
 app.listen(3000);
 ```
 
 ### Paso 1.3: Crear package.json
+
+> **⚠️ Lab de seguridad**: Las versiones a continuación están **intencionalmente pinneadas** a releases con CVEs conocidos para que CodeQL y Dependabot las detecten como parte del ejercicio.
+>
+> - `express@4.18.2`: vulnerable a CVE-2024-29041 (open redirect) y CVE-2024-43796 (XSS). Parchado en 4.19.2+.
+> - `mysql@2.18.1`: paquete **abandonado** sin mantenimiento desde 2014. Sustituir por `mysql2` en código real.
+>
+> **Regla de oro**: versiones SIEMPRE exactas (sin `^` ni `>=`). Aquí se pinen a versiones vulnerables a propósito para el lab.
 
 ```json
 {
@@ -107,8 +114,8 @@ app.listen(3000);
   "description": "Lab para practicar Code Scanning",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.18.0",
-    "mysql": "^2.18.0"
+    "express": "4.18.2",
+    "mysql": "2.18.1"
   }
 }
 ```
@@ -136,6 +143,7 @@ Repository → Settings → Security → Code security and analysis
 ```
 
 GitHub automáticamente:
+
 - Detecta lenguaje (JavaScript)
 - Crea workflow de CodeQL
 - Ejecuta primer análisis
@@ -157,18 +165,18 @@ on:
   pull_request:
     branches: [main]
   schedule:
-    - cron: '0 6 * * 1'  # Lunes 6:00 AM
+    - cron: "0 6 * * 1" # Lunes 6:00 AM
 
 jobs:
   analyze:
     name: Analyze JavaScript
     runs-on: ubuntu-latest
-    
+
     permissions:
       security-events: write
       actions: read
       contents: read
-    
+
     steps:
       # Paso 1: Checkout del código
       - name: Checkout repository
@@ -223,11 +231,11 @@ Repository → Security → Code scanning alerts
 
 Deberías ver alertas similares a:
 
-| Alerta | Severidad | Archivo |
-|--------|-----------|---------|
-| SQL Injection | 🔴 Critical | app.js:19 |
-| XSS | 🟠 High | app.js:28 |
-| Path Traversal | 🟠 High | app.js:35 |
+| Alerta            | Severidad   | Archivo   |
+| ----------------- | ----------- | --------- |
+| SQL Injection     | 🔴 Critical | app.js:19 |
+| XSS               | 🟠 High     | app.js:28 |
+| Path Traversal    | 🟠 High     | app.js:35 |
 | Command Injection | 🔴 Critical | app.js:43 |
 
 ### Paso 3.4: Examinar detalles de alerta
@@ -251,28 +259,28 @@ sin sanitización.
 
 ```javascript
 // ❌ ANTES - Vulnerable
-app.get('/user', (req, res) => {
-    const userId = req.query.id;
-    const query = `SELECT * FROM users WHERE id = ${userId}`;
-    db.query(query, (err, results) => {
-        res.json(results);
-    });
+app.get("/user", (req, res) => {
+  const userId = req.query.id;
+  const query = `SELECT * FROM users WHERE id = ${userId}`;
+  db.query(query, (err, results) => {
+    res.json(results);
+  });
 });
 
 // ✅ DESPUÉS - Seguro (parameterized query)
-app.get('/user', (req, res) => {
-    const userId = req.query.id;
-    // ¿Qué hace?: Usa placeholder ? para parámetros
-    // ¿Por qué?: Evita SQL injection
-    // ¿Para qué sirve?: El driver escapa automáticamente
-    const query = 'SELECT * FROM users WHERE id = ?';
-    db.query(query, [userId], (err, results) => {
-        if (err) {
-            res.status(500).json({ error: 'Database error' });
-            return;
-        }
-        res.json(results);
-    });
+app.get("/user", (req, res) => {
+  const userId = req.query.id;
+  // ¿Qué hace?: Usa placeholder ? para parámetros
+  // ¿Por qué?: Evita SQL injection
+  // ¿Para qué sirve?: El driver escapa automáticamente
+  const query = "SELECT * FROM users WHERE id = ?";
+  db.query(query, [userId], (err, results) => {
+    if (err) {
+      res.status(500).json({ error: "Database error" });
+      return;
+    }
+    res.json(results);
+  });
 });
 ```
 
@@ -280,20 +288,20 @@ app.get('/user', (req, res) => {
 
 ```javascript
 // ❌ ANTES - Vulnerable
-app.get('/search', (req, res) => {
-    const searchTerm = req.query.q;
-    res.send(`<h1>Resultados para: ${searchTerm}</h1>`);
+app.get("/search", (req, res) => {
+  const searchTerm = req.query.q;
+  res.send(`<h1>Resultados para: ${searchTerm}</h1>`);
 });
 
 // ✅ DESPUÉS - Seguro (sanitización)
-const escapeHtml = require('escape-html');
+const escapeHtml = require("escape-html");
 
-app.get('/search', (req, res) => {
-    const searchTerm = req.query.q;
-    // ¿Qué hace?: Escapa caracteres HTML especiales
-    // ¿Por qué?: Evita ejecución de scripts maliciosos
-    const safeTerm = escapeHtml(searchTerm);
-    res.send(`<h1>Resultados para: ${safeTerm}</h1>`);
+app.get("/search", (req, res) => {
+  const searchTerm = req.query.q;
+  // ¿Qué hace?: Escapa caracteres HTML especiales
+  // ¿Por qué?: Evita ejecución de scripts maliciosos
+  const safeTerm = escapeHtml(searchTerm);
+  res.send(`<h1>Resultados para: ${safeTerm}</h1>`);
 });
 ```
 
@@ -301,28 +309,28 @@ app.get('/search', (req, res) => {
 
 ```javascript
 // ❌ ANTES - Vulnerable
-app.get('/file', (req, res) => {
-    const filename = req.query.name;
-    res.sendFile(`/uploads/${filename}`);
+app.get("/file", (req, res) => {
+  const filename = req.query.name;
+  res.sendFile(`/uploads/${filename}`);
 });
 
 // ✅ DESPUÉS - Seguro (validación de path)
-const path = require('path');
+const path = require("path");
 
-app.get('/file', (req, res) => {
-    const filename = req.query.name;
-    // ¿Qué hace?: Obtiene solo el nombre del archivo
-    // ¿Por qué?: Evita ../../../etc/passwd
-    const safeName = path.basename(filename);
-    const uploadDir = path.resolve(__dirname, 'uploads');
-    const filePath = path.join(uploadDir, safeName);
-    
-    // Verificar que está dentro del directorio permitido
-    if (!filePath.startsWith(uploadDir)) {
-        return res.status(403).send('Access denied');
-    }
-    
-    res.sendFile(filePath);
+app.get("/file", (req, res) => {
+  const filename = req.query.name;
+  // ¿Qué hace?: Obtiene solo el nombre del archivo
+  // ¿Por qué?: Evita ../../../etc/passwd
+  const safeName = path.basename(filename);
+  const uploadDir = path.resolve(__dirname, "uploads");
+  const filePath = path.join(uploadDir, safeName);
+
+  // Verificar que está dentro del directorio permitido
+  if (!filePath.startsWith(uploadDir)) {
+    return res.status(403).send("Access denied");
+  }
+
+  res.sendFile(filePath);
 });
 ```
 
@@ -330,34 +338,34 @@ app.get('/file', (req, res) => {
 
 ```javascript
 // ❌ ANTES - Vulnerable
-app.get('/ping', (req, res) => {
-    const host = req.query.host;
-    exec(`ping -c 1 ${host}`, (err, stdout) => {
-        res.send(stdout);
-    });
+app.get("/ping", (req, res) => {
+  const host = req.query.host;
+  exec(`ping -c 1 ${host}`, (err, stdout) => {
+    res.send(stdout);
+  });
 });
 
 // ✅ DESPUÉS - Seguro (validación + execFile)
-const { execFile } = require('child_process');
-const validator = require('validator');
+const { execFile } = require("child_process");
+const validator = require("validator");
 
-app.get('/ping', (req, res) => {
-    const host = req.query.host;
-    
-    // ¿Qué hace?: Valida que sea IP o dominio válido
-    // ¿Por qué?: Evita ; rm -rf / u otros comandos
-    if (!validator.isIP(host) && !validator.isFQDN(host)) {
-        return res.status(400).send('Invalid host');
+app.get("/ping", (req, res) => {
+  const host = req.query.host;
+
+  // ¿Qué hace?: Valida que sea IP o dominio válido
+  // ¿Por qué?: Evita ; rm -rf / u otros comandos
+  if (!validator.isIP(host) && !validator.isFQDN(host)) {
+    return res.status(400).send("Invalid host");
+  }
+
+  // ¿Qué hace?: execFile no usa shell, pasa args como array
+  // ¿Para qué sirve?: Imposible inyectar comandos
+  execFile("ping", ["-c", "1", host], (err, stdout) => {
+    if (err) {
+      return res.status(500).send("Ping failed");
     }
-    
-    // ¿Qué hace?: execFile no usa shell, pasa args como array
-    // ¿Para qué sirve?: Imposible inyectar comandos
-    execFile('ping', ['-c', '1', host], (err, stdout) => {
-        if (err) {
-            return res.status(500).send('Ping failed');
-        }
-        res.send(stdout);
-    });
+    res.send(stdout);
+  });
 });
 ```
 
