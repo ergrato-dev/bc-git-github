@@ -51,7 +51,7 @@ semana-XX/
 
 ## 🔗 Enlaces Importantes
 
-- [📚 Documentación General](../_docs/README.md)
+- [📚 Documentación General](../docs/README.md)
 - [🎓 Área de Estudiantes](../estudiantes/README.md)
 - [📋 Administración](../admin/README.md)
 

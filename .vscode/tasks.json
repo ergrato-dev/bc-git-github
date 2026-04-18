@@ -5,7 +5,7 @@
       "label": "📚 Abrir Documentación Principal",
       "type": "shell",
       "command": "code",
-      "args": ["./_docs/README.md"],
+      "args": ["./docs/README.md"],
       "group": "build",
       "presentation": {
         "echo": true,
@@ -75,7 +75,7 @@
       "label": "📊 Generar Reporte del Bootcamp",
       "type": "shell",
       "command": "tree",
-      "args": ["-d", "-L", "3", "_docs/"],
+      "args": ["-d", "-L", "3", "docs/"],
       "group": "build",
       "presentation": {
         "echo": true,

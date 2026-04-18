@@ -1,7 +1,7 @@
 # 🚀 Git & GitHub Bootcamp - 16 Weeks
 
 <p align="center">
-  <img src="./_assets/banner-bootcamp.svg" alt="Git & GitHub Bootcamp Banner" width="800">
+  <img src="./assets/banner-bootcamp.svg" alt="Git & GitHub Bootcamp Banner" width="800">
 </p>
 
 <h3 align="center">🎯 Zero to Hero 🦸</h3>
@@ -138,7 +138,7 @@ git config --list
 bc-git-github/
 ├── 📄 README.md                    # This file
 ├── 📄 README_EN.md                 # English version
-├── 🖼️ _assets/                     # Graphic resources
+├── 🖼️ assets/                     # Graphic resources
 │   └── banner-bootcamp.svg
 ├── ⚙️ .github/                     # GitHub configurations
 │   ├── ISSUE_TEMPLATE/
@@ -216,7 +216,7 @@ Contributions are welcome! This is an open-source educational project.
 
 ## 📞 Support
 
-- 📖 **FAQ:** [Frequently asked questions](_docs/recursos/faq.md)
+- 📖 **FAQ:** [Frequently asked questions](docs/recursos/faq.md)
 - 🐛 **Issues:** [Report a problem](../../issues)
 - 💬 **Discussions:** [Community forum](../../discussions)
 
@@ -244,7 +244,7 @@ See [LICENSE](LICENSE) for the full text.
 
 ### 🚀 Ready to transform your career?
 
-**[📚 Start Bootcamp](./bootcamp/week-01/) • [🎓 View Certifications](./_docs/recursos/certificaciones-github.md) • [❓ FAQ](./_docs/recursos/faq.md)**
+**[📚 Start Bootcamp](./bootcamp/week-01/) • [🎓 View Certifications](./docs/recursos/certificaciones-github.md) • [❓ FAQ](./docs/recursos/faq.md)**
 
 _Developed with ❤️ for the developer community_
 

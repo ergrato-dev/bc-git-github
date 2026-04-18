@@ -218,8 +218,8 @@ docs(readme): actualizar tabla de contenidos
 
 ```
 bc-git-github/
-├── _assets/                  # Assets generales del proyecto
-├── _docs/                    # Documentación adicional
+├── assets/                  # Assets generales del proyecto
+├── docs/                    # Documentación adicional
 ├── .github/                  # Configuración de GitHub
 │   ├── ISSUE_TEMPLATE/       # Plantillas de issues
 │   └── copilot-instructions.md

@@ -5,8 +5,8 @@
 # ¿POR QUÉ?: Automatizar el proceso de commits durante el desarrollo del bootcamp
 # ¿PARA QUÉ SIRVE?: Mantener un historial constante sin intervención manual
 
-SCRIPT_PATH="/home/epti/Documents/epti-dev/bc-channel/bc-git-github/_scripts/auto-commit.sh"
-CRON_ENTRY="*/5 * * * * $SCRIPT_PATH >> /home/epti/Documents/epti-dev/bc-channel/bc-git-github/_scripts/cron.log 2>&1"
+SCRIPT_PATH="/home/epti/Documents/epti-dev/bc-channel/bc-git-github/scripts/auto-commit.sh"
+CRON_ENTRY="*/5 * * * * $SCRIPT_PATH >> /home/epti/Documents/epti-dev/bc-channel/bc-git-github/scripts/cron.log 2>&1"
 
 echo "🚀 Configurando Auto-commits para Bootcamp Git/GitHub"
 echo "=================================================="
@@ -53,7 +53,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
     crontab -l
     echo ""
     echo "📝 El auto-commit iniciará en los próximos 5 minutos"
-    echo "📄 Los logs se guardarán en: _scripts/cron.log y _scripts/auto-commit.log"
+    echo "📄 Los logs se guardarán en: scripts/cron.log y scripts/auto-commit.log"
     
 else
     echo "❌ Configuración cancelada"
@@ -70,5 +70,5 @@ echo "🛠️  Comandos útiles:"
 echo "   • Ver cron jobs: crontab -l"
 echo "   • Editar cron jobs: crontab -e"
 echo "   • Remover todos los cron jobs: crontab -r"
-echo "   • Ver logs: tail -f _scripts/auto-commit.log"
-echo "   • Testear script manualmente: ./_scripts/auto-commit.sh"
+echo "   • Ver logs: tail -f scripts/auto-commit.log"
+echo "   • Testear script manualmente: ./scripts/auto-commit.sh"

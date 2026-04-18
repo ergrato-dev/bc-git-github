@@ -7,8 +7,8 @@ Este repositorio contiene el material educativo para un bootcamp intensivo de **
 ## Estructura del Proyecto
 
 - `bootcamp/` - Todo el contenido del bootcamp organizado por semanas
-- `_assets/` - Recursos gráficos globales (banner, logos)
-- `_scripts/` - Scripts de automatización
+- `assets/` - Recursos gráficos globales (banner, logos)
+- `scripts/` - Scripts de automatización
 - `.github/` - Configuraciones de GitHub y este archivo de instrucciones
 - Cada semana tiene su propia carpeta con material teórico y práctico
 

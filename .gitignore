@@ -13,7 +13,7 @@
 *~
 
 # Logs específicos del bootcamp
-_scripts/*.log
+scripts/*.log
 cron.log
 auto-commit.log
 

@@ -14,13 +14,13 @@ Este directorio contiene scripts para automatizar commits durante el desarrollo 
 
 ```bash
 # 1. Configurar auto-commits
-./_scripts/setup-cron.sh
+./scripts/setup-cron.sh
 
 # 2. Ver logs en tiempo real
-tail -f _scripts/auto-commit.log
+tail -f scripts/auto-commit.log
 
 # 3. Testear manualmente
-./_scripts/auto-commit.sh
+./scripts/auto-commit.sh
 ```
 
 ## 📋 Características del Auto-commit
@@ -130,8 +130,8 @@ crontab -r
 
 ```bash
 # Ver logs en tiempo real
-tail -f _scripts/auto-commit.log
-tail -f _scripts/cron.log
+tail -f scripts/auto-commit.log
+tail -f scripts/cron.log
 
 # Ver últimos commits
 git log --oneline -10
@@ -144,11 +144,11 @@ git status
 
 ```bash
 # Ejecutar auto-commit manualmente
-./_scripts/auto-commit.sh
+./scripts/auto-commit.sh
 
 # Simular cambios para testing
-touch _docs/test-file.md
-echo "Test content" > _docs/test-file.md
+touch docs/test-file.md
+echo "Test content" > docs/test-file.md
 ```
 
 ## ⚠️ Consideraciones Importantes
@@ -175,7 +175,7 @@ echo "Test content" > _docs/test-file.md
 sudo systemctl status cron
 
 # Verificar permisos del script
-ls -la _scripts/auto-commit.sh
+ls -la scripts/auto-commit.sh
 
 # Verificar sintaxis del crontab
 crontab -l | grep auto-commit
@@ -196,10 +196,10 @@ git log --oneline -5
 
 ```bash
 # Corregir permisos de scripts
-chmod +x _scripts/*.sh
+chmod +x scripts/*.sh
 
 # Verificar propiedad de archivos
-ls -la _scripts/
+ls -la scripts/
 ```
 
 ## 📚 Referencias

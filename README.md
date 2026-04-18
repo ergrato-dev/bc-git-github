@@ -1,7 +1,7 @@
 # 🚀 Bootcamp Git & GitHub - 16 Semanas
 
 <p align="center">
-  <img src="./_assets/banner-bootcamp.svg" alt="Bootcamp Git & GitHub Banner" width="800">
+  <img src="./assets/banner-bootcamp.svg" alt="Bootcamp Git & GitHub Banner" width="800">
 </p>
 
 <h3 align="center">🎯 Zero to Hero 🦸</h3>
@@ -116,7 +116,7 @@ git clone https://github.com/tu-usuario/bc-git-github.git
 cd bc-git-github
 
 # 3. Comenzar con la Semana 1
-cd _docs/week-01
+cd docs/week-01
 ```
 
 ### Configuración Inicial
@@ -135,17 +135,17 @@ git config --list
 ```text
 bc-git-github/
 ├── 📄 README.md                    # Este archivo
-├── 🖼️ _assets/                     # Recursos gráficos
+├── 🖼️ assets/                     # Recursos gráficos
 │   └── banner-bootcamp.svg
 ├── ⚙️ .github/                     # Configuraciones GitHub
 │   └── copilot-instructions.md
-├── 📚 _docs/                       # Documentación del bootcamp
+├── 📚 docs/                       # Documentación del bootcamp
 │   ├── 📋 README.md                # Índice principal
 │   ├── 📝 week-01/ al week-16/     # Contenido por semanas
 │   ├── 💼 recursos/                # Material complementario
 │   ├── 🧪 ejercicios/              # Ejercicios generales
 │   └── 📊 evaluaciones/            # Exámenes y evaluaciones
-└── 🔧 _scripts/                    # Scripts de automatización
+└── 🔧 scripts/                    # Scripts de automatización
     ├── auto-commit.sh              # Commits automáticos
     ├── setup-cron.sh               # Configuración de cron
     └── remove-cron.sh              # Remover cron job
@@ -155,22 +155,22 @@ bc-git-github/
 
 | Semana | Tema                                          | Horas | Certificación  |
 | ------ | --------------------------------------------- | ----- | -------------- |
-| 1      | [Git Foundations](/_docs/week-01/)            | 6h    | Foundations    |
-| 2      | [Repositories y Commits](/_docs/week-02/)     | 6h    | Foundations    |
-| 3      | [Branching Básico](/_docs/week-03/)           | 6h    | Foundations    |
-| 4      | [Merge Conflicts](/_docs/week-04/)            | 6h    | Foundations    |
-| 5      | [Remote Repositories](/_docs/week-05/)        | 6h    | Foundations    |
-| 6      | [GitHub Features](/_docs/week-06/)            | 6h    | Foundations    |
-| 7      | [GitHub Actions Fundamentos](/_docs/week-07/) | 6h    | Actions        |
-| 8      | [CI/CD Pipelines](/_docs/week-08/)            | 6h    | Actions        |
-| 9      | [Actions Avanzadas](/_docs/week-09/)          | 6h    | Actions        |
-| 10     | [Deployment Strategies](/_docs/week-10/)      | 6h    | Actions        |
-| 11     | [Security Features](/_docs/week-11/)          | 6h    | Security       |
-| 12     | [Vulnerability Management](/_docs/week-12/)   | 6h    | Security       |
-| 13     | [Security Policies](/_docs/week-13/)          | 6h    | Security       |
-| 14     | [Enterprise Administration](/_docs/week-14/)  | 6h    | Administration |
-| 15     | [Administration Avanzado](/_docs/week-15/)    | 6h    | Administration |
-| 16     | [Proyecto Final](/_docs/week-16/)             | 6h    | Integración    |
+| 1      | [Git Foundations](/docs/week-01/)            | 6h    | Foundations    |
+| 2      | [Repositories y Commits](/docs/week-02/)     | 6h    | Foundations    |
+| 3      | [Branching Básico](/docs/week-03/)           | 6h    | Foundations    |
+| 4      | [Merge Conflicts](/docs/week-04/)            | 6h    | Foundations    |
+| 5      | [Remote Repositories](/docs/week-05/)        | 6h    | Foundations    |
+| 6      | [GitHub Features](/docs/week-06/)            | 6h    | Foundations    |
+| 7      | [GitHub Actions Fundamentos](/docs/week-07/) | 6h    | Actions        |
+| 8      | [CI/CD Pipelines](/docs/week-08/)            | 6h    | Actions        |
+| 9      | [Actions Avanzadas](/docs/week-09/)          | 6h    | Actions        |
+| 10     | [Deployment Strategies](/docs/week-10/)      | 6h    | Actions        |
+| 11     | [Security Features](/docs/week-11/)          | 6h    | Security       |
+| 12     | [Vulnerability Management](/docs/week-12/)   | 6h    | Security       |
+| 13     | [Security Policies](/docs/week-13/)          | 6h    | Security       |
+| 14     | [Enterprise Administration](/docs/week-14/)  | 6h    | Administration |
+| 15     | [Administration Avanzado](/docs/week-15/)    | 6h    | Administration |
+| 16     | [Proyecto Final](/docs/week-16/)             | 6h    | Integración    |
 
 **Total: 96 horas de formación intensiva**
 
@@ -224,13 +224,13 @@ bc-git-github/
 ### Paso 1: Preparación
 
 1. 📋 Revisa los [prerrequisitos](#prerrequisitos)
-2. 🔧 [Instala Git](/_docs/ejercicios/ejercicio-01-instalacion.md)
+2. 🔧 [Instala Git](/docs/ejercicios/ejercicio-01-instalacion.md)
 3. 🆔 Crea tu cuenta en GitHub
-4. 📖 Lee la [introducción al bootcamp](/_docs/README.md)
+4. 📖 Lee la [introducción al bootcamp](/docs/README.md)
 
 ### Paso 2: Semana 1
 
-1. 📚 Ve a [Semana 1 - Fundamentos](/_docs/week-01/)
+1. 📚 Ve a [Semana 1 - Fundamentos](/docs/week-01/)
 2. 🎯 Revisa los objetivos de aprendizaje
 3. 📖 Comienza con la primera lección
 4. ✍️ Realiza los ejercicios prácticos
@@ -272,7 +272,7 @@ bc-git-github/
 - 💬 **Discord:** Comunidad activa 24/7
 - 📧 **Email:** soporte@bootcamp-git.com
 - 📅 **Office Hours:** Lunes y Miércoles 18:00-19:00 UTC
-- 📖 **FAQ:** [Preguntas frecuentes](/_docs/recursos/faq.md)
+- 📖 **FAQ:** [Preguntas frecuentes](/docs/recursos/faq.md)
 
 ### Post-Graduación
 
@@ -312,7 +312,7 @@ Ver [LICENSE](LICENSE) para el texto completo.
 
 ### 🚀 ¿Listo para transformar tu carrera?
 
-**[📚 Comenzar el Bootcamp](./_docs/week-01/) • [🎓 Ver Certificaciones](./_docs/recursos/certificaciones-github.md) • [❓ FAQ](./_docs/recursos/faq.md)**
+**[📚 Comenzar el Bootcamp](./docs/week-01/) • [🎓 Ver Certificaciones](./docs/recursos/certificaciones-github.md) • [❓ FAQ](./docs/recursos/faq.md)**
 
 _Desarrollado con ❤️ para la comunidad de desarrolladores_
 

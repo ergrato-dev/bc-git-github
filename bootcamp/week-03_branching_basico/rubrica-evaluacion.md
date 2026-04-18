@@ -144,7 +144,7 @@ git log --oneline --graph     # Visualizar historial
 
 ## 🔗 Recursos de Evaluación
 
-- [Rúbrica General del Bootcamp](../../_docs/evaluaciones/README.md)
+- [Rúbrica General del Bootcamp](../../docs/evaluaciones/README.md)
 - [Guía de Conventional Commits](../week-02/1-teoria/02-commits-profesionales.md)
 - [Ejercicios de Práctica](2-practicas/README.md)
 
