@@ -16,6 +16,7 @@ Material complementario:
 - Enlaces útiles
 - Certificaciones GitHub
 - FAQ del bootcamp
+- Buenas prácticas de branches
 
 ### 📊 `/evaluaciones/`
 
