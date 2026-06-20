@@ -17,6 +17,7 @@ Material complementario:
 - Certificaciones GitHub
 - FAQ del bootcamp
 - Buenas prácticas de branches
+- Git aliases — atajos de terminal
 
 ### 📊 `/evaluaciones/`
 
