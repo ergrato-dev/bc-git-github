@@ -18,6 +18,7 @@ Material complementario:
 - FAQ del bootcamp
 - Buenas prácticas de branches
 - Git aliases — atajos de terminal
+- Configuración de Git personal y equipos compartidos
 
 ### 📊 `/evaluaciones/`
 
