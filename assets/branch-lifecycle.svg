@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 820">
+  <rect width="600" height="820" fill="#0d1117"/>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#21262d" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="820" fill="url(#grid)" opacity="0.4"/>
+
+  <!-- Title -->
+  <text x="300" y="36" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#58a6ff" font-weight="bold" text-anchor="middle">Ciclo de Vida de una Branch</text>
+
+  <!-- ===== STEP 1 ===== -->
+  <g transform="translate(50, 60)">
+    <rect x="0" y="0" width="500" height="64" rx="8" fill="#0d419d"/>
+    <text x="20" y="24" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#8b949e">PASO 1</text>
+    <text x="20" y="44" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#e6e6e6" font-weight="bold">Actualizar rama base</text>
+    <text x="340" y="24" font-family="Courier New, monospace" font-size="12" fill="#79c0ff">git checkout main</text>
+    <text x="340" y="44" font-family="Courier New, monospace" font-size="12" fill="#79c0ff">git pull</text>
+  </g>
+
+  <!-- Arrow 1->2 -->
+  <g stroke="#30363d" stroke-width="2" fill="none">
+    <path d="M 300 124 L 300 148"/>
+    <polygon points="293,148 300,156 307,148" fill="#30363d"/>
+  </g>
+
+  <!-- ===== STEP 2 ===== -->
+  <g transform="translate(50, 160)">
+    <rect x="0" y="0" width="500" height="64" rx="8" fill="#0d419d"/>
+    <text x="20" y="24" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#8b949e">PASO 2</text>
+    <text x="20" y="44" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#e6e6e6" font-weight="bold">Crear branch</text>
+    <text x="300" y="34" font-family="Courier New, monospace" font-size="12" fill="#79c0ff">git checkout -b feat/algo</text>
+  </g>
+
+  <!-- Arrow 2->3 -->
+  <g stroke="#30363d" stroke-width="2" fill="none">
+    <path d="M 300 224 L 300 248"/>
+    <polygon points="293,248 300,256 307,248" fill="#30363d"/>
+  </g>
+
+  <!-- ===== STEP 3 ===== -->
+  <g transform="translate(50, 260)">
+    <rect x="0" y="0" width="500" height="64" rx="8" fill="#1b3a1b"/>
+    <text x="20" y="24" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#8b949e">PASO 3</text>
+    <text x="20" y="44" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#e6e6e6" font-weight="bold">Desarrollar</text>
+    <text x="340" y="24" font-family="Courier New, monospace" font-size="11" fill="#56d364">git add .</text>
+    <text x="340" y="44" font-family="Courier New, monospace" font-size="11" fill="#56d364">git commit -m "mensaje"</text>
+  </g>
+
+  <!-- Loop indicator for step 3 -->
+  <g transform="translate(470, 285)">
+    <path d="M 0 0 Q 30 0 30 -15 Q 30 -30 0 -30" stroke="#56d364" stroke-width="1.5" fill="none" stroke-dasharray="3,3"/>
+    <polygon points="3,-30 0,-22 -3,-30" fill="#56d364"/>
+    <text x="14" y="10" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#56d364">repetir</text>
+  </g>
+
+  <!-- Arrow 3->4 -->
+  <g stroke="#30363d" stroke-width="2" fill="none">
+    <path d="M 300 324 L 300 348"/>
+    <polygon points="293,348 300,356 307,348" fill="#30363d"/>
+  </g>
+
+  <!-- ===== STEP 4 ===== -->
+  <g transform="translate(50, 360)">
+    <rect x="0" y="0" width="500" height="64" rx="8" fill="#5c2d00"/>
+    <text x="20" y="24" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#8b949e">PASO 4</text>
+    <text x="20" y="44" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#e6e6e6" font-weight="bold">Sincronizar con base</text>
+    <text x="320" y="34" font-family="Courier New, monospace" font-size="12" fill="#d2a8ff">git merge main</text>
+    <text x="160" y="56" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#8b949e" font-style="italic">al menos 1 vez al día</text>
+  </g>
+
+  <!-- Arrow 4->5 -->
+  <g stroke="#30363d" stroke-width="2" fill="none">
+    <path d="M 300 424 L 300 448"/>
+    <polygon points="293,448 300,456 307,448" fill="#30363d"/>
+  </g>
+
+  <!-- ===== STEP 5 ===== -->
+  <g transform="translate(50, 460)">
+    <rect x="0" y="0" width="500" height="80" rx="8" fill="#4a1a6b"/>
+    <text x="20" y="24" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#8b949e">PASO 5</text>
+    <text x="20" y="44" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#e6e6e6" font-weight="bold">Push y abrir Pull Request</text>
+    <text x="320" y="26" font-family="Courier New, monospace" font-size="11" fill="#d2a8ff">git push origin feat/algo</text>
+    <text x="20" y="70" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#c9d1d9">→ Abrir PR en GitHub para revisión del equipo</text>
+  </g>
+
+  <!-- Arrow 5->6 -->
+  <g stroke="#30363d" stroke-width="2" fill="none">
+    <path d="M 300 540 L 300 564"/>
+    <polygon points="293,564 300,572 307,564" fill="#30363d"/>
+  </g>
+
+  <!-- ===== STEP 6 ===== -->
+  <g transform="translate(50, 576)">
+    <rect x="0" y="0" width="500" height="72" rx="8" fill="#1b3a1b"/>
+    <text x="20" y="24" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#8b949e">PASO 6</text>
+    <text x="20" y="44" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#e6e6e6" font-weight="bold">Merge y limpiar</text>
+    <text x="300" y="26" font-family="Courier New, monospace" font-size="11" fill="#56d364">git checkout main &amp;&amp; git pull</text>
+    <text x="300" y="46" font-family="Courier New, monospace" font-size="11" fill="#56d364">git branch -d feat/algo</text>
+    <text x="300" y="66" font-family="Courier New, monospace" font-size="11" fill="#56d364">git push origin --delete feat/algo</text>
+  </g>
+
+  <!-- Graceful box around all steps -->
+  <rect x="40" y="50" width="520" height="608" rx="12" fill="none" stroke="#30363d" stroke-width="1.5" stroke-dasharray="8,4"/>
+
+  <!-- Footer -->
+  <text x="300" y="810" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#484f58" text-anchor="middle">Figura 4: Ciclo de vida completo de una branch — de creación a eliminación</text>
+</svg>

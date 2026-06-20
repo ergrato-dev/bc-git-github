@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340">
+  <rect width="800" height="340" fill="#0d1117"/>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#21262d" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="340" fill="url(#grid)" opacity="0.4"/>
+
+  <!-- Title -->
+  <text x="400" y="32" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#58a6ff" font-weight="bold" text-anchor="middle">Git Flow</text>
+
+  <!-- main branch (top) -->
+  <g stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 50 90 L 700 90" stroke="#3fb950"/>
+  </g>
+
+  <!-- main commit nodes -->
+  <g>
+    <circle cx="80" cy="90" r="7" fill="#c9d1d9"/>
+    <circle cx="320" cy="90" r="7" fill="#3fb950"/>
+    <circle cx="630" cy="90" r="7" fill="#3fb950"/>
+    <circle cx="700" cy="90" r="7" fill="#c9d1d9"/>
+  </g>
+
+  <!-- develop branch (middle) -->
+  <g stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 40 200 L 690 200" stroke="#8957e5"/>
+  </g>
+
+  <!-- develop commit nodes -->
+  <g fill="#8957e5">
+    <circle cx="70" cy="200" r="7"/>
+    <circle cx="150" cy="200" r="7"/>
+    <circle cx="230" cy="200" r="7"/>
+    <circle cx="440" cy="200" r="7"/>
+    <circle cx="520" cy="200" r="7"/>
+    <circle cx="600" cy="200" r="7"/>
+    <circle cx="680" cy="200" r="7"/>
+  </g>
+
+  <!-- feature/X branch -->
+  <g stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 110 200 Q 120 260 140 260 L 210 260 Q 230 260 230 200" stroke="#58a6ff"/>
+  </g>
+  <g fill="#58a6ff">
+    <circle cx="140" cy="260" r="6"/>
+    <circle cx="190" cy="260" r="6"/>
+  </g>
+
+  <!-- feature/Y branch -->
+  <g stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 180 200 Q 200 300 230 300 L 370 300 Q 400 300 440 200" stroke="#f0883e"/>
+  </g>
+  <g fill="#f0883e">
+    <circle cx="250" cy="300" r="6"/>
+    <circle cx="310" cy="300" r="6"/>
+    <circle cx="370" cy="300" r="6"/>
+  </g>
+
+  <!-- main<->develop vertical links -->
+  <g stroke-width="3" fill="none" stroke="#8b949e" stroke-linecap="round" stroke-dasharray="6,4">
+    <path d="M 80 90 L 70 200"/>
+    <path d="M 320 90 L 440 200"/>
+    <path d="M 630 90 L 680 200"/>
+  </g>
+
+  <!-- Merge dots for vertical links -->
+  <circle cx="80" cy="90" r="4" fill="#8b949e"/>
+  <circle cx="320" cy="90" r="4" fill="#8b949e"/>
+  <circle cx="630" cy="90" r="4" fill="#8b949e"/>
+
+  <!-- Labels -->
+  <text x="50" y="76" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#3fb950" font-weight="bold">main</text>
+  <g transform="translate(620, 60)">
+    <rect x="0" y="0" width="80" height="20" rx="4" fill="#238636"/>
+    <text x="40" y="14" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">producción</text>
+  </g>
+
+  <text x="40" y="228" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#8957e5" font-weight="bold">develop</text>
+  <g transform="translate(690, 185)">
+    <rect x="0" y="0" width="80" height="20" rx="4" fill="#8957e5"/>
+    <text x="40" y="14" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">integración</text>
+  </g>
+
+  <text x="165" y="282" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#58a6ff" font-weight="bold" text-anchor="middle">feat/X</text>
+  <text x="310" y="330" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#f0883e" font-weight="bold" text-anchor="middle">feat/Y</text>
+
+  <!-- Legend -->
+  <g transform="translate(530, 270)">
+    <rect x="0" y="0" width="230" height="60" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="12" y="20" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#8b949e" font-weight="bold">Ramas principales:</text>
+    <circle cx="18" cy="37" r="5" fill="#3fb950"/>
+    <text x="30" y="41" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#c9d1d9">main</text>
+    <circle cx="80" cy="37" r="5" fill="#8957e5"/>
+    <text x="92" y="41" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#c9d1d9">develop</text>
+    <circle cx="150" cy="37" r="5" fill="#58a6ff"/>
+    <text x="162" y="41" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#c9d1d9">feat/*</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="400" y="335" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#484f58" text-anchor="middle">Figura 3: Estrategia Git Flow — ramas de larga duración con main y develop</text>
+</svg>

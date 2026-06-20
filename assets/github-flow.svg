@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <rect width="800" height="300" fill="#0d1117"/>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#21262d" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="300" fill="url(#grid)" opacity="0.4"/>
+
+  <!-- Title -->
+  <text x="400" y="32" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#58a6ff" font-weight="bold" text-anchor="middle">GitHub Flow</text>
+
+  <!-- Main branch -->
+  <g stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 50 140 L 700 140" stroke="#3fb950"/>
+  </g>
+
+  <!-- main commit nodes -->
+  <g>
+    <circle cx="80" cy="140" r="7" fill="#c9d1d9"/>
+    <circle cx="220" cy="140" r="7" fill="#3fb950"/>
+    <circle cx="400" cy="140" r="7" fill="#3fb950"/>
+    <circle cx="630" cy="140" r="7" fill="#3fb950"/>
+    <circle cx="700" cy="140" r="7" fill="#c9d1d9"/>
+  </g>
+
+  <!-- feature/A branch -->
+  <g stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 130 140 Q 140 90 160 90 L 320 90 Q 340 90 350 140" stroke="#58a6ff"/>
+    <path d="M 350 140 Q 370 140 400 140" stroke="#58a6ff"/>
+  </g>
+  <g fill="#58a6ff">
+    <circle cx="160" cy="90" r="6"/>
+    <circle cx="240" cy="90" r="6"/>
+    <circle cx="320" cy="90" r="6"/>
+  </g>
+
+  <!-- feature/B branch -->
+  <g stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 290 140 Q 310 200 340 200 L 520 200 Q 550 200 560 140" stroke="#f0883e"/>
+    <path d="M 560 140 Q 590 140 630 140" stroke="#f0883e"/>
+  </g>
+  <g fill="#f0883e">
+    <circle cx="370" cy="200" r="6"/>
+    <circle cx="440" cy="200" r="6"/>
+    <circle cx="510" cy="200" r="6"/>
+  </g>
+
+  <!-- Labels for feature branches -->
+  <text x="240" y="75" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#58a6ff" font-weight="bold" text-anchor="middle">feat/A</text>
+  <text x="440" y="230" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#f0883e" font-weight="bold" text-anchor="middle">feat/B</text>
+
+  <!-- Label for main -->
+  <text x="50" y="125" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#3fb950" font-weight="bold">main</text>
+
+  <!-- Production tag on main -->
+  <g transform="translate(620, 108)">
+    <rect x="0" y="0" width="80" height="22" rx="4" fill="#238636"/>
+    <text x="40" y="15" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">producción</text>
+  </g>
+
+  <!-- Merge markers -->
+  <circle cx="350" cy="140" r="4" fill="#c9d1d9"/>
+  <circle cx="560" cy="140" r="4" fill="#c9d1d9"/>
+
+  <!-- Footer -->
+  <text x="400" y="285" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#484f58" text-anchor="middle">Figura 2: Estrategia GitHub Flow — ramas de feature cortas que hacen merge a main</text>
+</svg>

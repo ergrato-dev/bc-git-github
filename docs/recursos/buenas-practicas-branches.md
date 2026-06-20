@@ -23,11 +23,7 @@ Una **branch** (rama) es una línea independiente de desarrollo dentro de un rep
 
 **Analogía**: Imagina que el código principal (`main`) es el tronco de un árbol. Cada branch es una rama que crece del tronco. Puedes podarla, injertarla o fusionarla de vuelta sin dañar el tronco.
 
-```
-main     ●───●───●───●───●───●  (producción, estable)
-                \
-feature          ●───●───●       (trabajo aislado)
-```
+![Branch básica](../assets/basic-branch.svg)
 
 ---
 
@@ -91,13 +87,7 @@ Elige una según el tamaño de tu equipo y frecuencia de despliegue.
 
 La estrategia más simple. Ideal para equipos pequeños y despliegues continuos.
 
-```
-main ───●──────────●──────────●──── (producción)
-         \        / \        /
-feat/A    ●──●──●   /        /
-                   /        /
-feat/B            ●──●──●──●
-```
+![GitHub Flow](../assets/github-flow.svg)
 
 📌 **Reglas**:
 
@@ -111,15 +101,7 @@ feat/B            ●──●──●──●
 
 Estrategia más robusta con múltiples ramas de largo plazo. Ideal para proyectos con ciclos de release definidos.
 
-```
-main     ──●──────────────●────────────●──  (producción)
-            \            / \          /
-develop  ──●──●──●──●──●───●──●──●──●───  (integración)
-            \    /    /
-feat/X       ●──●    /
-                    /
-feat/Y             ●──●──●
-```
+![Git Flow](../assets/git-flow.svg)
 
 📌 **Ramas principales**:
 
@@ -365,42 +347,7 @@ Configura reglas de protección en `main` (y `develop` si usas Git Flow) desde *
 
 ## 📋 Resumen Visual: Ciclo de Vida de una Branch
 
-```
-                   ┌──────────────────────────────────┐
-                   │  1. Actualizar rama base         │
-                   │     git checkout main            │
-                   │     git pull                     │
-                   └─────────────┬────────────────────┘
-                                 │
-                   ┌─────────────▼────────────────────┐
-                   │  2. Crear branch                 │
-                   │     git checkout -b feat/algo    │
-                   └─────────────┬────────────────────┘
-                                 │
-                   ┌─────────────▼────────────────────┐
-                   │  3. Desarrollar                  │
-                   │     git add + git commit         │
-                   │     (repetir según necesidad)    │
-                   └─────────────┬────────────────────┘
-                                 │
-                   ┌─────────────▼────────────────────┐
-                   │  4. Sincronizar con base         │
-                   │     git merge main               │
-                   │     (al menos 1 vez al día)      │
-                   └─────────────┬────────────────────┘
-                                 │
-                   ┌─────────────▼────────────────────┐
-                   │  5. Push y abrir Pull Request    │
-                   │     git push origin feat/algo    │
-                   │     (revisar código en equipo)   │
-                   └─────────────┬────────────────────┘
-                                 │
-                   ┌─────────────▼────────────────────┐
-                   │  6. Merge y limpiar              │
-                   │     Merge en GitHub              │
-                   │     git branch -d feat/algo      │
-                   └──────────────────────────────────┘
-```
+![Ciclo de Vida de una Branch](../assets/branch-lifecycle.svg)
 
 ---
 

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 220">
+  <rect width="700" height="220" fill="#0d1117"/>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#21262d" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="700" height="220" fill="url(#grid)" opacity="0.4"/>
+
+  <!-- Main branch line -->
+  <g stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 40 130 L 600 130" stroke="#3fb950"/>
+    <!-- Feature branch -->
+    <path d="M 200 130 Q 220 60 260 60 L 440 60" stroke="#58a6ff"/>
+    <!-- Merge back -->
+    <path d="M 440 60 Q 480 130 500 130" stroke="#58a6ff"/>
+  </g>
+
+  <!-- Commit nodes main -->
+  <g>
+    <circle cx="60" cy="130" r="8" fill="#c9d1d9"/>
+    <circle cx="140" cy="130" r="8" fill="#c9d1d9"/>
+    <circle cx="200" cy="130" r="8" fill="#3fb950"/>
+    <circle cx="500" cy="130" r="8" fill="#3fb950"/>
+    <circle cx="560" cy="130" r="8" fill="#c9d1d9"/>
+    <circle cx="620" cy="130" r="8" fill="#c9d1d9"/>
+  </g>
+
+  <!-- Commit nodes feature -->
+  <g fill="#58a6ff">
+    <circle cx="280" cy="60" r="8"/>
+    <circle cx="360" cy="60" r="8"/>
+    <circle cx="440" cy="60" r="8"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="600" y="108" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#3fb950" font-weight="bold" text-anchor="end">main</text>
+  <text x="600" y="125" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#8b949e" text-anchor="end">(producción, estable)</text>
+
+  <text x="280" y="30" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#58a6ff" font-weight="bold" text-anchor="middle">feature</text>
+  <text x="280" y="48" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">(trabajo aislado)</text>
+
+  <!-- Title -->
+  <text x="20" y="200" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#484f58">Figura 1: Estructura básica de una branch</text>
+</svg>
