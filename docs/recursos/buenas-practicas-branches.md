@@ -23,7 +23,7 @@ Una **branch** (rama) es una línea independiente de desarrollo dentro de un rep
 
 **Analogía**: Imagina que el código principal (`main`) es el tronco de un árbol. Cada branch es una rama que crece del tronco. Puedes podarla, injertarla o fusionarla de vuelta sin dañar el tronco.
 
-![Branch básica](../assets/basic-branch.svg)
+![Branch básica](../../assets/basic-branch.svg)
 
 ---
 
@@ -87,7 +87,7 @@ Elige una según el tamaño de tu equipo y frecuencia de despliegue.
 
 La estrategia más simple. Ideal para equipos pequeños y despliegues continuos.
 
-![GitHub Flow](../assets/github-flow.svg)
+![GitHub Flow](../../assets/github-flow.svg)
 
 📌 **Reglas**:
 
@@ -101,7 +101,7 @@ La estrategia más simple. Ideal para equipos pequeños y despliegues continuos.
 
 Estrategia más robusta con múltiples ramas de largo plazo. Ideal para proyectos con ciclos de release definidos.
 
-![Git Flow](../assets/git-flow.svg)
+![Git Flow](../../assets/git-flow.svg)
 
 📌 **Ramas principales**:
 
@@ -347,7 +347,7 @@ Configura reglas de protección en `main` (y `develop` si usas Git Flow) desde *
 
 ## 📋 Resumen Visual: Ciclo de Vida de una Branch
 
-![Ciclo de Vida de una Branch](../assets/branch-lifecycle.svg)
+![Ciclo de Vida de una Branch](../../assets/branch-lifecycle.svg)
 
 ---
 
