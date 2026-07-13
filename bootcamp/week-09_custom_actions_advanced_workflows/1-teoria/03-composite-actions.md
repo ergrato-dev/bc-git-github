@@ -346,8 +346,7 @@ runs:
       continue-on-error: ${{ inputs.fail-on-error != 'true' }}
       run: |
         echo "🐍 Running flake8..."
-        pip install flake8 --quiet
-        flake8 . --count --show-source --statistics
+        uvx flake8 . --count --show-source --statistics
       shell: bash
     
     # ========================================

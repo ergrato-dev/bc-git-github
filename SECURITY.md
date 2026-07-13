@@ -63,4 +63,4 @@ Este bootcamp enseña prácticas de seguridad en Git/GitHub. Como estudiante o c
 
 ---
 
-_Semanas 11-12 del bootcamp cubren GitHub Advanced Security en detalle._
+_Semanas 11-13 del bootcamp cubren GitHub Advanced Security en detalle._

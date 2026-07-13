@@ -61,7 +61,7 @@ Al finalizar esta semana serás capaz de:
 ## 📁 Estructura de Carpetas
 
 ```
-week-10/
+week-10_deployment_strategies/
 ├── README.md                    # Este archivo
 ├── rubrica-evaluacion.md        # Criterios de evaluación (100 pts)
 ├── 0-assets/                    # Diagramas SVG
@@ -129,7 +129,7 @@ jobs:
 
 | ⬅️ Anterior | 🏠 Inicio | Siguiente ➡️ |
 |:------------|:---------:|-------------:|
-| [Semana 09: Custom Actions](../semana-09/README.md) | [Bootcamp](../README.md) | [Semana 11: Security Features](../semana-11/README.md) |
+| [Semana 09: Custom Actions](../week-09_custom_actions_advanced_workflows/README.md) | [Bootcamp](../README.md) | [Semana 11: Security Features](../week-11_security_features/README.md) |
 
 ---
 

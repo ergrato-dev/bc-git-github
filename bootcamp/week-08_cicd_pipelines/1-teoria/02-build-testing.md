@@ -83,14 +83,15 @@ jobs:
 
 #### Node.js / JavaScript
 ```yaml
-- run: npm ci
-- run: npm run build
+- run: pnpm install --frozen-lockfile
+- run: pnpm run build
 ```
 
 #### Python
 ```yaml
-- run: pip install -r requirements.txt
-- run: python -m build  # Para packages
+- run: curl -LsSf https://astral.sh/uv/install.sh | sh
+- run: uv sync --frozen
+- run: uv build  # Para packages
 ```
 
 #### Go

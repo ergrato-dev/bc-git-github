@@ -25,7 +25,7 @@ Al finalizar esta semana seras capaz de:
 ## Estructura de la Semana
 
 ```
-week-04/
+week-04_merge_conflicts/
 ├── README.md                 # Este archivo
 ├── rubrica-evaluacion.md     # Criterios de evaluacion
 ├── 0-assets/                 # Diagramas SVG
@@ -123,7 +123,7 @@ week-04/
 
 | Anterior | Inicio | Siguiente |
 |:---------|:------:|----------:|
-| [Week 03: Branching Basico](../week-03/) | [Bootcamp](../) | [Week 05: Remote Repositories](../week-05/) |
+| [Week 03: Branching Basico](../week-03_branching_basico/) | [Bootcamp](../) | [Week 05: Remote Repositories](../week-05_remote_repositories/) |
 
 ---
 

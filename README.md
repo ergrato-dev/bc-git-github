@@ -116,7 +116,7 @@ git clone https://github.com/tu-usuario/bc-git-github.git
 cd bc-git-github
 
 # 3. Comenzar con la Semana 1
-cd docs/week-01
+cd bootcamp/week-01_fundamentos_de_git
 ```
 
 ### Configuración Inicial
@@ -139,11 +139,12 @@ bc-git-github/
 │   └── banner-bootcamp.svg
 ├── ⚙️ .github/                     # Configuraciones GitHub
 │   └── copilot-instructions.md
-├── 📚 docs/                       # Documentación del bootcamp
+├── 🎓 bootcamp/                    # Material de trabajo semanal
+│   └── week-01_fundamentos_de_git/ al week-16_proyecto_final_certificaciones/
+├── 📚 docs/                       # Documentación complementaria
 │   ├── 📋 README.md                # Índice principal
-│   ├── 📝 week-01/ al week-16/     # Contenido por semanas
 │   ├── 💼 recursos/                # Material complementario
-│   ├── 🧪 ejercicios/              # Ejercicios generales
+│   ├── 🧪 ejercicios/              # Ejercicios transversales
 │   └── 📊 evaluaciones/            # Exámenes y evaluaciones
 └── 🔧 scripts/                    # Scripts de automatización
     ├── auto-commit.sh              # Commits automáticos
@@ -155,22 +156,22 @@ bc-git-github/
 
 | Semana | Tema                                          | Horas | Certificación  |
 | ------ | --------------------------------------------- | ----- | -------------- |
-| 1      | [Git Foundations](/docs/week-01/)            | 6h    | Foundations    |
-| 2      | [Repositories y Commits](/docs/week-02/)     | 6h    | Foundations    |
-| 3      | [Branching Básico](/docs/week-03/)           | 6h    | Foundations    |
-| 4      | [Merge Conflicts](/docs/week-04/)            | 6h    | Foundations    |
-| 5      | [Remote Repositories](/docs/week-05/)        | 6h    | Foundations    |
-| 6      | [GitHub Features](/docs/week-06/)            | 6h    | Foundations    |
-| 7      | [GitHub Actions Fundamentos](/docs/week-07/) | 6h    | Actions        |
-| 8      | [CI/CD Pipelines](/docs/week-08/)            | 6h    | Actions        |
-| 9      | [Actions Avanzadas](/docs/week-09/)          | 6h    | Actions        |
-| 10     | [Deployment Strategies](/docs/week-10/)      | 6h    | Actions        |
-| 11     | [Security Features](/docs/week-11/)          | 6h    | Security       |
-| 12     | [Vulnerability Management](/docs/week-12/)   | 6h    | Security       |
-| 13     | [Security Policies](/docs/week-13/)          | 6h    | Security       |
-| 14     | [Enterprise Administration](/docs/week-14/)  | 6h    | Administration |
-| 15     | [Administration Avanzado](/docs/week-15/)    | 6h    | Administration |
-| 16     | [Proyecto Final](/docs/week-16/)             | 6h    | Integración    |
+| 1      | [Git Foundations](/bootcamp/week-01_fundamentos_de_git/)            | 6h    | Foundations    |
+| 2      | [Repositories y Commits](/bootcamp/week-02_repositories_y_commits/)     | 6h    | Foundations    |
+| 3      | [Branching Básico](/bootcamp/week-03_branching_basico/)           | 6h    | Foundations    |
+| 4      | [Merge Conflicts](/bootcamp/week-04_merge_conflicts/)            | 6h    | Foundations    |
+| 5      | [Remote Repositories](/bootcamp/week-05_remote_repositories/)        | 6h    | Foundations    |
+| 6      | [GitHub Features](/bootcamp/week-06_github_features/)            | 6h    | Foundations    |
+| 7      | [GitHub Actions Fundamentos](/bootcamp/week-07_github_actions_fundamentos/) | 6h    | Actions        |
+| 8      | [CI/CD Pipelines](/bootcamp/week-08_cicd_pipelines/)            | 6h    | Actions        |
+| 9      | [Actions Avanzadas](/bootcamp/week-09_custom_actions_advanced_workflows/)          | 6h    | Actions        |
+| 10     | [Deployment Strategies](/bootcamp/week-10_deployment_strategies/)      | 6h    | Actions        |
+| 11     | [Security Features](/bootcamp/week-11_security_features/)          | 6h    | Security       |
+| 12     | [Vulnerability Management](/bootcamp/week-12_vulnerability_management/)   | 6h    | Security       |
+| 13     | [Security Policies](/bootcamp/week-13_security_policies_compliance/)          | 6h    | Security       |
+| 14     | [Enterprise Administration](/bootcamp/week-14_enterprise_administration/)  | 6h    | Administration |
+| 15     | [Administration Avanzado](/bootcamp/week-15_github_administration_avanzado/)    | 6h    | Administration |
+| 16     | [Proyecto Final](/bootcamp/week-16_proyecto_final_certificaciones/)             | 6h    | Integración    |
 
 **Total: 96 horas de formación intensiva**
 
@@ -230,7 +231,7 @@ bc-git-github/
 
 ### Paso 2: Semana 1
 
-1. 📚 Ve a [Semana 1 - Fundamentos](/docs/week-01/)
+1. 📚 Ve a [Semana 1 - Fundamentos](/bootcamp/week-01_fundamentos_de_git/)
 2. 🎯 Revisa los objetivos de aprendizaje
 3. 📖 Comienza con la primera lección
 4. ✍️ Realiza los ejercicios prácticos
@@ -292,14 +293,14 @@ Este proyecto está bajo la licencia **CC BY-NC-SA 4.0** (Creative Commons Attri
 
 Ver [LICENSE](LICENSE) para el texto completo.
 
-## � Documentación Adicional
+## 📎 Documentación Adicional
 
 - [🤖 Instrucciones para Copilot](.github/copilot-instructions.md)
 - [🤝 Guía de Contribución](CONTRIBUTING.md)
 - [📜 Código de Conducta](CODE_OF_CONDUCT.md)
 - [🔒 Política de Seguridad](SECURITY.md)
 
-## �🙏 Reconocimientos
+## 🙏 Reconocimientos
 
 - 💖 **GitHub Education** por los recursos y soporte
 - 👥 **Comunidad Open Source** por las mejores prácticas
@@ -312,7 +313,7 @@ Ver [LICENSE](LICENSE) para el texto completo.
 
 ### 🚀 ¿Listo para transformar tu carrera?
 
-**[📚 Comenzar el Bootcamp](./docs/week-01/) • [🎓 Ver Certificaciones](./docs/recursos/certificaciones-github.md) • [❓ FAQ](./docs/recursos/faq.md)**
+**[📚 Comenzar el Bootcamp](./bootcamp/week-01_fundamentos_de_git/) • [🎓 Ver Certificaciones](./docs/recursos/certificaciones-github.md) • [❓ FAQ](./docs/recursos/faq.md)**
 
 _Desarrollado con ❤️ para la comunidad de desarrolladores_
 

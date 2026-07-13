@@ -23,7 +23,7 @@ Al finalizar esta semana serás capaz de:
 ## 🗂️ Estructura de la Semana
 
 ```text
-week-07/
+week-07_github_actions_fundamentos/
 ├── README.md                 # Este archivo
 ├── rubrica-evaluacion.md     # Criterios de evaluación
 ├── 0-assets/                 # Diagramas SVG
@@ -152,7 +152,7 @@ jobs:
 
 | ⬅️ Anterior | 🏠 Inicio | Siguiente ➡️ |
 |:------------|:---------:|-------------:|
-| [Week 06: GitHub Features](../week-06/README.md) | [Bootcamp](../README.md) | [Week 08: CI/CD Pipelines](../week-08/README.md) |
+| [Week 06: GitHub Features](../week-06_github_features/README.md) | [Bootcamp](../README.md) | [Week 08: CI/CD Pipelines](../week-08_cicd_pipelines/README.md) |
 
 ---
 
@@ -201,7 +201,7 @@ _Week 07 | Bootcamp Git/GitHub | Fase 2: GitHub Actions Certification_
 
 | ⬅️ Anterior | 🏠 Inicio | Siguiente ➡️ |
 |:------------|:---------:|-------------:|
-| [Week 06: GitHub Features](../week-06/README.md) | [Bootcamp](../README.md) | [Week 08: CI/CD Pipelines](../week-08/README.md) |
+| [Week 06: GitHub Features](../week-06_github_features/README.md) | [Bootcamp](../README.md) | [Week 08: CI/CD Pipelines](../week-08_cicd_pipelines/README.md) |
 
 ---
 

@@ -260,7 +260,7 @@ Tu espacio de trabajo actual. La carpeta donde están tus archivos y donde haces
 
 | ⬅️ Recursos | 🏠 Semana | Siguiente ➡️ |
 |:------------|:---------:|-------------:|
-| [Recursos](../4-recursos/README.md) | [Week 02](../README.md) | [Week 03](../../week-03/README.md) |
+| [Recursos](../4-recursos/README.md) | [Week 02](../README.md) | [Week 03](../../week-03_branching_basico/README.md) |
 
 ---
 

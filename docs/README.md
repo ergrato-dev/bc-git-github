@@ -1,12 +1,8 @@
-# � Documentación del Bootcamp Git/GitHub
+# 📚 Documentación del Bootcamp Git/GitHub
 
-Esta carpeta contiene toda la documentación estática y recursos complementarios del bootcamp intensivo de Git y GitHub.
+Esta carpeta contiene documentación estática y recursos complementarios del bootcamp intensivo de Git y GitHub. El material de trabajo semanal (teoría, prácticas, proyectos) vive en [`../bootcamp/`](../bootcamp/README.md).
 
 ## 📁 Estructura de Documentación
-
-### 📋 `/syllabus/`
-
-Contenido curricular, objetivos de aprendizaje y planificación académica.
 
 ### 🔗 `/recursos/`
 
@@ -34,37 +30,44 @@ Ejercicios transversales y material de práctica general.
 
 #### 📘 Fase 1: GitHub Foundations Certification (Semanas 1-6)
 
-| Semana             | Tema Principal         | Enfoque                               | Certificación      |
-| ------------------ | ---------------------- | ------------------------------------- | ------------------ |
-| [01](./week-01/) | Fundamentos de Git     | Instalación y conceptos básicos       | GitHub Foundations |
-| [02](./week-02/) | Repositories y Commits | Workflow básico de trabajo            | GitHub Foundations |
-| [03](./week-03/) | Branching y Merging    | Creación y manejo de branches         | GitHub Foundations |
-| [04](./week-04/) | Merge Conflicts        | Resolución de conflictos              | GitHub Foundations |
-| [05](./week-05/) | Remote Repositories    | Colaboración con repositorios remotos | GitHub Foundations |
-| [06](./week-06/) | GitHub Features        | Issues, PRs, Reviews, Projects        | GitHub Foundations |
+| Semana | Tema Principal         | Enfoque                               | Certificación      |
+| ------ | ----------------------- | -------------------------------------- | ------------------- |
+| [01](../bootcamp/week-01_fundamentos_de_git/README.md) | Fundamentos de Git     | Instalación y conceptos básicos       | GitHub Foundations |
+| [02](../bootcamp/week-02_repositories_y_commits/README.md) | Repositories y Commits | Workflow básico de trabajo            | GitHub Foundations |
+| [03](../bootcamp/week-03_branching_basico/README.md) | Branching y Merging    | Creación y manejo de branches         | GitHub Foundations |
+| [04](../bootcamp/week-04_merge_conflicts/README.md) | Merge Conflicts        | Resolución de conflictos              | GitHub Foundations |
+| [05](../bootcamp/week-05_remote_repositories/README.md) | Remote Repositories    | Colaboración con repositorios remotos | GitHub Foundations |
+| [06](../bootcamp/week-06_github_features/README.md) | GitHub Features        | Issues, PRs, Reviews, Projects        | GitHub Foundations |
 
 #### 🔧 Fase 2: GitHub Actions Certification (Semanas 7-10)
 
-| Semana             | Tema Principal             | Enfoque                          | Certificación  |
-| ------------------ | -------------------------- | -------------------------------- | -------------- |
-| [07](./week-07/) | GitHub Actions Fundamentos | Workflows, sintaxis YAML         | GitHub Actions |
-| [08](./week-08/) | CI/CD Pipelines            | Build, test, deploy automation   | GitHub Actions |
-| [09](./week-09/) | Actions Avanzadas          | Custom actions, marketplace      | GitHub Actions |
-| [10](./week-10/) | Estrategias de Deployment  | Environments, secrets, approvals | GitHub Actions |
+| Semana | Tema Principal              | Enfoque                          | Certificación  |
+| ------ | ----------------------------- | ---------------------------------- | --------------- |
+| [07](../bootcamp/week-07_github_actions_fundamentos/README.md) | GitHub Actions Fundamentos | Workflows, sintaxis YAML         | GitHub Actions |
+| [08](../bootcamp/week-08_cicd_pipelines/README.md) | CI/CD Pipelines            | Build, test, deploy automation   | GitHub Actions |
+| [09](../bootcamp/week-09_custom_actions_advanced_workflows/README.md) | Actions Avanzadas          | Custom actions, marketplace      | GitHub Actions |
+| [10](../bootcamp/week-10_deployment_strategies/README.md) | Estrategias de Deployment  | Environments, secrets, approvals | GitHub Actions |
 
-#### 🛡️ Fase 3: GitHub Advanced Security (Semanas 11-12)
+#### 🛡️ Fase 3: GitHub Advanced Security Certification (Semanas 11-13)
 
-| Semana             | Tema Principal           | Enfoque                              | Certificación     |
-| ------------------ | ------------------------ | ------------------------------------ | ----------------- |
-| [11](./week-11/) | Security Features        | Code scanning, dependency review     | Advanced Security |
-| [12](./week-12/) | Vulnerability Management | Secret scanning, security advisories | Advanced Security |
+| Semana | Tema Principal            | Enfoque                              | Certificación     |
+| ------ | --------------------------- | --------------------------------------- | ------------------- |
+| [11](../bootcamp/week-11_security_features/README.md) | Security Features        | Code scanning, dependency review     | Advanced Security |
+| [12](../bootcamp/week-12_vulnerability_management/README.md) | Vulnerability Management | Secret scanning, security advisories | Advanced Security |
+| [13](../bootcamp/week-13_security_policies_compliance/README.md) | Security Policies & Compliance | Políticas de seguridad y compliance | Advanced Security |
 
-#### 👥 Fase 4: GitHub Administration + Proyecto Final (Semanas 13-14)
+#### 👥 Fase 4: GitHub Administration Certification (Semanas 14-15)
 
-| Semana             | Tema Principal            | Enfoque                           | Certificación  |
-| ------------------ | ------------------------- | --------------------------------- | -------------- |
-| [13](./week-13/) | Enterprise Administration | Organizations, teams, permissions | Administration |
-| [14](./week-14/) | Proyecto Final & Examen   | Preparación certificaciones       | Todas          |
+| Semana | Tema Principal             | Enfoque                           | Certificación  |
+| ------ | ----------------------------- | ------------------------------------ | --------------- |
+| [14](../bootcamp/week-14_enterprise_administration/README.md) | Enterprise Administration | Organizations, teams, permisos, SSO | Administration |
+| [15](../bootcamp/week-15_github_administration_avanzado/README.md) | GitHub Administration Avanzado | Auditoría, compliance, gobernanza enterprise | Administration |
+
+#### 🎓 Fase 5: Proyecto Final & Certificaciones (Semana 16)
+
+| Semana | Tema Principal                | Enfoque                              | Certificación |
+| ------ | -------------------------------- | ---------------------------------------- | --------------- |
+| [16](../bootcamp/week-16_proyecto_final_certificaciones/README.md) | Proyecto Final & Certificaciones | Proyecto integrador y preparación final | Todas          |
 
 ## 🎯 Objetivos de Aprendizaje y Certificaciones
 
@@ -100,7 +103,7 @@ Al finalizar el bootcamp serás capaz de:
 
 ## 📖 Recursos Adicionales
 
-- [📋 Ejercicios](./ejercicios/) - Prácticas guiadas por semana
+- [📋 Ejercicios](./ejercicios/) - Prácticas guiadas transversales
 - [📝 Evaluaciones](./evaluaciones/) - Tests y proyectos de evaluación
 - [🛠️ Recursos](./recursos/) - Cheatsheets, enlaces útiles y herramientas
 - [❓ FAQ](./recursos/faq.md) - Preguntas frecuentes
@@ -114,10 +117,10 @@ Al finalizar el bootcamp serás capaz de:
 
 ## 📅 Cronograma
 
-**Modalidad**: Presencial/Virtual híbrida  
-**Duración**: 14 semanas (70 días hábiles)  
-**Horario**: Lunes a Viernes, 4 horas diarias  
-**Certificaciones**: Preparación para las 4 certificaciones oficiales de GitHub  
+**Modalidad**: Presencial/Virtual híbrida
+**Duración**: 16 semanas (80 días hábiles)
+**Horario**: Lunes a Viernes, 4 horas diarias
+**Certificaciones**: Preparación para las 4 certificaciones oficiales de GitHub
 **Exámenes**: Simulacros y preparación para certificaciones al final de cada fase
 
 ## 🏆 Evaluación
@@ -128,4 +131,4 @@ Al finalizar el bootcamp serás capaz de:
 
 ---
 
-**¿Listo para comenzar?** 👉 [Ir a Semana 1](./week-01/README.md)
+**¿Listo para comenzar?** 👉 [Ir a Semana 1](../bootcamp/week-01_fundamentos_de_git/README.md)

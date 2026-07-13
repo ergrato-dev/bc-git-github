@@ -49,7 +49,7 @@ git config --list | grep user
 # ¿PARA QUÉ SIRVE?: Tener un espacio dedicado para el proyecto
 
 # Navegar a la carpeta de entregables del bootcamp
-cd [ruta-bootcamp]/week-01/4-proyecto/entregables/
+cd [ruta-bootcamp]/week-01_fundamentos_de_git/4-proyecto/entregables/
 
 # Crear directorio para tu repositorio
 mkdir mi-primer-repo

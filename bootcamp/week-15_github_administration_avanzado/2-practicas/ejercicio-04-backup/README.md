@@ -352,4 +352,4 @@ echo "Created: restore-repo.sh"
 
 ---
 
-**Siguiente**: [Proyecto Semanal](../3-proyecto/README.md)
+**Siguiente**: [Proyecto Semanal](../../3-proyecto/README.md)

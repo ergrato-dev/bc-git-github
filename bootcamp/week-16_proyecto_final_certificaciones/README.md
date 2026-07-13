@@ -67,9 +67,9 @@ Total: 6 horas (360 minutos)
 ## 📂 Estructura de la Semana
 
 ```
-week-16/
+week-16_proyecto_final_certificaciones/
 ├── README.md
-├── RUBRICA_EVALUACION.md
+├── rubrica-evaluacion.md
 ├── 0-assets/
 │   ├── 01-certification-paths.svg
 │   ├── 02-project-architecture.svg
@@ -131,4 +131,4 @@ Al completar esta semana, habrás conseguido:
 
 | Anterior | Inicio | Siguiente |
 |----------|--------|-----------|
-| [← Semana 15: Advanced Admin](../week-15/README.md) | [📚 Índice](../README.md) | 🎓 **¡GRADUACIÓN!** |
+| [← Semana 15: Advanced Admin](../week-15_github_administration_avanzado/README.md) | [📚 Índice](../README.md) | 🎓 **¡GRADUACIÓN!** |

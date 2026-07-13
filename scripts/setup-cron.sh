@@ -5,8 +5,9 @@
 # ¿POR QUÉ?: Automatizar el proceso de commits durante el desarrollo del bootcamp
 # ¿PARA QUÉ SIRVE?: Mantener un historial constante sin intervención manual
 
-SCRIPT_PATH="/home/epti/Documents/epti-dev/bc-channel/bc-git-github/scripts/auto-commit.sh"
-CRON_ENTRY="*/5 * * * * $SCRIPT_PATH >> /home/epti/Documents/epti-dev/bc-channel/bc-git-github/scripts/cron.log 2>&1"
+REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+SCRIPT_PATH="$REPO_DIR/scripts/auto-commit.sh"
+CRON_ENTRY="*/5 * * * * $SCRIPT_PATH >> $REPO_DIR/scripts/cron.log 2>&1"
 
 echo "🚀 Configurando Auto-commits para Bootcamp Git/GitHub"
 echo "=================================================="

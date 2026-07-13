@@ -30,7 +30,7 @@
 # ═══════════════════════════════════════════════════════════════════════════════
 
 # Configuración
-REPO_DIR="/home/epti/Documents/epti-dev/bc-channel/bc-git-github"
+REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 LOG_FILE="$REPO_DIR/scripts/auto-commit.log"
 DATE=$(date '+%Y-%m-%d %H:%M:%S')
 

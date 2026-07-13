@@ -318,7 +318,7 @@ Términos clave de Integración Continua, Entrega Continua y Despliegue Continuo
 
 - [Documentación de GitHub Actions](https://docs.github.com/en/actions)
 - [GitHub Actions Glossary](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)
-- [Glosario Semana 07](../../week-07/5-glosario/)
+- [Glosario Semana 07](../../week-07_github_actions_fundamentos/5-glosario/)
 
 ---
 

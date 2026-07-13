@@ -266,7 +266,7 @@ Imagina que trabajas en un equipo de 5 desarrolladores en diferentes países. ¿
 
 En la siguiente lección aprenderemos sobre la **Historia de Git** y cómo Linus Torvalds revolucionó el control de versiones.
 
-### 📖 **Siguiente**: [Lección 1.2: Historia de Git](./leccion-02-historia-git.md)
+### 📖 **Siguiente**: [Lección 1.2: Historia de Git](./02-historia-git.md)
 
 ---
 

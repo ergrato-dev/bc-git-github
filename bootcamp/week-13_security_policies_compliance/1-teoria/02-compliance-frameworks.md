@@ -175,8 +175,7 @@ git reflog expire --expire=now --all
 git gc --prune=now --aggressive
 
 # Solución 2: git filter-repo
-pip install git-filter-repo
-git filter-repo --invert-paths --path file-with-pii.txt
+uvx git-filter-repo --invert-paths --path file-with-pii.txt
 ```
 
 ### GitHub Data Processing Agreement

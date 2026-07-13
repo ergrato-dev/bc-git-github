@@ -254,8 +254,8 @@ jobs:
     runs-on: ubuntu-latest  # 🐧 Linux!
     steps:
       - run: |
-          npm install
-          npm run build
+          pnpm install --frozen-lockfile
+          pnpm run build
           # Todo es bash, no PowerShell
 ```
 
@@ -340,4 +340,4 @@ jobs:
 
 ---
 
-**¿Completaste el ejercicio?** 👉 Continúa con [Ejercicio 2: Primera Configuración](./ejercicio-02-configuracion.md)
+**¿Completaste el ejercicio?** 👉 Continúa con [Ejercicio 2: Primera Configuración](../../bootcamp/week-01_fundamentos_de_git/2-practicas/ejercicio-02-configuracion/)

@@ -236,7 +236,7 @@ Quiero entender mejor los branches y...
 
 | ⬅️ Anterior | 🏠 Semana | Siguiente ➡️ |
 |:------------|:---------:|-------------:|
-| [README](README.md) | [Week 01](README.md) | [Week 02](../week-02/README.md) |
+| [README](README.md) | [Week 01](README.md) | [Week 02](../week-02_repositories_y_commits/README.md) |
 
 ---
 

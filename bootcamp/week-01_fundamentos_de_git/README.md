@@ -23,7 +23,7 @@ Al finalizar esta semana serás capaz de:
 ## 🗂️ Estructura de la Semana
 
 ```
-week-01/
+week-01_fundamentos_de_git/
 ├── README.md                    # Este archivo
 ├── rubrica-evaluacion.md        # Criterios de evaluación
 ├── 0-assets/                    # Diagramas y recursos visuales
@@ -133,7 +133,7 @@ week-01/
 
 | ⬅️ Anterior | 🏠 Inicio | Siguiente ➡️ |
 |-------------|-----------|--------------|
-| [Bootcamp](../README.md) | [Bootcamp](../README.md) | [Week 02: Repositories y Commits](../week-02/README.md) |
+| [Bootcamp](../README.md) | [Bootcamp](../README.md) | [Week 02: Repositories y Commits](../week-02_repositories_y_commits/README.md) |
 
 ---
 

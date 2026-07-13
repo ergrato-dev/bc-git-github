@@ -219,4 +219,4 @@ Para aprobar esta semana y avanzar hacia la certificación GitHub Actions:
 
 | ⬅️ Anterior | 🏠 Semana | ➡️ Siguiente |
 |:-----------:|:---------:|:------------:|
-| [Rúbrica Week 07](../week-07/rubrica-evaluacion.md) | [README](README.md) | [Rúbrica Week 09](../week-09/rubrica-evaluacion.md) |
+| [Rúbrica Week 07](../week-07_github_actions_fundamentos/rubrica-evaluacion.md) | [README](README.md) | [Rúbrica Week 09](../week-09_custom_actions_advanced_workflows/rubrica-evaluacion.md) |

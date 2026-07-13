@@ -550,11 +550,42 @@ git config --global core.editor "nano"
 
 ---
 
+## 🔐 Conexión Segura con SSH
+
+Una vez configurado Git, el siguiente paso es establecer una **conexión segura** con repositorios remotos usando **SSH** en vez de HTTPS (evita escribir usuario/contraseña o token en cada `push`/`pull`).
+
+1. **Generar un par de llaves** (si no tienes una):
+   ```bash
+   ssh-keygen -t ed25519 -C "tu-email@ejemplo.com"
+   ```
+2. **Activar el agente SSH y añadir la llave**:
+   ```bash
+   eval "$(ssh-agent -s)"
+   ssh-add ~/.ssh/id_ed25519
+   ```
+3. **Copiar la llave pública** y registrarla en GitHub (`Settings → SSH and GPG keys → New SSH key`):
+   ```bash
+   cat ~/.ssh/id_ed25519.pub
+   ```
+4. **Verificar la conexión**:
+   ```bash
+   ssh -T git@github.com
+   ```
+5. **Usar SSH en vez de HTTPS** al clonar o en un remoto existente:
+   ```bash
+   git remote set-url origin git@github.com:usuario/repositorio.git
+   ```
+
+### 🤔 **Preguntas de Reflexión**
+
+1. ¿Qué ventaja de seguridad tiene SSH frente a HTTPS con usuario/contraseña?
+2. ¿Por qué `ssh-add` es necesario incluso después de generar la llave?
+
+---
+
 ## 🔗 Próximos Pasos
 
-Una vez configurado Git, el siguiente paso es establecer una **conexión segura** con repositorios remotos usando **SSH**.
-
-### 📖 **Siguiente**: [Lección 1.4: Configuración de SSH](./leccion-04-ssh.md)
+### 📖 **Siguiente**: [Prácticas de la Semana 1](../2-practicas/README.md)
 
 ---
 

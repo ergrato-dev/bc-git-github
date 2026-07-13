@@ -80,7 +80,7 @@ Domain 5: Manage GitHub Enterprise administration (20%)
 ## 📂 Estructura de la Semana
 
 ```
-week-15/
+week-15_github_administration_avanzado/
 ├── README.md
 ├── rubrica-evaluacion.md
 ├── 0-assets/
@@ -127,5 +127,5 @@ week-15/
 
 ## 🔗 Navegación
 
-[← Semana 14: Administration](../semana-14/README.md) | [Inicio](../README.md) | [Semana 16: Proyecto Final →](../semana-16/README.md)
+[← Semana 14: Administration](../week-14_enterprise_administration/README.md) | [Inicio](../README.md) | [Semana 16: Proyecto Final →](../week-16_proyecto_final_certificaciones/README.md)
 

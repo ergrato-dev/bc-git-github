@@ -29,7 +29,7 @@ Al finalizar esta semana serás capaz de:
 ## 🗂️ Estructura de la Semana
 
 ```
-week-13/
+week-13_security_policies_compliance/
 ├── README.md                    # Este archivo
 ├── rubrica-evaluacion.md        # Criterios de evaluación (100 pts)
 ├── 0-assets/                    # 4 diagramas SVG
@@ -155,7 +155,7 @@ week-13/
 
 | ⬅️ Anterior | 🏠 Inicio | Siguiente ➡️ |
 |:------------|:---------:|-------------:|
-| [Week 12: Vulnerability Management](../week-12/) | [Bootcamp](../README.md) | [Week 14: Enterprise Administration](../week-14/) |
+| [Week 12: Vulnerability Management](../week-12_vulnerability_management/) | [Bootcamp](../README.md) | [Week 14: Enterprise Administration](../week-14_enterprise_administration/) |
 
 ---
 

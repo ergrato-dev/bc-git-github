@@ -24,7 +24,7 @@ Al finalizar esta semana serás capaz de:
 ## 🗂️ Estructura de la Semana
 
 ```
-week-09/
+week-09_custom_actions_advanced_workflows/
 ├── README.md                 # Este archivo
 ├── rubrica-evaluacion.md     # Criterios de evaluación (100 pts)
 ├── 0-assets/                 # Diagramas SVG
@@ -184,7 +184,7 @@ Esta semana cubre temas del examen:
 
 | ⬅️ Anterior | 🏠 Inicio | ➡️ Siguiente |
 |:-----------:|:---------:|:------------:|
-| [Week 08](../week-08/) | [Bootcamp](../README.md) | [Week 10](../week-10/) |
+| [Week 08](../week-08_cicd_pipelines/) | [Bootcamp](../README.md) | [Week 10](../week-10_deployment_strategies/) |
 
 ---
 

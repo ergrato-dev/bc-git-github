@@ -27,7 +27,7 @@ Al finalizar esta semana seras capaz de:
 ## Estructura de la Semana
 
 ```
-week-06/
+week-06_github_features/
 ├── README.md                 # Este archivo
 ├── rubrica-evaluacion.md     # Criterios de evaluacion
 ├── 0-assets/                 # Diagramas SVG
@@ -146,7 +146,7 @@ Columnas tipicas:
 
 | Anterior | Inicio | Siguiente |
 |:---------|:------:|----------:|
-| [Week 05](../week-05/README.md) | [Bootcamp](../README.md) | [Week 07](../week-07/README.md) |
+| [Week 05](../week-05_remote_repositories/README.md) | [Bootcamp](../README.md) | [Week 07](../week-07_github_actions_fundamentos/README.md) |
 
 ---
 

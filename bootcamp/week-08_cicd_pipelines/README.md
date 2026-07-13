@@ -39,7 +39,7 @@ Al finalizar esta semana serás capaz de:
 ## 🗂️ Estructura de la Semana
 
 ```text
-week-08/
+week-08_cicd_pipelines/
 ├── README.md                     # Este archivo
 ├── rubrica-evaluacion.md         # Criterios de evaluación
 ├── 0-assets/                     # Diagramas SVG
@@ -181,7 +181,7 @@ Esta semana cubre los siguientes temas del examen:
 
 | ⬅️ Anterior | 🏠 Inicio | ➡️ Siguiente |
 |:-----------:|:---------:|:------------:|
-| [Semana 07: Actions Fundamentos](../week-07/README.md) | [Bootcamp](../README.md) | [Semana 09: Actions Avanzadas](../week-09/README.md) |
+| [Semana 07: Actions Fundamentos](../week-07_github_actions_fundamentos/README.md) | [Bootcamp](../README.md) | [Semana 09: Actions Avanzadas](../week-09_custom_actions_advanced_workflows/README.md) |
 
 ---
 

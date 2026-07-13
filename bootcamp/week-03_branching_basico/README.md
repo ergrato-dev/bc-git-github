@@ -16,8 +16,8 @@ Al finalizar esta semana serás capaz de:
 
 ## 📚 Requisitos Previos
 
-- ✅ Completar [Week 01: Fundamentos de Git](../week-01/README.md)
-- ✅ Completar [Week 02: Repositories y Commits](../week-02/README.md)
+- ✅ Completar [Week 01: Fundamentos de Git](../week-01_fundamentos_de_git/README.md)
+- ✅ Completar [Week 02: Repositories y Commits](../week-02_repositories_y_commits/README.md)
 - ✅ Dominio de commits, staging area e historial
 
 ---
@@ -25,7 +25,7 @@ Al finalizar esta semana serás capaz de:
 ## 🗂️ Estructura de la Semana
 
 ```
-week-03/
+week-03_branching_basico/
 ├── README.md                 # Este archivo
 ├── rubrica-evaluacion.md     # Criterios de evaluación (100 pts)
 ├── 0-assets/                 # Diagramas SVG (branches, merge, HEAD)
@@ -114,7 +114,7 @@ Simular el desarrollo de una aplicación con múltiples features usando branches
 
 | ⬅️ Anterior | 🏠 Inicio | Siguiente ➡️ |
 |:------------|:---------:|-------------:|
-| [Week 02: Repositories y Commits](../week-02/README.md) | [Bootcamp](../README.md) | [Week 04: Merge Conflicts](../week-04/README.md) |
+| [Week 02: Repositories y Commits](../week-02_repositories_y_commits/README.md) | [Bootcamp](../README.md) | [Week 04: Merge Conflicts](../week-04_merge_conflicts/README.md) |
 
 ---
 

@@ -247,7 +247,7 @@ git reset --hard HEAD~1      # BORRA todo (peligroso)
 
 | ⬅️ Anterior | 🏠 Semana | Siguiente ➡️ |
 |:------------|:---------:|-------------:|
-| [README](README.md) | [Week 02](README.md) | [Week 03](../week-03/README.md) |
+| [README](README.md) | [Week 02](README.md) | [Week 03](../week-03_branching_basico/README.md) |
 
 ---
 

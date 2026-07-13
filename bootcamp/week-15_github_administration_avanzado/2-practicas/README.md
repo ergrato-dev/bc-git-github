@@ -72,7 +72,7 @@ gh extension install github/gh-gei
 
 ## ✅ Evaluación
 
-Cada ejercicio se evalúa según la rúbrica en [RUBRICA_EVALUACION.md](../RUBRICA_EVALUACION.md):
+Cada ejercicio se evalúa según la rúbrica en [rubrica-evaluacion.md](../rubrica-evaluacion.md):
 
 - **15 puntos** por ejercicio completado
 - **Total**: 60 puntos (60% de la nota semanal)

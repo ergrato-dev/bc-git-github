@@ -30,22 +30,22 @@ Cuando generes contenido para el bootcamp, sigue esta estructura:
 ````
 bootcamp/
 ├── README.md                     # Índice principal del bootcamp
-├── week-01/                      # Git Foundations
-├── week-02/                      # Repositories y commits
-├── week-03/                      # Branching básico
-├── week-04/                      # Merge conflicts
-├── week-05/                      # Remote repositories
-├── week-06/                      # GitHub features
-├── week-07/                      # GitHub Actions fundamentos
-├── week-08/                      # CI/CD pipelines
-├── week-09/                      # Actions avanzadas
-├── week-10/                      # Deployment strategies
-├── week-11/                      # Security features
-├── week-12/                      # Vulnerability management
-├── week-13/                      # Security policies
-├── week-14/                      # Enterprise administration
-├── week-15/                      # Administration avanzado
-└── week-16/                      # Proyecto final + certificaciones
+├── week-01_fundamentos_de_git/                      # Git Foundations
+├── week-02_repositories_y_commits/                  # Repositories y commits
+├── week-03_branching_basico/                        # Branching básico
+├── week-04_merge_conflicts/                         # Merge conflicts
+├── week-05_remote_repositories/                     # Remote repositories
+├── week-06_github_features/                         # GitHub features
+├── week-07_github_actions_fundamentos/              # GitHub Actions fundamentos
+├── week-08_cicd_pipelines/                          # CI/CD pipelines
+├── week-09_custom_actions_advanced_workflows/       # Actions avanzadas
+├── week-10_deployment_strategies/                   # Deployment strategies
+├── week-11_security_features/                       # Security features
+├── week-12_vulnerability_management/                # Vulnerability management
+├── week-13_security_policies_compliance/            # Security policies
+├── week-14_enterprise_administration/               # Enterprise administration
+├── week-15_github_administration_avanzado/          # Administration avanzado
+└── week-16_proyecto_final_certificaciones/          # Proyecto final + certificaciones
 ````
 
 ### Estructura Interna de Cada Semana
@@ -120,7 +120,10 @@ Cada lección debe incluir:
 }
 ```
 
-#### Python
+#### Python (uv)
+
+Usar [`uv`](https://docs.astral.sh/uv/) en vez de `pip`/`poetry`/`conda` en todo ejemplo didáctico (`uv add`, `uv sync`, `uv run`).
+
 ```
 # ✅ OBLIGATORIO
 requests==2.31.0

@@ -31,7 +31,7 @@ Al finalizar esta semana serás capaz de:
 ## 🗂️ Estructura de la Semana
 
 ```
-week-11/
+week-11_security_features/
 ├── README.md                 # Este archivo
 ├── rubrica-evaluacion.md     # Criterios de evaluación (100 pts)
 ├── 0-assets/                 # Diagramas SVG
@@ -211,7 +211,7 @@ updates:
 
 | ⬅️ Anterior | 🏠 Inicio | Siguiente ➡️ |
 |:------------|:---------:|-------------:|
-| [Week 10: Deployment Strategies](../week-10/README.md) | [Bootcamp](../README.md) | [Week 12: Vulnerability Management](../week-12/README.md) |
+| [Week 10: Deployment Strategies](../week-10_deployment_strategies/README.md) | [Bootcamp](../README.md) | [Week 12: Vulnerability Management](../week-12_vulnerability_management/README.md) |
 
 ---
 

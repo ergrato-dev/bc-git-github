@@ -32,7 +32,7 @@ Crear una suite completa de Custom Actions que automatice el etiquetado de Issue
 ## 📁 Estructura del Proyecto
 
 ```
-mi-proyecto-semana-09/
+mi-proyecto-week-09_custom_actions_advanced_workflows/
 ├── .github/
 │   ├── actions/
 │   │   ├── auto-labeler/           # JavaScript Action

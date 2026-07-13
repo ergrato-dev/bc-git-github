@@ -61,7 +61,7 @@ git push origin feature/nombre-descriptivo
 
 ---
 
-## � Regla de Oro de Versiones
+## 📌 Regla de Oro de Versiones
 
 > **Esta regla aplica a todo ejemplo de código en el bootcamp, sin excepción.**
 
@@ -116,9 +116,20 @@ patch (ej: supply chain attack) se instalará automáticamente. Las versiones ex
 `git tag -f v1 <new-commit>` y tu pipeline ejecutará código diferente al que revisaste.
 Un SHA es inmutable: la ejecución siempre será exactamente el código que auditaste.
 
-### Python (requirements.txt / pyproject.toml)
+### Python (uv / pyproject.toml)
+
+Los ejemplos didácticos de Python deben usar [`uv`](https://docs.astral.sh/uv/) en vez de `pip`/`poetry`/`conda` para instalar y fijar dependencias.
+
+```bash
+# ✅ CORRECTO — añade con versión exacta y actualiza uv.lock
+uv add requests==2.31.0 boto3==1.34.0
+
+# ✅ CORRECTO — instala desde el lockfile en CI
+uv sync --frozen
+```
 
 ```
+# pyproject.toml
 # ✅ CORRECTO
 requests==2.31.0
 boto3==1.34.0
@@ -128,9 +139,11 @@ requests>=2.0
 boto3~=1.34
 ```
 
+**Por qué importa**: `uv.lock` fija el árbol de dependencias completo (incluyendo transitivas); `uv sync --frozen` en CI garantiza builds reproducibles sin resolver versiones nuevas en cada corrida.
+
 ---
 
-## �📝 Estándares de Contenido
+## 📝 Estándares de Contenido
 
 ### Idioma
 
@@ -175,6 +188,8 @@ git commit -m "feat: descripción"
 ---
 
 ## 🔄 Proceso de Pull Request
+
+> ⚠️ **Nota**: los Pull Requests externos se **cierran automáticamente** al abrirse (ver `.github/workflows/close-prs.yml`) para mantener el control de calidad del contenido educativo. Si quieres proponer un cambio, abre primero un **Issue** con la plantilla de Feature Request o Bug Report; si el mantenedor lo aprueba, se coordinará el PR directamente contigo.
 
 ### 1. Antes de Crear el PR
 
@@ -222,9 +237,11 @@ bc-git-github/
 ├── docs/                    # Documentación adicional
 ├── .github/                  # Configuración de GitHub
 │   ├── ISSUE_TEMPLATE/       # Plantillas de issues
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   ├── CODEOWNERS
 │   └── copilot-instructions.md
 ├── bootcamp/                 # Contenido del bootcamp
-│   └── week-XX/              # Semanas 01-14
+│   └── week-XX_slug/         # Semanas 01-16
 │       ├── 0-assets/         # Diagramas SVG
 │       ├── 1-teoria/         # Material teórico
 │       ├── 2-practicas/      # Ejercicios guiados

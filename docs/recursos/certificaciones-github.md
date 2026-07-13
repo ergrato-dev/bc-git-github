@@ -2,7 +2,7 @@
 
 ## 📋 Descripción General
 
-Este bootcamp de 14 semanas está diseñado específicamente para preparar a los estudiantes para las **4 certificaciones oficiales de GitHub**, cubriendo desde fundamentos hasta administración empresarial.
+Este bootcamp de 16 semanas está diseñado específicamente para preparar a los estudiantes para las **4 certificaciones oficiales de GitHub**, cubriendo desde fundamentos hasta administración empresarial.
 
 ## 🏅 Certificaciones Disponibles
 
@@ -36,7 +36,7 @@ Este bootcamp de 14 semanas está diseñado específicamente para preparar a los
 
 ### 3. GitHub Advanced Security Certification
 
-**Duración de preparación:** Semanas 11-12  
+**Duración de preparación:** Semanas 11-13  
 **Nivel:** Avanzado  
 **Temas cubiertos:**
 
@@ -50,7 +50,7 @@ Este bootcamp de 14 semanas está diseñado específicamente para preparar a los
 
 ### 4. GitHub Administration Certification
 
-**Duración de preparación:** Semana 13  
+**Duración de preparación:** Semanas 14-15  
 **Nivel:** Experto  
 **Temas cubiertos:**
 
@@ -68,9 +68,9 @@ Este bootcamp de 14 semanas está diseñado específicamente para preparar a los
 | ------ | -------------- | ------------------ | -------------------------- |
 | 1-6    | Foundations    | GitHub Foundations | Examen simulacro Semana 6  |
 | 7-10   | Actions        | GitHub Actions     | Examen simulacro Semana 10 |
-| 11-12  | Security       | Advanced Security  | Examen simulacro Semana 12 |
-| 13     | Administration | Administration     | Examen simulacro Semana 13 |
-| 14     | Final          | Todas              | Repaso y exámenes finales  |
+| 11-13  | Security       | Advanced Security  | Examen simulacro Semana 13 |
+| 14-15  | Administration | Administration     | Examen simulacro Semana 15 |
+| 16     | Final          | Todas              | Repaso y exámenes finales  |
 
 ## 💰 Costos y Beneficios
 
@@ -94,7 +94,7 @@ Este bootcamp de 14 semanas está diseñado específicamente para preparar a los
 
 ### Material del Bootcamp
 
-- 📖 14 semanas de contenido estructurado
+- 📖 16 semanas de contenido estructurado
 - 💻 +100 ejercicios prácticos
 - 🧪 Laboratorios hands-on
 - 📝 Exámenes simulacro semanales
@@ -120,19 +120,19 @@ Este bootcamp de 14 semanas está diseñado específicamente para preparar a los
 2. **Custom actions** development
 3. **Simulacro semanal** con 15 preguntas
 
-### Semanas 11-12: Security
+### Semanas 11-13: Security
 
 1. **Security scanning** en repositorios reales
 2. **Vulnerability management** hands-on
 3. **Simulacro intensivo** con 25 preguntas
 
-### Semana 13: Administration
+### Semanas 14-15: Administration
 
 1. **Enterprise setup** simulation
 2. **Policy implementation** práctica
 3. **Simulacro completo** 75 preguntas
 
-### Semana 14: Repaso Final
+### Semana 16: Repaso Final
 
 1. **Mock exams** para las 4 certificaciones
 2. **Weak points** identification y refuerzo
@@ -157,4 +157,4 @@ Para cada certificación, el estudiante debe:
 ---
 
 **🎓 ¿Listo para comenzar tu journey hacia las certificaciones GitHub?**  
-👉 [Iniciar Bootcamp](../week-01/README.md)
+👉 [Iniciar Bootcamp](../../bootcamp/week-01_fundamentos_de_git/README.md)

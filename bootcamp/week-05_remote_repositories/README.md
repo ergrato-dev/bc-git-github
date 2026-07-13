@@ -75,7 +75,7 @@ Total: 6 horas
 ## Estructura de Carpetas
 
 ```
-week-05/
+week-05_remote_repositories/
 ├── README.md                      # Este archivo
 ├── rubrica-evaluacion.md          # Criterios de evaluacion
 ├── 0-assets/                      # Diagramas SVG
@@ -156,8 +156,8 @@ Esta semana cubre los siguientes temas del examen:
 
 | Seccion | Enlace |
 |---------|--------|
-| Anterior | [Week 04: Merge Conflicts](../week-04/README.md) |
-| Siguiente | [Week 06: GitHub Features](../week-06/README.md) |
+| Anterior | [Week 04: Merge Conflicts](../week-04_merge_conflicts/README.md) |
+| Siguiente | [Week 06: GitHub Features](../week-06_github_features/README.md) |
 | Indice | [Bootcamp](../README.md) |
 
 ---

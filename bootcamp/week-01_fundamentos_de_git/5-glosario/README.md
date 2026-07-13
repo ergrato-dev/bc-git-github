@@ -396,7 +396,7 @@ git status -s
 
 | ⬅️ Recursos | 🏠 Week 01 | Siguiente ➡️ |
 |:------------|:---------:|-------------:|
-| [4-recursos](../4-recursos/) | [README](../README.md) | [Week 02](../../week-02/README.md) |
+| [4-recursos](../4-recursos/) | [README](../README.md) | [Week 02](../../week-02_repositories_y_commits/README.md) |
 
 ---
 

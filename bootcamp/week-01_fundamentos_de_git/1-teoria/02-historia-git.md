@@ -318,7 +318,7 @@ Imagina que eres un desarrollador en 2004 trabajando con CVS/SVN:
 
 Ahora que entiendes **por qué** Git existe y **cómo** revolucionó el desarrollo, es hora de **configurarlo** en tu sistema.
 
-### 📖 **Siguiente**: [Lección 1.3: Configuración de Git](./leccion-03-configuracion.md)
+### 📖 **Siguiente**: [Lección 1.3: Configuración de Git](./03-configuracion.md)
 
 ---
 

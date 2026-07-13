@@ -55,7 +55,7 @@ Fase 4: GitHub Administration (Semanas 14-15)
 ## 🗂️ Estructura de la Semana
 
 ```
-week-14/
+week-14_enterprise_administration/
 ├── README.md                    # Este archivo
 ├── rubrica-evaluacion.md        # Criterios de evaluación (100 pts)
 ├── 0-assets/                    # Diagramas SVG
@@ -73,7 +73,7 @@ week-14/
 │   ├── ejercicio-01-org-setup/
 │   ├── ejercicio-02-teams-structure/
 │   ├── ejercicio-03-branch-protection/
-│   └── ejercicio-04-sso-configuration/
+│   └── ejercicio-04-security-policies/
 ├── 3-proyecto/                  # Proyecto semanal (120 min)
 │   ├── README.md
 │   └── solution/
@@ -124,7 +124,7 @@ week-14/
 | 01 | [Organization Setup](2-practicas/ejercicio-01-org-setup/) | 40 min | Crear y configurar una organization |
 | 02 | [Teams Structure](2-practicas/ejercicio-02-teams-structure/) | 40 min | Diseñar estructura de teams |
 | 03 | [Branch Protection](2-practicas/ejercicio-03-branch-protection/) | 35 min | Implementar rulesets |
-| 04 | [SSO Configuration](2-practicas/ejercicio-04-sso-configuration/) | 35 min | Configurar autenticación |
+| 04 | [Security Policies](2-practicas/ejercicio-04-security-policies/) | 35 min | 2FA enforcement, tokens y sesiones |
 
 ---
 
@@ -179,7 +179,7 @@ Configurarás una **organización enterprise completa** para una empresa fictici
 
 | ⬅️ Anterior | 🏠 Inicio | Siguiente ➡️ |
 |:------------|:---------:|-------------:|
-| [Week 13: Security Policies](../week-13/) | [Bootcamp](../README.md) | [Week 15: Admin Avanzado](../week-15/) |
+| [Week 13: Security Policies](../week-13_security_policies_compliance/) | [Bootcamp](../README.md) | [Week 15: Admin Avanzado](../week-15_github_administration_avanzado/) |
 
 ---
 
@@ -229,7 +229,7 @@ Configurarás una **organización enterprise completa** para una empresa fictici
 
 | ⬅️ Anterior | 🏠 Inicio | Siguiente ➡️ |
 |:------------|:---------:|-------------:|
-| [Week 13: Security Policies](../week-13/README.md) | [Bootcamp](../README.md) | [Week 15: Administration Avanzado](../week-15/README.md) |
+| [Week 13: Security Policies](../week-13_security_policies_compliance/README.md) | [Bootcamp](../README.md) | [Week 15: Administration Avanzado](../week-15_github_administration_avanzado/README.md) |
 
 ---
 

@@ -127,4 +127,4 @@ git credential-cache exit
 
 ---
 
-[⬅️ Volver a Recursos](../README.md) | [📚 Lección completa](../../1-teoria/03-configuracion.md)
+[⬅️ Volver a Recursos](../README.md) | [📚 Lección completa](../1-teoria/03-configuracion.md)
